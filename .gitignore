@@ -1,6 +1,7 @@
 ocr-env/
 llm/
 output/
+dictionary-data/
 *.png
 __pycache__/
 .env

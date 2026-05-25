@@ -73,6 +73,15 @@ output/
 ├── run.sh               Orchestrator script
 ├── notice.pdf           Sample test document
 ├── output/              Generated files (gitignored)
+├── dictionary/          Nepali dictionary scripts and text data (tracked)
+│   ├── nepDict.py               SQLite → DSL converter
+│   ├── dsl-parser.py            English-Nepali pair extractor
+│   ├── eng_nep_pairs.txt        3,800+ bilingual word pairs
+│   └── ...
+├── dictionary-data/     Large dictionary binaries (gitignored)
+│   ├── nep_dict.sqlite3         7,620 word dictionary DB
+│   ├── nepali_dictionary.dsl    DSL format (KOReader-compatible)
+│   └── nepali_dictionary.{dict,idx,syn}  StarDict format
 ├── ocr-env/             Python venv (gitignored)
 └── AGENTS.md            Project conventions & model notes
 ```

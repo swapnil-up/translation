@@ -41,7 +41,8 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 - **Dependencies:** `requirements.txt` (version ranges, not exact pins)
 - **Venv:** `ocr-env/` (gitignored)
 - **Intermediates:** `output/` (gitignored — png, html, ocr.txt, translated.txt)
-- **Attempt folders** (`Attempt {1,2,3}/`) are prior explorations — ignore
+- **Dictionary data:** `dictionary/` (tracked) — scripts and text data; large binaries in `dictionary-data/` (gitignored)
+- **Prior attempts** (`Attempt {1,2,3}/`) — deleted; useful content moved to `dictionary/`
 - **`llm/idea.md`** has the full architecture blueprint
 
 ## OCR Model
