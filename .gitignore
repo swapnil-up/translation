@@ -1,1 +1,6 @@
 ocr-env/
+llm/
+output/
+*.png
+__pycache__/
+.env
