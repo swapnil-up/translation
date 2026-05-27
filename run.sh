@@ -13,6 +13,7 @@ Options:
   -h, --help       Show this help
   -o, --save       Save plain OCR text to output/<pdf>-ocr.txt
   --html           Generate positioned HTML overlay (opens in browser)
+  --night          Night mode (dim image, warm text — use with --html)
   --translate      Translate to English via Gemini
   --all            HTML + translate (full pipeline)
 
@@ -20,6 +21,7 @@ Examples:
   ./run.sh notice.pdf                  Plain OCR to stdout
   ./run.sh notice.pdf --save           Save to output/notice-ocr.txt
   ./run.sh notice.pdf --html           HTML overlay
+  ./run.sh notice.pdf --html --night   HTML overlay in night mode
   ./run.sh notice.pdf --translate      Translate to English
   ./run.sh notice.pdf --all            HTML + translate, opens in browser
 HELP

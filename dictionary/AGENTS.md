@@ -25,6 +25,10 @@ ocr-env/bin/python dictionary/build_stardict.py
 - PP-OCRv5 common errors: ब/व confusion, missing anusvara, conjunct simplification
 - If re-extracting pairs, delete `.progress` file to restart from beginning (not resume)
 
+## Future
+- **Sabdkosh** (`Sabdkosh-2075-10th.pdf`) is the next scraping target — a comprehensive Nepali dictionary (~50,000 entries). Source: https://ia902802.us.archive.org/5/items/nepali-brihat-sabdakosh-nepali-dictionary/Sabdkosh-2075-10th.pdf
+- Unlike `nep-eng.pdf`, this is Nepali→Nepali only (no English column) — different extraction strategy needed
+
 ## Conventions
 - `dictionary/` tracked — scripts + text data (eng_nep_pairs.txt)
 - `dictionary-data/` gitignored — binaries (SQLite, DSL, StarDict, source PDF)
