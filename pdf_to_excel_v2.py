@@ -327,14 +327,15 @@ def parse_long_code_row(row_text: str, scale: int = 1) -> dict | None:
     tokens = row_text.strip().split()
     if len(tokens) < 2:
         return None
-    code = tokens[0].translate(DIGIT_MAP)
+    code = tokens[0].translate(DIGIT_MAP).replace(',', '')
     if not re.match(r'^\d{5,9}$', code):
         return None
 
-    # Find where numbers start (first purely-numeric token after code)
+    # Find where numbers start (first purely-numeric token after code).
+    # Strip commas for Nepali-format numbers like "5,56,00,000".
     num_start = None
     for i in range(1, len(tokens)):
-        cand = tokens[i].translate(DIGIT_MAP)
+        cand = tokens[i].translate(DIGIT_MAP).replace(',', '')
         if re.match(r'^\d+$', cand):
             num_start = i
             break
@@ -415,8 +416,9 @@ def classify_budget_table(table: PageTable,
         is_total = first and is_total_text(first)
         is_grand = first and is_grand_total_text(first)
 
-        # Detect rows where pdfplumber merged cells (single cell, long code)
-        long_code_match = re.match(r'^(\d{8,9})\b', first.translate(DIGIT_MAP))
+        # Detect rows where pdfplumber merged cells into one.
+        # Try regex parsing for any single-cell detail row with a code.
+        long_code_match = re.match(r'^(\d{5,9})\b', first.translate(DIGIT_MAP))
         use_regex = is_detail and long_code_match and len(row) <= 2
 
         if use_regex:
@@ -447,10 +449,17 @@ def classify_budget_table(table: PageTable,
                     desc_section = description.split('-')[0].split('–')[0].strip()
                     if desc_section and len(desc_section) > 2:
                         current_section = desc_section
-                for ci in range(2, len(row)):
-                    v = parse_number(row[ci], scale)
-                    if v is not None:
-                        numeric_values.append(v)
+                # For 1-cell rows that weren't caught by long_code_match
+                # (e.g. 3-4 digit codes), try text-based number extraction
+                if len(row) <= 1 and code:
+                    parsed = parse_long_code_row(combined, scale)
+                    if parsed:
+                        numeric_values = parsed['numeric_values']
+                else:
+                    for ci in range(2, len(row)):
+                        v = parse_number(row[ci], scale)
+                        if v is not None:
+                            numeric_values.append(v)
             else:
                 code = ''
                 if is_total:
@@ -853,6 +862,52 @@ def decode_cell_text(cell_text: str, font_mapper: FontMapper,
     return decoded.replace('\ufffd', '')
 
 
+def reconstruct_table_from_text(pdf_path: str, page, page_num: int,
+                                font_mapper: FontMapper,
+                                decoded_text: str):
+    """Fallback: reconstruct budget rows from decoded page text
+    when pdfplumber's table detection misses content.
+
+    Splits decoded text into lines, filters for budget-like rows
+    (5+ digit code or total keyword), returns a PageTable with
+    1-column rows for the regex parser."""
+    lines = decoded_text.split('\n')
+    data_rows = []
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+        line = re.sub(r'\[CID:\d+\]', '', line).strip()
+        if not line:
+            continue
+        line = sanitize_devanagari(line)
+        line = finalize_devanagari_spelling(line)
+        if not line:
+            continue
+
+        digit_prefix = re.match(r'^[\d]+', line.translate(DIGIT_MAP))
+        is_budget_code = digit_prefix and len(digit_prefix.group()) >= 5
+        if is_budget_code or is_total_text(line):
+            data_rows.append([line])
+
+    if not data_rows:
+        return None
+
+    # Sort so budget-code rows come first (for is_detail detection),
+    # then total rows (so they still participate in state machine)
+    budget_rows = [r for r in data_rows if re.match(r'^[\d]+', r[0].translate(DIGIT_MAP))]
+    total_rows = [r for r in data_rows if not re.match(r'^[\d]+', r[0].translate(DIGIT_MAP))]
+    data_rows = budget_rows + total_rows
+
+    return PageTable(
+        page_num=page_num,
+        bbox=(0, 0, 0, 0),
+        header=['कोड', 'विवरण', 'यथार्थ', 'संशोधित',
+                'अनुमान', 'जम्मा', 'अन्य'],
+        rows=data_rows,
+    )
+
+
 def extract_pdf(pdf_path: str, font_mapper: FontMapper,
                 max_pages: int | None = None) -> list[dict]:
     pages: list[dict] = []
@@ -912,6 +967,22 @@ def extract_pdf(pdf_path: str, font_mapper: FontMapper,
                     header=header,
                     rows=rows,
                 ))
+
+            if decoded_tables:
+                total_table_rows = sum(len(t.rows) for t in decoded_tables)
+                total_chars = len(page.chars)
+                # If tables are sparse (<10 rows) but page is dense
+                # (>500 chars), fall back to text-based reconstruction
+                if total_table_rows < 10 and total_chars > 500:
+                    fallback = reconstruct_table_from_text(
+                        pdf_path, page, pi, font_mapper,
+                        result.get('raw_text', ''))
+                    if fallback and len(fallback.rows) > total_table_rows:
+                        print(f'[page]  P{pi+1}: text fallback '
+                              f'({len(fallback.rows)} rows vs '
+                              f'{total_table_rows} from tables)',
+                              file=sys.stderr)
+                        decoded_tables = [fallback]
 
             if decoded_tables:
                 result['type'] = 'table'

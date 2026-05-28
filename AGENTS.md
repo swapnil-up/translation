@@ -1,32 +1,45 @@
 # AGENTS.md — Nepali Admin Copilot
 
 ## Project Goal
-Extract Devanagari Unicode text from Nepali government PDFs (Preeti/Kantipur legacy fonts) via flatten-to-image + PaddleOCR, then translate to plain English with Gemini.
+Extract Devanagari text from Nepali government PDFs. Two pipelines:
+- **OCR** — legacy fonts (Preeti/Kantipur): flatten-to-image + PaddleOCR + optional Gemini translation
+- **Vector** — CID-keyed fonts (Kalimati): pdfplumber + font mapping → structured tables (SQLite/CSV/Excel) with cross-verification
 
-## Current Status: MVP v1
-- `pdf_to_text.py` — full pipeline: PDF → images → PaddleOCR → filtered Unicode → optional Gemini translation → positioned HTML overlay
-- `run.sh` — orchestrator script for common workflows
-- `output/` — gitignored directory for all generated files
-- Uses PP-OCRv5 with `devanagari_PP-OCRv5_mobile_rec` recognition model
-- Output sorted by Y position (top-to-bottom reading order)
-- Optional `--translate` flag pipes text through Gemini 2.5 Flash Lite for English translation
-- Optional `--html` flag renders positioned HTML overlay with hover zoom + word-wrap
+## Current Status: v2 (Budget extraction working)
+
+### Vector Pipeline (`pdf_to_excel_v2.py`)
+- Uses pdfplumber table detection with CID→Unicode font mapper (120 glyphs from 17 CMaps)
+- **Text fallback**: when pdfplumber finds <10 rows but page has >500 chars, falls back to text-line reconstruction (`reconstruct_table_from_text`). Splits decoded text by lines, filters for 5+ digit codes or "जम्मा" keywords, routes through `parse_long_code_row` token-based extraction.
+- 20-page test: 8 pages use table detection, 10 pages use text fallback
+- Known structural diff on page 8: commissions (Rs 226.7M) not grouped under अर्थ मन्त्रालय, but page total is correct
+- Pages 14-18: budget codes at 3 hierarchy levels (3/5/8-digit) — all present in PDF, not deduplicated
+
+### Verification (`verify_budget.py`)
+- Queries: `pages`, `page N --sum`, `section <name>`, `totals`, `verify`
+- Cross-verification: per (page, section) sum of data rows vs stated totals
 
 ## Running
-```bash
-# Direct
-ocr-env/bin/python pdf_to_text.py notice.pdf                         # Devanagari Unicode
-ocr-env/bin/python pdf_to_text.py notice.pdf --html                   # HTML overlay (output/notice.html)
-ocr-env/bin/python pdf_to_text.py notice.pdf --html --translate       # HTML + translation
-export GEMINI_API_KEY='your-key'
-ocr-env/bin/python pdf_to_text.py notice.pdf --translate             # English translation
 
-# Orchestrator
-./run.sh notice.pdf               # plain OCR to stdout
-./run.sh notice.pdf --save        # save plain text to output/
-./run.sh notice.pdf --html        # HTML overlay
-./run.sh notice.pdf --translate   # translate
-./run.sh notice.pdf --all         # HTML + translate, opens browser
+### OCR
+```bash
+ocr-env/bin/python pdf_to_text.py notice.pdf                  # Devanagari
+ocr-env/bin/python pdf_to_text.py notice.pdf --html            # HTML overlay
+export GEMINI_API_KEY='key'
+ocr-env/bin/python pdf_to_text.py notice.pdf --translate       # Gemini translation
+./run.sh notice.pdf --all                                      # orchestrator
+```
+
+### Vector (budget)
+```bash
+# First N pages → SQLite
+ocr-env/bin/python pdf_to_excel_v2.py output/redbook.pdf --max-pages 20 --sqlite
+
+# Slice a range
+make slice PDF=output/redbook.pdf FROM=30 TO=50 DB=output/slice-30-50.db
+
+# Verify
+python3 verify_budget.py output/redbook-20.db verify
+python3 verify_budget.py output/redbook-20.db page 10 --sum
 ```
 
 ## Setup
@@ -36,42 +49,21 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 ```
 
 ## Conventions
-- **Entry point:** `pdf_to_text.py`
-- **Orchestrator:** `run.sh` (executable, thin wrapper)
-- **Dependencies:** `requirements.txt` (version ranges, not exact pins)
 - **Venv:** `ocr-env/` (gitignored)
-- **Intermediates:** `output/` (gitignored — png, html, ocr.txt, translated.txt)
-- **Dictionary data:** `dictionary/` (tracked) — scripts and text data; large binaries in `dictionary-data/` (gitignored)
-- **Prior attempts** (`Attempt {1,2,3}/`) — deleted; useful content moved to `dictionary/`
-- **`llm/idea.md`** has the full architecture blueprint
+- **Output:** `output/` (gitignored — png, html, txt, db, xlsx, csv)
+- **Dictionary data:** `dictionary/` (tracked); binaries in `dictionary-data/` (gitignored)
+- **`llm/idea.md`** — full architecture blueprint
 
-## OCR Model
-- **Recognition:** `devanagari_PP-OCRv5_mobile_rec` (far better than v3 Devanagari model)
-- **Detection:** `PP-OCRv5_mobile_det`
-- Doc preprocessor disabled (clean digital PDFs don't need orientation classify or unwarping)
-- Textline orientation disabled
-- Models cache at `~/.paddlex/official_models/`
-
-## Known Versions
-- paddleocr 3.5.0 + paddlepaddle 3.2.2 is the known-good combo
-- paddlepaddle 3.3.x has a bug (PIR format incompatibility)
-- paddlepaddle 3.0.0 works but can only use PP-OCRv3 models
-
-## Translation
-- **Model:** `gemini-2.5-flash-lite` (cheapest available lite tier)
-- API key via `GEMINI_API_KEY` env var or `--translate=KEY`
-- System prompt includes a terminology glossary for government terms
-- Free tier: 1,500 requests/day, 15 requests/minute
-
-## HTML Overlay
-- `--html` flag generates `output/<pdf>.html` + `output/<pdf>.png`
-- Percentage-based positioning scales with browser
-- Hover: text zooms large with word-wrap (no horizontal scroll)
-- When `--translate` is combined, English appears in yellow below Devanagari
-- Sidecar files: `<pdf>-ocr.txt` and `<pdf>-translated.txt`
+## Font Mapping
+- Kalimati: 8 subsets sharing one CIDFont (696 glyphs, Identity-H encoding, no cmap)
+- 17 ToUnicode CMap tables parsed → 120 CID→Unicode mappings + 21 fallback CIDs
+- Preeti: Roman→Devanagari transliteration table (used for positioning spaces only)
+- 70-entry word fix table for broken legacy glyph sequences (पर्देश→प्रदेश etc.)
+- Scale multiplier: page header (हजार/लाख/करोड) ×1000/×100000/×10M
 
 ## Known Issues
-- Some conjuncts and rephas (half-letters) still misrecognized
-- Very occasional Devanagari numeral confusion
-- Low-confidence garbage detections filtered by <40% Devanagari ratio + length >= 2
-- First run downloads ~80 MB of models
+- Some conjuncts/rephas still misrecognized (both pipelines)
+- Nested subtotals on detail pages — each program total verified individually
+- "स्रोत जम्मा नेपाल" sub-header lines flagged as total rows (no numeric impact)
+- Truncated text at PDF crop boundary
+- First OCR run downloads ~80 MB of models
