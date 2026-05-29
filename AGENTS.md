@@ -9,10 +9,34 @@ Extract Devanagari text from Nepali government PDFs. Two pipelines:
 
 ### Vector Pipeline (`pdf_to_excel_v2.py`)
 - Uses pdfplumber table detection with CID→Unicode font mapper (120 glyphs from 17 CMaps)
-- **Text fallback**: when pdfplumber finds <10 rows but page has >500 chars, falls back to text-line reconstruction (`reconstruct_table_from_text`). Splits decoded text by lines, filters for 5+ digit codes or "जम्मा" keywords, routes through `parse_long_code_row` token-based extraction.
+- **Text fallback**: when pdfplumber finds <10 rows but page has >500 chars, falls back to text-line reconstruction (`reconstruct_table_from_text`). Splits decoded text by lines, filters for 3+ digit codes or "जम्मा" keywords, routes through `parse_long_code_row` token-based extraction.
 - 20-page test: 8 pages use table detection, 10 pages use text fallback
+- **Number concatenation fix**: `page.extract_text()` on fallback pages concatenates single-digit columns. `_fix_concatenated_numbers()`:
+  - Detail lines (6+ digit codes): drops first digit of 3-digit tokens (335→35)
+  - Summary lines (comma-formatted tokens like `11,94`): drops first digit of comma groups (→`1,94`, parsed as 194)
+  - First token (budget code) is never truncated
+- **"नेपाल सरकार नगद" stripped** from descriptions (column-group label, not description)
 - Known structural diff on page 8: commissions (Rs 226.7M) not grouped under अर्थ मन्त्रालय, but page total is correct
 - Pages 14-18: budget codes at 3 hierarchy levels (3/5/8-digit) — all present in PDF, not deduplicated
+
+### Data Columns
+| # | DB Column | Description |
+|---|-----------|-------------|
+| 1 | `year_actual` | यथार्थ (actual) |
+| 2 | `year_revised` | संशोधित (revised) |
+| 3 | `year_estimate` | अनुमान (estimate) |
+| 4 | `total` | जम्मा (total) |
+| 5 | `current_exp` | चालु (current expenditure) |
+| 6 | `capital_exp` | पूँजीगत (capital expenditure) |
+| 7 | `financial` | वित्तीय व्यवस्था (financial arrangement) |
+| 8 | `baideshik_anudan` | बैदेशिक अनुदान (foreign grant) |
+| 9 | `baideshik_rin` | बैदेशिक ऋण (foreign loan) |
+| 10 | `prathamikta_sanket` | प्राथमिकता सङ्केत (priority code) |
+| 11 | `raniti_sanket` | रणनीति सङ्केत (strategy code) |
+| 12 | `laigik_sanket` | लैङ्गिक सङ्केत (gender code) |
+
+- Columns 8-12 captured from table-detected pages (pdfplumber cell iteration); NULL on text-fallback pages.
+- Summary tables (pages 4-5) have different column ordering — positions do NOT align with the standard mapping.
 
 ### Verification (`verify_budget.py`)
 - Queries: `pages`, `page N --sum`, `section <name>`, `totals`, `verify`

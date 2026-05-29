@@ -291,6 +291,11 @@ class BudgetItem:
     current_exp: float | None = None
     capital_exp: float | None = None
     financial: float | None = None
+    baideshik_anudan: float | None = None
+    baideshik_rin: float | None = None
+    prathamikta_sanket: float | None = None
+    raniti_sanket: float | None = None
+    laigik_sanket: float | None = None
     is_total: bool = False
     is_section_header: bool = False
     is_grand_total: bool = False
@@ -323,20 +328,23 @@ def parse_long_code_row(row_text: str, scale: int = 1) -> dict | None:
     """Parse a row where pdfplumber merged all cells into one.
     Extracts budget code (first token), trailing numeric values,
     and description (everything between code and numbers).
-    Caps at 6 numeric values to discard trailing page refs like 'P1 09'."""
+    Captures up to 12 numeric values for columns up to laigik_sanket.
+    Skips tokens with alphabetic chars to discard page refs like 'P1 09'."""
     tokens = row_text.strip().split()
     if len(tokens) < 2:
         return None
     code = tokens[0].translate(DIGIT_MAP).replace(',', '')
-    if not re.match(r'^\d{5,9}$', code):
+    if not re.match(r'^\d{3,9}$', code):
         return None
 
     # Find where numbers start (first purely-numeric token after code).
     # Strip commas for Nepali-format numbers like "5,56,00,000".
+    # Use [0-9] (ASCII-only) NOT \d because \d matches Devanagari
+    # digits too — "२" in "प्रदेश नं. २" would falsely match.
     num_start = None
     for i in range(1, len(tokens)):
-        cand = tokens[i].translate(DIGIT_MAP).replace(',', '')
-        if re.match(r'^\d+$', cand):
+        cand = tokens[i].replace(',', '')
+        if re.match(r'^[0-9]+$', cand):
             num_start = i
             break
 
@@ -349,7 +357,14 @@ def parse_long_code_row(row_text: str, scale: int = 1) -> dict | None:
         }
 
     description = ' '.join(tokens[1:num_start])
-    # Parse all trailing numeric tokens, limited to 6 (year_actual..capital_exp)
+    # Strip column-group labels from description
+    for label in ('नेपाल सरकार नगद', 'नेपाल सरकार  नगद', 'नेपाल सरकार', 'नगद'):
+        description = description.replace(label, '')
+    description = description.strip()
+
+    # Parse all trailing numeric tokens, capped at 6 for text-fallback
+    # (extra columns are empty on detail pages; "P1 09" page-ref artifacts
+    # appear after position 6).
     raw_numbers = tokens[num_start:]
     numeric_values = []
     for t in raw_numbers:
@@ -418,7 +433,7 @@ def classify_budget_table(table: PageTable,
 
         # Detect rows where pdfplumber merged cells into one.
         # Try regex parsing for any single-cell detail row with a code.
-        long_code_match = re.match(r'^(\d{5,9})\b', first.translate(DIGIT_MAP))
+        long_code_match = re.match(r'^(\d{3,9})\b', first.translate(DIGIT_MAP))
         use_regex = is_detail and long_code_match and len(row) <= 2
 
         if use_regex:
@@ -501,6 +516,21 @@ def classify_budget_table(table: PageTable,
             item.capital_exp = numeric_values[5]
         if n_num >= 7:
             item.financial = numeric_values[6]
+        if n_num >= 8:
+            item.baideshik_anudan = numeric_values[7]
+        if n_num >= 9:
+            item.baideshik_rin = numeric_values[8]
+        if n_num >= 10:
+            item.prathamikta_sanket = numeric_values[9]
+        if n_num >= 11:
+            item.raniti_sanket = numeric_values[10]
+        if n_num >= 12:
+            item.laigik_sanket = numeric_values[11]
+
+        # Strip column-group label from descriptions
+        item.description = item.description.replace('नेपाल सरकार नगद', '')
+        item.description = item.description.replace('नेपाल सरकार  नगद', '')
+        item.description = item.description.strip()
 
         items.append(item)
 
@@ -619,7 +649,11 @@ def export_excel(pages: list[dict], output_path: str):
                     cols = ['Page', 'Section', 'Code', 'Description',
                             'Year Actual', 'Year Revised', 'Year Estimate',
                             'Total', 'Current Exp', 'Capital Exp',
-                            'Financial', 'Is Total', 'Is Section',
+                            'Financial',
+                            'Baideshik Anudan', 'Baideshik Rin',
+                            'Prathamikta Sanket', 'Raniti Sanket',
+                            'Laigik Sanket',
+                            'Is Total', 'Is Section',
                             'Is Grand Total']
                     for ci, c in enumerate(cols):
                         cell = ws.cell(row=br, column=ci + 1, value=c)
@@ -633,6 +667,9 @@ def export_excel(pages: list[dict], output_path: str):
                                 item.year_estimate,
                                 item.total, item.current_exp,
                                 item.capital_exp, item.financial,
+                                item.baideshik_anudan, item.baideshik_rin,
+                                item.prathamikta_sanket, item.raniti_sanket,
+                                item.laigik_sanket,
                                 'Yes' if item.is_total else '',
                                 'Yes' if item.is_section_header else '',
                                 'Yes' if item.is_grand_total else '']
@@ -699,7 +736,10 @@ def export_csv(pages: list[dict], output_dir: str, stem: str):
             if items:
                 lines = ['Section,Code,Description,Year Actual,Year Revised,'
                          'Year Estimate,Total,Current Exp,Capital Exp,'
-                         'Financial,Is Total,Is Grand Total']
+                         'Financial,'
+                         'Baideshik Anudan,Baideshik Rin,'
+                         'Prathamikta Sanket,Raniti Sanket,Laigik Sanket,'
+                         'Is Total,Is Grand Total']
                 for item in items:
                     d = item.description.replace('"', '""')
                     lines.append(
@@ -709,6 +749,11 @@ def export_csv(pages: list[dict], output_dir: str, stem: str):
                         f'{item.year_estimate or ""},{item.total or ""},'
                         f'{item.current_exp or ""},{item.capital_exp or ""},'
                         f'{item.financial or ""},'
+                        f'{item.baideshik_anudan or ""},'
+                        f'{item.baideshik_rin or ""},'
+                        f'{item.prathamikta_sanket or ""},'
+                        f'{item.raniti_sanket or ""},'
+                        f'{item.laigik_sanket or ""},'
                         f'{"Yes" if item.is_total else ""},'
                         f'{"Yes" if item.is_grand_total else ""}'
                     )
@@ -745,6 +790,11 @@ def export_sqlite(pages: list[dict], output_path: str):
             current_exp REAL,
             capital_exp REAL,
             financial REAL,
+            baideshik_anudan REAL,
+            baideshik_rin REAL,
+            prathamikta_sanket REAL,
+            raniti_sanket REAL,
+            laigik_sanket REAL,
             is_total_row INTEGER DEFAULT 0,
             is_grand_total_row INTEGER DEFAULT 0,
             is_section_header INTEGER DEFAULT 0,
@@ -768,10 +818,12 @@ def export_sqlite(pages: list[dict], output_path: str):
                          budget_code, description,
                          year_actual, year_revised, year_estimate,
                          total, current_exp, capital_exp, financial,
+                         baideshik_anudan, baideshik_rin,
+                         prathamikta_sanket, raniti_sanket, laigik_sanket,
                          is_total_row, is_grand_total_row,
                          is_section_header, scale_multiplier)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,
-                            ?, ?, ?, ?)
+                            ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     pnum, table_type, item.section,
                     item.code, item.description,
@@ -779,6 +831,9 @@ def export_sqlite(pages: list[dict], output_path: str):
                     item.year_estimate,
                     item.total, item.current_exp,
                     item.capital_exp, item.financial,
+                    item.baideshik_anudan, item.baideshik_rin,
+                    item.prathamikta_sanket, item.raniti_sanket,
+                    item.laigik_sanket,
                     1 if item.is_total else 0,
                     1 if item.is_grand_total else 0,
                     1 if item.is_section_header else 0,
@@ -862,6 +917,45 @@ def decode_cell_text(cell_text: str, font_mapper: FontMapper,
     return decoded.replace('\ufffd', '')
 
 
+def _fix_concatenated_numbers(text: str) -> str:
+    """Fix number groups where `page.extract_text()` concatenated adjacent
+    single-digit columns.
+
+    On detail lines (8-digit codes): 3-digit groups like 335→35.
+    On summary lines (3-digit codes): comma-formatted groups like 11,94→1,94
+    (which parse_number converts to 194).
+
+    Only applies when the line has the concatenation pattern: 4+ non-code
+    tokens with exactly 3 digits, or at least 2 comma-formatted tokens with
+    4 digits.  The first token (always the budget code) is never truncated."""
+    tokens = text.split()
+    non_code = tokens[1:]
+    three_digit_count = 0
+    comma_4digit_count = 0
+    for t in non_code:
+        digits = re.sub(r'[^\d]', '', t)
+        if len(digits) == 3:
+            three_digit_count += 1
+        if ',' in t and len(digits) == 4:
+            comma_4digit_count += 1
+    if three_digit_count < 4 and comma_4digit_count < 2:
+        return text
+
+    fixed = [tokens[0]]
+    for tok in tokens[1:]:
+        digits = re.sub(r'[^\d]', '', tok)
+        if len(digits) == 3:
+            fixed.append(digits[1:])
+        elif ',' in tok and len(digits) == 4:
+            parts = tok.split(',')
+            if parts and len(parts[0]) >= 1:
+                parts[0] = parts[0][1:]
+            fixed.append(','.join(parts))
+        else:
+            fixed.append(tok)
+    return ' '.join(fixed)
+
+
 def reconstruct_table_from_text(pdf_path: str, page, page_num: int,
                                 font_mapper: FontMapper,
                                 decoded_text: str):
@@ -869,8 +963,8 @@ def reconstruct_table_from_text(pdf_path: str, page, page_num: int,
     when pdfplumber's table detection misses content.
 
     Splits decoded text into lines, filters for budget-like rows
-    (5+ digit code or total keyword), returns a PageTable with
-    1-column rows for the regex parser."""
+    (3+ digit code excluding year patterns, or total keyword),
+    returns a PageTable with 1-column rows for the regex parser."""
     lines = decoded_text.split('\n')
     data_rows = []
     for line in lines:
@@ -885,9 +979,24 @@ def reconstruct_table_from_text(pdf_path: str, page, page_num: int,
         if not line:
             continue
 
+        # Skip column sub-headers like "स्रोत जम्मा नेपाल"
+        if 'स्रोत' in line and 'जम्मा' in line and 'नेपाल' in line:
+            continue
+
         digit_prefix = re.match(r'^[\d]+', line.translate(DIGIT_MAP))
-        is_budget_code = digit_prefix and len(digit_prefix.group()) >= 5
+        is_budget_code = False
+        if digit_prefix:
+            code = digit_prefix.group()
+            # 3+ digit codes, excluding year patterns (2077, 2078...)
+            is_budget_code = len(code) >= 3 and not re.match(r'^20\d{2}$', code)
         if is_budget_code or is_total_text(line):
+            # Fix concatenated numbers on detail lines (6+ digit codes)
+            # OR on summary lines with comma-formatted 4-digit tokens.
+            code_len = len(digit_prefix.group()) if digit_prefix else 0
+            has_comma_4 = any(',' in t and len(re.sub(r'[^\d]', '', t)) == 4
+                              for t in line.split())
+            if code_len >= 6 or has_comma_4:
+                line = _fix_concatenated_numbers(line)
             data_rows.append([line])
 
     if not data_rows:
