@@ -306,6 +306,8 @@ def detect_scale(text: str) -> int:
 class BudgetRow:
     code: str = ''
     description: str = ''
+    source: str = ''
+    nikasa_vidhi: str = ''
     year_actual: float = 0
     year_revised: float = 0
     year_estimate: float = 0
@@ -319,6 +321,7 @@ class BudgetRow:
     raniti_sanket: str = ''
     laigik_sanket: str = ''
     is_total: bool = False
+    row_type: str = 'budget'  # 'budget', 'total', 'heading'
     page: int = 0
 
 
@@ -329,10 +332,12 @@ AMOUNT_RE = re.compile(r'[\d,]+')
 # ── State-machine parser ─────────────────────────────────────────────
 
 HEADER_KEYWORDS = ['शीर्षक', 'स्रोत', 'अनुदान', 'विवरण', 'यथार्थ', 'संशोधित',
-                   'प्राथमिकता', 'दिगो', 'लैङ्गिक', 'नेपाल सरकार', 'वैदेशिक',
+                   'प्राथमिकता', 'दिगो', 'लैङ्गिक', 'वैदेशिक',
                    'संघीय', 'व्ययभार', 'आर्थिक', 'बजेट']
+# Section headings that should be captured as heading rows (not skipped)
+HEADING_LABELS = ['शीर्षक', 'स्रोत']
 AMOUNT_LINE_RE = re.compile(r'^[\d,.\-]+$')
-DESC_CONTINUE_KEYWORDS = ['नेपाल सरकार', 'नगद', 'कार्यालय', 'सामग्री', 'खर्च',
+DESC_CONTINUE_KEYWORDS = ['कार्यालय', 'सामग्री', 'खर्च',
                           'भत्ता', 'सुविधा', 'मर्मत', 'इन्धन', 'पोशाक',
                           'पानी', 'संचार', 'महसुल', 'वीमा', 'नवीकरण',
                           'औजार', 'भ्रमण', 'अनुगमन', 'मूल्यांकन', 'साधन',
@@ -352,16 +357,23 @@ def process_page_lines(lines: list[str], page: int, scale: int) -> list[BudgetRo
     current_priority_code = ''
     current_raniti = ''
     current_laigik = ''
+    current_source = ''
+    current_nikasa_vidhi = ''
     
     def finalize_current():
         nonlocal current_code, current_desc_parts, current_amounts, current_total
         nonlocal current_priority_code, current_raniti, current_laigik
+        nonlocal current_source, current_nikasa_vidhi
         if not current_code and not current_total:
             return
         desc = ' '.join(current_desc_parts).strip()
+        if not current_code and not desc:
+            return
         row = BudgetRow(
             code=current_code,
             description=desc,
+            source=current_source,
+            nikasa_vidhi=current_nikasa_vidhi,
             page=page,
             is_total=current_total,
         )
@@ -396,8 +408,28 @@ def process_page_lines(lines: list[str], page: int, scale: int) -> list[BudgetRo
         if not line:
             continue
         
-        # Skip header keywords
+        # Check for section headings (capture these as heading rows)
         stripped = line.replace(' ', '')
+        if any(stripped.startswith(kw.replace(' ', '')) for kw in HEADING_LABELS):
+            finalize_current()
+            rows.append(BudgetRow(
+                page=page,
+                description=line,
+                is_total=False,
+                row_type='heading',
+            ))
+            current_code = ''
+            current_desc_parts = []
+            current_amounts = []
+            current_total = False
+            current_priority_code = ''
+            current_raniti = ''
+            current_laigik = ''
+            current_source = ''
+            current_nikasa_vidhi = ''
+            continue
+        
+        # Skip remaining header keywords (column labels, not section headings)
         if any(stripped.startswith(kw.replace(' ', '')) for kw in HEADER_KEYWORDS):
             continue
         
@@ -435,6 +467,8 @@ def process_page_lines(lines: list[str], page: int, scale: int) -> list[BudgetRo
             current_priority_code = ''
             current_raniti = ''
             current_laigik = ''
+            current_source = ''
+            current_nikasa_vidhi = ''
             continue
         
         # Handle "P1", "0", "3" as priority codes on separate lines
@@ -466,6 +500,14 @@ def process_page_lines(lines: list[str], page: int, scale: int) -> list[BudgetRo
                     current_amounts.append(n)
                     continue
             
+            # Check for source (स्रोत) and निकासा विधि (disbursement method)
+            if line == 'नेपाल सरकार' and not current_source:
+                current_source = line
+                continue
+            if line == 'नगद' and not current_nikasa_vidhi:
+                current_nikasa_vidhi = line
+                continue
+            
             # Check if this is a description continuation
             if any(kw in line for kw in DESC_CONTINUE_KEYWORDS):
                 current_desc_parts.append(line)
@@ -478,6 +520,11 @@ def process_page_lines(lines: list[str], page: int, scale: int) -> list[BudgetRo
                 current_desc_parts = []
                 current_amounts = []
                 current_total = False
+                current_priority_code = ''
+                current_raniti = ''
+                current_laigik = ''
+                current_source = ''
+                current_nikasa_vidhi = ''
                 # Re-process this line in next iteration... but we already consumed it
                 # Let the next iteration handle it as standalone logic
             continue
@@ -493,6 +540,8 @@ def process_page_lines(lines: list[str], page: int, scale: int) -> list[BudgetRo
                 current_desc_parts = []
                 current_amounts = []
                 current_total = True
+                current_source = ''
+                current_nikasa_vidhi = ''
             continue
         
         # Skip random standalone numbers (no active code)
@@ -506,20 +555,21 @@ def process_page_lines(lines: list[str], page: int, scale: int) -> list[BudgetRo
 # ── Main extraction ──────────────────────────────────────────────────
 
 def extract_pdf(pdf_path: str, max_pages: Optional[int] = None,
-                db_path: Optional[str] = None):
+                start_page: int = 1, db_path: Optional[str] = None):
     """Extract budget data from PDF and write to SQLite."""
     
     doc = fitz.open(pdf_path)
     total_pages = len(doc)
     if max_pages:
         total_pages = min(total_pages, max_pages)
+    start_idx = max(0, start_page - 1)  # convert to 0-indexed
     
     all_rows = []
     # Track cumulative scale across pages - continuation pages inherit from first detail page
     current_scale = 1
     first_detail_page = None
     
-    for pno in range(total_pages):
+    for pno in range(start_idx, total_pages):
         sys.stderr.write(f'\rPage {pno+1}/{total_pages}')
         sys.stderr.flush()
         
@@ -547,7 +597,8 @@ def extract_pdf(pdf_path: str, max_pages: Optional[int] = None,
     # Output stats
     n_codes = sum(1 for r in all_rows if r.code)
     n_totals = sum(1 for r in all_rows if r.is_total)
-    print(f'Extracted {len(all_rows)} rows ({n_codes} with codes, {n_totals} totals)',
+    n_headings = sum(1 for r in all_rows if r.row_type == 'heading')
+    print(f'Extracted {len(all_rows)} rows ({n_codes} with codes, {n_totals} totals, {n_headings} headings)',
           file=sys.stderr)
     
     # Write to SQLite
@@ -574,6 +625,8 @@ def _write_sqlite(rows, doc, db_path: str):
             page INTEGER,
             code TEXT,
             description TEXT,
+            source TEXT,
+            nikasa_vidhi TEXT,
             year_actual REAL,
             year_revised REAL,
             year_estimate REAL,
@@ -586,7 +639,8 @@ def _write_sqlite(rows, doc, db_path: str):
             prathamikta_sanket TEXT,
             raniti_sanket TEXT,
             laigik_sanket TEXT,
-            is_total INTEGER DEFAULT 0
+            is_total INTEGER DEFAULT 0,
+            row_type TEXT DEFAULT 'budget'
         )
     ''')
     
@@ -600,18 +654,21 @@ def _write_sqlite(rows, doc, db_path: str):
     for row in rows:
         cur.execute('''
             INSERT INTO budget (
-                page, code, description, year_actual, year_revised,
+                page, code, description, source, nikasa_vidhi,
+                year_actual, year_revised,
                 year_estimate, total, current_exp, capital_exp, financial,
                 baideshik_anudan, baideshik_rin, prathamikta_sanket,
-                raniti_sanket, laigik_sanket, is_total
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                raniti_sanket, laigik_sanket, is_total, row_type
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         ''', (
             row.page, row.code, row.description,
+            row.source, row.nikasa_vidhi,
             row.year_actual, row.year_revised, row.year_estimate,
             row.total, row.current_exp, row.capital_exp, row.financial,
             row.baideshik_anudan, row.baideshik_rin,
             row.prathamikta_sanket, row.raniti_sanket, row.laigik_sanket,
-            1 if row.is_total else 0
+            1 if row.is_total else 0,
+            row.row_type
         ))
     
     # Store page content
@@ -631,6 +688,7 @@ def _write_sqlite(rows, doc, db_path: str):
 def main():
     parser = argparse.ArgumentParser(description='Extract Nepali budget PDF using PyMuPDF')
     parser.add_argument('pdf', help='Path to PDF file')
+    parser.add_argument('--start-page', type=int, default=1, help='First page to process')
     parser.add_argument('--max-pages', type=int, help='Max pages to process')
     parser.add_argument('--sqlite', action='store_true', help='Output to SQLite')
     parser.add_argument('--output', '-o', help='Output path')
@@ -645,7 +703,7 @@ def main():
         base = os.path.splitext(os.path.basename(args.pdf))[0]
         output_path = f'output/{base}.db'
     
-    rows = extract_pdf(args.pdf, max_pages=args.max_pages, db_path=output_path)
+    rows = extract_pdf(args.pdf, max_pages=args.max_pages, start_page=args.start_page, db_path=output_path)
     
     # Print sample
     for r in rows[:10]:
