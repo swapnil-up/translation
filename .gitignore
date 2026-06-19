@@ -5,3 +5,7 @@ dictionary-data/
 *.png
 __pycache__/
 .env
+node_modules/
+dist/
+static_dist/
+*.egg-info/

@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+pydantic-settings
+paddlepaddle
+paddleocr
+pdf2image
+Pillow
+google-genai
+python-dotenv
