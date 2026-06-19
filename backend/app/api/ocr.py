@@ -14,7 +14,7 @@ from app.services.ocr_service import (
     cleanup_task_resources,
     UPLOAD_BASE,
 )
-from app.services.translation import translate_devanagari_to_english
+from app.services.translation import translate_devanagari_to_english, translate_blocks
 
 router = APIRouter()
 
@@ -89,8 +89,30 @@ async def start_translation(task_id: str):
     task.phase = "translating"
 
     try:
-        translation = translate_devanagari_to_english(task.result or "")
-        task.translation = translation
+        blocks_by_key = {}
+        for page in task.pages:
+            for bi, block in enumerate(page.blocks):
+                key = f"page-{page.page_number}-block-{bi}"
+                block_text = " ".join(line.text for line in block.lines)
+                blocks_by_key[key] = block_text
+
+        if blocks_by_key:
+            translations = translate_blocks(blocks_by_key)
+        else:
+            translation = translate_devanagari_to_english(task.result or "")
+            task.translation = translation
+            task.phase = "completed"
+            return {"status": "done"}
+
+        for page in task.pages:
+            for bi, block in enumerate(page.blocks):
+                key = f"page-{page.page_number}-block-{bi}"
+                trans = translations.get(key, "")
+                for li, line in enumerate(block.lines):
+                    line_key = f"{page.page_number}-{bi}-{li}"
+                    task.line_translations[line_key] = trans
+
+        task.translation = "done"
         task.phase = "completed"
     except Exception as e:
         task.translation_error = str(e)
@@ -116,7 +138,34 @@ async def get_overlay_data(task_id: str):
     task = tasks_db.get(task_id)
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
-    return {"pages": [p.model_dump() for p in task.pages]}
+    page_data = []
+    for p in task.pages:
+        blocks_out = []
+        for bi, block in enumerate(p.blocks):
+            lines_out = []
+            for li, line in enumerate(block.lines):
+                line_key = f"{p.page_number}-{bi}-{li}"
+                trans = task.line_translations.get(line_key, "")
+                lines_out.append({
+                    "text": line.text,
+                    "translation": trans,
+                    "x": line.x,
+                    "y": line.y,
+                    "width": line.width,
+                    "height": line.height,
+                })
+            blocks_out.append({
+                "lines": lines_out,
+                "x": block.x,
+                "y": block.y,
+                "width": block.width,
+                "height": block.height,
+            })
+        page_data.append({
+            "page_number": p.page_number,
+            "blocks": blocks_out,
+        })
+    return {"pages": page_data}
 
 
 @router.get("/ocr/{task_id}/layers/{page_num}")

@@ -10,10 +10,28 @@ class OcrWord(BaseModel):
     height: int
 
 
+class OcrLine(BaseModel):
+    text: str
+    x: int
+    y: int
+    width: int
+    height: int
+
+
+class OcrBlock(BaseModel):
+    lines: list[OcrLine]
+    x: int
+    y: int
+    width: int
+    height: int
+
+
 class OcrPage(BaseModel):
     page_number: int
     text: str
     words: list[OcrWord]
+    lines: list[OcrLine] = []
+    blocks: list[OcrBlock] = []
     status: str  # "success" | "blank" | "failed"
 
 
@@ -27,6 +45,7 @@ class OcrTaskState(BaseModel):
     page_errors: dict[int, str] = {}
     result: Optional[str] = None
     translation: Optional[str] = None
+    line_translations: dict[str, str] = {}  # "page-line" → translation
     translation_error: Optional[str] = None
     error: Optional[str] = None
 

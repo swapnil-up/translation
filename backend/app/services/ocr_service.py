@@ -6,11 +6,67 @@ from typing import Optional
 
 from pdf2image import convert_from_path
 
-from app.schemas import OcrTaskState, OcrPage, OcrWord
+from app.schemas import OcrTaskState, OcrPage, OcrWord, OcrLine, OcrBlock
 
 tasks_db: dict[str, OcrTaskState] = {}
 ocr_lock = asyncio.Lock()
 UPLOAD_BASE = "/tmp/uploads"
+
+Y_TOLERANCE = 8
+
+
+def group_words_into_lines(words: list[OcrWord]) -> list[OcrLine]:
+    if not words:
+        return []
+    sorted_words = sorted(words, key=lambda w: (w.y, w.x))
+    lines = []
+    current_line = [sorted_words[0]]
+    for w in sorted_words[1:]:
+        last = current_line[-1]
+        if abs(w.y - last.y) <= Y_TOLERANCE:
+            current_line.append(w)
+        else:
+            joined = " ".join(wrd.text for wrd in current_line)
+            min_x = min(wrd.x for wrd in current_line)
+            min_y = min(wrd.y for wrd in current_line)
+            max_x = max(wrd.x + wrd.width for wrd in current_line)
+            max_y = max(wrd.y + wrd.height for wrd in current_line)
+            lines.append(OcrLine(text=joined, x=min_x, y=min_y, width=max_x - min_x, height=max_y - min_y))
+            current_line = [w]
+    if current_line:
+        joined = " ".join(wrd.text for wrd in current_line)
+        min_x = min(wrd.x for wrd in current_line)
+        min_y = min(wrd.y for wrd in current_line)
+        max_x = max(wrd.x + wrd.width for wrd in current_line)
+        max_y = max(wrd.y + wrd.height for wrd in current_line)
+        lines.append(OcrLine(text=joined, x=min_x, y=min_y, width=max_x - min_x, height=max_y - min_y))
+    return lines
+
+
+def group_lines_into_blocks(lines: list[OcrLine], y_gap: int = 20) -> list[OcrBlock]:
+    if not lines:
+        return []
+    blocks = []
+    current = [lines[0]]
+    for line in lines[1:]:
+        last = current[-1]
+        gap = line.y - (last.y + last.height)
+        if gap <= y_gap:
+            current.append(line)
+        else:
+            min_x = min(l.x for l in current)
+            min_y = min(l.y for l in current)
+            max_x = max(l.x + l.width for l in current)
+            max_y = max(l.y + l.height for l in current)
+            blocks.append(OcrBlock(lines=list(current), x=min_x, y=min_y, width=max_x - min_x, height=max_y - min_y))
+            current = [line]
+    if current:
+        min_x = min(l.x for l in current)
+        min_y = min(l.y for l in current)
+        max_x = max(l.x + l.width for l in current)
+        max_y = max(l.y + l.height for l in current)
+        blocks.append(OcrBlock(lines=list(current), x=min_x, y=min_y, width=max_x - min_x, height=max_y - min_y))
+    return blocks
 
 
 def get_queue_position(task_id: str) -> int:
@@ -66,10 +122,14 @@ async def run_ocr_pipeline_task(task_id: str, file_path: str):
             for p in result["pages"]:
                 words = [OcrWord(**w) for w in p["words"]]
                 page_status = "failed" if p["page_number"] in result.get("page_errors", {}) else ("blank" if not words else "success")
+                lines_list = group_words_into_lines(words) if words else []
+                blocks_list = group_lines_into_blocks(lines_list) if lines_list else []
                 pages.append(OcrPage(
                     page_number=p["page_number"],
                     text=p["text"],
                     words=words,
+                    lines=lines_list,
+                    blocks=blocks_list,
                     status=page_status,
                 ))
 
