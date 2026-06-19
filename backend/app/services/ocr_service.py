@@ -4,7 +4,9 @@ import shutil
 import uuid
 from typing import Optional
 
-from app.schemas import OcrTaskState
+from pdf2image import convert_from_path
+
+from app.schemas import OcrTaskState, OcrPage, OcrWord
 
 tasks_db: dict[str, OcrTaskState] = {}
 ocr_lock = asyncio.Lock()
@@ -41,21 +43,42 @@ async def run_ocr_pipeline_task(task_id: str, file_path: str):
             tasks_db[task_id].status = "processing"
             tasks_db[task_id].phase = "converting_pdf"
 
-            # --- OCR logic will go here (Phase 1a/1c) ---
-            # from pdf_to_text import NepaliOCRProcessor
-            # processor = NepaliOCRProcessor()
-            # result = processor.ocr_pdf(file_path)
-
-            # Stub:
-            await asyncio.sleep(0.1)
-            result = {
-                "full_text": "OCR result placeholder",
-                "pages": []
-            }
+            # Convert to images and save page JPEGs for overlay
+            images = convert_from_path(file_path, dpi=100)
+            pages_dir = os.path.join(UPLOAD_BASE, task_id, "pages")
+            os.makedirs(pages_dir, exist_ok=True)
+            for i, img in enumerate(images, start=1):
+                img.save(os.path.join(pages_dir, f"{i}.jpg"), format="JPEG", quality=80)
+            tasks_db[task_id].total = len(images)
 
             # Clean up source PDF
             if os.path.isfile(file_path):
                 os.remove(file_path)
+
+            # Run OCR
+            tasks_db[task_id].phase = "ocr"
+
+            from pdf_to_text import NepaliOCRProcessor
+            processor = NepaliOCRProcessor()
+            result = processor.ocr_pdf(images=images)
+
+            pages = []
+            for p in result["pages"]:
+                words = [OcrWord(**w) for w in p["words"]]
+                page_status = "failed" if p["page_number"] in result.get("page_errors", {}) else ("blank" if not words else "success")
+                pages.append(OcrPage(
+                    page_number=p["page_number"],
+                    text=p["text"],
+                    words=words,
+                    status=page_status,
+                ))
+
+            page_errors_converted = {int(k): v for k, v in result.get("page_errors", {}).items()}
+            successful_pages = len([p for p in pages if p.status == "success"])
+
+            tasks_db[task_id].current = successful_pages
+            tasks_db[task_id].pages = pages
+            tasks_db[task_id].page_errors = page_errors_converted
 
             tasks_db[task_id].status = "done"
             tasks_db[task_id].phase = "completed"

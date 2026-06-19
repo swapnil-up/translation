@@ -3,10 +3,16 @@ import os
 import re
 import sys
 from pathlib import Path
+from typing import Optional
 
 import numpy as np
 import requests
 from pdf2image import convert_from_path
+
+# PaddlePaddle 3.3.0+ CPU oneDNN regression workaround (harmless on 3.2.x)
+os.environ.setdefault("PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT", "0")
+os.environ.setdefault("FLAGS_allocator_strategy", "naive_best_fit")
+
 from paddleocr import PaddleOCR
 
 GEMINI_MODEL = "gemini-2.5-flash-lite"
@@ -15,58 +21,114 @@ GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/models"
 DEVANAGARI_RE = re.compile(r"[\u0900-\u097F]")
 
 
-def pdf_to_images(pdf_path: str, dpi: int = 300) -> list:
-    print(f"[pdf] Converting {Path(pdf_path).name} → images ({dpi} dpi)...", file=sys.stderr, flush=True)
-    imgs = convert_from_path(pdf_path, dpi=dpi)
-    print(f"[pdf]  {len(imgs)} page(s) rasterised", file=sys.stderr, flush=True)
-    return imgs
+class NepaliOCRProcessor:
+    """OCR processor for Nepali Devanagari PDFs.
+
+    Loads PaddleOCR once at init — shared across all requests.
+    Use ``ocr_pdf()`` for the web app; the CLI entry point (``main()``)
+    wraps the same class.
+    """
+
+    def __init__(self):
+        self.ocr = PaddleOCR(
+            text_recognition_model_name="devanagari_PP-OCRv5_mobile_rec",
+            text_detection_model_name="PP-OCRv5_mobile_det",
+            use_doc_orientation_classify=False,
+            use_doc_unwarping=False,
+            use_textline_orientation=False,
+        )
+
+    def ocr_pdf(self, file_path: Optional[str] = None, images: Optional[list] = None, dpi: int = 100) -> dict:
+        """Run OCR on a PDF and return structured results.
+
+        Pass either ``file_path`` (converts internally) or ``images`` (pre-converted).
+
+        Returns::
+
+            {
+                "full_text": "नेपाल सरकार...",
+                "pages": [
+                    {
+                        "page_number": 1,
+                        "text": "...",
+                        "words": [
+                            {"text": "...", "x": int, "y": int, "width": int, "height": int},
+                            ...
+                        ]
+                    },
+                    ...
+                ],
+                "page_errors": {"3": "image too dark", ...}
+            }
+        """
+        if images is None:
+            if file_path is None:
+                raise ValueError("Either file_path or images must be provided")
+            images = convert_from_path(file_path, dpi=dpi)
+
+        full_lines = []
+        pages = []
+        page_errors = {}
+
+        for page_idx, img in enumerate(images):
+            page_num = page_idx + 1
+            page_words = []
+            try:
+                arr = np.array(img.convert("RGB"))
+                result = self.ocr.predict(arr)
+                for record in result:
+                    texts = record.get("rec_texts", [])
+                    scores = record.get("rec_scores", [])
+                    boxes = record.get("rec_boxes", [])
+                    for i in range(len(texts)):
+                        t = texts[i].strip()
+                        s = scores[i]
+                        if s < 0.3 or not t:
+                            continue
+                        dev_ratio = len(DEVANAGARI_RE.findall(t)) / max(len(t), 1)
+                        if dev_ratio < 0.4 and len(t) >= 2 and s < 0.7:
+                            continue
+                        b = boxes[i]
+                        if hasattr(b, "shape") and len(b.shape) == 1 and b.shape[0] == 4:
+                            x1, y1, x2, y2 = int(b[0]), int(b[1]), int(b[2]), int(b[3])
+                        else:
+                            x1, y1 = int(b[0][0]), int(b[0][1])
+                            x2, y2 = int(b[2][0]), int(b[2][1])
+                        word = {
+                            "text": t,
+                            "x": x1,
+                            "y": y1,
+                            "width": max(x2 - x1, 60),
+                            "height": max(y2 - y1, 14),
+                        }
+                        page_words.append(word)
+                        full_lines.append({"y": y1, "x": x1, "w": word["width"], "h": word["height"], "text": t, "page": page_idx})
+
+            except Exception as e:
+                page_errors[str(page_num)] = str(e)
+
+            page_text = " ".join(w["text"] for w in page_words)
+            pages.append({
+                "page_number": page_num,
+                "text": page_text,
+                "words": page_words,
+            })
+
+        full_lines.sort(key=lambda r: (r["page"], r["y"], r["x"]))
+        full_text = "\n".join(r["text"] for r in full_lines)
+
+        return {
+            "full_text": full_text,
+            "pages": pages,
+            "page_errors": page_errors,
+        }
+
+    def pdf_to_images(self, pdf_path: str, dpi: int = 300) -> list:
+        """Convert PDF pages to PIL Images."""
+        return convert_from_path(pdf_path, dpi=dpi)
 
 
-def is_devanagari_line(text: str, min_ratio: float = 0.4) -> bool:
-    if not text.strip():
-        return False
-    dev_len = len(DEVANAGARI_RE.findall(text))
-    return dev_len / len(text.strip()) >= min_ratio
-
-
-def extract_lines(images: list) -> list:
-    ocr = PaddleOCR(
-        text_recognition_model_name="devanagari_PP-OCRv5_mobile_rec",
-        text_detection_model_name="PP-OCRv5_mobile_det",
-        use_doc_orientation_classify=False,
-        use_doc_unwarping=False,
-        use_textline_orientation=False,
-    )
-    total = len(images)
-    lines = []
-    for page_idx, img in enumerate(images):
-        print(f"[ocr]  Page {page_idx + 1}/{total}...", file=sys.stderr, flush=True)
-        before = len(lines)
-        arr = np.array(img)
-        result = ocr.predict(arr)
-        for record in result:
-            texts = record["rec_texts"]
-            scores = record["rec_scores"]
-            boxes = record["rec_boxes"]
-            for i in range(len(texts)):
-                t = texts[i].strip()
-                s = scores[i]
-                if s < 0.3 or not t:
-                    continue
-                dev_ratio = len(DEVANAGARI_RE.findall(t)) / max(len(t), 1)
-                if dev_ratio < 0.4 and len(t) >= 2 and s < 0.7:
-                    continue
-                x1, y1, x2, y2 = [int(boxes[i][j]) for j in range(4)]
-                lines.append({"y": y1, "x": x1, "w": max(x2 - x1, 60), "h": max(y2 - y1, 14), "text": t, "page": page_idx})
-        added = len(lines) - before
-        print(f"[ocr]   → {added} lines", file=sys.stderr, flush=True)
-    lines.sort(key=lambda r: (r["page"], r["y"], r["x"]))
-    print(f"[ocr]  Total: {len(lines)} lines across {total} pages", file=sys.stderr, flush=True)
-    return lines
-
-
-def lines_to_plain(lines: list) -> str:
-    return "\n".join(r["text"] for r in lines)
+# ── Standalone functions (shared by CLI + HTML overlay) ─────────────────
 
 
 def group_into_blocks(lines: list, y_gap: int = 20) -> list:
@@ -268,10 +330,16 @@ def main():
         print(f"Error: {pdf} not found", file=sys.stderr)
         sys.exit(1)
 
+    processor = NepaliOCRProcessor()
+
     print(f"[stage] 1/4 — Rasterise PDF", file=sys.stderr, flush=True)
-    images = pdf_to_images(str(pdf), dpi=args.dpi)
+    images = processor.pdf_to_images(str(pdf), dpi=args.dpi)
     print(f"[stage] 2/4 — OCR {len(images)} page(s)", file=sys.stderr, flush=True)
-    lines = extract_lines(images)
+    result = processor.ocr_pdf(str(pdf), dpi=args.dpi)
+    lines = []
+    for p in result["pages"]:
+        for w in p["words"]:
+            lines.append({"y": w["y"], "x": w["x"], "w": w["width"], "h": w["height"], "text": w["text"], "page": p["page_number"] - 1})
 
     if args.translate:
         print(f"[stage] 3/4 — Translate to English", file=sys.stderr, flush=True)
@@ -306,7 +374,10 @@ def main():
             print(f"Written to {txt_path}")
 
         txt_path = out_dir / f"{stem}-ocr.txt"
-        txt_path.write_text(lines_to_plain(lines), encoding="utf-8")
+        txt_path.write_text(
+            "\n".join(r["text"] for r in lines),
+            encoding="utf-8"
+        )
         print(f"Written to {txt_path}")
     else:
         text = "\n".join(r.get("translation", r["text"]) for r in lines)

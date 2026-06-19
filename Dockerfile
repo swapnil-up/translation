@@ -20,6 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ENV PADDLEX_HOME=/root/.paddlex
 ENV XDG_CACHE_HOME=/root/.cache
 ENV PYTHONUNBUFFERED=1
+ENV PADDLE_PDX_ENABLE_MKLDNN_BYDEFAULT=0
+ENV FLAGS_allocator_strategy=naive_best_fit
 
 COPY backend/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt

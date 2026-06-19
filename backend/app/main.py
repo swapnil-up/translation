@@ -8,7 +8,8 @@ from app.config import settings
 app = FastAPI(title="Nepali Admin Copilot")
 
 # === STEP 1: API routers ===
-# app.include_router(ocr.router)
+from app.api import ocr
+app.include_router(ocr.router, prefix="/api")
 
 @app.get("/api/config/status")
 async def get_config_status():

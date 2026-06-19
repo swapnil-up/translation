@@ -1,9 +1,10 @@
 fastapi
 uvicorn[standard]
 pydantic-settings
-paddlepaddle
-paddleocr
+paddlepaddle==3.2.2
+paddleocr==3.5.0
 pdf2image
 Pillow
 google-genai
+python-multipart
 python-dotenv
