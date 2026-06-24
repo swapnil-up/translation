@@ -9,3 +9,5 @@ node_modules/
 dist/
 static_dist/
 *.egg-info/
+
+.venv
