@@ -1,4 +1,5 @@
 import asyncio
+import json
 import os
 import shutil
 import uuid
@@ -11,6 +12,40 @@ from app.schemas import OcrTaskState, OcrPage, OcrWord, OcrLine, OcrBlock
 tasks_db: dict[str, OcrTaskState] = {}
 ocr_lock = asyncio.Lock()
 UPLOAD_BASE = "/tmp/uploads"
+STATE_FILE = "state.json"
+
+
+def save_task_state(task_id: str):
+    task = tasks_db.get(task_id)
+    if not task:
+        return
+    task_dir = os.path.join(UPLOAD_BASE, task_id)
+    os.makedirs(task_dir, exist_ok=True)
+    path = os.path.join(task_dir, STATE_FILE)
+    try:
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(task.model_dump(mode="json"), f, ensure_ascii=False)
+    except Exception:
+        pass
+
+
+def load_task_state(task_id: str) -> Optional[OcrTaskState]:
+    path = os.path.join(UPLOAD_BASE, task_id, STATE_FILE)
+    if not os.path.isfile(path):
+        return None
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return OcrTaskState.model_validate(data)
+    except Exception:
+        return None
+
+
+def get_task(task_id: str) -> Optional[OcrTaskState]:
+    task = tasks_db.get(task_id)
+    if task:
+        return task
+    return load_task_state(task_id)
 
 Y_TOLERANCE = 8
 
@@ -79,8 +114,9 @@ def get_queue_position(task_id: str) -> int:
     return position
 
 
-async def cleanup_task_resources(task_id: str, delay_seconds: int = 1800):
+async def cleanup_task_resources(task_id: str, delay_seconds: int = 7200):
     await asyncio.sleep(delay_seconds)
+    tasks_db.pop(task_id, None)
     task_dir = os.path.join(UPLOAD_BASE, task_id)
     if os.path.isdir(task_dir):
         try:
@@ -144,7 +180,10 @@ async def run_ocr_pipeline_task(task_id: str, file_path: str):
             tasks_db[task_id].phase = "completed"
             tasks_db[task_id].result = result["full_text"]
 
+            save_task_state(task_id)
+
         except Exception as e:
             tasks_db[task_id].status = "error"
             tasks_db[task_id].phase = "failed"
             tasks_db[task_id].error = str(e)
+            save_task_state(task_id)

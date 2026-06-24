@@ -3,20 +3,22 @@ import os
 import uuid
 
 from fastapi import APIRouter, HTTPException, UploadFile, File, status
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse
 
 from app.config import settings
 from app.schemas import OcrResult
 from app.services.ocr_service import (
-    tasks_db,
+    get_task,
     ocr_lock,
     run_ocr_pipeline_task,
     cleanup_task_resources,
+    save_task_state,
     UPLOAD_BASE,
 )
 from app.services.translation import translate_devanagari_to_english, translate_blocks
 
 router = APIRouter()
+TRANSLATION_BATCH_SIZE = 10
 
 
 @router.post("/ocr")
@@ -44,7 +46,9 @@ async def start_ocr(file: UploadFile = File(...)):
 
 @router.get("/ocr/{task_id}")
 async def get_task_status(task_id: str):
-    task = tasks_db.get(task_id)
+    from app.services.ocr_service import tasks_db
+
+    task = get_task(task_id)
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
     from app.services.ocr_service import get_queue_position
@@ -63,7 +67,7 @@ async def get_task_status(task_id: str):
 
 @router.get("/ocr/{task_id}/result")
 async def get_task_result(task_id: str):
-    task = tasks_db.get(task_id)
+    task = get_task(task_id)
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
     if task.status not in ("done", "error"):
@@ -78,6 +82,8 @@ async def get_task_result(task_id: str):
 
 @router.post("/ocr/{task_id}/translate")
 async def start_translation(task_id: str):
+    from app.services.ocr_service import tasks_db
+
     task = tasks_db.get(task_id)
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
@@ -97,33 +103,44 @@ async def start_translation(task_id: str):
                 blocks_by_key[key] = block_text
 
         if blocks_by_key:
-            translations = translate_blocks(blocks_by_key)
+            keys = list(blocks_by_key.keys())
+            task.total = len(keys)
+            task.current = 0
+            all_translations: dict[str, str] = {}
+
+            for start in range(0, len(keys), TRANSLATION_BATCH_SIZE):
+                batch_keys = keys[start:start + TRANSLATION_BATCH_SIZE]
+                batch_dict = {k: blocks_by_key[k] for k in batch_keys}
+                batch_result = translate_blocks(batch_dict)
+                all_translations.update(batch_result)
+                task.current = min(start + TRANSLATION_BATCH_SIZE, len(keys))
+
+            for page in task.pages:
+                for bi, block in enumerate(page.blocks):
+                    key = f"page-{page.page_number}-block-{bi}"
+                    trans = all_translations.get(key, "")
+                    for li, line in enumerate(block.lines):
+                        line_key = f"{page.page_number}-{bi}-{li}"
+                        task.line_translations[line_key] = trans
+
+            task.translation = "done"
         else:
             translation = translate_devanagari_to_english(task.result or "")
             task.translation = translation
-            task.phase = "completed"
-            return {"status": "done"}
 
-        for page in task.pages:
-            for bi, block in enumerate(page.blocks):
-                key = f"page-{page.page_number}-block-{bi}"
-                trans = translations.get(key, "")
-                for li, line in enumerate(block.lines):
-                    line_key = f"{page.page_number}-{bi}-{li}"
-                    task.line_translations[line_key] = trans
-
-        task.translation = "done"
         task.phase = "completed"
+        save_task_state(task_id)
     except Exception as e:
         task.translation_error = str(e)
         task.phase = "translation_failed"
+        save_task_state(task_id)
 
     return {"status": "translating" if task.phase == "translating" else "done"}
 
 
 @router.get("/ocr/{task_id}/translate")
 async def get_translation_status(task_id: str):
-    task = tasks_db.get(task_id)
+    task = get_task(task_id)
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
     if task.translation is not None:
@@ -135,7 +152,7 @@ async def get_translation_status(task_id: str):
 
 @router.get("/ocr/{task_id}/overlay")
 async def get_overlay_data(task_id: str):
-    task = tasks_db.get(task_id)
+    task = get_task(task_id)
     if not task:
         raise HTTPException(status_code=404, detail="Task not found")
     page_data = []
@@ -178,6 +195,7 @@ async def get_page_layer(task_id: str, page_num: int):
 
 @router.delete("/ocr/{task_id}")
 async def delete_task(task_id: str):
+    from app.services.ocr_service import tasks_db
     task = tasks_db.get(task_id)
     if task:
         tasks_db.pop(task_id, None)
