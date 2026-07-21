@@ -3,9 +3,10 @@
     <div
       v-for="page in pages"
       :key="page.page_number"
-      class="relative border border-gray-200 rounded-lg overflow-hidden bg-white mx-auto"
+      class="relative border border-gray-200 rounded-lg bg-white mx-auto"
       style="max-width: 800px;"
     >
+      <div class="overflow-hidden rounded-lg">
       <img
         :src="`/api/ocr/${taskId}/layers/${page.page_number}`"
         :alt="`Page ${page.page_number}`"
@@ -13,6 +14,7 @@
         loading="lazy"
         @load="onImgLoad($event, page.page_number)"
       />
+      </div>
       <div
         v-if="pageSizes[page.page_number]"
         class="absolute inset-0 pointer-events-none"
@@ -22,27 +24,22 @@
         }"
       >
         <div
-          v-for="(block, bi) in page.blocks"
-          :key="bi"
-          class="absolute"
+          v-for="line in flatLines(page)"
+          :key="`${page.page_number}-${line.li}`"
+          class="absolute overflow-hidden rounded-sm group pointer-events-auto ocr-block"
+          :class="line.translation ? 'bg-black/40' : 'bg-black/30'"
           :style="{
-            left: (block.x * pageSizes[page.page_number].sx) + 'px',
-            top: (block.y * pageSizes[page.page_number].sy) + 'px',
-            width: (block.width * pageSizes[page.page_number].sx) + 'px',
+            left: (line.x * pageSizes[page.page_number].sx) + 'px',
+            top: (line.y * pageSizes[page.page_number].sy) + 'px',
+            width: Math.max(line.width * pageSizes[page.page_number].sx, 20) + 'px',
+            height: (line.height * pageSizes[page.page_number].sy) + 'px',
           }"
         >
-          <div v-for="(line, li) in block.lines" :key="li">
-            <div
-              class="text-[11px] leading-tight break-words px-0.5 rounded-sm"
-              :class="line.translation ? 'bg-black/40 text-yellow-200' : 'bg-black/30 text-cyan-300'"
-            >
-              {{ line.text }}
-            </div>
-            <div
-              v-if="line.translation"
-              class="text-[10px] leading-tight break-words px-0.5 rounded-sm bg-black/30 text-orange-200"
-            >
-              {{ line.translation }}
+          <div class="relative">
+            <div class="hidden group-hover:block text-[11px] leading-tight mb-1 whitespace-nowrap overflow-hidden text-ellipsis opacity-60" style="color: #88ddff;">{{ line.text }}</div>
+            <div class="text-[11px] leading-tight break-words px-0.5 group-hover:text-2xl group-hover:leading-snug transition-all duration-150">
+              <span style="color: #00eeff;">{{ line.text }}</span>
+              <span v-if="line.translation" class="block text-[10px] group-hover:text-lg" style="color: #ff6600;">{{ line.translation }}</span>
             </div>
           </div>
         </div>
@@ -65,8 +62,37 @@ interface PageSize {
   sy: number
 }
 
+interface FlatLine {
+  li: number
+  text: string
+  translation: string
+  x: number
+  y: number
+  width: number
+  height: number
+}
+
 const pages = ref<any[]>([])
 const pageSizes = reactive<Record<number, PageSize>>({})
+
+function flatLines(page: any): FlatLine[] {
+  const lines: FlatLine[] = []
+  let li = 0
+  for (const block of page.blocks) {
+    for (const line of block.lines) {
+      lines.push({
+        li: li++,
+        text: line.text,
+        translation: line.translation || '',
+        x: line.x,
+        y: line.y,
+        width: line.width,
+        height: line.height,
+      })
+    }
+  }
+  return lines
+}
 
 function onImgLoad(e: Event, pageNum: number) {
   const img = e.target as HTMLImageElement
@@ -93,3 +119,14 @@ onMounted(async () => {
   }
 })
 </script>
+
+<style scoped>
+.ocr-block:hover {
+  width: auto !important;
+  min-width: 250px !important;
+  max-width: 500px !important;
+  height: auto !important;
+  z-index: 100 !important;
+  overflow: visible !important;
+}
+</style>

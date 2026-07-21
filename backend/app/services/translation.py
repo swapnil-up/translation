@@ -46,11 +46,22 @@ def translate_devanagari_to_english(text: str) -> str:
     return parts[0].get("text", "").strip()
 
 
-def translate_blocks(blocks_by_key: dict[str, str]) -> dict[str, str]:
-    """Translate multiple text blocks in a single Gemini call.
+ContextItem = tuple[list[str], int]  # (all lines in block, target line index)
 
-    Uses an enumerated list format with explicit ``--- BLOCK N`` / ``--- TRANS N``
-    markers that Gemini is unlikely to strip.
+
+def translate_blocks(
+    blocks_by_key: dict[str, str],
+    context: dict[str, ContextItem] | None = None,
+) -> dict[str, str]:
+    """Translate multiple text items in a single Gemini call.
+
+    Each item (key → text) is sent with a sequential marker, and the
+    response is parsed back into the same keys.  Works for both block-level
+    and line-level keys.
+
+    When *context* is provided, each item's surrounding lines are included
+    so Gemini can translate the target line more accurately.  Each context
+    value is (list_of_all_block_lines, target_line_index).
 
     Returns:
         Same keys mapped to English translations.
@@ -63,12 +74,21 @@ def translate_blocks(blocks_by_key: dict[str, str]) -> dict[str, str]:
     input_lines = []
     for i, key in enumerate(sorted_keys):
         text = blocks_by_key[key]
-        input_lines.append(f"--- BLOCK {i}\n{text}")
+        ctx = (context or {}).get(key)
+        if ctx is not None:
+            block_lines, target_idx = ctx
+            marked = list(block_lines)
+            marked[target_idx] = f">>> {marked[target_idx]} <<<"
+            input_lines.append(f"--- ITEM {i}\n" + "\n".join(marked))
+        else:
+            input_lines.append(f"--- ITEM {i}\n{text}")
 
     prompt = (
-        "Translate each Nepali block to English. "
-        "Output exactly one --- TRANS N section per input block, in order. "
-        "Never skip a block. Do not add any introductory text.\n\n"
+        "Translate each Nepali item below to English. "
+        "Lines between >>> and <<< are the ones to translate; "
+        "surrounding lines are context only. "
+        "Output exactly one --- TRANS N section per input item, in order. "
+        "Never skip an item. Do not add any introductory text.\n\n"
         + "\n\n".join(input_lines)
     )
 

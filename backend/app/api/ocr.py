@@ -95,33 +95,38 @@ async def start_translation(task_id: str):
     task.phase = "translating"
 
     try:
-        blocks_by_key = {}
+        lines_by_key: dict[str, str] = {}
+        line_ctx_lines: dict[str, list[str]] = {}
+        line_ctx_idx: dict[str, int] = {}
         for page in task.pages:
             for bi, block in enumerate(page.blocks):
-                key = f"page-{page.page_number}-block-{bi}"
-                block_text = " ".join(line.text for line in block.lines)
-                blocks_by_key[key] = block_text
+                block_lines = [line.text for line in block.lines]
+                for li, line in enumerate(block.lines):
+                    key = f"page-{page.page_number}-block-{bi}-line-{li}"
+                    lines_by_key[key] = line.text
+                    line_ctx_lines[key] = block_lines
+                    line_ctx_idx[key] = li
 
-        if blocks_by_key:
-            keys = list(blocks_by_key.keys())
+        if lines_by_key:
+            keys = list(lines_by_key.keys())
             task.total = len(keys)
             task.current = 0
             all_translations: dict[str, str] = {}
 
             for start in range(0, len(keys), TRANSLATION_BATCH_SIZE):
                 batch_keys = keys[start:start + TRANSLATION_BATCH_SIZE]
-                batch_dict = {k: blocks_by_key[k] for k in batch_keys}
-                batch_result = translate_blocks(batch_dict)
+                batch_dict = {k: lines_by_key[k] for k in batch_keys}
+                batch_ctx = {k: (line_ctx_lines[k], line_ctx_idx[k]) for k in batch_keys}
+                batch_result = translate_blocks(batch_dict, batch_ctx)
                 all_translations.update(batch_result)
                 task.current = min(start + TRANSLATION_BATCH_SIZE, len(keys))
 
             for page in task.pages:
                 for bi, block in enumerate(page.blocks):
-                    key = f"page-{page.page_number}-block-{bi}"
-                    trans = all_translations.get(key, "")
                     for li, line in enumerate(block.lines):
+                        key = f"page-{page.page_number}-block-{bi}-line-{li}"
                         line_key = f"{page.page_number}-{bi}-{li}"
-                        task.line_translations[line_key] = trans
+                        task.line_translations[line_key] = all_translations.get(key, "")
 
             task.translation = "done"
         else:

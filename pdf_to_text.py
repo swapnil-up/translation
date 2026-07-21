@@ -164,25 +164,18 @@ def generate_html(lines: list, images: list, out_dir: str, stem: str, night_mode
 
         nav_links += f'<a href="#page-{page_idx + 1}" class="pn">{page_idx + 1}</a>\n'
 
-        page_lines = by_page[page_idx]
-        blocks = group_into_blocks(page_lines)
-
         cards = ""
-        for block in blocks:
-            nep_text = " ".join(r["text"] for r in block)
-            eng_text = block[0].get("translation", "")
+        for r in by_page[page_idx]:
+            bl = pct(r["x"], iw)
+            bt = pct(r["y"], ih)
+            bw = pct(r["w"], iw)
+            bh = pct(r["h"], ih)
 
-            min_x = min(r["x"] for r in block)
-            min_y = min(r["y"] for r in block)
-            max_right = max(r["x"] + r["w"] for r in block)
-            bl = pct(min_x, iw)
-            bt = pct(min_y, ih)
-            bw = pct(max_right - min_x, iw)
-
-            content = f'<div class="np">{nep_text}</div>'
-            if eng_text:
-                content += f'<div class="en">{eng_text}</div>'
-            cards += f'<div class="block" style="left:{bl}%;top:{bt}%;width:{bw}%;">{content}</div>\n'
+            content = f'<div class="np">{r["text"]}</div>'
+            trans = r.get("translation", "")
+            if trans:
+                content += f'<div class="en">{trans}</div>'
+            cards += f'<div class="block" style="left:{bl}%;top:{bt}%;width:{bw}%;height:{bh}%;">{content}</div>\n'
 
         pages_html += f"""<div class="page" id="page-{page_idx + 1}">
 <h2 class="pl">Page {page_idx + 1}</h2>
@@ -194,16 +187,16 @@ def generate_html(lines: list, images: list, out_dir: str, stem: str, night_mode
     if night_mode:
         extra_style = """body { background: #0a0a0a; }
 .bg { filter: brightness(0.2) saturate(0.4) sepia(0.3); }
-.block { background: rgba(0,0,0,0.65); }
-.block:hover { background: rgba(10,10,10,0.95); }
+.block { background: rgba(0,0,0,0.65); overflow: hidden; }
+.block:hover { background: rgba(10,10,10,0.95); overflow: visible; height: auto !important; }
 .np { color: #e8c44a; }
 .en { color: #88ccee; }"""
     else:
         extra_style = """body { background: #1a1a1a; }
-.block { background: rgba(0,0,0,0.5); }
-.block:hover { background: rgba(0,0,0,0.85); }
-.np { color: #00ccff; }
-.en { color: #ffcc00; }"""
+.block { background: rgba(0,0,0,0.7); overflow: hidden; }
+.block:hover { background: rgba(0,0,0,0.9); overflow: visible; height: auto !important; }
+.np { color: #00eeff; }
+.en { color: #88ddff; }"""
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -219,8 +212,8 @@ body {{ padding: 50px 20px 20px; }}
 .page {{ position: relative; width: 100%; max-width: 2550px; margin: 0 auto 40px; scroll-margin-top: 50px; }}
 .pl {{ position: absolute; top: -30px; left: 0; font: 13px/1 sans-serif; color: #666; }}
 .bg {{ display: block; width: 100%; height: auto; }}
-.block {{ position: absolute; font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif; white-space: normal; border-radius: 3px; padding: 3px 6px; transition: transform 0.15s ease; z-index: 1; word-wrap: break-word; }}
-.block:hover {{ z-index: 100; transform: none; }}
+.block {{ position: absolute; font-family: 'Noto Sans', 'Noto Sans Devanagari', sans-serif; white-space: normal; border-radius: 2px; padding: 1px 3px; overflow: hidden; transition: transform 0.15s ease; z-index: 1; word-wrap: break-word; }}
+.block:hover {{ z-index: 100; overflow: visible; height: auto !important; transform: none; }}
 .block:hover .np {{ font-size: clamp(20px, 1.8vw, 36px); }}
 .block:hover .en {{ font-size: clamp(18px, 1.6vw, 32px); }}
 .np {{ font-size: clamp(13px, 0.9vw, 20px); }}
