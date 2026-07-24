@@ -121,6 +121,15 @@ def is_quota_error(stderr: str) -> bool:
     return any(p in stderr for p in ["429", "403", "RESOURCE_EXHAUSTED", "quota", "rate limit"])
 
 
+def dedup_lines(text: str) -> str:
+    lines = text.splitlines()
+    result = [lines[0]] if lines else []
+    for i in range(1, len(lines)):
+        if lines[i] != lines[i - 1]:
+            result.append(lines[i])
+    return "\n".join(result)
+
+
 def run_ocr(pdf_path: Path) -> dict:
     stem = pdf_path.stem
     out_txt = TRANSLATIONS_DIR / f"{stem}.txt"
@@ -145,6 +154,11 @@ def run_ocr(pdf_path: Path) -> dict:
         if is_quota_error(err):
             raise RuntimeError("QUOTA_EXHAUSTED: " + err[-500:])
         raise RuntimeError(err[-500:])
+
+    if ocr_txt.exists():
+        ocr_txt.write_text(dedup_lines(ocr_txt.read_text()), encoding="utf-8")
+    if out_txt.exists():
+        out_txt.write_text(dedup_lines(out_txt.read_text()), encoding="utf-8")
 
     result_dict = {"ocr_path": str(ocr_txt if ocr_txt.exists() else out_txt)}
     if api_key and out_txt.exists():
