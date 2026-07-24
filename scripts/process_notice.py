@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 MANIFEST = Path("notices.json")
+TRANSLATIONS_DIR = Path("translations")
 OUTPUT_DIR = Path("output")
 BASE = "https://hr.parliament.gov.np"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -122,8 +123,8 @@ def is_quota_error(stderr: str) -> bool:
 
 def run_ocr(pdf_path: Path) -> dict:
     stem = pdf_path.stem
-    out_txt = OUTPUT_DIR / f"{stem}.txt"
-    ocr_txt = OUTPUT_DIR / f"{stem}-ocr.txt"
+    out_txt = TRANSLATIONS_DIR / f"{stem}.txt"
+    ocr_txt = TRANSLATIONS_DIR / f"{stem}-ocr.txt"
     api_key = os.environ.get("GEMINI_API_KEY", "")
 
     cmd = [
@@ -137,6 +138,7 @@ def run_ocr(pdf_path: Path) -> dict:
     else:
         print(f"[ocr] OCR only -> {out_txt}")
 
+    TRANSLATIONS_DIR.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         err = result.stderr + result.stdout

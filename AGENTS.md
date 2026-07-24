@@ -80,6 +80,7 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 ## Conventions
 - **Venv:** `ocr-env/` (gitignored)
 - **Output:** `output/` (gitignored — png, html, txt, db, xlsx, csv)
+- **Translations:** `translations/` (tracked — committed OCR text + English translations)
 - **Dictionary data:** `dictionary/` (tracked); binaries in `dictionary-data/` (gitignored)
 - **`llm/idea.md`** — full architecture blueprint
 
