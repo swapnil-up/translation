@@ -22,8 +22,10 @@
     "title": "Notice 2083-03-30",
     "url": "https://hr.parliament.gov.np/en/notices/1784095509",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/zwvznu64wd13cgrn.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2083-03-30-ocr.txt",
+    "translated_path": "translations/Notice_2083-03-30.txt"
   },
   {
     "serial": "4.",
