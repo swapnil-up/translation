@@ -304,8 +304,13 @@ def main():
     else:
         text = "\n".join(r.get("translation", r["text"]) for r in lines)
         if args.output:
-            Path(args.output).write_text(text, encoding="utf-8")
-            print(f"Written to {args.output}")
+            out_path = Path(args.output)
+            out_path.write_text(text, encoding="utf-8")
+            print(f"Written to {out_path}")
+            if args.translate:
+                ocr_path = out_path.with_stem(out_path.stem + "-ocr")
+                ocr_path.write_text(lines_to_plain(lines), encoding="utf-8")
+                print(f"Written to {ocr_path}")
         else:
             print(text)
 

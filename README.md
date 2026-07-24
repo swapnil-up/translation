@@ -74,6 +74,25 @@ Both pipelines are exposed as a **FastAPI web app** with a **Vue 3 SPA** fronten
 - `pdf_to_excel_v2.py` / `pdf_to_excel_v3.py` — budget extraction
 - `verify_budget.py` — cross-verify extracted totals
 
+### Notice Automation Pipeline
+- `scripts/scrape_notices.py` — scrapes parliament notices list (1,300+ entries) and backfills PDF URLs
+- `scripts/process_notice.py` — picks 1 pending notice, downloads PDF, runs OCR + translation, saves both
+- `notices.json` — manifest tracking status (pending/done/failed) for all notices
+- GitHub Actions: weekly scrape + daily backfill translation (`GEMINI_API_KEY` secret required)
+
+```bash
+# Scrape notice list (fast, incremental)
+.venv/bin/python scripts/scrape_notices.py
+
+# Backfill PDF URLs
+.venv/bin/python scripts/scrape_notices.py --backfill
+
+# Process one notice (download, OCR, translate)
+GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py
+
+# Output: output/{title}.txt (translation) + output/{title}-ocr.txt (Devanagari)
+```
+
 ## Tech Stack
 
 | Component | Technology |
@@ -129,6 +148,13 @@ python pdf_to_text.py notice.pdf --html --translate
 │   ├── pdf_to_excel_v3.py  # PyMuPDF engine
 │   └── verify_budget.py    # Cross-verification
 ├── dictionary/              # Nepali-English dict builder
+├── scripts/                 # Notice automation
+│   ├── scrape_notices.py   # Scraper (list + PDF backfill)
+│   └── process_notice.py   # Download, OCR, translate pipeline
+├── .github/workflows/      # GitHub Actions
+│   ├── scrape-notices.yml  # Weekly scrape
+│   └── translate-notices.yml # Daily backfill translation
+├── notices.json            # Notice manifest (1,300+ entries)
 ├── Dockerfile               # Production build
 └── requirements.txt         # Root dependencies
 ```
@@ -143,6 +169,12 @@ git push space main
 ```
 
 Set `GEMINI_API_KEY` in Space secrets for translation support.
+
+## GitHub Actions Setup
+
+1. Add `GEMINI_API_KEY` to repo secrets (Settings → Secrets and variables → Actions)
+2. The scrape workflow runs Monday 6am, translate workflow runs daily 4am
+3. Both can also be triggered manually from the Actions tab
 
 ## License
 

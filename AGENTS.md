@@ -96,3 +96,35 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 - Per-instance CID mapping differences → word-fix table grows per page range
 - Pages 1-16 (TOC) produce noise rows with empty descriptions
 - No cross-verification yet (verify_budget.py not adapted for v3 schema)
+
+## Notice Automation Pipeline (new)
+
+### Scripts
+- `scripts/scrape_notices.py` — scrapes `hr.parliament.gov.np` notices table (44 pages, 1,302 entries). Two modes: `--list-only` (fast, incremental) and `--backfill` (fetches detail pages for PDF URLs). Output: `notices.json`.
+- `scripts/process_notice.py` — picks 1 pending notice from manifest, backfills PDF URL if missing, downloads PDF, runs PaddleOCR + Gemini translation, saves both Devanagari and English. Updates status in `notices.json`.
+
+### GitHub Actions
+- `scrape-notices.yml` — weekly Monday 6am, commits new notices to `notices.json`
+- `translate-notices.yml` — daily 4am, processes 1 pending notice, commits translated output
+
+### Manifest (`notices.json`)
+| Field | Description |
+|-------|-------------|
+| `serial` | Row number from table |
+| `title` | Notice title (e.g. "Notice 2083-03-31") |
+| `url` | Detail page URL |
+| `pdf_url` | Direct PDF attachment URL |
+| `status` | `pending` / `done` / `failed` / `no_pdf` |
+| `scraped_at` | Date first discovered |
+| `ocr_path` | Path to saved OCR text (when done) |
+| `translated_path` | Path to saved translation (when done) |
+
+### Running
+```bash
+.venv/bin/python scripts/scrape_notices.py                    # incremental list scrape
+.venv/bin/python scripts/scrape_notices.py --backfill         # backfill PDF URLs
+GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py  # process 1 notice
+```
+
+### SSL Note
+The parliament site has a misconfigured SSL cert — both scripts use `verify=False`. The GitHub Actions runners also hit this issue; the `urllib3.disable_warnings()` in the scripts suppresses the noise.
