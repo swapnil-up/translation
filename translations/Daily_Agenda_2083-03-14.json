@@ -1,0 +1,168 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 28\nDaily Agenda\nFederal\nNepal\nParliament,\nSaturday, Ashad 14, 2083\n11:00 AM\nLetter from the Office of the President\nThe Honorable Speaker will read out the letter from the Office of the President regarding the certification of bills.\n1. Presentation of Annual Report\nOn behalf of the Honorable Prime Minister Balendra Shah, the Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam will present the \"Report of the Auditor General, 2083\".\n2. Management Work\nOn behalf of the Honorable Prime Minister Balendra Shah, the Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam will:\n(a) Present a proposal seeking permission to introduce the \"Public Procurement (Second Amendment) Bill, 2083\".\n(b) Introduce the \"Public Procurement (Second Amendment) Bill, 2083\".\n3. The Honorable Minister of Finance Dr. Swarnim Wagle will:\n(a) Present a proposal seeking permission to introduce the \"Money Laundering Prevention (Third Amendment) Bill, 2083\".\n(b) Introduce the \"Money Laundering Prevention (Third Amendment) Bill, 2083\".\n4. The Honorable Minister of Land Management, Cooperatives, Poverty Alleviation and National Planning Pratibha Rawal will:\n(a) Present a proposal seeking permission to introduce the \"Cooperatives (First Amendment) Bill, 2083\".\n(b) Introduce the \"Cooperatives (First Amendment) Bill, 2083\".\n5. The Honorable Minister of Health and Population Nisha Mehta will:\n(a) Present a proposal seeking permission to introduce the \"Bill to Amend Some Nepal Acts Related to Health Sciences Institute, 2083\".\n(b) Introduce the \"Bill to Amend Some Nepal Acts Related to Health Sciences Institute, 2083\".\n6. Discussion on the \"Financial Bill, 2083\" with amendments will be held.\n7. Amendments to the \"Financial Bill, 2083\" will be presented for decision.\n8. The Honorable Minister of Finance Dr. Swarnim Wagle will:\n(a) Present a proposal that \"The Financial Bill, 2083 be passed\".\n(b) Present a proposal that \"Clause-by-clause discussion on the \"National Debt Raising Bill, 2083\" be held in the House\".\nAmendments to the \"National Debt Raising Bill, 2083\" will be presented for decision.\n9. The Honorable Minister of Finance Dr. Swarnim Wagle will present a proposal that \"The National Debt Raising Bill, 2083 be passed\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-03-14",
+    "date_ad": "2026-06-28",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "28",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Office of the President regarding bill certification. This section sets the stage for the day's proceedings.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential letter",
+        "Bill certification"
+      ]
+    },
+    {
+      "name": "Presentation of Annual Report",
+      "summary_en": "On behalf of the Prime Minister, the Minister of Law, Justice and Parliamentary Affairs will present the Auditor General's Annual Report for 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Auditor General's Report"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Report of the Auditor General, 2083"
+      ],
+      "key_issues": [
+        "Annual report",
+        "Auditor General"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "Several bills are proposed for introduction, including amendments to public procurement, money laundering prevention, cooperatives, and health sciences acts. The Financial Bill and National Debt Raising Bill are also scheduled for discussion and potential passage.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Introduction of Public Procurement Bill"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Introduction of Money Laundering Bill"
+        },
+        {
+          "name": "Pratibha Rawal",
+          "party": null,
+          "topic": "Introduction of Cooperatives Bill"
+        },
+        {
+          "name": "Nisha Mehta",
+          "party": null,
+          "topic": "Introduction of Health Sciences Bill"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Financial Bill discussion and passage"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "National Debt Raising Bill discussion"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Public Procurement (Second Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Money Laundering Prevention (Third Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Cooperatives (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Bill to Amend Some Nepal Acts Related to Health Sciences Institute, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Financial Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "National Debt Raising Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Bill introduction",
+        "Legislative amendments",
+        "Financial Bill",
+        "Debt raising"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The meeting concluded with the Secretary-General's name listed, indicating the end of the day's agenda.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary proceedings",
+    "House of Representatives",
+    "Legislation",
+    "Bill introduction",
+    "Annual report",
+    "Public Procurement",
+    "Money Laundering",
+    "Cooperatives",
+    "Health Sciences",
+    "Financial Bill",
+    "National Debt",
+    "Auditor General"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Land Management, Cooperatives, Poverty Alleviation and National Planning",
+    "Health and Population"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Pratibha Rawal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
