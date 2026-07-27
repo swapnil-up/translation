@@ -117,7 +117,7 @@ def scrape_list_only():
         page += 1
         time.sleep(DELAY)
     if new_notices:
-        existing.extend(new_notices)
+        existing[0:0] = new_notices
         save_manifest(existing)
     print(f"[done] {len(new_notices)} new, {len(existing)} total", file=sys.stderr)
 

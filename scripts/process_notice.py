@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 import re
@@ -117,10 +118,6 @@ def download_pdf(pdf_url: str, dest: Path) -> bool:
         return False
 
 
-def is_quota_error(stderr: str) -> bool:
-    return any(p in stderr for p in ["429", "403", "RESOURCE_EXHAUSTED", "quota", "rate limit"])
-
-
 def dedup_lines(text: str) -> str:
     lines = text.splitlines()
     result = [lines[0]] if lines else []
@@ -128,6 +125,14 @@ def dedup_lines(text: str) -> str:
         if lines[i] != lines[i - 1]:
             result.append(lines[i])
     return "\n".join(result)
+
+
+def _classify_gemini_error(err: str) -> str:
+    if "rate limit" in err.lower():
+        return "rpm"
+    if any(p in err for p in ["429", "403", "RESOURCE_EXHAUSTED", "quota"]):
+        return "rpd"
+    return "other"
 
 
 def run_ocr(pdf_path: Path) -> dict:
@@ -151,7 +156,10 @@ def run_ocr(pdf_path: Path) -> dict:
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
         err = result.stderr + result.stdout
-        if is_quota_error(err):
+        kind = _classify_gemini_error(err)
+        if kind == "rpm":
+            raise RuntimeError("RPM_LIMITED: " + err[-500:])
+        if kind == "rpd":
             raise RuntimeError("QUOTA_EXHAUSTED: " + err[-500:])
         raise RuntimeError(err[-500:])
 
@@ -191,27 +199,44 @@ def process_one(notice: dict, index: int, notices: list) -> bool:
         save_manifest(notices)
         return False
 
-    try:
-        result = run_ocr(pdf_dest)
-        notices[index].update(result)
-        notices[index]["status"] = "done"
-        save_manifest(notices)
-        print(f"[done] {notice['title']}")
-        return True
-    except RuntimeError as e:
-        msg = str(e)
-        if "QUOTA_EXHAUSTED" in msg:
-            print(f"[quota] Gemini credits exhausted — keeping '{notice['title']}' as pending", file=sys.stderr)
+    max_rpm_retries = 5
+    for attempt in range(max_rpm_retries + 1):
+        try:
+            result = run_ocr(pdf_dest)
+            notices[index].update(result)
+            notices[index]["status"] = "done"
+            save_manifest(notices)
+            print(f"[done] {notice['title']}")
+            return True
+        except RuntimeError as e:
+            msg = str(e)
+            if "RPM_LIMITED" in msg:
+                if attempt < max_rpm_retries:
+                    wait = min(2 ** (attempt + 2), 60)
+                    print(f"[rpm] rate limited, retry {attempt + 1}/{max_rpm_retries} in {wait}s...", file=sys.stderr)
+                    time.sleep(wait)
+                    continue
+                print(f"[rpm] max retries exceeded — keeping '{notice['title']}' as pending", file=sys.stderr)
+                save_manifest(notices)
+                return False
+            if "QUOTA_EXHAUSTED" in msg:
+                print(f"[quota] daily Gemini quota exhausted — keeping '{notice['title']}' as pending", file=sys.stderr)
+                save_manifest(notices)
+                return False
+            print(f"[error] processing: {msg}", file=sys.stderr)
+            notices[index]["status"] = "failed"
             save_manifest(notices)
             return False
-        print(f"[error] processing: {msg}", file=sys.stderr)
-        notices[index]["status"] = "failed"
-        save_manifest(notices)
-        return False
 
 
 def main():
     load_env()
+
+    parser = argparse.ArgumentParser(description="Process pending notices through OCR + Gemini translation")
+    parser.add_argument("--max-count", "-n", type=int, default=0,
+                        help="Max notices to process per run (0 = unlimited)")
+    args = parser.parse_args()
+
     api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
         print("[warn] GEMINI_API_KEY not set — OCR only, no translation", file=sys.stderr)
@@ -221,12 +246,25 @@ def main():
         print("[error] notices.json empty — run scrape first", file=sys.stderr)
         return
 
-    idx = pick_pending(notices)
-    if idx is None:
-        print("[done] no pending notices")
-        return
+    processed = 0
+    max_count = args.max_count
 
-    process_one(notices[idx], idx, notices)
+    while True:
+        if max_count and processed >= max_count:
+            print(f"[limit] reached max-count ({max_count})", file=sys.stderr)
+            break
+
+        idx = pick_pending(notices)
+        if idx is None:
+            print("[done] no pending notices")
+            break
+
+        ok = process_one(notices[idx], idx, notices)
+        processed += 1
+
+        if not ok and notices[idx].get("status") == "pending":
+            print(f"[quota] stopping — {processed} notice(s) processed this run", file=sys.stderr)
+            break
 
 
 if __name__ == "__main__":
