@@ -13,6 +13,7 @@ on:
 
 env:
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
 jobs:
   translate-notices:
@@ -41,11 +42,9 @@ jobs:
       - name: Process notices until quota exhausted
         run: python scripts/process_notice.py --max-count ${{ github.event.inputs.count || '0' }}
       - name: Upsert to pgvector (if DATABASE_URL configured)
-        if: ${{ secrets.DATABASE_URL != '' }}
+        if: env.DATABASE_URL != ''
         continue-on-error: true
         run: python scripts/upsert_notice.py translations/*.json
-        env:
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
       - name: Commit results
         run: |
           git config user.name "github-actions"
