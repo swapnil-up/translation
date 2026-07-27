@@ -52,8 +52,10 @@
     "title": "Daily Agenda 2083-03-30",
     "url": "https://hr.parliament.gov.np/en/notices/1783939616",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/ieksoeleqd31uwmc.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-03-30-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-03-30.txt"
   },
   {
     "serial": "7.",
