@@ -1,0 +1,120 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting No. 30\nDaily Business Schedule\nFederal\nNepal\nParliament,\nThursday, Ashar 18, 2083\n11:00 AM\nLetter from the Office of the Prime Minister and Council of Ministers\n1. The Honorable Speaker will read out the contents of the letter received from the Office of the Prime Minister and Council of Ministers regarding additional responsibilities.\nManagement Work\n2. On behalf of the Honorable Prime Minister Balendra Shah, the Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam will present a proposal to \"Discuss the Public Procurement (Second Amendment) Bill, 2083 clause by clause in the House.\"\n3. Amendments presented to the \"Public Procurement (Second Amendment) Bill, 2083\" will be presented for decision.\n4. On behalf of the Honorable Prime Minister Balen Shah, the Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam will present a proposal to \"Pass the Public Procurement (Second Amendment) Bill, 2083.\"\n5. The Honorable Minister of Finance Dr. Swarnim Wagle will present a proposal to \"Discuss the Anti-Money Laundering (Third Amendment) Bill, 2083 clause by clause in the House.\"\n6. Amendments presented to the \"Anti-Money Laundering (Third Amendment) Bill, 2083\" will be presented for decision.\n7. The Honorable Minister of Finance Dr. Swarnim Wagle will present a proposal to \"Pass the Anti-Money Laundering (Third Amendment) Bill, 2083.\"\n8. The Honorable Minister of Land Management, Cooperatives, and Poverty Alleviation Pratibha Rawal will present a proposal to \"Discuss the Cooperatives (First Amendment) Bill, 2083 clause by clause in the House.\"\n9. Amendments presented to the \"Cooperatives (First Amendment) Bill, 2083\" will be presented for decision.\n10. The Honorable Minister of Land Management, Cooperatives, and Poverty Alleviation Pratibha Rawal will present a proposal to \"Pass the Cooperatives (First Amendment) Bill, 2083.\"\n11. The Honorable Minister of Health and Population Nisha Mehta will present a proposal to \"Discuss the Bill to Amend Some Nepal Acts Related to Health Science Institutes, 2083 clause by clause in the House.\"\n12. Amendments presented to the \"Bill to Amend Some Nepal Acts Related to Health Science Institutes, 2083\" will be presented for decision.\n13. The Honorable Minister of Health and Population Nisha Mehta will present a proposal to \"Pass the Bill to Amend Some Nepal Acts Related to Health Science Institutes, 2083.\"\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-18",
+    "date_ad": "2026-07-02",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "30",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Prime Minister's office regarding additional responsibilities. This section sets the stage for the day's legislative agenda.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Prime Minister's Office letter",
+        "Additional responsibilities"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "Several bills were presented for clause-by-clause discussion and subsequent passage. These included amendments to the Public Procurement, Anti-Money Laundering, Cooperatives, and Health Science Institutes Acts.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Public Procurement (Second Amendment) Bill, 2083"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Anti-Money Laundering (Third Amendment) Bill, 2083"
+        },
+        {
+          "name": "Pratibha Rawal",
+          "party": null,
+          "topic": "Cooperatives (First Amendment) Bill, 2083"
+        },
+        {
+          "name": "Nisha Mehta",
+          "party": null,
+          "topic": "Bill to Amend Health Science Institutes Acts, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Public Procurement (Second Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Anti-Money Laundering (Third Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Cooperatives (First Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Bill to Amend Some Nepal Acts Related to Health Science Institutes, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative agenda",
+        "Bill discussions",
+        "Bill amendments",
+        "Public Procurement",
+        "Anti-Money Laundering",
+        "Cooperatives",
+        "Health Science Institutes"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Legislation",
+    "Bill Discussion",
+    "Public Procurement",
+    "Anti-Money Laundering",
+    "Cooperatives",
+    "Health Science Institutes",
+    "Amendment Bills",
+    "Government Business"
+  ],
+  "ministries_mentioned": [
+    "Office of the Prime Minister and Council of Ministers",
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Finance",
+    "Ministry of Land Management, Cooperatives, and Poverty Alleviation",
+    "Ministry of Health and Population"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Pratibha Rawal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

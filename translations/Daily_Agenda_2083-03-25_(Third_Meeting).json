@@ -1,0 +1,117 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2081\nSecond Session\nMeeting Number - 34\nFederal Parliament of Nepal\nDaily Business Schedule\nThursday, Ashadh 25, 2081\n(Third Meeting)\n6:20 PM\nManagement Work\n1. On behalf of the Right Honourable Prime Minister Balendra Shah, Honourable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will present a proposal to \"Consider the amendments made by the National Assembly to the Public Procurement (Second Amendment) Bill, 2081\".\n2. Honourable Minister for Finance Dr. Swarnim Wagle will present a proposal to \"Consider the amendments made by the National Assembly to the Prevention of Money Laundering (Third Amendment) Bill, 2081\".\n3. Honourable Minister for Land Management, Cooperatives, Federal Affairs and General Administration Pratibha Rawal will present a proposal to \"Consider the amendments made by the National Assembly to the Cooperatives (First Amendment) Bill, 2081\".\n4. Honourable Minister for Health and Food Hygiene Nisha Mehta will present a proposal to \"Consider the amendments made by the National Assembly to the Bill to Amend Some Nepal Laws Related to Health Science Education, 2081\".\nPanch Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2081-04-25",
+    "date_ad": "2024-07-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "34",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "On behalf of the Prime Minister, four ministers will present proposals to consider amendments made by the National Assembly to various bills. These include the Public Procurement Bill, the Prevention of Money Laundering Bill, the Cooperatives Bill, and the Bill to Amend Some Nepal Laws Related to Health Science Education.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Consider amendments to Public Procurement (Second Amendment) Bill, 2081"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Consider amendments to Prevention of Money Laundering (Third Amendment) Bill, 2081"
+        },
+        {
+          "name": "Pratibha Rawal",
+          "party": null,
+          "topic": "Consider amendments to Cooperatives (First Amendment) Bill, 2081"
+        },
+        {
+          "name": "Nisha Mehta",
+          "party": null,
+          "topic": "Consider amendments to Health Science Education Bill, 2081"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Public Procurement (Second Amendment) Bill, 2081",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Prevention of Money Laundering (Third Amendment) Bill, 2081",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Cooperatives (First Amendment) Bill, 2081",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Bill to Amend Some Nepal Laws Related to Health Science Education, 2081",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative amendments",
+        "National Assembly amendments",
+        "Public Procurement",
+        "Money Laundering",
+        "Cooperatives",
+        "Health Science Education"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "Legislation",
+    "Bill Amendments",
+    "National Assembly",
+    "House of Representatives",
+    "Public Procurement",
+    "Money Laundering",
+    "Cooperatives",
+    "Health Education",
+    "Government Business"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Land Management, Cooperatives, Federal Affairs and General Administration",
+    "Health and Food Hygiene"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Pratibha Rawal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Panch Prasad Pandey",
+      "party": null,
+      "section": null
+    }
+  ],
+  "adjournment_time": "6:20 PM",
+  "next_meeting_date": null
+}

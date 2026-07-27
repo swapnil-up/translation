@@ -1,0 +1,103 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 34\nFederal\nNepal\nDaily Agenda\nParliament\nThursday, Ashar 24, 2083\n(Second Meeting)\n5:35 PM\nInformation regarding messages\n1. Information regarding messages received from the National Assembly.\nSecretary of the House of Representatives, Prakash Adhikari, will provide information regarding the \"Economic Bill, 2083\" and the \"Bill to Raise National Debt, 2083\".\n2. Table of Bills received from the National Assembly with messages.\nSecretary of the House of Representatives, Prakash Adhikari, will table the \"Public Procurement (Second Amendment) Bill, 2083\", the \"Property Infringement (Money Laundering) Prevention (Third Amendment) Bill, 2083\", the \"Cooperative (First Amendment) Bill, 2083\", and the \"Bill to Amend Some Nepal Laws Related to Health Science Education, 2083\" along with messages received from the National Assembly.\nPanch Prasad Pandey\nSecretary General",
+  "session": {
+    "date_bs": "2083-04-24",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": "34",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Information regarding messages",
+      "summary_en": "The Secretary of the House of Representatives, Prakash Adhikari, informed the House about messages received from the National Assembly concerning two bills: the Economic Bill, 2083 and the Bill to Raise National Debt, 2083.",
+      "speakers": [
+        {
+          "name": "Prakash Adhikari",
+          "party": null,
+          "topic": "Information on messages from National Assembly"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Economic Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Bill to Raise National Debt, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Messages from National Assembly",
+        "Economic Bill, 2083",
+        "Bill to Raise National Debt, 2083"
+      ]
+    },
+    {
+      "name": "Table of Bills received from the National Assembly with messages",
+      "summary_en": "The Secretary of the House of Representatives, Prakash Adhikari, tabled four bills received from the National Assembly with messages. These included amendments to public procurement, money laundering prevention, cooperative laws, and health science education laws.",
+      "speakers": [
+        {
+          "name": "Prakash Adhikari",
+          "party": null,
+          "topic": "Tabling bills from National Assembly"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Public Procurement (Second Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Property Infringement (Money Laundering) Prevention (Third Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Cooperative (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Bill to Amend Some Nepal Laws Related to Health Science Education, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Bills from National Assembly",
+        "Public Procurement Amendment",
+        "Money Laundering Prevention Amendment",
+        "Cooperative Law Amendment",
+        "Health Science Education Law Amendment"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Agenda",
+    "House of Representatives",
+    "National Assembly Messages",
+    "Legislation",
+    "Economic Bill",
+    "National Debt Bill",
+    "Public Procurement Bill",
+    "Money Laundering Bill",
+    "Cooperative Bill",
+    "Health Science Education Bill"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Prakash Adhikari",
+      "party": null,
+      "section": "Information regarding messages"
+    },
+    {
+      "name": "Prakash Adhikari",
+      "party": null,
+      "section": "Table of Bills received from the National Assembly with messages"
+    }
+  ],
+  "adjournment_time": "5:35 PM",
+  "next_meeting_date": null
+}

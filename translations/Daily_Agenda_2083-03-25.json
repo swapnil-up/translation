@@ -1,0 +1,91 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 33\nFederal Parliament of Nepal\nDaily Agenda\n2083 Ashar 24, Thursday\n11:00 AM\nPresentation of Annual Report\n1. On behalf of the Right Honourable Prime Minister Balendra Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will present:\n(a) \"Annual Report of the Attorney General 2081/082\".\n(b) \"Annual Report of the Commission for the Investigation of Abuse of Authority 2081/082\".\n2. On behalf of the Right Honourable Prime Minister Balendra Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will:\n(a) Seek permission to present the \"National Service Corps Bill, 2083\".\n(b) Present the \"National Service Corps Bill, 2083\".\n(c) Present the proposal to \"Consider the Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083\".\n\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-03-24",
+    "date_ad": "2026-07-08",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "33",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Presentation of Annual Report",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, presented the Annual Report of the Attorney General 2081/082 and the Annual Report of the Commission for the Investigation of Abuse of Authority 2081/082 on behalf of the Prime Minister.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Annual Reports"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Annual Report of the Attorney General 2081/082",
+        "Annual Report of the Commission for the Investigation of Abuse of Authority 2081/082"
+      ],
+      "key_issues": [
+        "Attorney General's Annual Report",
+        "Commission for the Investigation of Abuse of Authority Annual Report"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, sought permission to present the National Service Corps Bill, 2083, presented the bill, and proposed consideration of the Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "National Service Corps Bill and Nepal Special Service Act Amendment"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "National Service Corps Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "National Service Corps Bill",
+        "Nepal Special Service Act Amendment"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Annual Reports",
+    "Legislation",
+    "Bills",
+    "Attorney General",
+    "Commission for the Investigation of Abuse of Authority",
+    "National Service Corps",
+    "Nepal Special Service Act"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "On behalf of the Prime Minister"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Report, Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Secretary-General"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

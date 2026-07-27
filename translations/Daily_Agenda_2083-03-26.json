@@ -1,0 +1,120 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 36\nFederal Parliament of Nepal\nDaily Business Schedule\nFriday, Ashadh 26, 2083\n1:00 PM\nLetter from the Office of the President\nTo read out the letter received from the Office of the President regarding bill certification.\nPresentation of Annual Reports\nOn behalf of the Right Honourable Prime Minister Pushpa Kamal Dahal 'Prachanda', the Honourable Minister for Law, Justice and Parliamentary Affairs, Ms. Sobita Gautam, will present:\n(a) The '20th Annual Report of the Election Commission, 2081/082'.\n(b) The '8th Annual Report of the National Security Council, 2081/082'.\n(c) The '18th Annual Report of the National Women Commission, 2081/082'.\nManagement Work\nOn behalf of the Right Honourable Prime Minister Pushpa Kamal Dahal 'Prachanda', the Honourable Minister for Law, Justice and Parliamentary Affairs, Ms. Sobita Gautam, will present the proposal 'Consideration of the National Service Corps Bill, 2083'.\nDiscussion and Ratification of Treaties\nThe Honourable Minister for Youth, Employment and Labour, Mr. Ramjee Yadav, will present:\n(a) The proposal 'Discuss the Protocol No. 29 to the Forced Labour Convention, 1930 (No. 29) of the International Labour Organization, 2014 in the House'.\n(b) The proposal 'Ratify the Protocol No. 29 to the Forced Labour Convention, 1930 (No. 29) of the International Labour Organization, 2014'.\n(c) The proposal 'General Discussion on the Labour Inspection Convention, 1947 (No. 81) of the International Labour Organization'.\n(d) The proposal 'Ratify the Labour Inspection Convention, 1947 (No. 81) of the International Labour Organization'.\nPashupati Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-26",
+    "date_ad": "2026-07-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "36",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read out a letter from the Office of the President concerning bill certification. This marks the beginning of the day's proceedings.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential letter",
+        "Bill certification"
+      ]
+    },
+    {
+      "name": "Presentation of Annual Reports",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs presented three annual reports on behalf of the Prime Minister: the Election Commission's report, the National Security Council's report, and the National Women Commission's report.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Election Commission, National Security Council, and National Women Commission annual reports"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "20th Annual Report of the Election Commission, 2081/082",
+        "8th Annual Report of the National Security Council, 2081/082",
+        "18th Annual Report of the National Women Commission, 2081/082"
+      ],
+      "key_issues": [
+        "Annual reports",
+        "Election Commission",
+        "National Security Council",
+        "National Women Commission"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs introduced a proposal for consideration of the National Service Corps Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Proposal for consideration of National Service Corps Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "National Service Corps Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "National Service Corps Bill",
+        "Legislation"
+      ]
+    },
+    {
+      "name": "Discussion and Ratification of Treaties",
+      "summary_en": "The Minister for Youth, Employment and Labour proposed discussion and ratification of Protocol No. 29 to the Forced Labour Convention and general discussion and ratification of the Labour Inspection Convention, 1947.",
+      "speakers": [
+        {
+          "name": "Ramjee Yadav",
+          "party": null,
+          "topic": "Proposals for discussion and ratification of ILO conventions and protocols"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "International Labour Organization",
+        "Forced Labour Convention",
+        "Labour Inspection Convention",
+        "Treaty ratification"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary proceedings",
+    "House of Representatives",
+    "Bill certification",
+    "Annual reports",
+    "Election Commission",
+    "National Security Council",
+    "National Women Commission",
+    "Legislation",
+    "National Service Corps Bill",
+    "International Labour Organization",
+    "Forced Labour Convention",
+    "Labour Inspection Convention",
+    "Treaty ratification"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Youth, Employment and Labour"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Reports, Management Work"
+    },
+    {
+      "name": "Ramjee Yadav",
+      "party": null,
+      "section": "Discussion and Ratification of Treaties"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -98,15 +98,58 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 - Pages 1-16 (TOC) produce noise rows with empty descriptions
 - No cross-verification yet (verify_budget.py not adapted for v3 schema)
 
-## Notice Automation Pipeline (new)
+## Notice Automation Pipeline
 
 ### Scripts
 - `scripts/scrape_notices.py` — scrapes `hr.parliament.gov.np` notices table (44 pages, 1,302 entries). Two modes: `--list-only` (fast, incremental) and `--backfill` (fetches detail pages for PDF URLs). Output: `notices.json`.
-- `scripts/process_notice.py` — picks 1 pending notice from manifest, backfills PDF URL if missing, downloads PDF, runs PaddleOCR + Gemini translation, saves both Devanagari and English. Updates status in `notices.json`.
+- `scripts/process_notice.py` — picks 1 pending notice from manifest, backfills PDF URL if missing, downloads PDF, runs PaddleOCR (OCR only), then calls Gemini with a structured JSON prompt. Saves three files: `{stem}-ocr.txt` (Devanagari), `{stem}.txt` (full English translation), `{stem}.json` (structured metadata with sections, speakers, bills, agenda tags).
+- `scripts/upsert_notice.py` — reads a structured `{stem}.json` file, chunks sections, generates embeddings via `text-embedding-004`, and upserts to pgvector (both notice record + chunks).
+- `scripts/init_db.py` — creates the pgvector schema (`notices` + `chunks` tables).
 
-### GitHub Actions
-- `scrape-notices.yml` — weekly Monday 6am, commits new notices to `notices.json`
-- `translate-notices.yml` — daily 4am, processes 1 pending notice, commits translated output
+### Output files (per notice)
+| File | Content |
+|------|---------|
+| `translations/{stem}-ocr.txt` | Raw Devanagari OCR text |
+| `translations/{stem}.txt` | Full English translation (narrative) |
+| `translations/{stem}.json` | Structured JSON with session, sections, speakers, bills, tags |
+
+### Database model (pgvector)
+```sql
+notices (id, title UNIQUE, date_bs, date_ad, meeting_type, meeting_number,
+         chairperson, agenda_tags, ministries_mentioned, full_translation_en, ...)
+
+chunks (id, notice_id FK, chunk_index, section_name, chunk_text,
+        embedding VECTOR(768), speaker_names TEXT[], key_issues TEXT[], ...)
+```
+- Upsert key: `notices.title` (unique). Rerunning the same notice updates in place.
+- Chunks are deleted + re-inserted on each upsert (simplifies iteration).
+
+### Running locally (requires Postgres + pgvector, or Supabase/Neon URL)
+
+**With Docker:**
+```bash
+docker compose up -d                              # start pgvector container
+.venv/bin/python scripts/init_db.py               # create schema
+GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py --max-count 1
+.venv/bin/python scripts/upsert_notice.py translations/Notice_*.json
+```
+
+**With Supabase/Neon (no Docker):**
+```bash
+.venv/bin/python scripts/init_db.py --url "postgresql://..."
+GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py --max-count 1
+.venv/bin/python scripts/upsert_notice.py translations/Notice_*.json --url "postgresql://..."
+```
+
+### Running with Supabase/Neon
+```bash
+# Create free project at supabase.com or neon.tech, get connection string
+.venv/bin/python scripts/init_db.py --url "postgresql://user:pass@host:5432/db"
+.venv/bin/python scripts/upsert_notice.py translations/*.json
+```
+
+### Gemini structured prompt
+Uses `response_mime_type="application/json"` with a schema that returns both `full_translation_en` + structured fields in one call. Model: `gemini-2.5-flash-lite` with `temperature=0.2`.
 
 ### Manifest (`notices.json`)
 | Field | Description |
@@ -119,13 +162,11 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 | `scraped_at` | Date first discovered |
 | `ocr_path` | Path to saved OCR text (when done) |
 | `translated_path` | Path to saved translation (when done) |
+| `structured_path` | Path to structured JSON (when done, new notices only) |
 
-### Running
-```bash
-.venv/bin/python scripts/scrape_notices.py                    # incremental list scrape
-.venv/bin/python scripts/scrape_notices.py --backfill         # backfill PDF URLs
-GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py  # process 1 notice
-```
+### GitHub Actions
+- `scrape-notices.yml` — weekly Monday 6am, commits new notices to `notices.json`
+- `translate-notices.yml` — daily 4am, processes 1 pending notice, commits translated output
 
 ### SSL Note
 The parliament site has a misconfigured SSL cert — both scripts use `verify=False`. The GitHub Actions runners also hit this issue; the `urllib3.disable_warnings()` in the scripts suppresses the noise.

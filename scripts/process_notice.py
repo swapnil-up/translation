@@ -22,6 +22,52 @@ HEADERS = {"User-Agent": "Mozilla/5.0"}
 MAX_RETRIES = 3
 RETRY_DELAY = 5
 
+GEMINI_MODEL = "gemini-2.5-flash-lite"
+GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/models"
+
+STRUCTURED_SCHEMA_DESC = """
+- full_translation_en: The complete English translation of the entire document as a single narrative string. Preserve all names, dates, numbers, and bill references exactly.
+- session.date_bs: Nepali date (e.g. 2081-04-12)
+- session.date_ad: Approximate AD date if inferrable, else null
+- session.meeting_type: Type of session (e.g. House of Representatives, Zero Hour, Special Time)
+- session.meeting_number: Meeting/sitting number if mentioned
+- session.chairperson: Name of presiding officer
+- sections[].name: Section name (e.g. Opening, Impromptu Session, Zero Hour, Main Business, Adjournment)
+- sections[].summary_en: 1-3 sentence summary of what happened in this section
+- sections[].speakers[].name: Full name of the MP or minister
+- sections[].speakers[].party: Party abbreviation if mentioned, else null
+- sections[].speakers[].topic: What they spoke about in 5-10 words
+- sections[].bills_discussed[].name: Full bill name
+- sections[].bills_discussed[].status: introduced | discussed | passed | ratified | sent_to_committee
+- sections[].reports_presented[]: Report names if any
+- sections[].key_issues[]: Key issues/topics raised in this section
+- agenda_tags[]: 5-15 freeform topical keywords for searching across notices
+- ministries_mentioned[]: Ministry names referenced
+- all_speakers_mentioned[].name: Speaker name
+- all_speakers_mentioned[].party: Party if mentioned
+- all_speakers_mentioned[].section: Which section they appeared in
+- adjournment_time: Time of adjournment if mentioned
+- next_meeting_date: Next meeting date if announced
+"""
+
+STRUCTURED_PROMPT = """You are an expert translator of Nepali parliamentary documents.
+
+Translate the following Nepali Devanagari OCR text from a House of Representatives meeting notice into English.
+
+Return a JSON object with exactly this structure — no markdown, no code fences, pure JSON:{schema}
+Rules:
+- full_translation_en must be the COMPLETE translation. Do not summarize or truncate it.
+- All names, dates, amounts, and bill references must be preserved exactly.
+- speakers lists per section: include every named MP or minister who spoke.
+- If a party is not explicitly stated in text, set to null.
+- agenda_tags: extract 5-15 topical keywords that would help someone search for this notice later.
+- If a field has no data, use null or empty array — never omit the field.
+- Output valid JSON only.
+
+--- BEGIN OCR TEXT ---
+{ocr_text}
+--- END OCR TEXT ---"""
+
 
 def load_manifest() -> list:
     if MANIFEST.exists():
@@ -137,41 +183,83 @@ def _classify_gemini_error(err: str) -> str:
 
 def run_ocr(pdf_path: Path) -> dict:
     stem = pdf_path.stem
-    out_txt = TRANSLATIONS_DIR / f"{stem}.txt"
     ocr_txt = TRANSLATIONS_DIR / f"{stem}-ocr.txt"
     api_key = os.environ.get("GEMINI_API_KEY", "")
 
     cmd = [
         sys.executable, "pdf_to_text.py",
         str(pdf_path),
-        "-o", str(out_txt),
+        "-o", str(ocr_txt),
     ]
-    if api_key:
-        cmd.extend(["--translate", api_key])
-        print(f"[ocr] OCR + translate -> {ocr_txt}, {out_txt}")
-    else:
-        print(f"[ocr] OCR only -> {out_txt}")
+    print(f"[ocr] OCR only -> {ocr_txt}")
 
     TRANSLATIONS_DIR.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(cmd, capture_output=True, text=True)
     if result.returncode != 0:
-        err = result.stderr + result.stdout
-        kind = _classify_gemini_error(err)
-        if kind == "rpm":
-            raise RuntimeError("RPM_LIMITED: " + err[-500:])
-        if kind == "rpd":
-            raise RuntimeError("QUOTA_EXHAUSTED: " + err[-500:])
+        err = (result.stderr or "") + (result.stdout or "")
         raise RuntimeError(err[-500:])
 
     if ocr_txt.exists():
         ocr_txt.write_text(dedup_lines(ocr_txt.read_text()), encoding="utf-8")
-    if out_txt.exists():
-        out_txt.write_text(dedup_lines(out_txt.read_text()), encoding="utf-8")
 
-    result_dict = {"ocr_path": str(ocr_txt if ocr_txt.exists() else out_txt)}
-    if api_key and out_txt.exists():
+    result_dict = {"ocr_path": str(ocr_txt)}
+
+    if api_key:
+        print(f"[translate] structured Gemini extraction...", file=sys.stderr)
+        ocr_text = ocr_txt.read_text(encoding="utf-8")
+        structured = call_gemini_structured(ocr_text, api_key)
+
+        translation = structured.get("full_translation_en", "")
+        out_txt = TRANSLATIONS_DIR / f"{stem}.txt"
+        out_txt.write_text(translation, encoding="utf-8")
+        print(f"[translate] full translation -> {out_txt} ({len(translation)} chars)", file=sys.stderr)
         result_dict["translated_path"] = str(out_txt)
+
+        out_json = TRANSLATIONS_DIR / f"{stem}.json"
+        out_json.write_text(json.dumps(structured, indent=2, ensure_ascii=False))
+        print(f"[translate] structured JSON -> {out_json}", file=sys.stderr)
+        result_dict["structured_path"] = str(out_json)
+
     return result_dict
+
+
+def call_gemini_structured(ocr_text: str, api_key: str) -> dict:
+    prompt = STRUCTURED_PROMPT.format(schema=STRUCTURED_SCHEMA_DESC, ocr_text=ocr_text)
+
+    resp = requests.post(
+        f"{GEMINI_API}/{GEMINI_MODEL}:generateContent",
+        headers={"Content-Type": "application/json"},
+        params={"key": api_key},
+        json={
+            "system_instruction": {
+                "parts": [{"text": "You are an expert translator of Nepali parliamentary documents. Output JSON only."}]
+            },
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {
+                "response_mime_type": "application/json",
+                "temperature": 0.2,
+                "maxOutputTokens": 16384,
+            },
+        },
+    )
+
+    if not resp.ok:
+        err = resp.json().get("error", {}).get("message", resp.text[:500])
+        kind = _classify_gemini_error(err)
+        if kind in ("rpm", "rpd"):
+            raise RuntimeError(f"{kind.upper()}: {err}")
+        raise RuntimeError(f"Gemini API error: {err}")
+
+    candidates = resp.json().get("candidates", [])
+    if not candidates:
+        raise RuntimeError("Gemini returned no candidates")
+
+    parts = candidates[0].get("content", {}).get("parts", [])
+    if not parts:
+        raise RuntimeError("Gemini returned empty content")
+
+    text = parts[0].get("text", "").strip()
+    return json.loads(text)
 
 
 def process_one(notice: dict, index: int, notices: list) -> bool:
@@ -210,7 +298,7 @@ def process_one(notice: dict, index: int, notices: list) -> bool:
             return True
         except RuntimeError as e:
             msg = str(e)
-            if "RPM_LIMITED" in msg:
+            if msg.startswith("RPM"):
                 if attempt < max_rpm_retries:
                     wait = min(2 ** (attempt + 2), 60)
                     print(f"[rpm] rate limited, retry {attempt + 1}/{max_rpm_retries} in {wait}s...", file=sys.stderr)
@@ -219,7 +307,7 @@ def process_one(notice: dict, index: int, notices: list) -> bool:
                 print(f"[rpm] max retries exceeded — keeping '{notice['title']}' as pending", file=sys.stderr)
                 save_manifest(notices)
                 return False
-            if "QUOTA_EXHAUSTED" in msg:
+            if msg.startswith("RPD"):
                 print(f"[quota] daily Gemini quota exhausted — keeping '{notice['title']}' as pending", file=sys.stderr)
                 save_manifest(notices)
                 return False

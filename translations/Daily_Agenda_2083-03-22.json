@@ -1,0 +1,118 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 39\nFederal Parliament of Nepal\nDaily Business Schedule\nMonday, Ashadh 22, 2083\n11:00 AM\nManagement Work\nOn behalf of the Right Honourable Prime Minister Balen Shah, Honourable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam:\n(a) Will present a proposal seeking leave to introduce the \"Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083\".\n(b) Will present the \"Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083\".\n2. Honourable Finance Minister Dr. Swarnim Wagle will present a proposal that the \"Nepal Rastra Bank (Third Amendment) Bill, 2083\" be sent to the relevant committee for clause-wise discussion.\n3. Honourable Minister for Culture, Tourism and Civil Aviation Khadga Raj Poudel will present a proposal that the \"Intangible Cultural Heritage (Conservation) Bill, 2083\", originating from the National Assembly, be sent to the relevant committee for clause-wise discussion.\nDiscussion on Agreements\n4. Honourable Minister for Youth, Labour and Employment Ramji Yadav:\n(a) Will present a proposal for general discussion on \"Protocol No. 29 of 2014 concerning the Forced Labour Convention, 1930 of the International Labour Organization\".\n(b) Will present a proposal for general discussion on \"Labour Inspection Convention, 1947 (No. 81) of the International Labour Organization\".\nPada Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-22",
+    "date_ad": "2026-07-07",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "39",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, on behalf of the Prime Minister, sought and received permission to introduce a bill to revive previous provisions of the Nepal Special Service Act, 2042. Subsequently, the Finance Minister proposed sending the Nepal Rastra Bank (Third Amendment) Bill, 2083 to committee, and the Minister for Culture, Tourism and Civil Aviation proposed sending the Intangible Cultural Heritage (Conservation) Bill, 2083 to committee.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Seeking leave to introduce Nepal Special Service Act Bill"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Sending Nepal Rastra Bank (Third Amendment) Bill to committee"
+        },
+        {
+          "name": "Khadga Raj Poudel",
+          "party": null,
+          "topic": "Sending Intangible Cultural Heritage Bill to committee"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Nepal Rastra Bank (Third Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Intangible Cultural Heritage (Conservation) Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Nepal Special Service Act",
+        "Nepal Rastra Bank Act",
+        "Intangible Cultural Heritage Conservation"
+      ]
+    },
+    {
+      "name": "Discussion on Agreements",
+      "summary_en": "The Minister for Youth, Labour and Employment proposed general discussions on two International Labour Organization conventions: the Forced Labour Convention, 1930 (Protocol 2014) and the Labour Inspection Convention, 1947.",
+      "speakers": [
+        {
+          "name": "Ramji Yadav",
+          "party": null,
+          "topic": "ILO Conventions on Forced Labour and Labour Inspection"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "International Labour Organization",
+        "Forced Labour Convention",
+        "Labour Inspection Convention"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "Legislation",
+    "Bill Introduction",
+    "Committee Referral",
+    "International Conventions",
+    "Labor Law",
+    "Cultural Heritage",
+    "Special Service Act",
+    "Central Bank",
+    "House of Representatives"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Culture, Tourism and Civil Aviation",
+    "Youth, Labour and Employment"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balen Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Khadga Raj Poudel",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Ramji Yadav",
+      "party": null,
+      "section": "Discussion on Agreements"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,108 @@
+"""
+Create the pgvector schema for the Nepali Admin Copilot.
+
+Usage:
+    python scripts/init_db.py                    # uses DATABASE_URL from .env
+    python scripts/init_db.py --drop             # drops existing tables first
+"""
+
+import argparse
+import os
+import sys
+from pathlib import Path
+
+import psycopg
+from psycopg import sql
+
+
+SCHEMA_SQL = """
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE IF NOT EXISTS notices (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    title TEXT UNIQUE,
+    date_bs TEXT,
+    date_ad DATE,
+    meeting_type TEXT,
+    meeting_number TEXT,
+    chairperson TEXT,
+    adjournment_time TEXT,
+    next_meeting_date TEXT,
+    source_pdf TEXT,
+    agenda_tags TEXT[],
+    ministries_mentioned TEXT[],
+    full_translation_en TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS chunks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    notice_id UUID NOT NULL REFERENCES notices(id) ON DELETE CASCADE,
+    chunk_index INT NOT NULL,
+    section_name TEXT,
+    chunk_text TEXT NOT NULL,
+    embedding VECTOR(768),  -- gemini-embedding-001 (outputDimensionality=768)
+    summary_en TEXT,
+    speaker_names TEXT[],
+    speaker_parties TEXT[],
+    key_issues TEXT[],
+    bills_discussed TEXT[],
+    reports_presented TEXT[]
+);
+
+CREATE INDEX IF NOT EXISTS idx_chunks_notice_id ON chunks(notice_id);
+CREATE INDEX IF NOT EXISTS idx_chunks_embedding ON chunks
+    USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
+"""
+
+
+DROP_SQL = """
+DROP TABLE IF EXISTS chunks;
+DROP TABLE IF EXISTS notices;
+"""
+
+
+def load_env():
+    env_path = Path(".env")
+    if env_path.exists():
+        for line in env_path.read_text().splitlines():
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                key, _, val = line.partition("=")
+                os.environ.setdefault(key.strip(), val.strip())
+
+
+def main():
+    load_env()
+
+    parser = argparse.ArgumentParser(description="Initialize pgvector schema")
+    parser.add_argument("--drop", action="store_true", help="Drop existing tables first")
+    parser.add_argument("--url", help="Database URL (default: DATABASE_URL env var)")
+    args = parser.parse_args()
+
+    db_url = args.url or os.environ.get("DATABASE_URL")
+    if not db_url:
+        print("Error: DATABASE_URL not set. Add to .env or pass --url", file=sys.stderr)
+        return
+
+    print(f"[db] connecting to {db_url}", file=sys.stderr)
+    conn = psycopg.connect(db_url)
+    conn.autocommit = True
+    cur = conn.cursor()
+
+    if args.drop:
+        print("[db] dropping existing tables...", file=sys.stderr)
+        cur.execute(DROP_SQL)
+        print("[db] done", file=sys.stderr)
+
+    print("[db] creating schema...", file=sys.stderr)
+    cur.execute(SCHEMA_SQL)
+    print("[db] schema ready", file=sys.stderr)
+
+    cur.close()
+    conn.close()
+
+
+if __name__ == "__main__":
+    main()

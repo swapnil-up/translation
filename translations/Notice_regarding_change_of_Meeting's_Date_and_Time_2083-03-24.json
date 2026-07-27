@@ -1,0 +1,53 @@
+{
+  "full_translation_en": "House of Representatives\nNotice - 1\nDate: 2083 Ashadh 24, Wednesday\nMeeting Notice\nDate and Time of Meeting\nAs the meeting of the House of Representatives held on Ashadh 24, 2083, could not be held due to unavoidable reasons, the Speaker has decided to convene the next meeting on Thursday, Ashadh 25, 2083, at 11:00 AM, in accordance with Rule 6(3) of the House of Representatives Regulations, 2083. This information is published for the convenience of the members of the House.\n\nPublished by:\n\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-24",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting of the House of Representatives scheduled for Ashadh 24, 2083, was postponed due to unavoidable reasons. The Speaker has rescheduled the meeting for Ashadh 25, 2083, at 11:00 AM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Speaker has announced the rescheduling of the House of Representatives meeting. The meeting will now take place on Thursday, Ashadh 25, 2083, at 11:00 AM, as per Rule 6(3) of the House of Representatives Regulations, 2083.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The notice is published for the information of the members regarding the rescheduled meeting.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Meeting Notice",
+    "Rescheduling",
+    "Parliamentary Regulations",
+    "Speaker's Decision"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": "2083-04-25"
+}

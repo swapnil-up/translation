@@ -1,0 +1,127 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting No. - 37\nFederal\nNepal\nDaily Agenda\nParliament,\n2083 Ashadh 30, Tuesday\n11:00 AM\nPresentation of Annual Reports\nOn behalf of the Right Honourable Prime Minister Balendra Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam:\n(a) \"Annual Report of the Judicial Council, Fiscal Year 2081/082\" will be presented.\n(b) \"Annual Report of the Judicial Service Commission, Fiscal Year 2081/082\" will be presented.\n(c) \"61st Annual Report of the Public Service Commission (2081 Shrawan - 2082 Ashadh)\" will be presented.\nLegislative Business\nOn behalf of the Honourable Finance Minister Dr. Swarnim Wagle:\n(a) Will present a proposal seeking permission to introduce the \"Bill to Amend and Repeal Some Nepal Laws Related to Finance, 2083\".\n(b) Will introduce the \"Bill to Amend and Repeal Some Nepal Laws Related to Finance, 2083\".\nOn behalf of the Right Honourable Prime Minister Balen Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam:\n(a) Will present a proposal to \"Send the Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083\" to the relevant committee for clause-by-clause discussion.\n(b) Will present a proposal to \"Send the National Service Corps Bill, 2083\" to the relevant committee for clause-by-clause discussion.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-30",
+    "date_ad": "2026-07-16",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "37",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Presentation of Annual Reports",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, presented the annual reports of the Judicial Council, the Judicial Service Commission, and the Public Service Commission for the fiscal year 2081/082. These reports cover the period from Shrawan 2081 to Ashadh 2082.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Annual Reports"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Annual Report of the Judicial Council, Fiscal Year 2081/082",
+        "Annual Report of the Judicial Service Commission, Fiscal Year 2081/082",
+        "61st Annual Report of the Public Service Commission (2081 Shrawan-2082 Ashadh)"
+      ],
+      "key_issues": [
+        "Judicial Council Annual Report",
+        "Judicial Service Commission Annual Report",
+        "Public Service Commission Annual Report"
+      ]
+    },
+    {
+      "name": "Legislative Business",
+      "summary_en": "The Finance Minister, Dr. Swarnim Wagle, sought permission to introduce a bill to amend and repeal certain Nepal laws related to finance. Following this, the bill was formally introduced.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Introduction of Finance Law Amendment Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend and Repeal Some Nepal Laws Related to Finance, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Finance Law Amendment"
+      ]
+    },
+    {
+      "name": "Legislative Business",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, proposed sending two bills to relevant committees for clause-by-clause discussion. These include a bill to revive provisions of the Nepal Special Service Act and the National Service Corps Bill.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Referral of Bills to Committee"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "National Service Corps Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Nepal Special Service Act Amendment",
+        "National Service Corps Bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Annual Reports",
+    "Judicial Council",
+    "Judicial Service Commission",
+    "Public Service Commission",
+    "Legislation",
+    "Finance Laws",
+    "Special Service Act",
+    "National Service Corps",
+    "Committee Referral"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Presentation of Annual Reports"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Reports"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Legislative Business"
+    },
+    {
+      "name": "Balen Shah",
+      "party": null,
+      "section": "Legislative Business"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Legislative Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

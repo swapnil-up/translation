@@ -2,7 +2,8 @@ name: Translate Notices (Backfill)
 
 on:
   schedule:
-    - cron: '0 4 * * *'
+    - cron: '0 4 * * *'   # 4 AM — picks up where previous run stopped
+    - cron: '0 16 * * *'  # 4 PM — catches quota window from earlier expiry
   workflow_dispatch:
     inputs:
       count:
@@ -39,6 +40,12 @@ jobs:
         run: pip install -r requirements.txt
       - name: Process notices until quota exhausted
         run: python scripts/process_notice.py --max-count ${{ github.event.inputs.count || '0' }}
+      - name: Upsert to pgvector (if DATABASE_URL configured)
+        if: ${{ secrets.DATABASE_URL != '' }}
+        continue-on-error: true
+        run: python scripts/upsert_notice.py translations/*.json
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
       - name: Commit results
         run: |
           git config user.name "github-actions"

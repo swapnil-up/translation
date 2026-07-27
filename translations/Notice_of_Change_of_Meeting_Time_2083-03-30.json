@@ -1,0 +1,41 @@
+{
+  "full_translation_en": "Nepal Parliament, Federal Parliament, House of Representatives Notice-9. Nepal Parliament. Date: 2083 Ashad 30, Tuesday. Meeting scheduled to convene at 11:00 AM. Due to unavoidable reasons, the meeting of the House of Representatives scheduled for Wednesday, Ashad 31, 2083, at 11:00 AM, could not be held. Therefore, as per Rule 6(3) of the House of Representatives Procedures, 2083, the Speaker has rescheduled the meeting to convene at 9:00 AM on the same day. This notice is published for the information of all Honourable Members. Signed, Prasad Pandey, Secretary-General.",
+  "session": {
+    "date_bs": "2083-03-30",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Speaker"
+  },
+  "sections": [
+    {
+      "name": "Notice of Rescheduled Meeting",
+      "summary_en": "This notice informs the Honourable Members of the House of Representatives that the meeting scheduled for Ashad 31, 2083, at 11:00 AM has been postponed due to unavoidable reasons. The Speaker has rescheduled the meeting to 9:00 AM on the same day, Ashad 31, 2083, in accordance with Rule 6(3) of the House of Representatives Procedures.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting postponement",
+        "Rescheduling of session",
+        "House of Representatives Procedures"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Notice",
+    "House of Representatives",
+    "Meeting Reschedule",
+    "Parliamentary Procedures",
+    "Nepal Parliament"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Prasad Pandey",
+      "party": null,
+      "section": "Notice of Rescheduled Meeting"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": "2083-03-31"
+}

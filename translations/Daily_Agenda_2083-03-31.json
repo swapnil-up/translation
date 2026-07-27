@@ -1,0 +1,147 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 38\nFederal\nNepal\nDaily Agenda\nParliament,\nWednesday, Ashad 31, 2083\n1:00 PM\nLetter from the Office of the President\n1. The Honorable Speaker will read out the letter received from the Office of the President regarding the certification of bills.\nPresentation of Annual Reports\n2. On behalf of the Honorable Prime Minister Pushpa Kamal Dahal 'Prachanda', the Honorable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will present:\n(a) The Eighteenth Annual Report of the National Human Rights Commission (Fiscal Year 2081/082, from Shrawan to Ashad end).\n(b) The Annual Report of the National Information Commission, Fiscal Year 2081/082.\n(c) The Seventh Annual Report of the National Inclusion Commission, Fiscal Year 2081/082.\nManagement Work\n3. The Honorable Finance Minister, Dr. Swarnim Wagle, will present a proposal for consideration of the 'Bill to Amend and Repeal Some Nepal Laws Related to Finance, 2083'.\nDiscussion and Ratification of Treaties\n4. The Honorable Minister for Youth, Labour and Employment, Ramji Yadav, will present:\n(a) A proposal for discussion in the House on the provisions of Protocol No. 29 of 2014 concerning the Forced Labour Convention, 1930 of the International Labour Organization.\n(b) A proposal for the ratification of Protocol No. 29 of 2014 concerning the Forced Labour Convention, 1930 of the International Labour Organization.\n(c) A proposal for discussion in the House on the provisions of the Labour Inspection Convention, 1947 (No. 81) of the International Labour Organization.\n(d) A proposal for the ratification of the Labour Inspection Convention, 1947 (No. 81) of the International Labour Organization.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-03-31",
+    "date_ad": "2026-07-16",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "38",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Office of the President concerning bill certification. This marks the beginning of the parliamentary session.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Reading letter from President's Office on bill certification"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential communication",
+        "Bill certification"
+      ]
+    },
+    {
+      "name": "Presentation of Annual Reports",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs presented three annual reports on behalf of the Prime Minister: the 18th Annual Report of the National Human Rights Commission, the Annual Report of the National Information Commission, and the 7th Annual Report of the National Inclusion Commission.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of annual reports"
+        },
+        {
+          "name": "Pushpa Kamal Dahal 'Prachanda'",
+          "party": null,
+          "topic": "Prime Minister (represented)"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Eighteenth Annual Report of the National Human Rights Commission (Fiscal Year 2081/082, from Shrawan to Ashad end)",
+        "Annual Report of the National Information Commission, Fiscal Year 2081/082",
+        "Seventh Annual Report of the National Inclusion Commission, Fiscal Year 2081/082"
+      ],
+      "key_issues": [
+        "National Human Rights Commission report",
+        "National Information Commission report",
+        "National Inclusion Commission report"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister proposed a bill to amend and repeal certain Nepal laws related to finance for consideration by the House.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Proposal for bill on finance laws amendment"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend and Repeal Some Nepal Laws Related to Finance, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Finance laws",
+        "Legislative amendment"
+      ]
+    },
+    {
+      "name": "Discussion and Ratification of Treaties",
+      "summary_en": "The Minister for Youth, Labour and Employment proposed discussions and ratification of two protocols related to the International Labour Organization's Forced Labour Convention and Labour Inspection Convention.",
+      "speakers": [
+        {
+          "name": "Ramji Yadav",
+          "party": null,
+          "topic": "Proposals on ILO conventions and protocols"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "International Labour Organization",
+        "Forced Labour Convention",
+        "Labour Inspection Convention",
+        "Treaty ratification"
+      ],
+      "treaties_discussed": [
+        "Protocol No. 29 of 2014 concerning the Forced Labour Convention, 1930 of the International Labour Organization",
+        "Labour Inspection Convention, 1947 (No. 81) of the International Labour Organization"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary proceedings",
+    "House of Representatives",
+    "Annual reports",
+    "Legislation",
+    "Finance",
+    "International Labour Organization",
+    "Treaties",
+    "Human Rights",
+    "Information Commission",
+    "Inclusion Commission"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Youth, Labour and Employment"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Reports"
+    },
+    {
+      "name": "Pushpa Kamal Dahal 'Prachanda'",
+      "party": null,
+      "section": "Presentation of Annual Reports"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Ramji Yadav",
+      "party": null,
+      "section": "Discussion and Ratification of Treaties"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

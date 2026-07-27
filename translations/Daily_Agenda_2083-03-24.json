@@ -1,0 +1,183 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 32\nFederal\nNepal\nDaily Agenda\nParliament,\nWednesday, Ashar 24, 2083\n11:00 AM\nInformation on Message\n1. The Secretary of the House of Representatives, Mr. Prakash Adhikari, will provide information on the message received from the National Assembly regarding the \"Appropriation Bill, 2083\".\nPresentation of Annual Reports\n2. On behalf of the Right Honourable Prime Minister Balendra Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam:\n(a) Will present the \"Annual Report of the Attorney General 2081/2082\".\n(b) Will present the \"Thirty-fifth Annual Report of the Commission for the Investigation of Abuse of Authority 2081/2082\".\nManagement Work\n3. On behalf of the Right Honourable Prime Minister Balendra Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam:\n(a) Will present a proposal seeking permission to introduce the \"National Service Corps Bill, 2083\".\n(b) Will introduce the \"National Service Corps Bill, 2083\".\n(c) Will present a proposal for consideration of the \"Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083\".\n4. The Honourable Minister for Finance, Dr. Swarnim Wagle, will present a proposal to send the \"Nepal Rastra Bank (Third Amendment) Bill, 2083\" to the relevant committee for clause-by-clause discussion.\n5. The Honourable Minister for Culture, Tourism and Civil Aviation, Khadga Raj Poudel, will present a proposal to send the \"Tourism Bill, 2082\", originating in the National Assembly, to the relevant committee for clause-by-clause discussion.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-03-24",
+    "date_ad": "2026-07-09",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "32",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Information on Message",
+      "summary_en": "The Secretary of the House of Representatives, Prakash Adhikari, will inform the house about a message received from the National Assembly concerning the Appropriation Bill, 2083. This section focuses on relaying official communications between parliamentary bodies.",
+      "speakers": [
+        {
+          "name": "Prakash Adhikari",
+          "party": null,
+          "topic": "Message from National Assembly regarding Appropriation Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Inter-parliamentary communication",
+        "Appropriation Bill"
+      ]
+    },
+    {
+      "name": "Presentation of Annual Reports",
+      "summary_en": "On behalf of the Prime Minister, the Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will present two annual reports: the Annual Report of the Attorney General 2081/2082 and the Thirty-fifth Annual Report of the Commission for the Investigation of Abuse of Authority 2081/2082. These presentations fulfill statutory reporting requirements.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Attorney General and CIAA annual reports"
+        },
+        {
+          "name": "Balendra Shah",
+          "party": null,
+          "topic": "Represented by Minister for Law, Justice and Parliamentary Affairs"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Annual Report of the Attorney General 2081/2082",
+        "Thirty-fifth Annual Report of the Commission for the Investigation of Abuse of Authority 2081/2082"
+      ],
+      "key_issues": [
+        "Annual reports",
+        "Attorney General's Office",
+        "Commission for the Investigation of Abuse of Authority"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will seek permission to introduce the National Service Corps Bill, 2083, and then introduce it. Following this, she will propose consideration of the Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Introduction of National Service Corps Bill and consideration of Nepal Special Service Act Bill"
+        },
+        {
+          "name": "Balendra Shah",
+          "party": null,
+          "topic": "Represented by Minister for Law, Justice and Parliamentary Affairs"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "National Service Corps Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislation",
+        "National Service Corps Bill",
+        "Nepal Special Service Act"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister for Finance, Dr. Swarnim Wagle, will propose sending the Nepal Rastra Bank (Third Amendment) Bill, 2083, to a committee for detailed discussion. Subsequently, the Minister for Culture, Tourism and Civil Aviation, Khadga Raj Poudel, will propose sending the Tourism Bill, 2082, originating from the National Assembly, to a committee for clause-by-clause discussion.",
+      "speakers": [
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Sending Nepal Rastra Bank (Third Amendment) Bill, 2083 to committee"
+        },
+        {
+          "name": "Khadga Raj Poudel",
+          "party": null,
+          "topic": "Sending Tourism Bill, 2082 to committee"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Rastra Bank (Third Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Tourism Bill, 2082",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Financial legislation",
+        "Banking reform",
+        "Tourism legislation",
+        "Bill referral to committee"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary agenda",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Annual Reports",
+    "Appropriation Bill",
+    "National Service Corps Bill",
+    "Nepal Special Service Act",
+    "Nepal Rastra Bank Bill",
+    "Tourism Bill",
+    "Committee referral",
+    "Government reporting"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Culture, Tourism and Civil Aviation"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Prakash Adhikari",
+      "party": null,
+      "section": "Information on Message"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Reports"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Presentation of Annual Reports"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Khadga Raj Poudel",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
