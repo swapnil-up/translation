@@ -1,0 +1,41 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nNotice No. 9\nDate: Asar 10, 2083\nWednesday\nInformation Regarding Meeting\nChange of date and time\nTime: 11:00 AM\nDate: Asar 11, 2083, Thursday\nMorning\nIt has been decided that the meeting of the House of Representatives will be held on Thursday, Asar 11, 2083, in the morning at 11:00 AM.\nHowever, due to a change in the schedule, the meeting cannot be held at the scheduled time.\nTherefore, as per Rule 6, Sub-rule (3) of the Rules of Procedure of the House of Representatives, 2083, the Honorable Speaker has rescheduled the meeting to be held on Friday, Asar 12, 2083, at 11:00 AM.\nThis notice is published for the information of the Honorable Members of the House of Representatives.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-10",
+    "date_ad": "2026-06-25",
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Notice of Meeting Change",
+      "summary_en": "The House of Representatives meeting initially scheduled for Thursday, Asar 11, 2083, at 11:00 AM has been rescheduled. Due to unforeseen circumstances, the meeting will now take place on Friday, Asar 12, 2083, at 11:00 AM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting schedule change",
+        "Rescheduling of House of Representatives session"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Notice",
+    "House of Representatives",
+    "Meeting Schedule",
+    "Rescheduling",
+    "Nepal Parliament",
+    "Legislative Business"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Notice of Meeting Change"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": "2083-04-12"
+}

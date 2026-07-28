@@ -228,24 +228,33 @@
     "title": "Notice regarding change of Meeting's Date and Time 2083-03-12(2)",
     "url": "https://hr.parliament.gov.np/en/notices/1782468067",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/enulm68ngmsgi8ix.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-03-12(2)-ocr.txt",
+    "translated_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-03-12(2).txt",
+    "structured_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-03-12(2).json"
   },
   {
     "serial": "23.",
     "title": "Notice regarding change of Meeting's Date and Time 2083-03-12",
     "url": "https://hr.parliament.gov.np/en/notices/1782445114",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/i2i0os2zldt1ufqz.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-03-12-ocr.txt",
+    "translated_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-03-12.txt",
+    "structured_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-03-12.json"
   },
   {
     "serial": "24.",
     "title": "Notice regarding change of Meeting's Date and Time 2083-3-10",
     "url": "https://hr.parliament.gov.np/en/notices/1782290366",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/kusnsisuamphc0mg.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-3-10-ocr.txt",
+    "translated_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-3-10.txt",
+    "structured_path": "translations/Notice_regarding_change_of_Meeting's_Date_and_Time_2083-3-10.json"
   },
   {
     "serial": "25.",

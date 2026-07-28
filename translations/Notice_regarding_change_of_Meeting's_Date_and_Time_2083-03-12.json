@@ -1,0 +1,58 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nNotice-1\nDate: 2083 Ashad 12, Friday\nNotice Regarding Change in Day and Time of Meeting\nToday, the meeting of the House of Representatives scheduled to be held on Friday, Ashad 12, 2083 at 1:00 PM could not be held at the specified time due to special reasons. Therefore, in accordance with Rule 6, Sub-rule (3) of the House of Representatives Regulations, 2083, the Honorable Speaker has decided to convene the meeting of the House on Saturday, Ashad 13, 2083 at 11:00 AM. This notice is published for the information of the Honorable Members.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-12",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "A notice was published regarding a change in the date and time of a House of Representatives meeting. The meeting originally scheduled for Friday, Ashad 12, 2083 at 1:00 PM was postponed due to special reasons.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting schedule change"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The meeting originally scheduled for Friday, Ashad 12, 2083 at 1:00 PM was postponed. The Honorable Speaker has rescheduled the meeting to Saturday, Ashad 13, 2083 at 11:00 AM, as per the House of Representatives Regulations, 2083.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting postponement and rescheduling"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The notice was published for the information of the Honorable Members regarding the rescheduled meeting.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Notice",
+    "House of Representatives",
+    "Meeting Schedule",
+    "Rescheduling",
+    "Regulations",
+    "Secretary-General"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": "2083 Ashad 13, Saturday"
+}

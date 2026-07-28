@@ -1,0 +1,39 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nNotice-9\n2083 Ashar 12, Friday\nNotice regarding change in the day and time of the meeting.\nToday, Ashar 12, 2083, Notice-1 was published, and the meeting of the House of Representatives scheduled to be held on Saturday, Ashar 13, 2083, at 9:00 AM could not be held at the said time due to special reasons. Therefore, in accordance with Rule 6, Sub-rule (3) of the House of Representatives Regulations 2083, the Honorable Speaker has determined that the meeting of the House of Representatives will be held on Sunday, Ashar 14, 2083, at 11:00 AM. This notice has been published for the information of the Honorable Members.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-12",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "A notice was published on Ashar 12, 2083, rescheduling a House of Representatives meeting. The meeting originally set for Ashar 13, 2083, at 9:00 AM has been postponed. The Honorable Speaker has rescheduled the meeting for Ashar 14, 2083, at 11:00 AM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting schedule change"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Notice",
+    "House of Representatives",
+    "Meeting Rescheduling",
+    "Session Information",
+    "Parliamentary Procedure"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": "2083-04-14"
+}
