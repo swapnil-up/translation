@@ -1,0 +1,53 @@
+{
+  "full_translation_en": "Parliament of Nepal House of Representatives Notice Regarding Change in Meeting Time Date: Jeth 27, 2083 Wednesday The meeting of the House of Representatives scheduled to be held today, Jeth 27, 2083, Wednesday at 11:00 AM has been postponed due to special reasons. As per the proviso to sub-rule (2) of rule 6 of the House of Representatives Regulations, 2083, the Honorable Speaker has rescheduled the meeting of the House of Representatives to be held today at 2:00 PM. This notice is published for the information of the Honorable Members. Padm Prasad Pandey Secretary General",
+  "session": {
+    "date_bs": "2083-02-27",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "A notice is published regarding a change in the meeting time of the House of Representatives. The meeting scheduled for 11:00 AM has been postponed due to special reasons.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting postponement",
+        "Rescheduling of meeting"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Honorable Speaker has rescheduled the meeting of the House of Representatives to be held today at 2:00 PM, as per the regulations. This information is provided for the members' awareness.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting rescheduled",
+        "Speaker's authority",
+        "House of Representatives Regulations"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Meeting notice",
+    "Meeting schedule",
+    "Rescheduling",
+    "Parliamentary procedures",
+    "Regulations"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padm Prasad Pandey",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

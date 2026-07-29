@@ -1,0 +1,301 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 26\nFederal Parliament of Nepal\nDaily Agenda\nThursday, Ashad 4, 2083\n11:00 AM\nResponse and Clarification to Questions Raised During the Discussion on the Appropriation Bill\n1. In the context of questions raised regarding various headings under the Appropriation Bill 2083 concerning the Ministry of Education and Sports; Ministry of Science, Technology and Innovation; Ministry of Law, Justice and Parliamentary Affairs; Ministry of Physical Infrastructure Development; Ministry of Home Affairs; Ministry of Energy, Water Resources and Irrigation; Office of the Prime Minister and Council of Ministers; National Planning Commission Secretariat; Office of the Vice President; and Office of the President, the Honourable Ministers will provide answers.\n2. The Honourable Speaker will present the following Honourable Members' proposals for expenditure reduction under various headings of various ministries under the Appropriation Bill, 2083 for decision:-\nHonourable Kripa Ram Rana\nHonourable Yuvraj Dulal\nHonourable Yeshoda Kumari Baral\nHonourable Parbati BK\nHonourable Guru Prasad Baral\nHonourable Jog Kumar Barbariya Yadav\nHonourable Mohammad Istiyak Rai\nHonourable Santosh Subba\nHonourable Nita Ghatani\nHonourable Balawati Sharma\nHonourable Bishnumaya BK\nHonourable Parshuram Tamang\nHonourable Yagya Bahadur Bogati\nHonourable Arjun Kumar Karki\nHonourable Narendra Kumar Koirala\nHonourable Ain Bahadur Mahar\nHonourable Ramesh Kumar Malla\nHonourable Pushpa Raj Kandel\nHonourable Padma Kumari Aryal\nHonourable Sajida Khatun Siddiki\n3. Clauses of the Appropriation Bill, 2083 will be presented for decision.\n4. The Honourable Minister of Finance, Dr. Swarnim Wagle, will present the motion \"That the Appropriation Bill, 2083 be passed.\"\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-04",
+    "date_ad": "2026-06-19",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "26",
+    "chairperson": "Honourable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The session began with the Honourable Speaker presiding. Ministers were scheduled to respond to questions raised during the discussion on the Appropriation Bill 2083 concerning various ministries and government offices. Honourable members also submitted proposals for expenditure reduction.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill 2083",
+        "Ministry of Education and Sports",
+        "Ministry of Science, Technology and Innovation",
+        "Ministry of Law, Justice and Parliamentary Affairs",
+        "Ministry of Physical Infrastructure Development",
+        "Ministry of Home Affairs",
+        "Ministry of Energy, Water Resources and Irrigation",
+        "Office of the Prime Minister and Council of Ministers",
+        "National Planning Commission Secretariat",
+        "Office of the Vice President",
+        "Office of the President",
+        "Expenditure Reduction Proposals"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Honourable Speaker presented proposals for expenditure reduction by several Honourable Members for decision. Subsequently, the clauses of the Appropriation Bill, 2083 were presented for decision, followed by the motion to pass the bill presented by the Honourable Minister of Finance.",
+      "speakers": [
+        {
+          "name": "Kripa Ram Rana",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Yuvraj Dulal",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Yeshoda Kumari Baral",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Parbati BK",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Guru Prasad Baral",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Jog Kumar Barbariya Yadav",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Mohammad Istiyak Rai",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Santosh Subba",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Nita Ghatani",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Balawati Sharma",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Bishnumaya BK",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Parshuram Tamang",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Yagya Bahadur Bogati",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Arjun Kumar Karki",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Narendra Kumar Koirala",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Ain Bahadur Mahar",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Ramesh Kumar Malla",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Pushpa Raj Kandel",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Padma Kumari Aryal",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Sajida Khatun Siddiki",
+          "party": null,
+          "topic": "Expenditure reduction proposal"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Motion to pass Appropriation Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "passed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill 2083",
+        "Expenditure reduction",
+        "Clause by clause decision",
+        "Passing the bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Appropriation Bill",
+    "Budget",
+    "Finance",
+    "Government Ministries",
+    "Legislation",
+    "Expenditure",
+    "Public Finance",
+    "Nepal"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Education and Sports",
+    "Ministry of Science, Technology and Innovation",
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Physical Infrastructure Development",
+    "Ministry of Home Affairs",
+    "Ministry of Energy, Water Resources and Irrigation",
+    "Office of the Prime Minister and Council of Ministers",
+    "National Planning Commission Secretariat",
+    "Office of the Vice President",
+    "Office of the President",
+    "Ministry of Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honourable Speaker",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Kripa Ram Rana",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Yuvraj Dulal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Yeshoda Kumari Baral",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Parbati BK",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Guru Prasad Baral",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Jog Kumar Barbariya Yadav",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Mohammad Istiyak Rai",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Santosh Subba",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Nita Ghatani",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Balawati Sharma",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Bishnumaya BK",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Parshuram Tamang",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Yagya Bahadur Bogati",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Arjun Kumar Karki",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Narendra Kumar Koirala",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ain Bahadur Mahar",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ramesh Kumar Malla",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Pushpa Raj Kandel",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Kumari Aryal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sajida Khatun Siddiki",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

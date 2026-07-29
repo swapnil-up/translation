@@ -1,0 +1,78 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 24\nFederal Parliament of Nepal\nDaily Agenda\nWednesday, Ashar 3, 2083\n11:00 AM\nResponse and Clarification to Questions Raised During the Discussion on the Appropriation Bill\nHonorable Ministers will respond to questions raised during the discussion on various headings under the Appropriation Bill, 2083, concerning the Ministry of Youth, Labour and Employment; Ministry of Industry, Commerce and Supplies; Ministry of Agriculture, Forest and Environment; Ministry of Information and Communication; Ministry of Culture, Tourism and Civil Aviation; Ministry of Health and Food Hygiene; Ministry of Land Management, Cooperatives, Federal Affairs and General Administration; and Ministry of Women, Children, Senior Citizens and Social Security.",
+  "session": {
+    "date_bs": "2083-03-03",
+    "date_ad": "2026-06-17",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "24",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The agenda for the day includes responses and clarifications from Honorable Ministers regarding questions raised during the discussion on the Appropriation Bill, 2083. The responses will cover various ministries including Youth, Labour and Employment, Industry, Commerce and Supplies, and others.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill discussion",
+        "Ministerial responses",
+        "Youth, Labour and Employment",
+        "Industry, Commerce and Supplies",
+        "Agriculture, Forest and Environment",
+        "Information and Communication",
+        "Culture, Tourism and Civil Aviation",
+        "Health and Food Hygiene",
+        "Land Management, Cooperatives, Federal Affairs and General Administration",
+        "Women, Children, Senior Citizens and Social Security"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Appropriation Bill",
+    "Parliamentary Session",
+    "Ministerial Response",
+    "Budget",
+    "Government Business",
+    "Youth",
+    "Labour",
+    "Employment",
+    "Industry",
+    "Commerce",
+    "Supplies",
+    "Agriculture",
+    "Forest",
+    "Environment",
+    "Information",
+    "Communication",
+    "Culture",
+    "Tourism",
+    "Civil Aviation",
+    "Health",
+    "Land Management",
+    "Cooperatives",
+    "Federal Affairs",
+    "General Administration",
+    "Women",
+    "Children",
+    "Social Security"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Youth, Labour and Employment",
+    "Ministry of Industry, Commerce and Supplies",
+    "Ministry of Agriculture, Forest and Environment",
+    "Ministry of Information and Communication",
+    "Ministry of Culture, Tourism and Civil Aviation",
+    "Ministry of Health and Food Hygiene",
+    "Ministry of Land Management, Cooperatives, Federal Affairs and General Administration",
+    "Ministry of Women, Children, Senior Citizens and Social Security"
+  ],
+  "all_speakers_mentioned": [],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

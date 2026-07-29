@@ -1,0 +1,185 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 23\nNepal\nDaily Agenda\nMonday, Ashad 1, 2083\n11:00 AM\nReorganization of Thematic Committees\nThe Honorable Speaker will reorganize the names of the Honorable Members in the thematic committees under the House of Representatives.\n2. Discussion on the Appropriation Bill Begins\nDiscussions will commence on various headings of the Appropriation Bill, 2083, under which discussions will be held in a grouped manner on various headings of the following ministries:-\n(a) Ministry of Youth, Labor and Employment\n(b) Ministry of Industry, Commerce and Supplies\n(c) Ministry of Agriculture, Forest and Environment\n(d) Ministry of Information and Communications\n(e) Ministry of Culture, Tourism and Civil Aviation\n(f) Ministry of Education and Sports\n(g) Ministry of Health and Food Security\n(h) Ministry of Land Management, Cooperatives, Federal Affairs and General Administration\n(i) Ministry of Women, Children, Senior Citizens and Social Security\n3. Honorable Kripa Ram Rana will present a proposal to reduce the expenditure amount of the Ministry of Industry, Commerce and Supplies under the Appropriation Bill, 2083, to one rupee.\n4. Honorable Parvati B.K. will present a proposal to reduce the expenditure amount of the Ministry of Industry, Commerce and Supplies under the Appropriation Bill, 2083, by one hundred rupees.\n5. Honorable Jog Kumar Barabariya Yadav will present a proposal to reduce the expenditure amount of the Ministry of Agriculture, Forest and Environment under the Appropriation Bill, 2083, to one rupee.\n6. Honorable Santosh Subba will present a proposal to reduce the expenditure amount of the Ministry of Agriculture, Forest and Environment under the Appropriation Bill, 2083, to one rupee.\n7. Honorable Nita Ghataani will present a proposal to reduce the expenditure amount of the Ministry of Information and Communications under the Appropriation Bill, 2083, to one rupee.\n8. Honorable Parshuram Tamang will present a proposal to reduce the expenditure amount of the Ministry of Culture, Tourism and Civil Aviation under the Appropriation Bill, 2083, by one hundred rupees.\n9. Honorable Arjun Kumar Karki will present a proposal to reduce the expenditure amount of the Ministry of Education and Sports under the Appropriation Bill, 2083, to one rupee.\n10. Honorable Narendra Kumar Kerung will present a proposal to reduce the expenditure amount of the Ministry of Education and Sports under the Appropriation Bill, 2083, to one rupee.\n11. Honorable Ramesh Kumar Mall will present a proposal to reduce the expenditure amount of the Ministry of Education and Sports under the Appropriation Bill, 2083, to one rupee.\n12. Honorable Sajida Khatun Siddiki will present a proposal to reduce the expenditure amount of the Ministry of Health and Food Security under the Appropriation Bill, 2083, to one rupee.\n13. Honorable Yuvraj Dulal will present a proposal to reduce the expenditure amount of the Ministry of Health and Food Security under the Appropriation Bill, 2083, by one hundred rupees.\n14. Honorable Eshu Kumari Baral will present a proposal to reduce the expenditure amount of the Ministry of Land Management, Cooperatives, Federal Affairs and General Administration under the Appropriation Bill, 2083, to one rupee.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-01-01",
+    "date_ad": "2026-06-16",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "23",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will reorganize the names of Honorable Members in the thematic committees under the House of Representatives. This sets the stage for upcoming legislative business.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Committee Reorganization"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "Discussions on the Appropriation Bill, 2083, will commence, focusing on various headings of several ministries. Several Honorable Members will present proposals to reduce expenditure amounts for specific ministries.",
+      "speakers": [
+        {
+          "name": "Kripa Ram Rana",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Industry, Commerce and Supplies"
+        },
+        {
+          "name": "Parvati B.K.",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Industry, Commerce and Supplies"
+        },
+        {
+          "name": "Jog Kumar Barabariya Yadav",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Agriculture, Forest and Environment"
+        },
+        {
+          "name": "Santosh Subba",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Agriculture, Forest and Environment"
+        },
+        {
+          "name": "Nita Ghataani",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Information and Communications"
+        },
+        {
+          "name": "Parshuram Tamang",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Culture, Tourism and Civil Aviation"
+        },
+        {
+          "name": "Arjun Kumar Karki",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Education and Sports"
+        },
+        {
+          "name": "Narendra Kumar Kerung",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Education and Sports"
+        },
+        {
+          "name": "Ramesh Kumar Mall",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Education and Sports"
+        },
+        {
+          "name": "Sajida Khatun Siddiki",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Health and Food Security"
+        },
+        {
+          "name": "Yuvraj Dulal",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Health and Food Security"
+        },
+        {
+          "name": "Eshu Kumari Baral",
+          "party": null,
+          "topic": "Reduce expenditure for Ministry of Land Management, Cooperatives, Federal Affairs and General Administration"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill discussion",
+        "Ministry expenditure review",
+        "Budgetary proposals"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Session",
+    "House of Representatives",
+    "Appropriation Bill",
+    "Budget",
+    "Expenditure Reduction",
+    "Ministry Discussions",
+    "Thematic Committees",
+    "Legislative Agenda"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Youth, Labor and Employment",
+    "Ministry of Industry, Commerce and Supplies",
+    "Ministry of Agriculture, Forest and Environment",
+    "Ministry of Information and Communications",
+    "Ministry of Culture, Tourism and Civil Aviation",
+    "Ministry of Education and Sports",
+    "Ministry of Health and Food Security",
+    "Ministry of Land Management, Cooperatives, Federal Affairs and General Administration",
+    "Ministry of Women, Children, Senior Citizens and Social Security"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Kripa Ram Rana",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Parvati B.K.",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Jog Kumar Barabariya Yadav",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Santosh Subba",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Nita Ghataani",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Parshuram Tamang",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Arjun Kumar Karki",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Narendra Kumar Kerung",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ramesh Kumar Mall",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sajida Khatun Siddiki",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Yuvraj Dulal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Eshu Kumari Baral",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

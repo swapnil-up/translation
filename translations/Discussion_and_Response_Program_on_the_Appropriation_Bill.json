@@ -1,0 +1,76 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\n(Second Session)\nProgram regarding discussion on various headings of the Appropriation Bill, 2083\n\nSl. No.\nAppropriation Heading\n(Relevant Ministry/Secretariat/Office)\nDate of Discussion\n1.\nYouth, Labour and Employment\n2.\nIndustry, Commerce and Supply\n3.\nAgriculture, Forest and Environment\n4.\nInformation and Communication\n5.\nCulture, Tourism and Civil Aviation\n2083/03/09\n6.\nEducation and Sports\n7.\nHealth and Food Hygiene\n8.\nLand Management, Cooperatives, Federal Affairs and General Administration\n9.\nWomen, Children, Gender and Sexual Minorities and Social Security\n10.\nScience, Technology and Innovation\n11.\nLaw, Justice and Parliamentary Affairs\n12.\nInfrastructure Development\n13.\nHome Affairs\n2083/03/02\n14.\nForeign Affairs\n15.\nFinance\n16.\nDefence, Prime Minister and Council of Ministers' Office, National Planning Commission Secretariat, Vice President's Office and President's Office\n\nFederal Parliament\nHouse of Representatives, 2082\nNepal\n(Second Session)\nProgram regarding responses by Ministers to questions raised in the context of ministry-wise discussions\n\nSl. No.\nAppropriation Heading\n(Relevant Ministry/Secretariat/Office)\nDate of Discussion\n1.\nYouth, Labour and Employment\n2.\nIndustry, Commerce and Supply\n3.\nAgriculture, Forest and Environment\n4.\nInformation and Communication\n5.\nCulture, Tourism and Civil Aviation\n2083/03/03\n6.\nEducation and Sports\n7.\nHealth and Food Hygiene\n8.\nLand Management, Cooperatives, Federal Affairs and General Administration\n9.\nWomen, Children, Gender and Sexual Minorities and Social Security\n10.\nScience, Technology and Innovation\n11.\nLaw, Justice and Parliamentary Affairs\n12.\nInfrastructure Development\n13.\nHome Affairs\n2083/03/04\n14.\nForeign Affairs\n15.\nFinance\n16.\nDefence, Prime Minister and Council of Ministers' Office, National Planning Commission Secretariat, Vice President's Office and President's Office",
+  "session": {
+    "date_bs": null,
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "This section outlines the schedule for discussions on various headings of the Appropriation Bill, 2083. It lists the relevant ministries and the dates allocated for these discussions, spanning from Jestha 2, 2083, to Jestha 9, 2083.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill discussions",
+        "Ministry-wise budget allocation"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "This section details the schedule for ministers to respond to questions raised during ministry-wise discussions. It specifies the dates from Jestha 3, 2083, to Jestha 4, 2083, for these responses, covering various ministries.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Ministerial responses",
+        "Ministry-wise discussions",
+        "Question and Answer session"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Appropriation Bill",
+    "Budget",
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Ministry Discussions",
+    "Ministerial Responses",
+    "Legislative Agenda",
+    "Nepal",
+    "2083 BS"
+  ],
+  "ministries_mentioned": [
+    "Youth, Labour and Employment",
+    "Industry, Commerce and Supply",
+    "Agriculture, Forest and Environment",
+    "Information and Communication",
+    "Culture, Tourism and Civil Aviation",
+    "Education and Sports",
+    "Health and Food Hygiene",
+    "Land Management, Cooperatives, Federal Affairs and General Administration",
+    "Women, Children, Gender and Sexual Minorities and Social Security",
+    "Science, Technology and Innovation",
+    "Law, Justice and Parliamentary Affairs",
+    "Infrastructure Development",
+    "Home Affairs",
+    "Foreign Affairs",
+    "Finance",
+    "Defence",
+    "Prime Minister and Council of Ministers' Office",
+    "National Planning Commission Secretariat",
+    "Vice President's Office",
+    "President's Office"
+  ],
+  "all_speakers_mentioned": [],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

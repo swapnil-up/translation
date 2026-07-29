@@ -1,0 +1,195 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 24\nFederal\nNepal\nDaily Agenda\nParliament,\n2083 Ashar 2, Tuesday\n11:00 AM\nDiscussion on the Appropriation Bill to continue\nDiscussion will commence on various headings of the Appropriation Bill, 2083\nunder the following:\n1. Discussion will be held in a grouped manner on various headings of the Ministry:-\n(a) Ministry of Science, Technology and Innovation\n(b) Ministry of Law, Justice and Parliamentary Affairs\n(c) Ministry of Infrastructure Development\n(d) Ministry of Home Affairs\n(e) Ministry of Energy, Water Resources and Irrigation\n(f) Ministry of Foreign Affairs\n(g) Ministry of Finance\n(h) Ministry of Defense, Office of the Prime Minister and Council of Ministers, National Planning Commission Secretariat, Office of the Vice President and Office of the President\n2. Honorable Guru Prasad Baral will present a proposal to reduce the expenditure amount under the heading of the Ministry of Science, Technology and Innovation of the Appropriation Bill, 2083 to one rupee.\n3. Honorable Ramesh Kumar Mall will present a proposal to reduce the expenditure amount under the heading of the Ministry of Law, Justice and Parliamentary Affairs of the Appropriation Bill, 2083 to one rupee.\n4. Honorable Mohammad Ishtiyak Rai will present a proposal to reduce the mentioned expenditure amount under the heading of the Ministry of Infrastructure Development of the Appropriation Bill, 2083.\n5. Honorable Balawati Sharma will present a proposal to reduce the expenditure amount under the heading of the Ministry of Infrastructure Development of the Appropriation Bill, 2083 to one rupee.\n6. Honorable Bishnu Maya BK will present a proposal to reduce the expenditure amount under the heading of the Ministry of Home Affairs of the Appropriation Bill, 2083 to one rupee.\n7. Honorable Yagya Bahadur Bogati will present a proposal to reduce the expenditure amount under the heading of the Ministry of Energy, Water Resources and Irrigation of the Appropriation Bill, 2083 to one rupee.\n8. Honorable Parvati BK will present a proposal to reduce the expenditure amount by one hundred rupees under the heading of the Ministry of Energy, Water Resources and Irrigation of the Appropriation Bill, 2083.\n9. Honorable Ain Bahadur Mahar will present a proposal to reduce the expenditure amount under the heading of the Ministry of Foreign Affairs of the Appropriation Bill, 2083 to one rupee.\n10. Honorable Pushpa Raj Kandel will present a proposal to reduce the expenditure amount under the heading of the Ministry of Finance of the Appropriation Bill, 2083 to one rupee.\n11. Honorable Parshuram Tamang will present a proposal to reduce the expenditure amount by one hundred rupees under the heading of the Ministry of Finance of the Appropriation Bill, 2083.\n12. Honorable Padma Kumari Aryal will present a proposal to reduce the expenditure amount under the heading of the Ministry of Defense, Office of the Prime Minister and Council of Ministers, National Planning Commission Secretariat, Office of the Vice President and Office of the President of the Appropriation Bill, 2083 to one rupee.\nCondolence Motion\n13. The Honorable Speaker will present a condolence motion for Mangal Prasad Gupta, former member of the House of Representatives.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-02",
+    "date_ad": "2026-06-17",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "24",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The House of Representatives will continue discussions on the Appropriation Bill, 2083. Members will present proposals to reduce expenditures under various ministries, including Science, Technology and Innovation, Law, Justice and Parliamentary Affairs, Infrastructure Development, Home Affairs, Energy, Water Resources and Irrigation, Foreign Affairs, Finance, and Defense. Specific proposals include reducing expenditures to one rupee or by one hundred rupees for certain ministry headings.",
+      "speakers": [
+        {
+          "name": "Guru Prasad Baral",
+          "party": null,
+          "topic": "Reduce expenditure on Science, Technology and Innovation"
+        },
+        {
+          "name": "Ramesh Kumar Mall",
+          "party": null,
+          "topic": "Reduce expenditure on Law, Justice and Parliamentary Affairs"
+        },
+        {
+          "name": "Mohammad Ishtiyak Rai",
+          "party": null,
+          "topic": "Reduce expenditure on Infrastructure Development"
+        },
+        {
+          "name": "Balawati Sharma",
+          "party": null,
+          "topic": "Reduce expenditure on Infrastructure Development to one rupee"
+        },
+        {
+          "name": "Bishnu Maya BK",
+          "party": null,
+          "topic": "Reduce expenditure on Home Affairs to one rupee"
+        },
+        {
+          "name": "Yagya Bahadur Bogati",
+          "party": null,
+          "topic": "Reduce expenditure on Energy, Water Resources and Irrigation to one rupee"
+        },
+        {
+          "name": "Parvati BK",
+          "party": null,
+          "topic": "Reduce expenditure on Energy, Water Resources and Irrigation by one hundred rupees"
+        },
+        {
+          "name": "Ain Bahadur Mahar",
+          "party": null,
+          "topic": "Reduce expenditure on Foreign Affairs to one rupee"
+        },
+        {
+          "name": "Pushpa Raj Kandel",
+          "party": null,
+          "topic": "Reduce expenditure on Finance to one rupee"
+        },
+        {
+          "name": "Parshuram Tamang",
+          "party": null,
+          "topic": "Reduce expenditure on Finance by one hundred rupees"
+        },
+        {
+          "name": "Padma Kumari Aryal",
+          "party": null,
+          "topic": "Reduce expenditure on Defense and related offices to one rupee"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill, 2083",
+        "Expenditure reduction proposals",
+        "Ministry budgets"
+      ]
+    },
+    {
+      "name": "Condolence Motion",
+      "summary_en": "The Honorable Speaker will present a condolence motion for Mangal Prasad Gupta, a former member of the House of Representatives.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Condolence motion for Mangal Prasad Gupta"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Condolence motion",
+        "Former member of House of Representatives"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Appropriation Bill",
+    "Budget discussion",
+    "Expenditure",
+    "Ministry proposals",
+    "Condolence motion",
+    "Legislation"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Science, Technology and Innovation",
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Infrastructure Development",
+    "Ministry of Home Affairs",
+    "Ministry of Energy, Water Resources and Irrigation",
+    "Ministry of Foreign Affairs",
+    "Ministry of Finance",
+    "Ministry of Defense",
+    "Office of the Prime Minister and Council of Ministers",
+    "National Planning Commission Secretariat",
+    "Office of the Vice President",
+    "Office of the President"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Guru Prasad Baral",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ramesh Kumar Mall",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Mohammad Ishtiyak Rai",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Balawati Sharma",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Bishnu Maya BK",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Yagya Bahadur Bogati",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Parvati BK",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ain Bahadur Mahar",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Pushpa Raj Kandel",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Parshuram Tamang",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Kumari Aryal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Mangal Prasad Gupta",
+      "party": null,
+      "section": "Condolence Motion"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

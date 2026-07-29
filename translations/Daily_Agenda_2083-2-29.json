@@ -1,0 +1,101 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 22\nFederal Parliament of Nepal\nDaily Business Schedule\nFriday, Jeth 29, 2083\n11:00 AM\nManagement Work\n1. Honorable Finance Minister Dr. Swarnim Wagle will present the proposal to \"Consider the Appropriation Bill, 2083\".\n2. Honorable Minister for Culture, Tourism and Civil Aviation Khadak Raj Poudel will present the proposal to \"Consider the Intangible Cultural Heritage (Protection) Bill, 2083\" originating in the National Assembly.\n3. Honorable Minister for Industry, Commerce and Supplies, who also holds the portfolio of Honorable Minister for Youth, Labour and Employment, Gauri Kumari will:\n(a) Present the \"International Labour Organization Convention on Labour Inspection, 1947 No. 81\".\n(b) Present the \"Protocol of 2014 to the International Labour Organization Convention concerning Forced Labour, 1930 No. 29\".\nPada Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-29",
+    "date_ad": "2026-06-13",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "22",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister presented a proposal to consider the Appropriation Bill, 2083. The Minister for Culture, Tourism and Civil Aviation presented a proposal to consider the Intangible Cultural Heritage (Protection) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Proposal to consider the Appropriation Bill, 2083"
+        },
+        {
+          "name": "Khadak Raj Poudel",
+          "party": null,
+          "topic": "Proposal to consider the Intangible Cultural Heritage (Protection) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Intangible Cultural Heritage (Protection) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill",
+        "Intangible Cultural Heritage Protection Bill"
+      ]
+    },
+    {
+      "name": "Treaty Related Work",
+      "summary_en": "The Minister for Industry, Commerce and Supplies presented two ILO conventions: the Labour Inspection Convention, 1947 (No. 81) and the Protocol of 2014 to the Forced Labour Convention, 1930 (No. 29).",
+      "speakers": [
+        {
+          "name": "Gauri Kumari",
+          "party": null,
+          "topic": "Presentation of ILO Conventions on Labour Inspection and Forced Labour"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "ILO Conventions",
+        "Labour Inspection",
+        "Forced Labour"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "House of Representatives",
+    "Appropriation Bill",
+    "Cultural Heritage",
+    "International Labour Organization",
+    "Conventions",
+    "Treaties",
+    "Legislation"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry",
+    "Ministry of Culture, Tourism and Civil Aviation",
+    "Ministry of Industry, Commerce and Supplies",
+    "Ministry of Youth, Labour and Employment"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Khadak Raj Poudel",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Gauri Kumari",
+      "party": null,
+      "section": "Treaty Related Work"
+    },
+    {
+      "name": "Pada Prasad Pandey",
+      "party": null,
+      "section": "Secretary-General"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
