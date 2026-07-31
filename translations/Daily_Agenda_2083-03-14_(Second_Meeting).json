@@ -1,0 +1,129 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 29\nFederal Parliament of Nepal\nDaily Business Schedule\nSunday, Ashadh 14, 2083\n2:55 PM\nManagement Work\n1. On behalf of the Right Honourable Prime Minister K.P. Sharma Oli, the Honourable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will present a proposal to \"Consider the Public Procurement (Second Amendment) Bill, 2083\".\n2. The Honourable Minister for Finance, Dr. Swarnim Wagle, will present a proposal to \"Consider the Prevention of Money Laundering (Third Amendment) Bill, 2083\".\n3. The Honourable Minister for Land Management, Cooperatives, Federal Affairs and General Administration, Pratibha Rawal, will present a proposal to \"Consider the Cooperatives (First Amendment) Bill, 2083\".\n4. The Honourable Minister for Health and Food Security, Nisha Mehta, will present a proposal to \"Consider the Bill to Amend Some Nepal Acts Related to Health Sciences Institute, 2083\".\nCondolence Motion\n4. The Honourable Speaker will present a condolence motion on the passing of former member of the House of Representatives, Rajendra Kharel.\n\nPanchan Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-14",
+    "date_ad": "2026-06-29",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "29",
+    "chairperson": "Honourable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "Four ministers presented proposals for consideration on various bills. These included amendments to the Public Procurement Act, the Prevention of Money Laundering Act, the Cooperatives Act, and an act related to a Health Sciences Institute.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Consideration of Public Procurement (Second Amendment) Bill, 2083"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Consideration of Prevention of Money Laundering (Third Amendment) Bill, 2083"
+        },
+        {
+          "name": "Pratibha Rawal",
+          "party": null,
+          "topic": "Consideration of Cooperatives (First Amendment) Bill, 2083"
+        },
+        {
+          "name": "Nisha Mehta",
+          "party": null,
+          "topic": "Consideration of Health Sciences Institute Amendment Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Public Procurement (Second Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Prevention of Money Laundering (Third Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Cooperatives (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Bill to Amend Some Nepal Acts Related to Health Sciences Institute, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative agenda",
+        "Bill consideration",
+        "Public procurement",
+        "Money laundering prevention",
+        "Cooperatives",
+        "Health sciences"
+      ]
+    },
+    {
+      "name": "Condolence Motion",
+      "summary_en": "The Honourable Speaker presented a condolence motion for the late Rajendra Kharel, a former member of the House of Representatives.",
+      "speakers": [
+        {
+          "name": "Honourable Speaker",
+          "party": null,
+          "topic": "Condolence motion for former member Rajendra Kharel"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Condolence motion",
+        "Former member of parliament"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary session",
+    "House of Representatives",
+    "Legislation",
+    "Bill introduction",
+    "Public Procurement",
+    "Money Laundering",
+    "Cooperatives",
+    "Health Sciences",
+    "Condolence",
+    "Former MP"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Land Management, Cooperatives, Federal Affairs and General Administration",
+    "Health and Food Security"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Pratibha Rawal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Honourable Speaker",
+      "party": null,
+      "section": "Condolence Motion"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

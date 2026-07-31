@@ -1,0 +1,109 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 18\nFederal\nNepal\nDaily Agenda\nParliament\nMonday, Jestha 25, 2083\n11:00 AM\nNomination to the Business Advisory Committee\n1. The Honorable Speaker will inform about the nomination of Honorable Members to the Business Advisory Committee.\n2. Commencement of discussion on the Annual Estimate of Revenue and Expenditure\nThe Honorable Minister of Finance, Dr. Swarnim Wagle, will present the proposal to \"Commence general discussion on the Annual Estimate of Revenue and Expenditure for the Fiscal Year 2083/084\".\n3. General discussion on the Annual Estimate of Revenue and Expenditure for the Fiscal Year 2083/084 will commence.\n4. The Honorable Minister of Finance, Dr. Swarnim Wagle, will respond to the questions raised during the discussion.\nManagement Work\nThe Honorable Minister of Finance, Dr. Swarnim Wagle:-\n(a) Will present the proposal to seek permission to introduce the \"Appropriation Bill, 2083\".\n(b) Will introduce the \"Appropriation Bill, 2083\".\n(c) Will present the proposal to seek permission to introduce the \"Public Debt Raising Bill, 2083\".\n(d) Will introduce the \"Public Debt Raising Bill, 2083\".\n(e) Will present the proposal to seek permission to introduce the \"Nepal Rastra Bank (Third Amendment) Bill, 2083\".\n(f) Will introduce the \"Nepal Rastra Bank (Third Amendment) Bill, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-25",
+    "date_ad": "2026-06-09",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "18",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Honorable Speaker will announce the nomination of members to the Business Advisory Committee. This marks the beginning of the parliamentary proceedings.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Nomination to Business Advisory Committee"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Business Advisory Committee Nomination"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister of Finance will initiate a general discussion on the Annual Estimate of Revenue and Expenditure for FY 2083/084. Following the discussion, the Minister will respond to questions raised by members.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Annual Estimate of Revenue and Expenditure"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Annual Estimate of Revenue and Expenditure",
+        "Fiscal Year 2083/084 Budget"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister of Finance will seek permission to introduce and subsequently present three key bills: the Appropriation Bill, 2083, the Public Debt Raising Bill, 2083, and the Nepal Rastra Bank (Third Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Introduction of Bills"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Public Debt Raising Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Nepal Rastra Bank (Third Amendment) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative Business",
+        "Financial Bills"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Agenda",
+    "House of Representatives",
+    "Budget Discussion",
+    "Revenue and Expenditure",
+    "Fiscal Year 2083/084",
+    "Legislation",
+    "Appropriation Bill",
+    "Public Debt Bill",
+    "Nepal Rastra Bank Amendment",
+    "Business Advisory Committee"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

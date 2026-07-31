@@ -1,0 +1,40 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nNotice-1\nDate: 2083 Jestha 25, Monday\nRegarding the change in the day and time of the meeting.\nToday, Jestha 25, 2083, Monday, the meeting of the House of Representatives, which was adjourned for fifteen minutes at 1:30 PM, could not be held at the said time due to special reasons. Therefore, as per sub-rule (3) of rule 6 of the House of Representatives Regulations, 2083, the Honorable Speaker has scheduled the meeting to be held on Tuesday, Jestha 26, 2083, at 9:00 AM. This notice is published for the information of the Honorable Members.\n\n- P. P. Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-25",
+    "date_ad": "2026-06-09",
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting of the House of Representatives, adjourned earlier, was rescheduled. The Speaker announced that the meeting would now convene on Jestha 26, 2083, at 9:00 AM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting rescheduling"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Notice",
+    "House of Representatives",
+    "Meeting Schedule",
+    "Rescheduling",
+    "Speaker's Decision",
+    "Parliamentary Regulations"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "P. P. Pandey",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": "1:30 PM",
+  "next_meeting_date": "2083-02-26"
+}

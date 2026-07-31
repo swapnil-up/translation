@@ -1,0 +1,173 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 27\nFederal Parliament of Nepal\nDaily Business Schedule\nFriday, Ashadh 5, 2083\n11:00 AM\nManagement Work\nHonorable Finance Minister Dr. Swarnim Wagle:-\n1. (a) To present the proposal 'Consider the Economic Bill, 2083'.\n(b) To present the proposal 'Consider the National Debt Raising Bill, 2083'.\nOrdinance Related Work\n2. The proposal 'Reject the Public Procurement (Second Amendment) Ordinance, 2083' presented by Honorable Khadga Bahadur Budha will be presented for decision.\n3. On behalf of the Right Honorable Prime Minister Balen Shah, Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam will present the proposal 'Approve the Public Procurement (Second Amendment) Ordinance, 2083'.\n4. The proposal 'Reject the Prevention of Money Laundering (Third Amendment) Ordinance, 2083' presented by Honorable Neeta Ghatani will be presented for decision.\n5. Honorable Finance Minister Dr. Swarnim Wagle will present the proposal 'Approve the Prevention of Money Laundering (Third Amendment) Ordinance, 2083'.\n6. The proposal 'Reject the Cooperatives (First Amendment) Ordinance, 2083' presented by Honorable Aaren Rai will be presented for decision.\n7. Honorable Minister of Land Management, Cooperatives, and Poverty Alleviation Pratibha Rawal will present the proposal 'Approve the Cooperatives (First Amendment) Ordinance, 2083'.\n8. The proposal 'Reject the Ordinance to Amend Some Nepal Acts Related to Health Sciences Institutions, 2083' presented by Honorable Kruparam Rana will be presented for decision.\n9. Honorable Minister of Health and Food Security Nisha Mehta will present the proposal 'Approve the Ordinance to Amend Some Nepal Acts Related to Health Sciences Institutions, 2083'.\n\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-05",
+    "date_ad": "2026-06-20",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "27",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister presented proposals for consideration of the Economic Bill, 2083 and the National Debt Raising Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Proposals for Economic Bill and National Debt Raising Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Economic Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "National Debt Raising Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Ordinance Related Work",
+      "summary_en": "Several ordinances were presented for approval or rejection, including those related to public procurement, money laundering, cooperatives, and health sciences institutions.",
+      "speakers": [
+        {
+          "name": "Khadga Bahadur Budha",
+          "party": null,
+          "topic": "Rejection of Public Procurement (Second Amendment) Ordinance, 2083"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Approval of Public Procurement (Second Amendment) Ordinance, 2083"
+        },
+        {
+          "name": "Neeta Ghatani",
+          "party": null,
+          "topic": "Rejection of Prevention of Money Laundering (Third Amendment) Ordinance, 2083"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Approval of Prevention of Money Laundering (Third Amendment) Ordinance, 2083"
+        },
+        {
+          "name": "Aaren Rai",
+          "party": null,
+          "topic": "Rejection of Cooperatives (First Amendment) Ordinance, 2083"
+        },
+        {
+          "name": "Pratibha Rawal",
+          "party": null,
+          "topic": "Approval of Cooperatives (First Amendment) Ordinance, 2083"
+        },
+        {
+          "name": "Kruparam Rana",
+          "party": null,
+          "topic": "Rejection of Ordinance to Amend Health Sciences Institutions Acts, 2083"
+        },
+        {
+          "name": "Nisha Mehta",
+          "party": null,
+          "topic": "Approval of Ordinance to Amend Health Sciences Institutions Acts, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Public Procurement (Second Amendment) Ordinance, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Prevention of Money Laundering (Third Amendment) Ordinance, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Cooperatives (First Amendment) Ordinance, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Ordinance to Amend Some Nepal Acts Related to Health Sciences Institutions, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Public Procurement Ordinance",
+        "Money Laundering Ordinance",
+        "Cooperatives Ordinance",
+        "Health Sciences Institutions Ordinance"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "Legislation",
+    "Economic Bills",
+    "Debt Raising",
+    "Ordinances",
+    "Public Procurement",
+    "Money Laundering",
+    "Cooperatives",
+    "Health Sciences",
+    "House of Representatives"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry",
+    "Law, Justice and Parliamentary Affairs Ministry",
+    "Land Management, Cooperatives, and Poverty Alleviation Ministry",
+    "Health and Food Security Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Khadga Bahadur Budha",
+      "party": null,
+      "section": "Ordinance Related Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Ordinance Related Work"
+    },
+    {
+      "name": "Neeta Ghatani",
+      "party": null,
+      "section": "Ordinance Related Work"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Ordinance Related Work"
+    },
+    {
+      "name": "Aaren Rai",
+      "party": null,
+      "section": "Ordinance Related Work"
+    },
+    {
+      "name": "Pratibha Rawal",
+      "party": null,
+      "section": "Ordinance Related Work"
+    },
+    {
+      "name": "Kruparam Rana",
+      "party": null,
+      "section": "Ordinance Related Work"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Ordinance Related Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

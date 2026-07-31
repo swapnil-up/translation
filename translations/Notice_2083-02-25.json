@@ -1,0 +1,132 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting No. 18\nFederal\nNepal\nParliament,\nNotice Paper - 2\n(Brief Minutes of the Meeting Proceedings)\nMonday, Jestha 25, 2083\nThe meeting of the House of Representatives commenced today at 1:00 PM under the chairmanship of the Right Honourable Speaker Dol Prasad Aryal.\nAt the beginning of the meeting, when Honourable Members from Nepali Congress, CPN (UML), Communist Party of Nepal, Labour Culture Party, and Rastriya Prajatantra Party stood in front of their seats demanding time to speak, the Right Honourable Speaker requested cooperation in advancing today's agenda, stating that dialogue was ongoing with the opposition leaders from the government side, that the budget discussion had been stalled for a long time, and that the government was serious about the issues raised by the Honourable Members.\nSubsequently, when time was granted to the following Honourable Members to speak, they stated that the Prime Minister's statement in the House, \"Nepal has encroached upon India's land in many places,\" which violated diplomatic dignity and official responsibility, must be apologized for and retracted; the House cannot proceed until it is retracted; Lipulek, Limpiyadhura, and Kalapani are integral parts of Nepal and must be unconditionally retracted; the Nepali Army must be deployed on the Nepal-India border; a country cannot exist without geography, as geography is necessary for a country to exist; there is disagreement with the views expressed by the Right Honourable Prime Minister on serious issues such as the nation, nationality, national independence, and border issues; the all-party meeting organized by the Chairman of Rastriya Swatantra Party has made a positive start to resume parliamentary proceedings; despite many disagreements, there is a commitment to regular parliamentary proceedings; the Prime Minister's statements in the House must be corrected and removed from the parliamentary record; it is not a normal matter for tax rates to be altered while the Finance Bill is under consideration in the House, and an investigation into this must be conducted by a parliamentary inquiry committee, not the Ministry of Finance; it is serious that information regarding changes in tax rates has come out; the Right Honourable Speaker should be more responsible in conducting the House by discussing the budget and other bills and issues of public concern; there is a discrepancy between the Finance Bill tabled in the House and the Finance Bill kept on the official website of the Ministry of Finance; the act of benefiting some businessmen by leaking information related to taxes and causing billions in losses to the state is unacceptable, and they expressed their views on these and other matters:-\nHonourable Padma Kumari Aryal\nHonourable Gyan Bahadur Shahi\n1.\n4.\nHonourable Santosh Subba\nHonourable Harkaraj Rai\n2.\n4.\nHonourable Barsaman Pun\nHonourable Gopal Sharma\n3.\n6.\nPage 1/2\nThereafter, the Right Honourable Speaker acknowledged the issues raised by the opposition Honourable Members and stated that the meeting would proceed while engaging in dialogue on the raised issues, and that the issues raised by the Honourable Members are matters of the public and the nation, and requested cooperation in conducting parliamentary proceedings. Some Honourable Members requested time to speak during the impromptu session. The Right Honourable Speaker urged for cooperation from all sides to advance the agenda and conduct the House, stating that parliamentary proceedings can be conducted through dialogue on issues of public concern and continuous debate. However, as the opposition Honourable Members remained standing in their seats, the Right Honourable Speaker adjourned the meeting for 15 minutes.\nSubsequently, the meeting of the House of Representatives was adjourned for 15 minutes later today at 1:30 PM.\nThe meeting of the House of Representatives, scheduled to reconvene in 15 minutes today, was adjourned until Tuesday, Jestha 26, 2083, at 1:00 PM, with the publication of Notice Paper-1.\nPadma Prasad Pandey\nSecretary-General\nPage 2/2",
+  "session": {
+    "date_bs": "2083-02-25",
+    "date_ad": "2026-06-09",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "18",
+    "chairperson": "Dol Prasad Aryal"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting commenced with the Speaker in the chair. Opposition members stood demanding to speak. The Speaker requested cooperation to proceed with the agenda, citing ongoing dialogue and stalled budget discussions.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "Opposition members spoke, demanding the Prime Minister retract a statement about Nepal encroaching on Indian land, deploy the army to the border, and investigate tax rate changes by a parliamentary committee. They also highlighted discrepancies in finance bills and alleged corruption.",
+      "speakers": [
+        {
+          "name": "Padma Kumari Aryal",
+          "party": null,
+          "topic": "PM's statement, border issues, tax investigation"
+        },
+        {
+          "name": "Gyan Bahadur Shahi",
+          "party": null,
+          "topic": "PM's statement, border issues, tax investigation"
+        },
+        {
+          "name": "Santosh Subba",
+          "party": null,
+          "topic": "PM's statement, border issues, tax investigation"
+        },
+        {
+          "name": "Harkaraj Rai",
+          "party": null,
+          "topic": "PM's statement, border issues, tax investigation"
+        },
+        {
+          "name": "Barsaman Pun",
+          "party": null,
+          "topic": "PM's statement, border issues, tax investigation"
+        },
+        {
+          "name": "Gopal Sharma",
+          "party": null,
+          "topic": "PM's statement, border issues, tax investigation"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Finance Bill",
+          "status": "under_consideration"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Prime Minister's statement on border encroachment",
+        "Lipulek, Limpiyadhura, Kalapani border dispute",
+        "Deployment of army to the border",
+        "Investigation into tax rate changes",
+        "Discrepancies in Finance Bill",
+        "Allegations of corruption and state loss"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The Speaker acknowledged the opposition's concerns and requested cooperation for parliamentary proceedings. Despite the request, opposition members remained standing, leading the Speaker to adjourn the meeting.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "parliamentary proceedings",
+    "opposition protest",
+    "Prime Minister's statement",
+    "border dispute",
+    "tax policy",
+    "finance bill",
+    "national sovereignty",
+    "budget discussion",
+    "all-party meeting"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Padma Kumari Aryal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Gyan Bahadur Shahi",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Santosh Subba",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Harkaraj Rai",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Barsaman Pun",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Gopal Sharma",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": "1:30 PM",
+  "next_meeting_date": "2083-02-26"
+}
