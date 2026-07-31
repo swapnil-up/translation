@@ -174,11 +174,17 @@ def dedup_lines(text: str) -> str:
 
 
 def _classify_gemini_error(err: str) -> str:
-    if "rate limit" in err.lower():
+    lowered = err.lower()
+    if any(p in lowered for p in ["rate limit", "high demand", "try again later"]):
         return "rpm"
     if any(p in err for p in ["429", "403", "RESOURCE_EXHAUSTED", "quota"]):
         return "rpd"
     return "other"
+
+
+def _output_token_budget(ocr_text: str) -> int:
+    chars = len(ocr_text)
+    return max(8192, min(chars // 2, 65536))
 
 
 def run_ocr(pdf_path: Path) -> dict:
@@ -238,28 +244,40 @@ def call_gemini_structured(ocr_text: str, api_key: str) -> dict:
             "generationConfig": {
                 "response_mime_type": "application/json",
                 "temperature": 0.2,
-                "maxOutputTokens": 16384,
+                "maxOutputTokens": _output_token_budget(ocr_text),
             },
         },
     )
 
+    try:
+        body = resp.json()
+    except ValueError:
+        body = {}
+
     if not resp.ok:
-        err = resp.json().get("error", {}).get("message", resp.text[:500])
+        err = body.get("error", {}).get("message", resp.text[:500])
         kind = _classify_gemini_error(err)
         if kind in ("rpm", "rpd"):
             raise RuntimeError(f"{kind.upper()}: {err}")
         raise RuntimeError(f"Gemini API error: {err}")
 
-    candidates = resp.json().get("candidates", [])
+    candidates = body.get("candidates", [])
     if not candidates:
         raise RuntimeError("Gemini returned no candidates")
 
-    parts = candidates[0].get("content", {}).get("parts", [])
+    candidate = candidates[0]
+    finish_reason = candidate.get("finishReason", "")
+    parts = candidate.get("content", {}).get("parts", [])
     if not parts:
         raise RuntimeError("Gemini returned empty content")
 
     text = parts[0].get("text", "").strip()
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        if finish_reason == "MAX_TOKENS":
+            raise RuntimeError(f"TRUNCATED: Gemini response cut off mid-JSON ({e})")
+        raise RuntimeError(f"Gemini returned invalid JSON ({e})")
 
 
 def process_one(notice: dict, index: int, notices: list) -> bool:
@@ -298,13 +316,13 @@ def process_one(notice: dict, index: int, notices: list) -> bool:
             return True
         except RuntimeError as e:
             msg = str(e)
-            if msg.startswith("RPM"):
+            if msg.startswith(("RPM", "TRUNCATED")):
                 if attempt < max_rpm_retries:
                     wait = min(2 ** (attempt + 2), 60)
-                    print(f"[rpm] rate limited, retry {attempt + 1}/{max_rpm_retries} in {wait}s...", file=sys.stderr)
+                    print(f"[retry] {msg.split(':')[0].lower()}, retry {attempt + 1}/{max_rpm_retries} in {wait}s...", file=sys.stderr)
                     time.sleep(wait)
                     continue
-                print(f"[rpm] max retries exceeded — keeping '{notice['title']}' as pending", file=sys.stderr)
+                print(f"[retry] max retries exceeded — keeping '{notice['title']}' as pending", file=sys.stderr)
                 save_manifest(notices)
                 return False
             if msg.startswith("RPD"):
@@ -312,6 +330,11 @@ def process_one(notice: dict, index: int, notices: list) -> bool:
                 save_manifest(notices)
                 return False
             print(f"[error] processing: {msg}", file=sys.stderr)
+            notices[index]["status"] = "failed"
+            save_manifest(notices)
+            return False
+        except Exception as e:
+            print(f"[error] processing: unexpected {type(e).__name__}: {e}", file=sys.stderr)
             notices[index]["status"] = "failed"
             save_manifest(notices)
             return False
