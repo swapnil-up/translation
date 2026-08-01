@@ -1,0 +1,42 @@
+{
+  "pdf": "redbook8283.pdf",
+  "pdf_path_hint": "output/redbook8283.pdf",
+  "description": "Gold pages are hand-transcribed from the PDF by a human — the ground truth (STRATEGY.md section 7). A page is only 'done' after a human sets verified=true in its JSON. tests/test_gold.py runs only completed pages whose PDF is present.",
+  "pages": [
+    {
+      "page": 3,
+      "file": "pages/page_003.json",
+      "status": "todo",
+      "template": "toc",
+      "note": "summary index page — no table, exercises TOC template"
+    },
+    {
+      "page": 17,
+      "file": "pages/page_017.json",
+      "status": "todo",
+      "template": "detail",
+      "note": "first detail page — carries the लाख scale marker"
+    },
+    {
+      "page": 26,
+      "file": "pages/page_026.json",
+      "status": "todo",
+      "template": "detail",
+      "note": "middle detail page — continuation scale inheritance"
+    },
+    {
+      "page": 34,
+      "file": "pages/page_034.json",
+      "status": "todo",
+      "template": "detail",
+      "note": "last detail page before summary section"
+    },
+    {
+      "page": 36,
+      "file": "pages/page_036.json",
+      "status": "todo",
+      "template": "summary",
+      "note": "summary-by-ministry page — different column layout"
+    }
+  ]
+}

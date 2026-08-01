@@ -8,6 +8,21 @@ Extract Devanagari text from Nepali government PDFs. Three pipelines:
 
 ## Current Status: v3 (PyMuPDF extraction working)
 
+### Redbook parser consolidation (in progress)
+- **`redbook_parser/`** is now the active budget module — the spatial-first /
+  scoped-encoding redesign. Full design: `redbook_parser/STRATEGY.md`.
+- **`budget/*.py` is frozen legacy** (v1/v2/v3) — reference only, do not edit.
+- **Tests:** `tests/` via pytest (uses the `redbook-env/` venv, gitignored):
+  ```bash
+  redbook-env/bin/python -m pytest tests/ -q
+  ```
+- **Gold standard:** `tests/gold/` — hand-transcribed pages (see
+  `tests/gold/README.md`); `tests/gold/record_gold.py` seeds drafts from a DB.
+- **CLI:** `redbook-env/bin/python -m redbook_parser.cli extract <pdf> --sqlite -o out.db`
+  and `... verify <db>` (math audit of extracted rows vs stated totals).
+
+### v3 Pipeline (baseline, being replaced)
+
 ### v3 Pipeline (`pdf_to_excel_v3.py`)
 Uses PyMuPDF's built-in ToUnicode CMap decoding, supplemented with:
 - **CID→Unicode table** (CID_CHAR_MAP): ~40 integer CID→Devanagari mappings for CIDs not in any font's ToUnicode CMap
