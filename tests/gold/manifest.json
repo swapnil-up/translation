@@ -1,6 +1,6 @@
 {
   "pdf": "redbook8283.pdf",
-  "pdf_path_hint": "output/redbook8283.pdf",
+  "pdf_path_hint": "redbook_parser/output/redbook8283.pdf",
   "description": "Gold pages are hand-transcribed from the PDF by a human — the ground truth (STRATEGY.md section 7). A page is only 'done' after a human sets verified=true in its JSON. tests/test_gold.py runs only completed pages whose PDF is present.",
   "pages": [
     {
@@ -25,11 +25,11 @@
       "note": "middle detail page — continuation scale inheritance"
     },
     {
-      "page": 34,
-      "file": "pages/page_034.json",
+      "page": 29,
+      "file": "pages/page_029.json",
       "status": "todo",
       "template": "detail",
-      "note": "last detail page before summary section"
+      "note": "last real detail page (page 34 was blank; pages 30-34 are blank/transition)"
     },
     {
       "page": 36,
