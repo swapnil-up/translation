@@ -1,0 +1,108 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 40\nFederal\nNepal\nDaily Agenda\nParliament,\nJuly 30, 2025 Tuesday\n1:00 PM\n(Tentative)\nPresentation of Annual Report\n1. Honorable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, on behalf of the Right Honorable Prime Minister, will present the \"Sixth Annual Report of the National Foundation for the Development of Indigenous Nationalities, Fiscal Year 2081/082\".\nProposal of Urgent Public Importance\n2. Honorable Bhim Raj Aidembe will present a proposal of urgent public importance stating that \"It is necessary for the government to identify landless, squatters, and unorganized residents, and to make necessary arrangements for their protection and resettlement, ensuring safe housing, basic services, food, health, education, and livelihood continuity, providing appropriate compensation, guaranteeing permanent resettlement, and distributing land ownership certificates to genuine landless and squatters as soon as possible.\"\nHonorable Ain Bahadur Mahat, Honorable Yuvraj Dulal, and Honorable Karen Rai will support the said proposal.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-19",
+    "date_ad": "2026-07-30",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "40",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Presentation of Annual Report",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will present the \"Sixth Annual Report of the National Foundation for the Development of Indigenous Nationalities, Fiscal Year 2081/082\" on behalf of the Prime Minister.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Annual Report of Indigenous Nationalities Foundation"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Sixth Annual Report of the National Foundation for the Development of Indigenous Nationalities, Fiscal Year 2081/082"
+      ],
+      "key_issues": [
+        "Indigenous Nationalities Foundation Report"
+      ]
+    },
+    {
+      "name": "Proposal of Urgent Public Importance",
+      "summary_en": "Honorable Bhim Raj Aidembe will present a proposal concerning the identification, protection, and resettlement of landless, squatters, and unorganized residents, including compensation and land ownership distribution. Three other MPs will support this proposal.",
+      "speakers": [
+        {
+          "name": "Bhim Raj Aidembe",
+          "party": null,
+          "topic": "Proposal for landless and squatter resettlement and land ownership"
+        },
+        {
+          "name": "Ain Bahadur Mahat",
+          "party": null,
+          "topic": "Support for landless and squatter resettlement proposal"
+        },
+        {
+          "name": "Yuvraj Dulal",
+          "party": null,
+          "topic": "Support for landless and squatter resettlement proposal"
+        },
+        {
+          "name": "Karen Rai",
+          "party": null,
+          "topic": "Support for landless and squatter resettlement proposal"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Landless and squatter rights",
+        "Resettlement",
+        "Housing",
+        "Land ownership certificates"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Session",
+    "House of Representatives",
+    "Annual Report",
+    "Indigenous Nationalities",
+    "Public Importance Proposal",
+    "Land Rights",
+    "Squatters",
+    "Resettlement",
+    "Housing",
+    "Land Ownership"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Report"
+    },
+    {
+      "name": "Bhim Raj Aidembe",
+      "party": null,
+      "section": "Proposal of Urgent Public Importance"
+    },
+    {
+      "name": "Ain Bahadur Mahat",
+      "party": null,
+      "section": "Proposal of Urgent Public Importance"
+    },
+    {
+      "name": "Yuvraj Dulal",
+      "party": null,
+      "section": "Proposal of Urgent Public Importance"
+    },
+    {
+      "name": "Karen Rai",
+      "party": null,
+      "section": "Proposal of Urgent Public Importance"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

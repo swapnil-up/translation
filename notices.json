@@ -3,9 +3,12 @@
     "serial": "1.",
     "title": "Possible Daily Agenda 2083-04-19(New)",
     "url": "https://hr.parliament.gov.np/en/notices/1785747212",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-03"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/qcgd8pfxfyfftxn6.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-03",
+    "ocr_path": "translations/Possible_Daily_Agenda_2083-04-19(New)-ocr.txt",
+    "translated_path": "translations/Possible_Daily_Agenda_2083-04-19(New).txt",
+    "structured_path": "translations/Possible_Daily_Agenda_2083-04-19(New).json"
   },
   {
     "serial": "1.",
