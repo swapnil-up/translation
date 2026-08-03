@@ -229,55 +229,69 @@ def run_ocr(pdf_path: Path) -> dict:
     return result_dict
 
 
+MAX_OUTPUT_TOKENS = 65536
+ADAPTIVE_BUDGET_RETRIES = 4
+
+
 def call_gemini_structured(ocr_text: str, api_key: str) -> dict:
     prompt = STRUCTURED_PROMPT.format(schema=STRUCTURED_SCHEMA_DESC, ocr_text=ocr_text)
+    budget = _output_token_budget(ocr_text)
 
-    resp = requests.post(
-        f"{GEMINI_API}/{GEMINI_MODEL}:generateContent",
-        headers={"Content-Type": "application/json"},
-        params={"key": api_key},
-        json={
-            "system_instruction": {
-                "parts": [{"text": "You are an expert translator of Nepali parliamentary documents. Output JSON only."}]
+    for attempt in range(ADAPTIVE_BUDGET_RETRIES):
+        resp = requests.post(
+            f"{GEMINI_API}/{GEMINI_MODEL}:generateContent",
+            headers={"Content-Type": "application/json"},
+            params={"key": api_key},
+            json={
+                "system_instruction": {
+                    "parts": [{"text": "You are an expert translator of Nepali parliamentary documents. Output JSON only."}]
+                },
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {
+                    "response_mime_type": "application/json",
+                    "temperature": 0.2,
+                    "maxOutputTokens": budget,
+                },
             },
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {
-                "response_mime_type": "application/json",
-                "temperature": 0.2,
-                "maxOutputTokens": _output_token_budget(ocr_text),
-            },
-        },
-    )
+        )
 
-    try:
-        body = resp.json()
-    except ValueError:
-        body = {}
+        try:
+            body = resp.json()
+        except ValueError:
+            body = {}
 
-    if not resp.ok:
-        err = body.get("error", {}).get("message", resp.text[:500])
-        kind = _classify_gemini_error(err)
-        if kind in ("rpm", "rpd"):
-            raise RuntimeError(f"{kind.upper()}: {err}")
-        raise RuntimeError(f"Gemini API error: {err}")
+        if not resp.ok:
+            err = body.get("error", {}).get("message", resp.text[:500])
+            kind = _classify_gemini_error(err)
+            if kind in ("rpm", "rpd"):
+                raise RuntimeError(f"{kind.upper()}: {err}")
+            raise RuntimeError(f"Gemini API error: {err}")
 
-    candidates = body.get("candidates", [])
-    if not candidates:
-        raise RuntimeError("Gemini returned no candidates")
+        candidates = body.get("candidates", [])
+        if not candidates:
+            raise RuntimeError("Gemini returned no candidates")
 
-    candidate = candidates[0]
-    finish_reason = candidate.get("finishReason", "")
-    parts = candidate.get("content", {}).get("parts", [])
-    if not parts:
-        raise RuntimeError("Gemini returned empty content")
+        candidate = candidates[0]
+        finish_reason = candidate.get("finishReason", "")
+        parts = candidate.get("content", {}).get("parts", [])
+        if not parts:
+            raise RuntimeError("Gemini returned empty content")
 
-    text = parts[0].get("text", "").strip()
-    try:
-        return json.loads(text)
-    except json.JSONDecodeError as e:
-        if finish_reason == "MAX_TOKENS":
+        text = parts[0].get("text", "").strip()
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError as e:
+            if finish_reason == "MAX_TOKENS":
+                used = (body.get("usageMetadata") or {}).get("candidatesTokenCount") or budget
+                grown = min(int(used * 1.5) + 2048, MAX_OUTPUT_TOKENS)
+                if grown > budget:
+                    print(f"[retry] truncated at {used} tokens, growing budget {budget} -> {grown}...", file=sys.stderr)
+                    budget = grown
+                    continue
             raise RuntimeError(f"TRUNCATED: Gemini response cut off mid-JSON ({e})")
         raise RuntimeError(f"Gemini returned invalid JSON ({e})")
+
+    raise RuntimeError("TRUNCATED: Gemini response cut off mid-JSON after budget growth")
 
 
 def process_one(notice: dict, index: int, notices: list) -> bool:
