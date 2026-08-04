@@ -558,8 +558,11 @@
     "title": "Daily Agenda 2083-2-19",
     "url": "https://hr.parliament.gov.np/en/notices/1780311421",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/dhe0imdyhnah3vfq.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-2-19-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-2-19.txt",
+    "structured_path": "translations/Daily_Agenda_2083-2-19.json"
   },
   {
     "serial": "22.",
