@@ -569,88 +569,121 @@
     "title": "Rules of HoR, 2083",
     "url": "https://hr.parliament.gov.np/en/notices/1780317161",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/fjl5mhf3qtglebhg.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Rules_of_HoR,_2083-ocr.txt",
+    "translated_path": "translations/Rules_of_HoR,_2083.txt",
+    "structured_path": "translations/Rules_of_HoR,_2083.json"
   },
   {
     "serial": "23.",
     "title": "Daily Agenda 2083-2-18",
     "url": "https://hr.parliament.gov.np/en/notices/1780231701",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/w7muwqkaq7xm7azl.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-2-18-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-2-18.txt",
+    "structured_path": "translations/Daily_Agenda_2083-2-18.json"
   },
   {
     "serial": "24.",
     "title": "Daily Agenda 2083-2-17(Third)",
     "url": "https://hr.parliament.gov.np/en/notices/1780242489",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/26xgkrmpni1megar.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-2-17(Third)-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-2-17(Third).txt",
+    "structured_path": "translations/Daily_Agenda_2083-2-17(Third).json"
   },
   {
     "serial": "25.",
     "title": "Daily Agenda 2083-2-17(Second)",
     "url": "https://hr.parliament.gov.np/en/notices/1780242066",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/xkpiowyhgmzyazh6.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-2-17(Second)-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-2-17(Second).txt",
+    "structured_path": "translations/Daily_Agenda_2083-2-17(Second).json"
   },
   {
     "serial": "26.",
     "title": "Daily Agenda 2083-2-17",
     "url": "https://hr.parliament.gov.np/en/notices/1780122121",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/jh3y8cmc87m8bwys.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-2-17-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-2-17.txt",
+    "structured_path": "translations/Daily_Agenda_2083-2-17.json"
   },
   {
     "serial": "27.",
     "title": "Notice of Joint Meeting 2083-02-15",
     "url": "https://hr.parliament.gov.np/en/notices/1780129046",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/hhsfrqxeibinblpd.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Joint_Meeting_2083-02-15-ocr.txt",
+    "translated_path": "translations/Notice_of_Joint_Meeting_2083-02-15.txt",
+    "structured_path": "translations/Notice_of_Joint_Meeting_2083-02-15.json"
   },
   {
     "serial": "28.",
     "title": "Notice 2083-02-15",
     "url": "https://hr.parliament.gov.np/en/notices/1780128878",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/z2dj7r55unfe2sr7.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2083-02-15-ocr.txt",
+    "translated_path": "translations/Notice_2083-02-15.txt",
+    "structured_path": "translations/Notice_2083-02-15.json"
   },
   {
     "serial": "29.",
     "title": "Daily agenda of joint Meeting  2083-02-15",
     "url": "https://hr.parliament.gov.np/en/notices/1779876559",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/smaxtiurqgchhjba.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_agenda_of_joint_Meeting__2083-02-15-ocr.txt",
+    "translated_path": "translations/Daily_agenda_of_joint_Meeting__2083-02-15.txt",
+    "structured_path": "translations/Daily_agenda_of_joint_Meeting__2083-02-15.json"
   },
   {
     "serial": "30.",
     "title": "Daily Agenda 2083-2-15",
     "url": "https://hr.parliament.gov.np/en/notices/1779876299",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/qzszt8mr5r6xwyfz.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-2-15-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-2-15.txt",
+    "structured_path": "translations/Daily_Agenda_2083-2-15.json"
   },
   {
     "serial": "1.",
     "title": "Notice 2083-02-13",
     "url": "https://hr.parliament.gov.np/en/notices/1780046825",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/5qbpg295yam1ike6.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2083-02-13-ocr.txt",
+    "translated_path": "translations/Notice_2083-02-13.txt",
+    "structured_path": "translations/Notice_2083-02-13.json"
   },
   {
     "serial": "2.",
     "title": "Daily Agenda 2083-2-13",
     "url": "https://hr.parliament.gov.np/en/notices/1779800308",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/2cddhsh1plgp7tmg.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2083-2-13-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2083-2-13.txt",
+    "structured_path": "translations/Daily_Agenda_2083-2-13.json"
   },
   {
     "serial": "3.",

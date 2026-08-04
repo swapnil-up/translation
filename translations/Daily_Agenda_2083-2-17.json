@@ -1,0 +1,105 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 13\nFederal\nNepal\nDaily Agenda\nParliament,\n2083 Jestha 17, Sunday\n1:00 PM\n(Tentative)\nClause-by-clause discussion and approval of the report of the Rules Drafting Committee.\nHonorable Chairperson Ganesh Parajuli of the House of Representatives Rules Drafting Committee will present the proposal to \"Commence clause-by-clause discussion on the Report of the House of Representatives Rules Drafting Committee, 2083\".\nProposed amendments to the said report will be presented for decision.\nHonorable Chairperson Ganesh Parajuli of the House of Representatives Rules Drafting Committee will present the proposal to \"Approve the Report of the House of Representatives Rules Drafting Committee, 2083\".\nManagement Work\nHonorable Finance Minister Dr. Swarnim Wagle:-\n(a) Will present the proposal to seek permission to present the \"Nepal Rastra Bank (Third Amendment) Bill, 2083\".\n(b) Will present the \"Nepal Rastra Bank (Third Amendment) Bill, 2083\".\nTreaty-related Work\nHonorable Minister for Youth, Employment and Labor Ramji Yadav:-\n(a) Will present the \"International Labour Organization's Labour Inspection Convention, 1947 (No. 81)\".\n(b) Will present the \"Protocol of 2014 to the Forced Labour Convention, 1930, No. 29\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-17",
+    "date_ad": "2026-05-31",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "13",
+    "chairperson": "Ganesh Parajuli"
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The House of Representatives Rules Drafting Committee's report was presented for clause-by-clause discussion and approval. Honorable Chairperson Ganesh Parajuli presented proposals for commencing the discussion and for approving the report.",
+      "speakers": [
+        {
+          "name": "Ganesh Parajuli",
+          "party": null,
+          "topic": "Presentation of Rules Drafting Committee report and proposals"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Report of the House of Representatives Rules Drafting Committee, 2083"
+      ],
+      "key_issues": [
+        "House of Representatives Rules Drafting Committee Report",
+        "Clause-by-clause discussion",
+        "Approval of report"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister sought and received permission to present the Nepal Rastra Bank (Third Amendment) Bill, 2083. The bill was subsequently presented.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Presentation of Nepal Rastra Bank (Third Amendment) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Rastra Bank (Third Amendment) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Nepal Rastra Bank Amendment Bill"
+      ]
+    },
+    {
+      "name": "Treaty-related Work",
+      "summary_en": "The Minister for Youth, Employment and Labor presented two International Labour Organization conventions: the Labour Inspection Convention, 1947 (No. 81) and the Protocol of 2014 to the Forced Labour Convention, 1930, No. 29.",
+      "speakers": [
+        {
+          "name": "Ramji Yadav",
+          "party": null,
+          "topic": "Presentation of ILO Conventions"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "International Labour Organization Conventions",
+        "Labour Inspection Convention, 1947",
+        "Forced Labour Convention, 1930 Protocol"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Procedure",
+    "Legislation",
+    "Rules Drafting",
+    "Banking Law",
+    "Monetary Policy",
+    "International Labour Law",
+    "Treaties",
+    "ILO Conventions",
+    "House of Representatives"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry",
+    "Ministry of Youth, Employment and Labor"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Ganesh Parajuli",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Ramji Yadav",
+      "party": null,
+      "section": "Treaty-related Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

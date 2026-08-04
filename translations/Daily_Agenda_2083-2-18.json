@@ -1,0 +1,82 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 16\nFederal\nNepal\nDaily Business Schedule\nParliament\n2083 Jestha 18, Monday\n1:00 PM\nLetter from the Office of the President\n1. The Honorable Speaker will read out the letter received from the Office of the President regarding the certification of bills.\n2. Discussion on the Annual Estimate of Revenue and Expenditure begins.\nHonorable Finance Minister Dr. Swarnim Wagle will present the proposal 'Let the general discussion on the Annual Estimate of Revenue and Expenditure for the fiscal year 2083/084 begin' with a statement.\n3. General discussion on the Annual Estimate of Revenue and Expenditure for the fiscal year 2083/084 will begin.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-18",
+    "date_ad": "2026-06-02",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "16",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Office of the President concerning the certification of bills. This marks the beginning of the parliamentary proceedings.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Reading letter from President's office on bill certification"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential letter",
+        "Bill certification"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Finance Minister presented a proposal to commence a general discussion on the Annual Estimate of Revenue and Expenditure for the fiscal year 2083/084. The discussion is set to begin.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Proposal for general discussion on FY 2083/084 budget"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Annual Estimate of Revenue and Expenditure",
+        "Fiscal Year 2083/084",
+        "Budget discussion"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Daily Business Schedule",
+    "Presidential Letter",
+    "Bill Certification",
+    "Budget",
+    "Revenue",
+    "Expenditure",
+    "Fiscal Year 2083/084",
+    "Finance Minister",
+    "General Discussion"
+  ],
+  "ministries_mentioned": [
+    "Office of the President"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Secretary-General"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,98 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 19\nFederal\nNepal\nParliament,\nDaily Business Schedule\nWednesday, Jestha 13, 2083\n11:00 AM\nTable of Messages\n1. Table of the bill received from the National Assembly with messages regarding the 'Intangible Cultural Heritage (Conservation) Bill, 2081' originating in the National Assembly.\nPresentation of Economic Survey\n2. The Honorable Minister for Finance, Dr. Swarnim Wagle, will present the Economic Survey for the fiscal year 2082/083.\nManagement Work\n3. The Honorable Minister for Information and Communications, Dr. Bikram Timilsina, will present a proposal for consideration of the 'Film Bill, 2082' originating in the National Assembly.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-13",
+    "date_ad": "2026-05-28",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "19",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Table of Messages",
+      "summary_en": "A message from the National Assembly concerning the 'Intangible Cultural Heritage (Conservation) Bill, 2081' will be presented. This bill originated in the National Assembly.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Intangible Cultural Heritage (Conservation) Bill, 2081",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Intangible Cultural Heritage (Conservation) Bill, 2081",
+        "National Assembly messages"
+      ]
+    },
+    {
+      "name": "Presentation of Economic Survey",
+      "summary_en": "The Minister for Finance, Dr. Swarnim Wagle, is scheduled to present the Economic Survey for the fiscal year 2082/083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Presentation of Economic Survey 2082/083"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Economic Survey for the fiscal year 2082/083"
+      ],
+      "key_issues": [
+        "Economic Survey",
+        "Fiscal year 2082/083"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Information and Communications, Dr. Bikram Timilsina, will introduce a proposal to consider the 'Film Bill, 2082', which originated in the National Assembly.",
+      "speakers": [
+        {
+          "name": "Dr. Bikram Timilsina",
+          "party": null,
+          "topic": "Consideration of Film Bill, 2082"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Film Bill, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Film Bill, 2082",
+        "National Assembly"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Cultural Heritage",
+    "Economic Survey",
+    "Film Industry",
+    "National Assembly",
+    "Government Reports"
+  ],
+  "ministries_mentioned": [
+    "Ministry for Finance",
+    "Ministry for Information and Communications"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Presentation of Economic Survey"
+    },
+    {
+      "name": "Dr. Bikram Timilsina",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
