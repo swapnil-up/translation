@@ -336,7 +336,8 @@ def process_one(notice: dict, index: int, notices: list) -> bool:
                     print(f"[retry] {msg.split(':')[0].lower()}, retry {attempt + 1}/{max_rpm_retries} in {wait}s...", file=sys.stderr)
                     time.sleep(wait)
                     continue
-                print(f"[retry] max retries exceeded — keeping '{notice['title']}' as pending", file=sys.stderr)
+                print(f"[retry] max retries exceeded — marking '{notice['title']}' as skipped", file=sys.stderr)
+                notices[index]["status"] = "skipped"
                 save_manifest(notices)
                 return False
             if msg.startswith("RPD"):
