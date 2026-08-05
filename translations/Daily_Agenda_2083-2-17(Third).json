@@ -1,0 +1,66 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 15\nDaily Business\nFederal Parliament of Nepal\n2083 Jestha 17, Sunday\n(Tuesday)\n10:05 PM\nManagement Work\nOn behalf of the Right Honourable Prime Minister and Home Minister Balen Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will present the proposal to \"Consider the amendment made by the National Assembly on the Voter List (First Amendment) Bill, 2083\".\nPadma Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2083-02-17",
+    "date_ad": "2026-05-31",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "15",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, on behalf of the Prime Minister and Home Minister, presented a proposal to consider amendments made by the National Assembly to the Voter List (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Consider amendment to Voter List Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Voter List (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Voter List Amendment Bill",
+        "National Assembly Amendments"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Legislation",
+    "Voter List",
+    "Bill Amendment",
+    "National Assembly",
+    "Government Business"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Home Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balen Shah",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": "10:05 PM",
+  "next_meeting_date": null
+}

@@ -1,0 +1,56 @@
+{
+  "full_translation_en": "Federal Parliament\nSession, 2083\nJoint Meeting\nMeeting Number-2\nFederal Parliament of Nepal\nDaily Business Schedule\n2083 Jestha 15, Friday\n4:00 PM\nPresentation of Annual Estimates\nThe Honourable Minister for Finance, Dr. Swarnim Wagle, will present the Annual Estimates (Budget) of Revenue and Expenditure for the Fiscal Year 2083/084.\nPadma Prasad Poudel\nGeneral Secretary",
+  "session": {
+    "date_bs": "2083-02-15",
+    "date_ad": null,
+    "meeting_type": "Joint Meeting",
+    "meeting_number": "2",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister for Finance, Dr. Swarnim Wagle, presented the Annual Estimates (Budget) of Revenue and Expenditure for the Fiscal Year 2083/084. This was the primary agenda item for the meeting.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Presentation of Annual Budget Estimates FY 2083/084"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Annual Budget Presentation",
+        "Fiscal Year 2083/084"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "Federal Parliament",
+    "Joint Meeting",
+    "Daily Business",
+    "Budget",
+    "Annual Estimates",
+    "Finance Minister",
+    "Fiscal Year 2083/084"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Poudel",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

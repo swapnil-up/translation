@@ -1,0 +1,85 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 14\nFederal\nNepal\nDaily Agenda\nParliament,\n2083 Jestha 17, Sunday\n(Second)\n9:40 AM\nInformation regarding message\n1. Information regarding message received from the National Assembly\nSecretary of the House of Representatives, Prakash Adhikari, will provide information regarding the \"Bill to Amend the Election of Members of the House of Representatives (First Amendment), 2083\".\nTabled Message\n2. Secretary of the House of Representatives, Prakash Adhikari, will table the \"Voter List (First Amendment) Bill, 2083\" along with the message received from the National Assembly.\nPadma Prasad Pandey\nSecretary General",
+  "session": {
+    "date_bs": "2083-02-17",
+    "date_ad": "2026-05-31",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "14",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Information regarding message",
+      "summary_en": "The Secretary of the House of Representatives, Prakash Adhikari, will inform the House about a message received from the National Assembly concerning the \"Bill to Amend the Election of Members of the House of Representatives (First Amendment), 2083\".",
+      "speakers": [
+        {
+          "name": "Prakash Adhikari",
+          "party": null,
+          "topic": "Information on National Assembly message"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend the Election of Members of the House of Representatives (First Amendment), 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "National Assembly Message",
+        "Election of Members of the House of Representatives Bill"
+      ]
+    },
+    {
+      "name": "Tabled Message",
+      "summary_en": "Following the information, the Secretary of the House of Representatives, Prakash Adhikari, will table the \"Voter List (First Amendment) Bill, 2083\" along with the message from the National Assembly.",
+      "speakers": [
+        {
+          "name": "Prakash Adhikari",
+          "party": null,
+          "topic": "Tabling Voter List Bill and National Assembly message"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Voter List (First Amendment) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Voter List Bill",
+        "National Assembly Message"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Procedure",
+    "Legislation",
+    "House of Representatives",
+    "National Assembly",
+    "Bills",
+    "Elections",
+    "Voter Registration"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Prakash Adhikari",
+      "party": null,
+      "section": "Information regarding message"
+    },
+    {
+      "name": "Prakash Adhikari",
+      "party": null,
+      "section": "Tabled Message"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Secretary General"
+    }
+  ],
+  "adjournment_time": "09:40 AM",
+  "next_meeting_date": null
+}

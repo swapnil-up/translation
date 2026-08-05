@@ -1,0 +1,110 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 12\nFederal\nNepal\nParliament,\nNotice - 2\n(Brief Record of Meeting Proceedings)\nThursday, Jestha 15, 2083\nThe meeting of the House of Representatives commenced today at 6:20 PM under the chairmanship of the Right Honourable Speaker Dol Prasad Aryal.\nAs soon as the meeting began, all the Honourable Members of the Nepali Congress Parliamentary Party stood in front of their respective seats. When the Right Honourable Speaker gave the floor to Honourable Nishkal Rai, he stated that the Nepali Congress is seriously concerned about the report published by the National Human Rights Commission regarding the Jenji rebellion of Bhadra 23 and 24. He further mentioned that the report of the Gauri Bahadur Karki Commission formed to investigate the same incident appears to be incomplete, insufficient, and unclear. The report of the National Human Rights Commission has raised questions about the coordinator of the Karki Commission itself. He pointed out that there was a planned objective in not making the report public before the elections. While the initial phase of the Jenji movement was related to the freedom of expression, peaceful protest, and demand for good governance guaranteed by the constitution, it subsequently became systematically violent in the name of protest. Government and private property were destroyed, and acts of arson, murder, looting, and anarchy occurred. The report indicated that responsible individuals of the state and even parliament members in power should be further investigated and prosecuted on suspicion of involvement in such activities. He further stated that during the Jenji demonstrations on Bhadra 24, after the current ruling party chairman escaped from Nakhkhu Jail, extensive vandalism occurred in various prisons and detention centers, and many prisoners escaped. Among those who escaped, some have committed various incidents in society.\nFollowing this, the Honourable Finance Minister Dr. Swarnim Wagle tabled the 'Annual Estimate of Revenue and Expenditure for Fiscal Year 2083/084' in accordance with Sub-rule (2) of Rule 141 of the House of Representatives Regulations, 2079.\nThereafter, the Right Honourable Speaker informed that the dates for Jestha 18, 19, and 20, 2083, have been set for a general discussion on the Annual Estimate of Revenue and Expenditure for Fiscal Year 2083/084 and for the Honourable Finance Minister to respond, in accordance with Sub-rule (1) of Rule 142 of the House of Representatives Regulations, 2079. He also informed that the party officials should provide the names of their party's spokesperson Honourable Members to the Business Section, Federal Parliament Secretariat, Singha Durbar, one hour before the meeting begins for participation in the discussion based on party representation.\nSubsequently, the Honourable Finance Minister Dr. Swarnim Wagle presented the 'Economic Bill, 2083' in accordance with Sub-rule (1) of Rule 152 of the House of Representatives Regulations, 2079.\nFollowing this, the House of Representatives was adjourned at 6:30 PM, and the next meeting is scheduled for Sunday, Jestha 17, 2083, at 1:00 PM.\nPadma Prasad Pandey\nSecretary-General\nPage 1/9",
+  "session": {
+    "date_bs": "2083-02-15",
+    "date_ad": "2026-05-29",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "12",
+    "chairperson": "Dol Prasad Aryal"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting commenced with the Speaker in the chair. Honourable Nishkal Rai raised concerns regarding the Jenji rebellion, the National Human Rights Commission's report, and the Gauri Bahadur Karki Commission's findings, highlighting issues of violence and escapees from prison.",
+      "speakers": [
+        {
+          "name": "Nishkal Rai",
+          "party": "Nepali Congress",
+          "topic": "Jenji rebellion report and commission findings"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Report of the National Human Rights Commission regarding the Jenji rebellion",
+        "Report of the Gauri Bahadur Karki Commission"
+      ],
+      "key_issues": [
+        "Jenji rebellion",
+        "Human rights violations",
+        "Incomplete commission report",
+        "Prison escapes",
+        "Accountability of officials"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Finance Minister tabled the budget statement for FY 2083/084 and presented the Economic Bill, 2083. The Speaker announced the schedule for general discussion on the budget.",
+      "speakers": [
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Tabling budget statement and presenting economic bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Annual Estimate of Revenue and Expenditure for Fiscal Year 2083/084",
+          "status": "introduced"
+        },
+        {
+          "name": "Economic Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Budget presentation",
+        "Economic bill",
+        "Fiscal year 2083/084"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The House of Representatives was adjourned until the next meeting.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Jenji Rebellion",
+    "Human Rights",
+    "Commission Report",
+    "Budget",
+    "Economic Bill",
+    "Fiscal Year 2083/084",
+    "Lawmaking",
+    "Security",
+    "Justice"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Nishkal Rai",
+      "party": "Nepali Congress",
+      "section": "Opening"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": "6:30 PM",
+  "next_meeting_date": "2083-02-17"
+}

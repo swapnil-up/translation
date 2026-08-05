@@ -1,0 +1,85 @@
+{
+  "full_translation_en": "Federal Parliament\nJoint Meeting\nSession, 2082\nMeeting Number - 2\nFederal\nNepal\nParliament\nNotice - 2\n(Brief details of the meeting proceedings)\nThursday, Jestha 15, 2083\nThe joint meeting of both houses of the Federal Parliament commenced at 4:05 PM under the chairmanship of the Honorable Speaker Dol Prasad Aryal.\nThereafter, the Honorable Finance Minister Dr. Swarnim Wagle, presenting the Annual Budget Statement (Budget) of Revenue and Expenditure for the Fiscal Year 2083/084 in accordance with Rule 5 of the Federal Parliament's Joint Meeting and Joint Committee (Operation) Regulations, 2080, informed that a total appropriation of Rs. 2124.34 billion has been allocated, comprising Rs. 1270.58 billion for recurrent expenditure, which is 49.8 percent of the total appropriation, Rs. 431.10 billion for capital expenditure, which is 20.3 percent, and Rs. 422.64 billion for financial management, which is 19.9 percent.\nSubsequently, the joint meeting of both houses of the Federal Parliament was adjourned at 6:00 PM.\nPadma Prasad Pandey\nSecretary-General\nPage 1/9",
+  "session": {
+    "date_bs": "2083-02-15",
+    "date_ad": "2026-05-29",
+    "meeting_type": "Joint Meeting of both houses of the Federal Parliament",
+    "meeting_number": "2",
+    "chairperson": "Dol Prasad Aryal"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The joint meeting of both houses of the Federal Parliament commenced under the chairmanship of the Honorable Speaker Dol Prasad Aryal.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Presided over the joint meeting"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Finance Minister presented the annual budget for FY 2083/084, detailing allocations for recurrent expenditure, capital expenditure, and financial management.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Presented the annual budget for FY 2083/084"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Annual Budget Statement (Budget) of Revenue and Expenditure for the Fiscal Year 2083/084",
+          "status": "presented"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "FY 2083/084 Budget",
+        "Recurrent Expenditure",
+        "Capital Expenditure",
+        "Financial Management"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The joint meeting of both houses of the Federal Parliament was adjourned.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Federal Parliament",
+    "Joint Meeting",
+    "Budget",
+    "Fiscal Year 2083/084",
+    "Finance Minister",
+    "Expenditure",
+    "Appropriation",
+    "Parliamentary Proceedings"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": "6:00 PM",
+  "next_meeting_date": null
+}

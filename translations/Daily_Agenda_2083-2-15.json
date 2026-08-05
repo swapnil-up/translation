@@ -1,0 +1,70 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 12\nFederal\nNepal\nParliament\nDaily Agenda\nFriday, Jestha 15, 2083\n5:30 PM\n(Tentative)\nTable of Annual Estimates\n1. Honorable Finance Minister Dr. Swarnim Wagle will table the report of the Annual Estimates of Revenue and Expenditure for the Fiscal Year 2083/084.\nManagement Work\n2. Honorable Finance Minister Dr. Swarnim Wagle will present the \"Economic Bill, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-15",
+    "date_ad": "2026-05-30",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "12",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The Finance Minister presented the annual estimates of revenue and expenditure for the fiscal year 2083/084. Following this, the Finance Minister also presented the Economic Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Table annual estimates of revenue and expenditure"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Present Economic Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Economic Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [
+        "Annual Estimates of Revenue and Expenditure for the Fiscal Year 2083/084"
+      ],
+      "key_issues": [
+        "Annual Budget",
+        "Economic Legislation"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Daily Agenda",
+    "Finance Minister",
+    "Annual Estimates",
+    "Revenue",
+    "Expenditure",
+    "Economic Bill",
+    "Legislation",
+    "Fiscal Year 2083/084"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
