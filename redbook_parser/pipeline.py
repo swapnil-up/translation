@@ -7,6 +7,7 @@ from .legacy import fix_text, sanitize_devanagari
 from .model import BudgetRow
 from .numbers import detect_scale
 from .parser import process_page_lines
+from .spatial import detect_template
 
 
 def extract_pdf(pdf_path: str, max_pages: int | None = None,
@@ -40,8 +41,9 @@ def extract_pdf(pdf_path: str, max_pages: int | None = None,
         if page_scale != 1 and first_detail_page is None:
             first_detail_page = pno
 
+        template = detect_template(fixed_text)
         lines = fixed_text.split("\n")
-        all_rows.extend(process_page_lines(lines, pno + 1, current_scale))
+        all_rows.extend(process_page_lines(lines, pno + 1, current_scale, template))
 
     if progress:
         sys.stderr.write("\n")

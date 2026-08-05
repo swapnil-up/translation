@@ -15,6 +15,7 @@ import re
 
 from .model import BudgetRow
 from .numbers import parse_number
+from .spatial import PageTemplate
 
 TOTAL_KEYWORDS = ("जम्मा", "कुल", "जोड", "कूल", "योग")
 
@@ -40,7 +41,8 @@ def _is_amount_line(s: str) -> bool:
     return bool(re.match(r"^[\d,.\-]+$", s))
 
 
-def process_page_lines(lines: list[str], page: int, scale: int = 1) -> list[BudgetRow]:
+def process_page_lines(lines: list[str], page: int, scale: int = 1,
+                       template: PageTemplate = PageTemplate.DETAIL) -> list[BudgetRow]:
     rows = []
     current_code = ""
     current_desc_parts = []
@@ -74,22 +76,44 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1) -> list[Budg
             row.raniti_sanket = current_raniti
             row.laigik_sanket = current_laigik
         if current_amounts:
-            # Detail-template column semantics (confirmed in Step-2 spike):
-            # 6 amount columns = financing split, NOT current/capital:
-            #   यथार्थ खर्च (2080/81) -> year_actual
-            #   संशोधित अनुमान (2081/82) -> year_revised
-            #   जम्मा बजेट (2082/83) -> year_estimate
-            #   नेपाल सरकार -> financial
-            #   वैदेशिक अनुदान -> baideshik_anudan
-            #   ऋण -> baideshik_rin
             amounts = [a * scale for a in current_amounts]
-            n = len(amounts)
-            row.year_actual = amounts[0] if n >= 1 else 0
-            row.year_revised = amounts[1] if n >= 2 else 0
-            row.year_estimate = amounts[2] if n >= 3 else 0
-            row.financial = amounts[3] if n >= 4 else 0
-            row.baideshik_anudan = amounts[4] if n >= 5 else 0
-            row.baideshik_rin = amounts[5] if n >= 6 else 0
+            if template == PageTemplate.SUMMARY:
+                # SUMMARY-template column semantics (confirmed on page 36):
+                # 8 amount columns = year_actual/revised/estimate then the
+                # current/capital split + financing:
+                #   यथार्थ खर्च (2080/81)  -> year_actual
+                #   संशोधित अनुमान (2081/82)-> year_revised
+                #   जम्मा बजेट (2082/83)   -> year_estimate
+                #   चालु                   -> current_exp
+                #   पुँजीगत तथा वित्तिय व्यवस्था -> capital_exp
+                #   नेपाल सरकार            -> financial
+                #   वैदेशिक अनुदान         -> baideshik_anudan
+                #   वैदेशिक ऋण             -> baideshik_rin
+                n = len(amounts)
+                row.year_actual = amounts[0] if n >= 1 else 0
+                row.year_revised = amounts[1] if n >= 2 else 0
+                row.year_estimate = amounts[2] if n >= 3 else 0
+                row.current_exp = amounts[3] if n >= 4 else 0
+                row.capital_exp = amounts[4] if n >= 5 else 0
+                row.financial = amounts[5] if n >= 6 else 0
+                row.baideshik_anudan = amounts[6] if n >= 7 else 0
+                row.baideshik_rin = amounts[7] if n >= 8 else 0
+            else:
+                # DETAIL-template column semantics (confirmed in Step-2 spike):
+                # 6 amount columns = financing split, NOT current/capital:
+                #   यथार्थ खर्च (2080/81) -> year_actual
+                #   संशोधित अनुमान (2081/82) -> year_revised
+                #   जम्मा बजेट (2082/83) -> year_estimate
+                #   नेपाल सरकार -> financial
+                #   वैदेशिक अनुदान -> baideshik_anudan
+                #   ऋण -> baideshik_rin
+                n = len(amounts)
+                row.year_actual = amounts[0] if n >= 1 else 0
+                row.year_revised = amounts[1] if n >= 2 else 0
+                row.year_estimate = amounts[2] if n >= 3 else 0
+                row.financial = amounts[3] if n >= 4 else 0
+                row.baideshik_anudan = amounts[4] if n >= 5 else 0
+                row.baideshik_rin = amounts[5] if n >= 6 else 0
         rows.append(row)
 
     def reset_all():
@@ -201,6 +225,16 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1) -> list[Budg
                 continue
 
             if any(kw in line for kw in DESC_CONTINUE_KEYWORDS):
+                current_desc_parts.append(line)
+                continue
+
+            # SUMMARY pages put the ministry name on the line right after the
+            # bare code (code has no inline rest). Capture it as description
+            # before any amounts arrive; चालु/पुँजीगत sub-row labels arrive
+            # after amounts and are handled by the finalize path below.
+            if (template == PageTemplate.SUMMARY
+                    and not current_desc_parts and not current_amounts
+                    and line not in ("चालु", "पुँजीगत")):
                 current_desc_parts.append(line)
                 continue
 

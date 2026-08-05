@@ -40,8 +40,9 @@ def test_page_matches_gold(entry, page_file, pdf):
     assert gold["verified"], f"gold page {entry['page']} is not verified"
     assert gold["page"] == entry["page"]
 
-    parsed = extract_pdf(str(pdf), start_page=entry["page"], max_pages=entry["page"],
-                         progress=False)
+    parsed_all = extract_pdf(str(pdf), start_page=1, max_pages=entry["page"],
+                             progress=False)
+    parsed = [r for r in parsed_all if r.page == entry["page"]]
 
     gold_rows = gold["rows"]
     if not gold_rows:

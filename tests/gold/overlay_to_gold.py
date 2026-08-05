@@ -38,6 +38,18 @@ AMOUNT_BANDS = {
     "b9": "baideshik_rin",
 }
 
+# SUMMARY template (b1=code, b2=description, b3-b10=amounts).
+SUMMARY_BANDS = {
+    "b3": "year_actual",
+    "b4": "year_revised",
+    "b5": "year_estimate",
+    "b6": "current_exp",
+    "b7": "capital_exp",
+    "b8": "financial",
+    "b9": "baideshik_anudan",
+    "b10": "baideshik_rin",
+}
+
 
 def split_code_desc(b1: str) -> tuple[str, str]:
     """Split a b1 cell like '21112 पारिश्रमिक पदाधिकारी' into (code, desc)."""
@@ -45,6 +57,11 @@ def split_code_desc(b1: str) -> tuple[str, str]:
     if m:
         return m.group(1), m.group(2).strip()
     return "", b1.strip()
+
+
+def _clean_desc(text: str) -> str:
+    """Normalize nbsp -> space and collapse runs of spaces."""
+    return re.sub(r" {2,}", " ", text.replace("\xa0", " "))
 
 
 def convert(overlay: dict, draft: dict) -> dict:
@@ -55,13 +72,34 @@ def convert(overlay: dict, draft: dict) -> dict:
     if not gold["notes"]:
         gold["notes"] = "human-verified via editable overlay"
 
+    template = draft.get("template", "detail")
     rows = gold["rows"]
     overlay_lines = overlay.get("lines", [])
 
     # Walk overlay lines in order, matching each code-bearing data line to the
-    # next draft budget/total row (they share order on a detail page).
+    # next draft budget/total row (they share order on a page).
     row_idx = 0
     for line in overlay_lines:
+        cells = {c.get("band"): c.get("text", "") for c in line.get("cells", [])}
+        if template == "summary":
+            # SUMMARY: b1=code (bare), b2=description (ministry name),
+            # b3-b10=amounts. Amounts stay from the (corrected) draft; only
+            # the human-corrected description is applied.
+            b1 = cells.get("b1", "")
+            if not re.match(r"^\d{3,15}$", b1.strip()):
+                continue
+            while row_idx < len(rows):
+                row = rows[row_idx]
+                row_idx += 1
+                if row.get("row_type") in ("budget", "total"):
+                    break
+            else:
+                break
+            row["code"] = b1
+            if cells.get("b2"):
+                row["description"] = _clean_desc(cells["b2"])
+            continue
+        # DETAIL: b1=code+desc, b2=source, b3=nikasa_vidhi.
         cells = {c.get("band"): c.get("text", "") for c in line.get("cells", [])}
         b1 = cells.get("b1", "")
         code, desc = split_code_desc(b1)

@@ -20,9 +20,18 @@ from enum import Enum
 
 import re
 
-# Page-template classification (heuristic placeholder — refine in Step 2).
+# Page-template classification.
+#   TOC pages have an index keyword.
+#   DETAIL pages carry the शीर्षक/विवरण विविध column and the financing split.
+#   SUMMARY pages carry the मन्त्रालय / निकाय column (ministry roll-up) and
+#   the current/capital split. "मन्त्रालय" alone also appears in body
+#   descriptions, so match the column-header phrase (with the slash), which
+#   only occurs on summary template pages.
 TOC_KEYWORDS = ["सूची-पत्र", "अनुक्रमणिका", "विषय सूची", "सूचीपत्र"]
-DETAIL_KEYWORDS = ["विवरण", "यथार्थ", "संशोधित", "अनुमान", "चालु", "पूँजीगत"]
+DETAIL_KEYWORDS = ["विवरण विविध", "शीर्षक", "स्रोत"]
+SUMMARY_COLUMN = "मन्त्तालय / िनकाय"  # garbled form of मन्त्रालय / निकाय
+SUMMARY_COLUMN_CLEAN = "मन्त्रालय / निकाय"
+SUMMARY_COLUMN_MIXED = "मन्त्रालय / िनकाय"  # after word-fix of मन्त्तालय->मन्त्रालय
 SUMMARY_KEYWORDS = ["सारांश", "जम्मा", "कुल"]
 
 
@@ -68,18 +77,44 @@ TEMPLATE_AMOUNT_COLS = {
     PageTemplate.UNKNOWN: 6,
 }
 
-# Per-template grids. SUMMARY bounds pending — do not reuse DETAIL bounds.
+# SUMMARY-template x-bounds, MEASURED by hand-marking page 36 (boxes-summary.json
+# at 200dpi, converted px->pt via px_per_pt=0.36). Columns (b1..b10):
+#   b1  36.7-74.2    अनुदान संख्या (code)
+#   b2  74.2-298.8   मन्त्रालय / निकाय (description)
+#   b3  298.8-360.0  2080/81 यथार्थ खर्च   -> year_actual
+#   b4  360.0-420.5  2081/82 संशोधित अनुमान-> year_revised
+#   b5  420.5-481.0  2082/83 जम्मा बजेट     -> year_estimate
+#   b6  481.0-542.2  चालु                  -> current_exp
+#   b7  542.2-601.9  पुँजीगत तथा वित्तिय व्यवस्था -> capital_exp
+#   b8  601.9-663.1  नेपाल सरकार           -> financial
+#   b9  663.1-724.3  वैदेशिक अनुदान        -> baideshik_anudan
+#   b10 724.3-785.5  वैदेशिक ऋण            -> baideshik_rin
+SUMMARY_GRID_BOUNDS = {
+    "budget_code": (36.7, 74.2),
+    "description": (74.2, 298.8),
+    "column_1": (298.8, 360.0),   # यथार्थ खर्च -> year_actual
+    "column_2": (360.0, 420.5),   # संशोधित     -> year_revised
+    "column_3": (420.5, 481.0),   # जम्मा       -> year_estimate
+    "column_4": (481.0, 542.2),   # चालु        -> current_exp
+    "column_5": (542.2, 601.9),   # पुँजीगत     -> capital_exp
+    "column_6": (601.9, 663.1),   # नेपाल सरकार -> financial
+    "column_7": (663.1, 724.3),   # अनुदान      -> baideshik_anudan
+    "column_8": (724.3, 785.5),   # ऋण          -> baideshik_rin
+}
+
+# Per-template grids. SUMMARY bounds now measured from page 36.
 TEMPLATE_GRID_BOUNDS = {
     PageTemplate.DETAIL: GRID_BOUNDS,
+    PageTemplate.SUMMARY: SUMMARY_GRID_BOUNDS,
 }
 
 
 def detect_template(text: str) -> PageTemplate:
-    """Classify a page from its header text (placeholder heuristic)."""
+    """Classify a page from its column-header/body text."""
     if any(kw in text for kw in TOC_KEYWORDS):
         return PageTemplate.TOC
-    if any(kw in text for kw in SUMMARY_KEYWORDS) and not any(
-            kw in text for kw in DETAIL_KEYWORDS):
+    if (SUMMARY_COLUMN in text or SUMMARY_COLUMN_CLEAN in text
+            or SUMMARY_COLUMN_MIXED in text):
         return PageTemplate.SUMMARY
     if any(kw in text for kw in DETAIL_KEYWORDS):
         return PageTemplate.DETAIL
