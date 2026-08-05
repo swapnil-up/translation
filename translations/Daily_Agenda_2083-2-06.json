@@ -1,0 +1,73 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 10\nFederal Parliament of Nepal\nDaily Business Schedule\nWednesday, Jeth 6, 2083\n11:00 AM\nManagement Work\nOn behalf of the Right Honourable Prime Minister and Home Minister Balendra Shah, Honourable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam will:\n(a) Present a proposal seeking permission to present the \"House of Representatives Member Election (First Amendment) Bill, 2083\".\n(b) Present the \"House of Representatives Member Election (First Amendment) Bill, 2083\".\n(c) Present a proposal seeking permission to present the \"Voter List (First Amendment) Bill, 2083\".\n(d) Present the \"Voter List (First Amendment) Bill, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-06",
+    "date_ad": "2026-05-21",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "10",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "On behalf of the Prime Minister and Home Minister, the Minister of Law, Justice and Parliamentary Affairs presented proposals and bills related to the election of members of the House of Representatives and the voter list. Specifically, two amendment bills were presented.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presenting election and voter list amendment bills"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "House of Representatives Member Election (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Voter List (First Amendment) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Election law amendment",
+        "Voter registration",
+        "Legislative business"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "parliament",
+    "house of representatives",
+    "legislation",
+    "election bill",
+    "voter list",
+    "amendment",
+    "parliamentary affairs",
+    "law",
+    "nepal"
+  ],
+  "ministries_mentioned": [
+    "Home Ministry",
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
