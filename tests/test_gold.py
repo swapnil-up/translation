@@ -24,7 +24,7 @@ def page_objects():
     for entry in load_manifest_pages():
         page_file = GOLD_DIR / entry["file"]
         pdf_hint = Path(MANIFEST["pdf_path_hint"])
-        pdf = (Path(__file__).parents[2] / pdf_hint) if not pdf_hint.is_absolute() else pdf_hint
+        pdf = (Path(__file__).parents[1] / pdf_hint) if not pdf_hint.is_absolute() else pdf_hint
         out.append(pytest.param(entry, page_file, pdf, id=f"page-{entry['page']:03d}"))
     return out
 

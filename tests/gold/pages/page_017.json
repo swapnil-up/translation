@@ -3,8 +3,8 @@
   "page": 17,
   "scale": 100000,
   "template": "detail",
-  "verified": false,
-  "notes": "",
+  "verified": true,
+  "notes": "human-verified via editable overlay",
   "rows": [
     {
       "code": "",
@@ -116,7 +116,7 @@
     },
     {
       "code": "21112",
-      "description": "पारिवारिक पदाधिकारी",
+      "description": "पारिश्रमिक पदाधिकारी",
       "year_actual": 2000000.0,
       "year_revised": 1900000.0,
       "year_estimate": 2000000.0,
@@ -130,11 +130,13 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "21142",
-      "description": "पदाधिकारी अन्य सुविधा",
+      "description": "पदाधिकारी अन्य सुबिधा",
       "year_actual": 1500000.0,
       "year_revised": 900000.0,
       "year_estimate": 1000000.0,
@@ -148,7 +150,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "21149",
@@ -166,7 +170,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22211",
@@ -184,11 +190,13 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22311",
-      "description": "मसलन्द तथा कार्यालय सामग्री",
+      "description": "मसलन्द तथा कार्यालय सामाग्री",
       "year_actual": 2300000.0,
       "year_revised": 1100000.0,
       "year_estimate": 1200000.0,
@@ -202,7 +210,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22314",
@@ -220,7 +230,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22613",
@@ -238,7 +250,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22711",
@@ -256,7 +270,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "102",
@@ -332,7 +348,7 @@
     },
     {
       "code": "21112",
-      "description": "पारिवारिक पदाधिकारी",
+      "description": "पारिश्रमिक पदाधिकारी",
       "year_actual": 1400000.0,
       "year_revised": 1400000.0,
       "year_estimate": 1400000.0,
@@ -346,11 +362,13 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "21142",
-      "description": "पदाधिकारी अन्य सुविधा",
+      "description": "पदाधिकारी अन्य सुबिधा",
       "year_actual": 200000.0,
       "year_revised": 400000.0,
       "year_estimate": 400000.0,
@@ -364,7 +382,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "21149",
@@ -382,7 +402,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22211",
@@ -400,7 +422,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22213",
@@ -418,11 +442,13 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22311",
-      "description": "मसलन्द तथा कार्यालय सामग्री",
+      "description": "मसलन्द तथा कार्यालय सामाग्री",
       "year_actual": 700000.0,
       "year_revised": 700000.0,
       "year_estimate": 700000.0,
@@ -436,7 +462,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22314",
@@ -454,7 +482,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22611",
@@ -472,7 +502,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22612",
@@ -490,7 +522,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "22711",
@@ -508,7 +542,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     },
     {
       "code": "103",
@@ -584,7 +620,7 @@
     },
     {
       "code": "21112",
-      "description": "पारिवारिक पदाधिकारी एकीकृत खर्च तथा वित्तीय बजेट अनुमान",
+      "description": "पारिश्रमिक पदाधिकारी",
       "year_actual": 1000000.0,
       "year_revised": 1000000.0,
       "year_estimate": 1000000.0,
@@ -598,7 +634,9 @@
       "raniti_sanket": "",
       "laigik_sanket": "",
       "is_total": false,
-      "row_type": "budget"
+      "row_type": "budget",
+      "source": "नेपाल सरकार",
+      "nikasa_vidhi": "नगद"
     }
   ]
 }

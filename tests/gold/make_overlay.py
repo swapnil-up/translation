@@ -213,10 +213,9 @@ function save() {{
   const lines = [];
   document.querySelectorAll('.w').forEach(w => {{
     const li = +w.dataset.line;
-    while (lines.length <= li) lines.push({{}});
+    while (lines.length <= li) lines.push({{ cells: [] }});
     lines[li].cells.push({{ band: w.dataset.band, text: w.textContent.trim() }});
   }});
-  lines.forEach(l => {{ if (!l.cells) l.cells = []; }});
   const data = {{ page: {page_no}, scale: 1, lines }};
   const blob = new Blob([JSON.stringify(data, null, 2)], {{type: 'application/json'}});
   const a = document.createElement('a');
