@@ -1,9 +1,11 @@
-"""CLI: redbook extract <pdf> | redbook verify <db>"""
+"""CLI: redbook extract <pdf> | redbook verify <db> | redbook census <pdf>"""
 
 import argparse
+import json
 import os
 import sys
 
+from .census import build_unknown_census, census_to_rows
 from .db import read_rows, write_db
 from .extraction import extract_page_text
 from .legacy import fix_text
@@ -46,6 +48,33 @@ def cmd_verify(args) -> int:
     return 1 if report.failures else 0
 
 
+def cmd_census(args) -> int:
+    import fitz  # lazy
+
+    if not os.path.exists(args.pdf):
+        print(f"Error: {args.pdf} not found", file=sys.stderr)
+        return 1
+    doc = fitz.open(args.pdf)
+    unknown = build_unknown_census(doc)
+    payload = {
+        "pdf": args.pdf,
+        "pages": len(doc),
+        "unknown_cid_count": len(unknown),
+        "note": (
+            "Each row is a CID that decodes to U+FFFD (missing from a page "
+            "font-object's ToUnicode CMap). Fill 'correct' with the intended "
+            "Devanagari; contexts give the surrounding word so the glyph is "
+            "decidable."),
+        "rows": census_to_rows(unknown),
+    }
+    out = args.output or "output/cid_census.json"
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+    print(f"Wrote {len(payload['rows'])} unknown CIDs to {out}", file=sys.stderr)
+    return 0
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="redbook",
                                      description="Spatial-first redbook budget extraction")
@@ -62,6 +91,11 @@ def main(argv=None) -> int:
     ve = sub.add_parser("verify", help="Run the math audit against a DB")
     ve.add_argument("db")
     ve.set_defaults(fn=cmd_verify)
+
+    ce = sub.add_parser("census", help="List unknown-CID glyphs needing a Devanagari mapping")
+    ce.add_argument("pdf")
+    ce.add_argument("--output", "-o", help="JSON output path (default output/cid-unknown.json)")
+    ce.set_defaults(fn=cmd_census)
 
     args = parser.parse_args(argv)
     return args.fn(args)
