@@ -1,0 +1,97 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 9\nFederal\nNepal\nParliament,\nDaily Agenda\n2083 Jestha 7, Thursday\n11:00 AM\nManagement Work\nHonorable Prime Minister and Home Minister, Minister of Science, Technology and Innovation\n1. On behalf of Balendra Shah, Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam:\n(a) \"Consider the Representative Council Member Election (First Amendment) Bill, 2083\"\n(b) \"Consider the Voter Roll (First Amendment) Bill, 2083\"\n(c) \"Consider the National Forensic Science Laboratory (Establishment and Operation) Bill, 2081\"\n2. Honorable Finance Minister Dr. Swarnim Wagle will present a proposal to \"Discuss the Alternative Development Finance Mobilization Bill, 2082 clause by clause in the House.\"\n3. The proposed amendments to the said bill will be presented for decision.\n4. Honorable Finance Minister Dr. Swarnim Wagle will present a proposal to \"Pass the Alternative Development Finance Mobilization Bill, 2082.\"\nPanchan Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-07",
+    "date_ad": "2026-05-22",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "9",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister of Law, Justice and Parliamentary Affairs presented proposals for consideration on three bills: the Representative Council Member Election (First Amendment) Bill, 2083, the Voter Roll (First Amendment) Bill, 2083, and the National Forensic Science Laboratory (Establishment and Operation) Bill, 2081.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Consideration of election and forensic science bills"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Representative Council Member Election (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Voter Roll (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "National Forensic Science Laboratory (Establishment and Operation) Bill, 2081",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Election Law Amendment",
+        "Voter Registration",
+        "Forensic Science Laboratory Establishment"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Finance Minister proposed clause-by-clause discussion of the Alternative Development Finance Mobilization Bill, 2082. Amendments will be presented for decision, followed by a proposal to pass the bill.",
+      "speakers": [
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Alternative Development Finance Mobilization Bill, 2082"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Alternative Development Finance Mobilization Bill, 2082",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Development Finance",
+        "Bill Discussion and Passage"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Session",
+    "House of Representatives",
+    "Legislation",
+    "Bill Introduction",
+    "Bill Discussion",
+    "Bill Passage",
+    "Election Law",
+    "Voter Registration",
+    "Forensic Science",
+    "Development Finance"
+  ],
+  "ministries_mentioned": [
+    "Home Ministry",
+    "Ministry of Science, Technology and Innovation",
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

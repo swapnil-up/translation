@@ -1,0 +1,93 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 10\nFederal\nNepal\nParliament,\nDaily Agenda\nTuesday, Jestha 12, 2083\n11:00 AM\nManagement Work\n1. The Honorable Minister for Culture, Tourism and Civil Aviation, Khadak Raj Poudel, will present the proposal to \"Consider the Tourism Bill, 2082\".\n2. On behalf of the Right Honorable Prime Minister, Home Minister, and Minister for Science, Technology, and Innovation, the Honorable Minister for Law, Justice, and Parliamentary Affairs, Sobita Gautam, will present the following proposals:-\n(a) \"Send the National Forensic Science Laboratory (Establishment and Operation) Bill, 2082 to the relevant committee for clause-by-clause discussion.\"\n(b) \"Conduct clause-by-clause discussion in the House on the Representative Members of the House of Representatives (First Amendment) Bill, 2083.\"\n(c) \"Pass the Representative Members of the House of Representatives (First Amendment) Bill, 2083.\"\n(d) \"Conduct clause-by-clause discussion in the House on the Voter List (First Amendment) Bill, 2083.\"\n(e) \"Pass the Voter List (First Amendment) Bill, 2083.\"\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-12",
+    "date_ad": "2026-05-27",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "10",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Culture, Tourism and Civil Aviation presented a proposal to consider the Tourism Bill, 2082. On behalf of the Prime Minister, the Minister for Law, Justice and Parliamentary Affairs presented proposals related to the National Forensic Science Laboratory Bill, 2082, the Representative Members of the House of Representatives (First Amendment) Bill, 2083, and the Voter List (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Khadak Raj Poudel",
+          "party": null,
+          "topic": "Consideration of Tourism Bill, 2082"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Proposals on Forensic Science, Election, and Voter List Bills"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Tourism Bill, 2082",
+          "status": "discussed"
+        },
+        {
+          "name": "National Forensic Science Laboratory (Establishment and Operation) Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Representative Members of the House of Representatives (First Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Representative Members of the House of Representatives (First Amendment) Bill, 2083",
+          "status": "passed"
+        },
+        {
+          "name": "Voter List (First Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Voter List (First Amendment) Bill, 2083",
+          "status": "passed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Tourism Bill",
+        "Forensic Science Laboratory Bill",
+        "Election Amendment Bill",
+        "Voter List Amendment Bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "Legislation",
+    "Bills",
+    "Tourism",
+    "Forensic Science",
+    "Elections",
+    "Voter Registration",
+    "House of Representatives",
+    "Government Business"
+  ],
+  "ministries_mentioned": [
+    "Culture, Tourism and Civil Aviation",
+    "Prime Minister's Office",
+    "Home Affairs",
+    "Science, Technology and Innovation",
+    "Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Khadak Raj Poudel",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
