@@ -41,19 +41,45 @@ def extract_glyphs(page, dedup: bool = True) -> list[dict]:
     seen = set()
     for span in page.get_texttrace():
         font = span["font"]
-        for (u, glyph, origin, bbox) in span["chars"]:
-            if dedup:
-                key = (font, glyph, round(origin[1]), round(origin[0]))
-                if key in seen:
-                    continue
-                seen.add(key)
-            out.append({
-                "font": font,
-                "cid": glyph,          # == CID for Identity-H
-                "c": chr(u) if u else "",
-                "origin": origin,
-                "bbox": bbox,
-            })
+        chars = span.get("chars", [])
+        
+        # If PyMuPDF provides per-glyph bboxes in chars, use them directly
+        if chars:
+            for (u, glyph, origin, bbox) in chars:
+                if dedup:
+                    key = (font, glyph, round(origin[1]), round(origin[0]))
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                out.append({
+                    "font": font,
+                    "cid": glyph,          # == CID for Identity-H
+                    "c": chr(u) if u else "",
+                    "origin": origin,
+                    "bbox": bbox,
+                })
+        else:
+            # Fallback: span-level bbox only; divide equally across text
+            sb = span["bbox"]
+            text = span.get("text", "")
+            n_chars = max(len(text), 1)
+            span_w = (sb[2] - sb[0]) / n_chars
+            for idx, ch in enumerate(text):
+                origin = (sb[0] + idx * span_w, sb[1])
+                char_x0 = sb[0] + idx * span_w
+                char_x1 = char_x0 + span_w
+                if dedup:
+                    key = (font, idx, round(origin[1]), round(origin[0]))
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                out.append({
+                    "font": font,
+                    "cid": 0,  # CID unknown at span level
+                    "c": ch,
+                    "origin": origin,
+                    "bbox": (char_x0, sb[1], char_x1, sb[3]),
+                })
     return out
 
 

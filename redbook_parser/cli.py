@@ -7,6 +7,7 @@ import sys
 
 from .census import build_unknown_census, census_to_rows
 from .db import read_rows, write_db
+from .review import build_review_html
 from .extraction import extract_page_text
 from .legacy import fix_text
 from .pipeline import extract_pdf
@@ -75,6 +76,22 @@ def cmd_census(args) -> int:
     return 0
 
 
+def cmd_review(args) -> int:
+    import fitz  # lazy
+
+    if not os.path.exists(args.pdf):
+        print(f"Error: {args.pdf} not found", file=sys.stderr)
+        return 1
+    doc = fitz.open(args.pdf)
+    out = args.output or "output/cid_review.html"
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+    htmlout = build_review_html(doc, args.crop, only=args.cids)
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(htmlout)
+    print(f"Wrote {out} ({os.path.getsize(out) / 1e6:.1f} MB)", file=sys.stderr)
+    return 0
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="redbook",
                                      description="Spatial-first redbook budget extraction")
@@ -96,6 +113,14 @@ def main(argv=None) -> int:
     ce.add_argument("pdf")
     ce.add_argument("--output", "-o", help="JSON output path (default output/cid-unknown.json)")
     ce.set_defaults(fn=cmd_census)
+
+    rv = sub.add_parser("review", help="HTML sheet with PDF crops for each unknown CID to fill in")
+    rv.add_argument("pdf")
+    rv.add_argument("--output", "-o", default="output/cid_review.html")
+    rv.add_argument("--crop", type=int, default=3, help="render samples per CID")
+    rv.add_argument("--cids", type=lambda s: {int(x) for x in s.split(",")},
+                    default=None, help="restrict to these CIDs (comma-separated)")
+    rv.set_defaults(fn=cmd_review)
 
     args = parser.parse_args(argv)
     return args.fn(args)
