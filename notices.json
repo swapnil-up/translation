@@ -959,96 +959,132 @@
     "title": "Notice of Federal Parliament Session Call",
     "url": "https://hr.parliament.gov.np/en/notices/1777975645",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/hosjls71sskosnyh.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Federal_Parliament_Session_Call-ocr.txt",
+    "translated_path": "translations/Notice_of_Federal_Parliament_Session_Call.txt",
+    "structured_path": "translations/Notice_of_Federal_Parliament_Session_Call.json"
   },
   {
     "serial": "29.",
     "title": "Notice 2082-12-25",
     "url": "https://hr.parliament.gov.np/en/notices/1777975312",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/q2zeolv4wfdibgp3.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2082-12-25-ocr.txt",
+    "translated_path": "translations/Notice_2082-12-25.txt",
+    "structured_path": "translations/Notice_2082-12-25.json"
   },
   {
     "serial": "30.",
     "title": "Notice of Joint Meeting 2082-12-27",
     "url": "https://hr.parliament.gov.np/en/notices/1776406602",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/87tpx8zjoawxnf1a.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Joint_Meeting_2082-12-27-ocr.txt",
+    "translated_path": "translations/Notice_of_Joint_Meeting_2082-12-27.txt",
+    "structured_path": "translations/Notice_of_Joint_Meeting_2082-12-27.json"
   },
   {
     "serial": "1.",
     "title": "Notice 2082-12-27",
     "url": "https://hr.parliament.gov.np/en/notices/1776406438",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/gwyuv5f75jpc6oii.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2082-12-27-ocr.txt",
+    "translated_path": "translations/Notice_2082-12-27.txt",
+    "structured_path": "translations/Notice_2082-12-27.json"
   },
   {
     "serial": "2.",
     "title": "Notice regarding changes in committee members",
     "url": "https://hr.parliament.gov.np/en/notices/1776335240",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/zlohpoaqnz3hpwnl.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_regarding_changes_in_committee_members-ocr.txt",
+    "translated_path": "translations/Notice_regarding_changes_in_committee_members.txt",
+    "structured_path": "translations/Notice_regarding_changes_in_committee_members.json"
   },
   {
     "serial": "3.",
     "title": "Notice of Election for Joint Committee Chairperson",
     "url": "https://hr.parliament.gov.np/en/notices/1776237740",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/yb7tgqfs5m6i5j2f.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Election_for_Joint_Committee_Chairperson-ocr.txt",
+    "translated_path": "translations/Notice_of_Election_for_Joint_Committee_Chairperson.txt",
+    "structured_path": "translations/Notice_of_Election_for_Joint_Committee_Chairperson.json"
   },
   {
     "serial": "4.",
     "title": "Notice regarding the scheduling of the Committee Chairperson election",
     "url": "https://hr.parliament.gov.np/en/notices/1776237643",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/zlbpigm7slsblz9l.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_regarding_the_scheduling_of_the_Committee_Chairperson_election-ocr.txt",
+    "translated_path": "translations/Notice_regarding_the_scheduling_of_the_Committee_Chairperson_election.txt",
+    "structured_path": "translations/Notice_regarding_the_scheduling_of_the_Committee_Chairperson_election.json"
   },
   {
     "serial": "5.",
     "title": "Notice Regarding the Election Schedule for the Chairperson Of the committee",
     "url": "https://hr.parliament.gov.np/en/notices/1776078837",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/bobeauhoffeyh0uk.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_Regarding_the_Election_Schedule_for_the_Chairperson_Of_the_committee-ocr.txt",
+    "translated_path": "translations/Notice_Regarding_the_Election_Schedule_for_the_Chairperson_Of_the_committee.txt",
+    "structured_path": "translations/Notice_Regarding_the_Election_Schedule_for_the_Chairperson_Of_the_committee.json"
   },
   {
     "serial": "6.",
     "title": "Joint Committee MPs List",
     "url": "https://hr.parliament.gov.np/en/notices/1775825658",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/wqmx3z9ezrdgaflt.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Joint_Committee_MPs_List-ocr.txt",
+    "translated_path": "translations/Joint_Committee_MPs_List.txt",
+    "structured_path": "translations/Joint_Committee_MPs_List.json"
   },
   {
     "serial": "7.",
     "title": "Work done during First session of HoRs",
     "url": "https://hr.parliament.gov.np/en/notices/1775823023",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/u8vnd1tvhehj2quv.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Work_done_during_First_session_of_HoRs-ocr.txt",
+    "translated_path": "translations/Work_done_during_First_session_of_HoRs.txt",
+    "structured_path": "translations/Work_done_during_First_session_of_HoRs.json"
   },
   {
     "serial": "8.",
     "title": "List of MPS of Thematic Commitees of HORs",
     "url": "https://hr.parliament.gov.np/en/notices/1775822916",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/l9rflahxzc2nnirc.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/List_of_MPS_of_Thematic_Commitees_of_HORs-ocr.txt",
+    "translated_path": "translations/List_of_MPS_of_Thematic_Commitees_of_HORs.txt",
+    "structured_path": "translations/List_of_MPS_of_Thematic_Commitees_of_HORs.json"
   },
   {
     "serial": "9.",
     "title": "Daily Agenda 2082-12-27",
     "url": "https://hr.parliament.gov.np/en/notices/1775634479",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/cbtmnm6zrgtyyrin.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2082-12-27-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2082-12-27.txt",
+    "structured_path": "translations/Daily_Agenda_2082-12-27.json"
   },
   {
     "serial": "10.",

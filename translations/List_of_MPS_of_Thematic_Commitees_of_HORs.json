@@ -1,0 +1,110 @@
+{
+  "full_translation_en": "The provided text is a list of members of various committees of the House of Representatives. It does not contain any narrative or procedural information about a meeting. The committees listed are: Finance Committee, International Relations and Tourism Committee, Industry, Commerce and Labour and Consumer Interest Committee, Law, Justice and Human Rights Committee, Agriculture, Cooperatives and Natural Resources Committee, Infrastructure Development Committee, Women and Social Affairs Committee, State Affairs and Good Governance Committee, Education, Health and Information Technology Committee, and Public Accounts Committee. Each committee lists its members by name, prefixed with 'मा०' (Honorable).",
+  "session": {
+    "date_bs": null,
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Finance Committee",
+      "summary_en": "This section lists the members of the Finance Committee. It includes 26 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "International Relations and Tourism Committee",
+      "summary_en": "This section lists the members of the International Relations and Tourism Committee. It includes 26 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Industry, Commerce and Labour and Consumer Interest Committee",
+      "summary_en": "This section lists the members of the Industry, Commerce and Labour and Consumer Interest Committee. It includes 26 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Law, Justice and Human Rights Committee",
+      "summary_en": "This section lists the members of the Law, Justice and Human Rights Committee. It includes 24 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Agriculture, Cooperatives and Natural Resources Committee",
+      "summary_en": "This section lists the members of the Agriculture, Cooperatives and Natural Resources Committee. It includes 26 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Infrastructure Development Committee",
+      "summary_en": "This section lists the members of the Infrastructure Development Committee. It includes 27 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Women and Social Affairs Committee",
+      "summary_en": "This section lists the members of the Women and Social Affairs Committee. It includes 22 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "State Affairs and Good Governance Committee",
+      "summary_en": "This section lists the members of the State Affairs and Good Governance Committee. It includes 26 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Education, Health and Information Technology Committee",
+      "summary_en": "This section lists the members of the Education, Health and Information Technology Committee. It includes 27 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Public Accounts Committee",
+      "summary_en": "This section lists the members of the Public Accounts Committee. It includes 26 members, each identified by name.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Committee Members",
+    "Finance Committee",
+    "International Relations and Tourism Committee",
+    "Industry, Commerce and Labour and Consumer Interest Committee",
+    "Law, Justice and Human Rights Committee",
+    "Agriculture, Cooperatives and Natural Resources Committee",
+    "Infrastructure Development Committee",
+    "Women and Social Affairs Committee",
+    "State Affairs and Good Governance Committee",
+    "Education, Health and Information Technology Committee",
+    "Public Accounts Committee"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

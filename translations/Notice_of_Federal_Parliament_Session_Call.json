@@ -1,0 +1,81 @@
+{
+  "full_translation_en": "Parliament Secretariat\nFederal Parliament\nKathmandu\nSingha Durbar\nUrgent Notice Regarding the Convening of the Session of the Federal Parliament\n\nHis Excellency the Right Honourable Ram Chandra Paudel, President of Nepal, has convened the session of the Federal Parliament in accordance with Article 93, Sub-article (1) of the Constitution of Nepal, at 2:00 PM on Monday, Baishakh 28, 2081 BS. Therefore, I hereby convene the session of the House of Representatives.\n\nDetails:\n\nPlace: House of Representatives Hall (Multipurpose Hall), Federal Parliament Building, Singha Durbar, Kathmandu.\n\nDate: Monday, Baishakh 28, 2081 BS.\n\nTime: 2:00 PM.\n\n(Signed)\n\nPrasad Pandey\nSecretary-General\nFederal Parliament Secretariat\nFederal Parliament",
+  "session": {
+    "date_bs": "2081-02-28",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Ram Chandra Paudel"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "An urgent notice is issued by the Parliament Secretariat regarding the convening of the Federal Parliament session. The President of Nepal, Ram Chandra Paudel, has convened the session as per the constitution.",
+      "speakers": [
+        {
+          "name": "Ram Chandra Paudel",
+          "party": null,
+          "topic": "Convening of Federal Parliament session"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Convening of Parliament Session",
+        "Presidential Order"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The notice specifies the date, time, and location for the upcoming session of the House of Representatives. The session is scheduled for Monday, Baishakh 28, 2081 BS, at 2:00 PM in the House of Representatives Hall.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Session Details",
+        "House of Representatives"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The notice is signed by Prasad Pandey, Secretary-General of the Federal Parliament Secretariat, formally announcing the convening of the session.",
+      "speakers": [
+        {
+          "name": "Prasad Pandey",
+          "party": null,
+          "topic": "Formal announcement of session convening"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Parliament Secretariat",
+        "Secretary-General"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament Session",
+    "House of Representatives",
+    "Convening Notice",
+    "Presidential Order",
+    "Constitutional Article",
+    "Parliament Secretariat",
+    "Meeting Schedule"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Ram Chandra Paudel",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Prasad Pandey",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

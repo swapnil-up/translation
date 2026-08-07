@@ -1,0 +1,203 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nMeeting Number - 6\nFederal\nNepal\nParliament\nDaily Agenda\nFriday, Chaitra 27, 2082\n4:00 PM\nLetter from the Office of the President\nThe Honorable Speaker will read out the letter from the Office of the President regarding the reallocation of portfolios of the Council of Ministers.\n1. To be Tabled\nThe Honorable Prime Minister, Balendra Shah, will table the copy of the address made by the Honorable President to a joint meeting of both houses of the Federal Parliament on Chaitra 27, 2082.\n2. Vote of Thanks\nThe Honorable Speaker will present the Vote of Thanks for the address made by the Honorable President.\n3. Election of the Deputy Speaker\nThe Honorable Jan Bahadur Shahi will present the following proposal:-\n\"Honorable Member Saraswati Lama be elected as the Deputy Speaker of the House of Representatives.\"\nThe proposal will be supported by Honorable Tahir Ali Bhat, Honorable Khushbu Oli, and Honorable Bharat Giri.\nThe Honorable Aaren Rai will present the following proposal:-\n\"Honorable Member Ruby Kumari be elected as the Deputy Speaker of the House of Representatives.\"\nThe proposal will be supported by Honorable Ashok Kumar Chaudhary and Honorable Ambika Devi Sangraula.\n4. Formation of Joint Committee\nThe Honorable Speaker will nominate members to the Parliamentary Hearing Committee and the Committee for Monitoring and Evaluating the Implementation of State Directive Principles, Policies, and Responsibilities, in accordance with the Federal Parliament Joint Meeting and Joint Committee (Operation) Rules, 2080.\n5. Formation of Thematic Committees\nThe Honorable Speaker will propose the nomination of members to 10 thematic committees in accordance with Rule 173 of the House of Representatives Rules, 2079.\n6. Letter from the President\nThe Honorable Speaker will read out the letter received from the Honorable President.\n\nPrasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-12-27",
+    "date_ad": "2026-04-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "6",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Letter from the Office of the President",
+      "summary_en": "The Speaker will read a letter from the President's office concerning the reallocation of ministerial portfolios. This sets the stage for the day's proceedings.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential letter",
+        "Cabinet reshuffle"
+      ]
+    },
+    {
+      "name": "To be Tabled",
+      "summary_en": "The Prime Minister will table a copy of the President's address to a joint session of Parliament. This is a procedural step to formally present the address.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "President's address",
+        "Tabling of documents"
+      ]
+    },
+    {
+      "name": "Vote of Thanks",
+      "summary_en": "The Speaker will initiate a vote of thanks for the President's address. This is a customary parliamentary procedure following such an address.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Vote of thanks",
+        "President's address"
+      ]
+    },
+    {
+      "name": "Election of the Deputy Speaker",
+      "summary_en": "Two separate proposals will be presented for the election of the Deputy Speaker, with nominations and support from various members. This section details the candidates and their proposers/supporters.",
+      "speakers": [
+        {
+          "name": "Jan Bahadur Shahi",
+          "party": null,
+          "topic": "Proposing Saraswati Lama for Deputy Speaker"
+        },
+        {
+          "name": "Saraswati Lama",
+          "party": null,
+          "topic": "Nomination for Deputy Speaker"
+        },
+        {
+          "name": "Tahir Ali Bhat",
+          "party": null,
+          "topic": "Supporting Saraswati Lama"
+        },
+        {
+          "name": "Khushbu Oli",
+          "party": null,
+          "topic": "Supporting Saraswati Lama"
+        },
+        {
+          "name": "Bharat Giri",
+          "party": null,
+          "topic": "Supporting Saraswati Lama"
+        },
+        {
+          "name": "Aaren Rai",
+          "party": null,
+          "topic": "Proposing Ruby Kumari for Deputy Speaker"
+        },
+        {
+          "name": "Ruby Kumari",
+          "party": null,
+          "topic": "Nomination for Deputy Speaker"
+        },
+        {
+          "name": "Ashok Kumar Chaudhary",
+          "party": null,
+          "topic": "Supporting Ruby Kumari"
+        },
+        {
+          "name": "Ambika Devi Sangraula",
+          "party": null,
+          "topic": "Supporting Ruby Kumari"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker election",
+        "Parliamentary procedure",
+        "Nominations"
+      ]
+    },
+    {
+      "name": "Formation of Joint Committee",
+      "summary_en": "The Speaker will nominate members to the Parliamentary Hearing Committee and a committee for monitoring state principles. This involves selecting MPs for key oversight roles.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Joint committee formation",
+        "Parliamentary Hearing Committee",
+        "State principles monitoring"
+      ]
+    },
+    {
+      "name": "Formation of Thematic Committees",
+      "summary_en": "The Speaker will propose the nomination of members to ten thematic committees, as per the House of Representatives Rules. This establishes the functional committees of the House.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Thematic committees",
+        "Committee nominations",
+        "House of Representatives Rules"
+      ]
+    },
+    {
+      "name": "Letter from the President",
+      "summary_en": "The Speaker will read another letter received from the President. The content of this letter is not specified in the agenda.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential letter"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary proceedings",
+    "House of Representatives",
+    "Deputy Speaker election",
+    "Presidential address",
+    "Committee formation",
+    "Cabinet portfolios",
+    "Legislation",
+    "Government business",
+    "Nepal Parliament"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "To be Tabled"
+    },
+    {
+      "name": "Jan Bahadur Shahi",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Saraswati Lama",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Tahir Ali Bhat",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Khushbu Oli",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Bharat Giri",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Aaren Rai",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Ruby Kumari",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Ashok Kumar Chaudhary",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    },
+    {
+      "name": "Ambika Devi Sangraula",
+      "party": null,
+      "section": "Election of the Deputy Speaker"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

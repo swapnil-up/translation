@@ -1,0 +1,371 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nBrief Information on Work Done\nHonorable Members, the First Session of the House of Representatives commenced on Thursday, Chaitra 19, 2082 BS and continued for a total of 9 days until Friday, Chaitra 27, 2082 BS. During this period, meetings were held 6 times on 6 days, with a total of 10 hours and 50 minutes spent on parliamentary proceedings. Additionally, on Friday, Chaitra 27, 2082 BS, a joint meeting of both houses of the Federal Parliament was held, spending a total of 15 minutes.\n\nOn Chaitra 27, 2082 BS, the Right Honorable President addressed the joint meeting of both houses of the Federal Parliament, as per Article 95 of the Constitution of Nepal, following the first session after the election of the House of Representatives. The House unanimously passed a motion of thanks for the address made by the Right Honorable President.\n\nAs per Article 104 of the Constitution of Nepal, to conduct its proceedings, maintain order in meetings, and make other proceedings regular and effective, the House of Representatives, until it formulates its own rules, will conduct its proceedings in accordance with the \"House of Representatives Rules, 2079 BS\". This proposal was unanimously approved by the House in its meeting on Chaitra 19, 2082 BS.\n\nThe \"Voter Name List (First Amendment) Ordinance, 2082 BS\", \"House of Representatives Member Election (First Amendment) Ordinance, 2082 BS\", and \"Nepal Special Service (Second Amendment) Ordinance, 2082 BS\", which were presented in the meeting on Chaitra 19, 2082 BS, were approved by the meeting held on Chaitra 23, 2082 BS.\n\nIn the election for the Speaker held on Chaitra 22, 2082 BS, Honorable Rabi Lamichhane as proposer, and Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam, Honorable Minister of Finance Swarnim Wagle, and Honorable Minister of Physical Infrastructure and Transport and Minister of Urban Development Sunil Lamshal as supporters, the sole proposal \"That Honorable Member Dol Prasad Aryal be elected as the Speaker of the House of Representatives\" was received, and the House unanimously elected Honorable Dol Prasad Aryal as Speaker.\n\nThe \"Alternative Development Fund Operation Bill, 2082 BS\", registered in the House of Representatives during this session, was presented.\n\nSimilarly, messages passed by the National Assembly regarding the \"Forensic Science Laboratory (Establishment and Operation) Bill, 2081 BS\", \"Tourism Bill, 2081 BS\", and \"Film Bill, 2081 BS\", which originated in the National Assembly, have been presented in the House.\n\nIn the meeting held on Chaitra 23, 2082 BS, in accordance with Rule 13 of the House of Representatives Rules, 2079 BS, 29 honorable members were nominated to the House of Representatives Business Advisory Committee. Furthermore, on the same day, Honorable Kavinra Bulety as proposer, and Honorable Sita Thapaliya, Honorable Ganesh Singh Thagunna, Honorable Yuvraj Dulal, Honorable Dhubraj Rai, Honorable Bharat Giri, and Honorable Pushpa Kumari Chaudhary as supporters, presented a proposal for the formation of a 15-member \"House of Representatives Rules Drafting Committee\", which was unanimously approved by the House.\n\nIn the election for the Deputy Speaker of the House of Representatives held on Chaitra 27, 2082 BS, out of two proposals, one stating \"That Honorable Member Sarita Lama be elected as the Deputy Speaker of the House of Representatives\" and another stating \"That Honorable Member Ruby Kumari be elected as the Deputy Speaker of the House of Representatives\", the proposal \"That Honorable Member Ruby Kumari be elected as the Deputy Speaker of the House of Representatives\" received two hundred and twenty-nine (229) votes and was passed by a majority of the total members present in the House of Representatives.\n\nThe \"Seventh Annual Report of the National Natural Resources and Fiscal Commission, 2082 BS\" was presented in this session.\n\nOn Chaitra 27, 2082 BS, in accordance with Rules 25 and 28 of the Federal Parliament Joint Meeting and Joint Committee (Operation) Rules, 2080 BS, the formation of the Parliamentary Hearing Committee and the Committee for Monitoring and Evaluating the Implementation of State Directors' Principles, Policies, and Responsibilities was completed. Additionally, in accordance with Rule 175 of the House of Representatives Rules, 2079 BS, the formation of 10 different thematic committees under the House of Representatives was completed.\n\nDuring this period, condolence motions were passed by the House on the demise of former members of the Constituent Assembly and former members: Rishikesh Gautam, Mohammad Aftab Alam, Krishna Kumari Shrestha, Amod Prasad Upadhyay, Homnath Dahal, Baldev Bohara, and Ramchandra Bhattarai.\n\nDuring this session, various honorable members sought Zero Hour, Special Time, and Urgent Time to draw the government's attention to contemporary issues.",
+  "session": {
+    "date_bs": "2082-01-19",
+    "date_ad": "2025-04-01",
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The First Session of the House of Representatives commenced on Chaitra 19, 2082 BS and concluded on Chaitra 27, 2082 BS, spanning 9 days. A total of 10 hours and 50 minutes of parliamentary proceedings took place over 6 meetings. A joint session of both houses also convened for 15 minutes.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "President's Address",
+      "summary_en": "The Right Honorable President addressed a joint session of both houses of the Federal Parliament on Chaitra 27, 2082 BS, as per Article 95 of the Constitution. The House unanimously passed a motion of thanks for the President's address.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential Address"
+      ]
+    },
+    {
+      "name": "Rules and Procedures",
+      "summary_en": "The House of Representatives unanimously approved conducting its proceedings according to the \"House of Representatives Rules, 2079 BS\" until its own rules are formulated, as per Article 104 of the Constitution.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "House Rules"
+      ]
+    },
+    {
+      "name": "Ordinance Approval",
+      "summary_en": "Three ordinances, namely the \"Voter Name List (First Amendment) Ordinance, 2082 BS\", \"House of Representatives Member Election (First Amendment) Ordinance, 2082 BS\", and \"Nepal Special Service (Second Amendment) Ordinance, 2082 BS\", were presented on Chaitra 19, 2082 BS and approved on Chaitra 23, 2082 BS.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Voter Name List (First Amendment) Ordinance, 2082 BS",
+          "status": "approved"
+        },
+        {
+          "name": "House of Representatives Member Election (First Amendment) Ordinance, 2082 BS",
+          "status": "approved"
+        },
+        {
+          "name": "Nepal Special Service (Second Amendment) Ordinance, 2082 BS",
+          "status": "approved"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Ordinances"
+      ]
+    },
+    {
+      "name": "Speaker Election",
+      "summary_en": "Honorable Dol Prasad Aryal was unanimously elected as the Speaker of the House of Representatives on Chaitra 22, 2082 BS, with Honorable Rabi Lamichhane as proposer and Ministers Sobita Gautam, Swarnim Wagle, and Sunil Lamshal as supporters.",
+      "speakers": [
+        {
+          "name": "Rabi Lamichhane",
+          "party": null,
+          "topic": "Proposing Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Supporting Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Supporting Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Sunil Lamshal",
+          "party": null,
+          "topic": "Supporting Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Elected Speaker"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Speaker Election"
+      ]
+    },
+    {
+      "name": "Bill Presentation",
+      "summary_en": "The \"Alternative Development Fund Operation Bill, 2082 BS\", registered in the House of Representatives, was presented. Additionally, messages from the National Assembly concerning three bills were presented.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Alternative Development Fund Operation Bill, 2082 BS",
+          "status": "presented"
+        },
+        {
+          "name": "Forensic Science Laboratory (Establishment and Operation) Bill, 2081 BS",
+          "status": "presented"
+        },
+        {
+          "name": "Tourism Bill, 2081 BS",
+          "status": "presented"
+        },
+        {
+          "name": "Film Bill, 2081 BS",
+          "status": "presented"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Bill Presentation",
+        "National Assembly Bills"
+      ]
+    },
+    {
+      "name": "Committee Formation",
+      "summary_en": "On Chaitra 23, 2082 BS, 29 members were nominated to the Business Advisory Committee. A 15-member Rules Drafting Committee was also unanimously formed, with Honorable Kavinra Bulety as proposer and several other members as supporters.",
+      "speakers": [
+        {
+          "name": "Kavinra Bulety",
+          "party": null,
+          "topic": "Proposing Rules Drafting Committee"
+        },
+        {
+          "name": "Sita Thapaliya",
+          "party": null,
+          "topic": "Supporting Rules Drafting Committee"
+        },
+        {
+          "name": "Ganesh Singh Thagunna",
+          "party": null,
+          "topic": "Supporting Rules Drafting Committee"
+        },
+        {
+          "name": "Yuvraj Dulal",
+          "party": null,
+          "topic": "Supporting Rules Drafting Committee"
+        },
+        {
+          "name": "Dhubraj Rai",
+          "party": null,
+          "topic": "Supporting Rules Drafting Committee"
+        },
+        {
+          "name": "Bharat Giri",
+          "party": null,
+          "topic": "Supporting Rules Drafting Committee"
+        },
+        {
+          "name": "Pushpa Kumari Chaudhary",
+          "party": null,
+          "topic": "Supporting Rules Drafting Committee"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Committee Formation",
+        "Business Advisory Committee",
+        "Rules Drafting Committee"
+      ]
+    },
+    {
+      "name": "Deputy Speaker Election",
+      "summary_en": "On Chaitra 27, 2082 BS, Honorable Ruby Kumari was elected Deputy Speaker of the House of Representatives with 229 votes, defeating Honorable Sarita Lama.",
+      "speakers": [
+        {
+          "name": "Ruby Kumari",
+          "party": null,
+          "topic": "Elected Deputy Speaker"
+        },
+        {
+          "name": "Sarita Lama",
+          "party": null,
+          "topic": "Candidate for Deputy Speaker"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker Election"
+      ]
+    },
+    {
+      "name": "Report Presentation",
+      "summary_en": "The \"Seventh Annual Report of the National Natural Resources and Fiscal Commission, 2082 BS\" was presented during the session.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Seventh Annual Report of the National Natural Resources and Fiscal Commission, 2082 BS"
+      ],
+      "key_issues": [
+        "Annual Report"
+      ]
+    },
+    {
+      "name": "Committee Formation (Joint and Thematic)",
+      "summary_en": "On Chaitra 27, 2082 BS, the Parliamentary Hearing Committee and the Committee for Monitoring State Directors' Principles were formed. Additionally, 10 thematic committees under the House of Representatives were established.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Committee Formation",
+        "Parliamentary Hearing Committee",
+        "Thematic Committees"
+      ]
+    },
+    {
+      "name": "Condolence Motions",
+      "summary_en": "The House passed condolence motions on the passing of former members: Rishikesh Gautam, Mohammad Aftab Alam, Krishna Kumari Shrestha, Amod Prasad Upadhyay, Homnath Dahal, Baldev Bohara, and Ramchandra Bhattarai.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Condolence Motions",
+        "Demise of Former Members"
+      ]
+    },
+    {
+      "name": "Zero Hour, Special Time, and Urgent Time",
+      "summary_en": "During the session, various honorable members utilized Zero Hour, Special Time, and Urgent Time to raise contemporary issues and draw the government's attention.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Zero Hour",
+        "Special Time",
+        "Urgent Time",
+        "Contemporary Issues"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Parliamentary Proceedings",
+    "Legislation",
+    "Ordinances",
+    "Elections",
+    "Committees",
+    "Reports",
+    "Condolences",
+    "Contemporary Issues",
+    "Session Summary"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Physical Infrastructure and Transport",
+    "Urban Development"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Rabi Lamichhane",
+      "party": null,
+      "section": "Speaker Election"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Speaker Election"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Speaker Election"
+    },
+    {
+      "name": "Sunil Lamshal",
+      "party": null,
+      "section": "Speaker Election"
+    },
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Speaker Election"
+    },
+    {
+      "name": "Kavinra Bulety",
+      "party": null,
+      "section": "Committee Formation"
+    },
+    {
+      "name": "Sita Thapaliya",
+      "party": null,
+      "section": "Committee Formation"
+    },
+    {
+      "name": "Ganesh Singh Thagunna",
+      "party": null,
+      "section": "Committee Formation"
+    },
+    {
+      "name": "Yuvraj Dulal",
+      "party": null,
+      "section": "Committee Formation"
+    },
+    {
+      "name": "Dhubraj Rai",
+      "party": null,
+      "section": "Committee Formation"
+    },
+    {
+      "name": "Bharat Giri",
+      "party": null,
+      "section": "Committee Formation"
+    },
+    {
+      "name": "Pushpa Kumari Chaudhary",
+      "party": null,
+      "section": "Committee Formation"
+    },
+    {
+      "name": "Sarita Lama",
+      "party": null,
+      "section": "Deputy Speaker Election"
+    },
+    {
+      "name": "Ruby Kumari",
+      "party": null,
+      "section": "Deputy Speaker Election"
+    },
+    {
+      "name": "Rishikesh Gautam",
+      "party": null,
+      "section": "Condolence Motions"
+    },
+    {
+      "name": "Mohammad Aftab Alam",
+      "party": null,
+      "section": "Condolence Motions"
+    },
+    {
+      "name": "Krishna Kumari Shrestha",
+      "party": null,
+      "section": "Condolence Motions"
+    },
+    {
+      "name": "Amod Prasad Upadhyay",
+      "party": null,
+      "section": "Condolence Motions"
+    },
+    {
+      "name": "Homnath Dahal",
+      "party": null,
+      "section": "Condolence Motions"
+    },
+    {
+      "name": "Baldev Bohara",
+      "party": null,
+      "section": "Condolence Motions"
+    },
+    {
+      "name": "Ramchandra Bhattarai",
+      "party": null,
+      "section": "Condolence Motions"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

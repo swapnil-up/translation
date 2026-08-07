@@ -1,0 +1,109 @@
+{
+  "full_translation_en": "Federal Parliament\nNotice-4\n2083 Baisakh 3, Thursday\nInformation regarding changes in committee members\nIn accordance with the Federal Parliament Joint Meeting and Joint Committee (Operation) Regulations, 2080 and the House of Representatives Regulations, 2079, the Hon'ble Speaker, using the authority vested under Rule 260 and 265 of the House of Representatives Regulations, 2071, has made changes to the list of Hon'ble Members in the committees formed, to be proposed for agreement after the commencement of the session. This notice is published for the information of the Hon'ble Members of the Federal Parliament regarding the changes in committee members as follows.\nS.N.\nName of Hon'ble Member\nChanged Committee\n1.\nMa. Rachu Nyaupane\nParliamentary Hearing Committee\n2.\nMa. Chandan Kumar Singh\nParliamentary Hearing Committee\n3.\nMa. Ram Lama\nState Affairs and Good Governance Committee to International Relations and Tourism Committee\n4.\nMa. Ganesh Karki\nState Affairs and Good Governance Committee to International Relations and Tourism Committee\n5.\nMa. Jagdish Kharel (Lalitpur)\nEducation, Health and Information Technology Committee to International Relations and Tourism Committee\n6.\nMa. Deepak Raj Bohora\nInternational Relations and Tourism Committee to State Affairs and Good Governance Committee\n7.\nMa. Bablu Gusa\nInternational Relations and Tourism Committee to State Affairs and Good Governance Committee\n8.\nMa. Rahbar Ansari\nEducation, Health and Information Technology Committee to Industry, Commerce and Labour and Consumer Interest Committee\n9.\nMa. Hari Prasad Bhusal\nInternational Relations and Tourism Committee to Education, Health and Information Technology Committee\n10.\nMa. Chandan Kumar Singh\nIndustry, Commerce and Labour and Consumer Interest Committee to Education, Health and Information Technology Committee\nHarka Raj Rai\nSecretary\nHouse of Representatives",
+  "session": {
+    "date_bs": "2083-02-03",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Hon'ble Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "This section announces changes to the membership of various parliamentary committees. The Hon'ble Speaker has made these changes under the authority of the House of Representatives Regulations.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Committee member changes"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "A detailed list of committee member reassignments is provided, specifying the member, the committee they are moving from, and the committee they are moving to. This includes changes to the Parliamentary Hearing Committee, State Affairs and Good Governance Committee, International Relations and Tourism Committee, Education, Health and Information Technology Committee, and Industry, Commerce and Labour and Consumer Interest Committee.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Committee member reassignments",
+        "Parliamentary Hearing Committee",
+        "State Affairs and Good Governance Committee",
+        "International Relations and Tourism Committee",
+        "Education, Health and Information Technology Committee",
+        "Industry, Commerce and Labour and Consumer Interest Committee"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The notice concludes with the designation of Harka Raj Rai as Secretary of the House of Representatives.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Committees",
+    "Committee Membership",
+    "House of Representatives",
+    "Federal Parliament",
+    "Legislation",
+    "Government Operations",
+    "Nepal"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Rachu Nyaupane",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Chandan Kumar Singh",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ram Lama",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ganesh Karki",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Jagdish Kharel",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Deepak Raj Bohora",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Bablu Gusa",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Rahbar Ansari",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Hari Prasad Bhusal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Harka Raj Rai",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

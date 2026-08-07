@@ -1,0 +1,86 @@
+{
+  "full_translation_en": "Federal Parliament\nJoint Meeting\nMeeting Number - 1\nFederal\nNepal\nNotice - 2\nParliament\n(Brief Description of Meeting Proceedings)\nFriday, Chaitra 27, 2082 BS\nThe joint meeting of both houses of the Federal Parliament commenced at 3:15 PM under the chairmanship of the Right Honourable Speaker Dol Prasad Aryal. First, the Right Honourable Prime Minister Pushpa Kamal Dahal 'Prachanda' presented the address of the Right Honourable President to the Parliament. Thereafter, the Right Honourable President Ram Chandra Paudel addressed the joint meeting of both houses of the Federal Parliament. Subsequently, the Right Honourable Speaker requested the Honourable Members to stand in their respective places and bid farewell to the Right Honourable President after the meeting was adjourned. Thereafter, the joint meeting of both houses of the Federal Parliament was adjourned at 3:30 PM.\nPadma Prasad Pandey\nSecretary-General\nPage 1/9",
+  "session": {
+    "date_bs": "2082-01-27",
+    "date_ad": null,
+    "meeting_type": "Joint Meeting of both houses of the Federal Parliament",
+    "meeting_number": "1",
+    "chairperson": "Dol Prasad Aryal"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The joint meeting of both houses of the Federal Parliament commenced under the chairmanship of the Speaker. The Prime Minister presented the President's address to the Parliament. The President then addressed the joint session.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Chairing the joint meeting"
+        },
+        {
+          "name": "Pushpa Kamal Dahal 'Prachanda'",
+          "party": null,
+          "topic": "Presenting President's address"
+        },
+        {
+          "name": "Ram Chandra Paudel",
+          "party": null,
+          "topic": "Addressing the joint session"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "Following the President's address, the Speaker requested members to bid farewell to the President. The joint meeting was then adjourned.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Requesting farewell to President"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Farewell to the President"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Federal Parliament",
+    "Joint Meeting",
+    "Presidential Address",
+    "Parliamentary Proceedings",
+    "Speaker",
+    "Prime Minister",
+    "President"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Pushpa Kamal Dahal 'Prachanda'",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Ram Chandra Paudel",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": "3:30 PM",
+  "next_meeting_date": null
+}

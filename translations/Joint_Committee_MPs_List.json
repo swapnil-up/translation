@@ -1,0 +1,163 @@
+{
+  "full_translation_en": "Parliamentary Hearing Committee\n(7) Hon. Bhimraj Aidembe\nHon. Arjun Narsingh K.C.\n(9)\n(2) Hon. Madhu Kumar Chaulagai\n(2) Hon. Bindra Burlakoti\n(9) Hon. Bodh Narayan Shrestha\nHon. Gajala Shamim Nikrani\n(3)\n(10) Hon. Ranju Neupane\n(4) Hon. Chandan Kumar Singh\nHon. Padam Kumari Aryal\n(11) Hon. Rajiv Khatri\n(12) Hon. Dr. Lekhraj Thapa\n(6) Hon. Barsaman Pun\nDirector of State, Policy and Responsibility Implementation Monitoring and Evaluation Committee\nHon. Ankita Thakur\n(7) Hon. Ramesh Kumar Hamal\n(1) Hon. Ganesh Karki\n(2) Hon. Ramesh Prasai\nHon. Gita Gurung\n(9) Hon. Ram Lama\n(3)\n(10) Hon. Rima Bishwakarma\n(4) Hon. Janak Raj Giri\n(11) Hon. Surendra Chaudhary\nHon. Pushparaj Kandel\n(12) Hon. Sushant Vaidya\nHon. Prakash Chandra Pariyar\n(6)",
+  "session": {
+    "date_bs": null,
+    "date_ad": null,
+    "meeting_type": "Parliamentary Hearing Committee",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Committee Members",
+      "summary_en": "This section lists members of the Parliamentary Hearing Committee. It appears to be a roster of individuals with their names and numerical designations.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Committee Mandate",
+      "summary_en": "This section describes the mandate of a committee, likely related to monitoring and evaluation of state policies and responsibilities. It mentions the Director of State.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Policy implementation monitoring",
+        "Responsibility evaluation"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Hearing Committee",
+    "Committee Members",
+    "Policy Monitoring",
+    "Evaluation",
+    "State Responsibilities"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Bhimraj Aidembe",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Arjun Narsingh K.C.",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Madhu Kumar Chaulagai",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Bindra Burlakoti",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Bodh Narayan Shrestha",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Gajala Shamim Nikrani",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Ranju Neupane",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Chandan Kumar Singh",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Padam Kumari Aryal",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Rajiv Khatri",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Dr. Lekhraj Thapa",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Barsaman Pun",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Ankita Thakur",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Ramesh Kumar Hamal",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Ganesh Karki",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Ramesh Prasai",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Gita Gurung",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Ram Lama",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Rima Bishwakarma",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Janak Raj Giri",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Surendra Chaudhary",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Pushparaj Kandel",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Sushant Vaidya",
+      "party": null,
+      "section": "Committee Members"
+    },
+    {
+      "name": "Prakash Chandra Pariyar",
+      "party": null,
+      "section": "Committee Members"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

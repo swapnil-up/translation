@@ -1,0 +1,44 @@
+{
+  "full_translation_en": "Federal Parliament\nNotice No. 3\nDate: 2083/02/02\n\nSecretary\nParliament\nWednesday\n\nNotice regarding the determination of the date for the election of the Committee Chairperson\n\nIn accordance with the Federal Parliament Joint Meeting and Joint Committee (Operation) Regulations, 2080, the election of the Chairperson for the Parliamentary Hearing Committee and the Committee for Monitoring and Evaluating the Implementation of State Directors' Principles, Policies, and Responsibilities has been scheduled by the Right Honorable Speaker for Friday, 2083/01/04, at 1:00 PM, in accordance with Rule 44 of the Federal Parliament Joint Meeting and Joint Committee (Operation) Regulations, 2080, and Sub-rule (1) of Rule 176 of the House of Representatives Regulations, 2079. This notice is published for the information of all Honorable Members.\n\nHarkaraj Rai\nSecretary\nHouse of Representatives\nDate: 2083/02/02 Wednesday\nScanned with\nCS\nCamScanner",
+  "session": {
+    "date_bs": "2083-02-02",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "A notice is published regarding the election of the Chairperson for the Parliamentary Hearing Committee and the Committee for Monitoring and Evaluating the Implementation of State Directors' Principles, Policies, and Responsibilities. The election is scheduled for Friday, 2083/01/04, at 1:00 PM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Election of Committee Chairperson",
+        "Parliamentary Hearing Committee",
+        "Committee for Monitoring and Evaluating State Directors' Principles, Policies, and Responsibilities"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Committee Election",
+    "House of Representatives",
+    "Federal Parliament",
+    "Committee Chairperson",
+    "Parliamentary Hearing Committee",
+    "Monitoring and Evaluation Committee",
+    "Meeting Schedule",
+    "Notice"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Harkaraj Rai",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
