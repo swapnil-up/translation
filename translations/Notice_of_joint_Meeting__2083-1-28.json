@@ -1,0 +1,82 @@
+{
+  "full_translation_en": "Federal Parliament\nJoint Meeting\nMeeting Number - 1\nFederal\nNepal\nNotice - 2\nParliament\n(Brief Minutes of the Meeting Proceedings)\nMonday, Baisakh 28, 2083 BS\nThe meeting commenced at 4:10 PM under the chairmanship of the Right Honourable Speaker Dol Prasad Aryal.\nFirst, the Right Honourable Prime Minister presented the address to the Right Honourable President.\nAfter that, the Right Honourable President Ram Chandra Paudel addressed the joint meeting of both houses of the Federal Parliament.\nSubsequently, the Right Honourable Speaker requested the Honourable Members to stand up and bid farewell to the Right Honourable President after the meeting was adjourned.\nThereafter, the joint meeting of both houses of the Federal Parliament was adjourned at 5:20 PM.\nPadma Prasad Pandey\nSecretary-General\nPage 9/9",
+  "session": {
+    "date_bs": "2083-04-28",
+    "date_ad": null,
+    "meeting_type": "Joint Meeting of both houses of the Federal Parliament",
+    "meeting_number": "1",
+    "chairperson": "Dol Prasad Aryal"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The joint meeting of both houses of the Federal Parliament commenced under the chairmanship of the Speaker. The Prime Minister presented the President's address to the President. The President then addressed the joint session.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Chairing the joint meeting"
+        },
+        {
+          "name": "Waledra Shah",
+          "party": null,
+          "topic": "Presenting the President's address"
+        },
+        {
+          "name": "Ram Chandra Paudel",
+          "party": null,
+          "topic": "Addressing the joint session"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The Speaker requested members to bid farewell to the President. The joint meeting was then adjourned.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Requesting farewell to the President"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Federal Parliament",
+    "Joint Meeting",
+    "Presidential Address",
+    "Parliamentary Proceedings",
+    "Meeting Adjournment"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Waledra Shah",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Ram Chandra Paudel",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": "5:20 PM",
+  "next_meeting_date": null
+}

@@ -1,0 +1,88 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 3\nFederal\nNepal\nParliament\nDaily Agenda\n2083 Baisakh 29, Tuesday\n1:00 PM\nSubmission of Treaty\n1. The Honorable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will submit the \"Treaty between the Government of Nepal and the Government of India on Mutual Legal Assistance in Criminal Matters.\"\nManagement of Alternative Development Finance\n2. The Honorable Minister for Finance, Dr. Swarnim Wagle, will present a proposal for \"Consideration of the Alternative Development Finance Mobilization Bill, 2082.\"\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-29",
+    "date_ad": "2026-05-12",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "3",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Submission of Treaty",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs presented a treaty between Nepal and India concerning mutual legal assistance in criminal matters.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Submission of Nepal-India treaty on mutual legal assistance"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Mutual Legal Assistance Treaty",
+        "Criminal Matters",
+        "Nepal-India Relations"
+      ]
+    },
+    {
+      "name": "Management of Alternative Development Finance",
+      "summary_en": "The Minister for Finance proposed consideration of the Alternative Development Finance Mobilization Bill, 2082.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Consideration of Alternative Development Finance Mobilization Bill, 2082"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Alternative Development Finance Mobilization Bill, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Development Finance",
+        "Bill Consideration",
+        "Economic Policy"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Agenda",
+    "Treaty Submission",
+    "Legal Assistance",
+    "Criminal Matters",
+    "Finance Bill",
+    "Development Finance",
+    "Legislation",
+    "House of Representatives",
+    "Nepal",
+    "India"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Submission of Treaty"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management of Alternative Development Finance"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Secretary-General"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

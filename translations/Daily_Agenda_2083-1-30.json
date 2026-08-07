@@ -1,0 +1,75 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 4\nFederal\nNepal\nDaily Agenda\nParliament,\nWednesday, 30th Baisakh, 2083\n11:00 AM\nCommencement of Discussion on the Policy and Program\n1. The Right Honourable Prime Minister Sher Bahadur Deuba will present a proposal to commence the discussion on the annual policy and program of the Government of Nepal for the fiscal year 2083/084, as mentioned in the address made by the Right Honourable President to a joint meeting of both houses of the Federal Parliament on Monday, 28th Baisakh, 2083.\n2. Amendments proposed by Honourable Members on the annual policy and program of the Government of Nepal for the fiscal year 2083/084 will be presented, and a discussion will be held on the annual policy and program of the Government of Nepal for the fiscal year 2083/084, as mentioned in the address made by the Right Honourable President to a joint meeting of both houses of the Federal Parliament on Monday, 28th Baisakh, 2083.\n3. The Right Honourable Prime Minister Sher Bahadur Deuba will respond to the questions raised during the discussion on the annual policy and program of the Government of Nepal for the fiscal year 2083/084, as mentioned in the address made by the Right Honourable President to a joint meeting of both houses of the Federal Parliament on Monday, 28th Baisakh, 2083.\n4. The amendments received on the annual policy and program of the Government of Nepal for the fiscal year 2083/084 will be presented for decision.\n5. The Right Honourable Speaker will present the annual policy and program of the Government of Nepal for the fiscal year 2083/084, as mentioned in the address made by the Right Honourable President to a joint meeting of both houses of the Federal Parliament on Monday, 28th Baisakh, 2083, for decision.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-30",
+    "date_ad": "2026-05-14",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "4",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Right Honourable Prime Minister will present a proposal to commence the discussion on the annual policy and program for FY 2083/084, based on the President's address.",
+      "speakers": [
+        {
+          "name": "Sher Bahadur Deuba",
+          "party": null,
+          "topic": "Proposal to commence policy and program discussion"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Annual Policy and Program FY 2083/084",
+        "President's Address"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "Amendments to the annual policy and program for FY 2083/084 will be presented, followed by a discussion based on the President's address. The Prime Minister will then respond to questions raised during the discussion. Finally, amendments will be put forth for decision, and the policy and program will be presented for a final decision.",
+      "speakers": [
+        {
+          "name": "Sher Bahadur Deuba",
+          "party": null,
+          "topic": "Responding to questions on policy and program"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Annual Policy and Program FY 2083/084",
+        "Amendments",
+        "Discussion",
+        "President's Address"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Policy and Program",
+    "Budget",
+    "Fiscal Year 2083/084",
+    "Government of Nepal",
+    "Federal Parliament",
+    "House of Representatives",
+    "Legislation",
+    "Debate",
+    "Prime Minister",
+    "President's Address"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sher Bahadur Deuba",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Sher Bahadur Deuba",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

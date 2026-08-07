@@ -1,0 +1,51 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 2\nFederal\nNepal\nDaily Agenda\nParliament\n2083 Baishakh 28, Monday\n(Second Meeting)\n4:00 PM\nTo be tabled\n1. To table the address made to the joint session of the Federal Parliament.\nVote of Thanks\nThe Honorable Speaker will present the following vote of thanks for the address made by the Right Honorable President:-\n2. \"This meeting of the House of Representatives expresses its gratitude to the Right Honorable President for the address made to the joint session of both houses of the Federal Parliament on Monday, Baishakh 28, 2083, in accordance with Article 94 of the Constitution of Nepal.\"\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-28",
+    "date_ad": "2026-05-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "2",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The agenda includes tabling the address made by the President to the joint session of the Federal Parliament. Following this, a vote of thanks for the President's address will be presented.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "President's address to joint session"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Speaker will present a vote of thanks to the President for the address delivered to the joint session of both houses of the Federal Parliament on Baishakh 28, 2083, as per Article 94 of the Constitution.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Vote of thanks to the President"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Federal Parliament",
+    "Presidential Address",
+    "Vote of Thanks",
+    "Constitution",
+    "Legislation"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

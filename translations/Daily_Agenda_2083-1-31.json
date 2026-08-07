@@ -1,0 +1,102 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 4\nFederal\nNepal\nDaily Agenda\nParliament\nThursday, Baishakh 31, 2083\n11:00 AM\nDiscussion on Policy and Program\n1. Discussion will be held on the Government of Nepal's annual policy and program for the fiscal year 2083/084, as mentioned in the address by the Right Honorable President to a joint meeting of both houses of the Federal Parliament on Monday, Baishakh 28, 2083.\n2. The Honorable Finance Minister Dr. Swarnim Wagle, on behalf of the Right Honorable Prime Minister, will respond to the questions raised during the discussion on the Government of Nepal's annual policy and program for the fiscal year 2083/084, as mentioned in the address by the Right Honorable President to a joint meeting of both houses of the Federal Parliament on Monday, Baishakh 28, 2083.\n3. Proposals for amendments to the Government of Nepal's annual policy and program for the fiscal year 2083/084 will be presented for decision.\n4. The Right Honorable Speaker will present the Government of Nepal's annual policy and program for the fiscal year 2083/084, as mentioned in the address by the Right Honorable President to a joint meeting of both houses of the Federal Parliament on Monday, Baishakh 28, 2083, for decision.\nPresentation of Principles and Priorities for the Appropriation Bill\n4. The Honorable Finance Minister Dr. Swarnim Wagle will present a proposal for discussion on \"Principles and Priorities for the Appropriation Bill for the Fiscal Year 2083/084 (excluding tax proposals)\".\nDiscussion on Report\n6. The Honorable Chairperson of the House of Representatives Regulations Drafting Committee, Ganesh Parajuli, will present a proposal for consideration on \"Report of the House of Representatives Regulations Drafting Committee, 2083\".\nPurna Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-31",
+    "date_ad": "2026-05-15",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "4",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The House of Representatives will discuss the Government of Nepal's annual policy and program for FY 2083/084, presented by the President. The Finance Minister will respond to questions, and proposed amendments will be put to a decision. Finally, the policy and program will be presented for a final decision by the Speaker.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Responding to questions on policy and program"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Government's Annual Policy and Program",
+        "Fiscal Year 2083/084",
+        "President's Address",
+        "Amendments"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Honorable Finance Minister will present the principles and priorities for the Appropriation Bill for FY 2083/084, excluding tax proposals, for discussion.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Presenting principles and priorities for Appropriation Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill for the Fiscal Year 2083/084 (excluding tax proposals)",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill",
+        "Principles and Priorities",
+        "Fiscal Year 2083/084",
+        "Tax Proposals"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Chairperson of the House of Representatives Regulations Drafting Committee will present the committee's report from 2083 for consideration.",
+      "speakers": [
+        {
+          "name": "Ganesh Parajuli",
+          "party": null,
+          "topic": "Presenting Regulations Drafting Committee Report"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Report of the House of Representatives Regulations Drafting Committee, 2083"
+      ],
+      "key_issues": [
+        "House of Representatives Regulations",
+        "Drafting Committee Report",
+        "Consideration"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Policy and Program",
+    "Budget",
+    "Appropriation Bill",
+    "Parliamentary Procedure",
+    "Legislation",
+    "Fiscal Year 2083/084",
+    "Regulations",
+    "Committee Report"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ganesh Parajuli",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,78 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 7\nFederal\nNepal\nDaily Agenda\nParliament,\n2083 Jestha 4, Tuesday\n11:00 AM\nLetter from the Office of the Prime Minister and Council of Ministers\n1. The Honorable Speaker will read out the letter received from the Office of the Prime Minister and Council of Ministers regarding the assignment.\n2. Discussion on the principles and priorities of the Appropriation Bill for the fiscal year 2083/084 (excluding tax proposals) will continue.\n3. The Honorable Finance Minister Dr. Swarnim Wagle will respond to the questions raised in the discussion.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-04",
+    "date_ad": "2026-05-19",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "7",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Honorable Speaker will read out a letter received from the Office of the Prime Minister and Council of Ministers regarding an assignment. This marks the beginning of the day's proceedings.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Assignment from Prime Minister's Office"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The discussion on the principles and priorities of the Appropriation Bill for the fiscal year 2083/084, excluding tax proposals, will continue. Following the discussion, the Finance Minister will provide responses to the questions raised.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Responding to questions on Appropriation Bill principles and priorities"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Appropriation Bill for the fiscal year 2083/084 (excluding tax proposals)",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Appropriation Bill",
+        "Fiscal Year 2083/084",
+        "Principles and Priorities"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Appropriation Bill",
+    "Fiscal Budget",
+    "Government Business",
+    "Legislative Agenda",
+    "Finance Minister",
+    "Parliamentary Session"
+  ],
+  "ministries_mentioned": [
+    "Office of the Prime Minister and Council of Ministers",
+    "Finance Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Closing"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

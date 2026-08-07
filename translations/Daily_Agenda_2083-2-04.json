@@ -1,0 +1,76 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 6\nFederal Parliament of Nepal\nDaily Agenda\nMonday, Jestha 4, 2083\n11:00 AM\n1. Letter from the Office of the President\nThe Honorable Speaker will read out the letter from the Office of the President regarding the reshuffle of the Council of Ministers.\n2. Reshuffle in the Business Transaction Committee\nThe Honorable Speaker will reshuffle the names of the Honorable Members in the Business Transaction Committee.\n3. Discussion on the Report\nThe Honorable Chairperson of the House of Representatives Regulations Drafting Committee, Ganesh Parajuli, will present a proposal for consideration on the \"Report of the House of Representatives Regulations Drafting Committee, 2083\".\n4. Discussion on the Principles and Priorities of the Appropriation Bill\nDiscussion will commence on \"Regarding the Principles and Priorities of the Appropriation Bill for the Fiscal Year 2083/084 (excluding tax proposals)\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-04",
+    "date_ad": "2026-05-19",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "6",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Office of the President concerning a reshuffle in the Council of Ministers. Following this, the Speaker will announce changes to the membership of the Business Transaction Committee.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Council of Ministers reshuffle",
+        "Business Transaction Committee"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Chairperson of the House of Representatives Regulations Drafting Committee will present a proposal for discussion on the committee's report. Subsequently, the House will begin discussing the principles and priorities of the Appropriation Bill for FY 2083/084, excluding tax proposals.",
+      "speakers": [
+        {
+          "name": "Ganesh Parajuli",
+          "party": null,
+          "topic": "Presentation of Regulations Drafting Committee report"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Report of the House of Representatives Regulations Drafting Committee, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Appropriation Bill for the Fiscal Year 2083/084 (excluding tax proposals)",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [
+        "Report of the House of Representatives Regulations Drafting Committee, 2083"
+      ],
+      "key_issues": [
+        "House of Representatives Regulations Drafting Committee",
+        "Appropriation Bill principles and priorities"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Procedures",
+    "Government Reshuffle",
+    "Committee Membership",
+    "Legislation",
+    "Budget",
+    "Appropriation Bill",
+    "Regulations",
+    "House of Representatives"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Ganesh Parajuli",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Footer"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,187 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 9\nFederal\nNepal\nParliament\nDaily Business Schedule\nMay 28, 2083, Monday\n2:00 PM\nPresident's Letter\nThe Honorable Speaker will read out the letter received from the Honorable President regarding the convening of the session.\n1. Letter from the Office of the President\nThe Honorable Speaker will read out the letter received from the Office of the President regarding the reshuffle of the Council of Ministers.\n2. Nomination of Members to Chair the Meeting\nThe Honorable Speaker will nominate Honorable Members to chair the meeting in the absence of the Speaker.\n3. Submission for Approval of the Order to Remove Obstacles\nThe Honorable Speaker will submit the Order to Remove Obstacles issued in accordance with Rule 260 of the House of Representatives Regulations, 2079 for approval.\n4. Presentation of the Report of the Regulations Drafting Committee\nThe Honorable Chairperson of the House of Representatives Regulations Drafting Committee, Ganesh Parajuli, will present the \"Report of the House of Representatives Regulations Drafting Committee, 2083\".\n5. Presentation of Ordinances\nThe Honorable Prime Minister, Balendra Shah, will:\n(a) Present the \"Public Procurement (Second Amendment) Ordinance, 2083\".\n(b) Present the \"Special Arrangement Ordinance for the Removal from Office of Public Office Bearers, 2083\".\n(c) Present the \"Constitutional Council (Work, Duties, Authority, and Procedures) (First Amendment) Ordinance, 2083\".\n6. The Honorable Finance Minister, Dr. Swarnim Wagle, will present the \"Anti-Money Laundering (Third Amendment) Ordinance, 2083\".\n7. The Honorable Minister for Law, Justice, and Parliamentary Affairs, Sobita Gautam, will present the \"Ordinance to Amend Some Nepal Laws, 2083\".\n8. The Honorable Minister for Land Management, Cooperatives, and Poverty Alleviation, Pratibha Rawal, will present the \"Cooperatives (First Amendment) Ordinance, 2083\".\n9. The Honorable Minister for Health and Population, Nisha Mehta, will present the \"Ordinance to Amend Some Nepal Laws Related to Health Science Academies, 2083\".\n10. The Honorable Minister for Education, Science, and Technology, Susmita Pokharel, will present the \"Ordinance to Amend Some Nepal Laws Related to Universities, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-28",
+    "date_ad": "2026-05-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "9",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the President regarding the convening of the session. Following this, the Speaker will read a letter from the Office of the President concerning a cabinet reshuffle. The Speaker will then nominate members to chair the meeting in their absence.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Reading presidential letter and cabinet reshuffle letter"
+        }
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Speaker will present an order to remove obstacles for approval. The Chairperson of the Regulations Drafting Committee will present the committee's report. The Prime Minister and several ministers will present various ordinances.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Submitting order to remove obstacles for approval"
+        },
+        {
+          "name": "Ganesh Parajuli",
+          "party": null,
+          "topic": "Presenting Regulations Drafting Committee Report"
+        },
+        {
+          "name": "Balendra Shah",
+          "party": null,
+          "topic": "Presenting Public Procurement and other ordinances"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Presenting Anti-Money Laundering Ordinance"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presenting Ordinance to Amend Nepal Laws"
+        },
+        {
+          "name": "Pratibha Rawal",
+          "party": null,
+          "topic": "Presenting Cooperatives Amendment Ordinance"
+        },
+        {
+          "name": "Nisha Mehta",
+          "party": null,
+          "topic": "Presenting Health Science Academies Ordinance"
+        },
+        {
+          "name": "Susmita Pokharel",
+          "party": null,
+          "topic": "Presenting University Laws Amendment Ordinance"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Public Procurement (Second Amendment) Ordinance, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Special Arrangement Ordinance for the Removal from Office of Public Office Bearers, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Constitutional Council (Work, Duties, Authority, and Procedures) (First Amendment) Ordinance, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Anti-Money Laundering (Third Amendment) Ordinance, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Ordinance to Amend Some Nepal Laws, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Cooperatives (First Amendment) Ordinance, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Ordinance to Amend Some Nepal Laws Related to Health Science Academies, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Ordinance to Amend Some Nepal Laws Related to Universities, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [
+        "Report of the House of Representatives Regulations Drafting Committee, 2083"
+      ],
+      "key_issues": [
+        "Presidential communications",
+        "Cabinet reshuffle",
+        "Parliamentary procedures",
+        "Regulations drafting",
+        "Ordinance presentations",
+        "Public procurement",
+        "Public office bearers",
+        "Constitutional Council",
+        "Anti-money laundering",
+        "Cooperatives",
+        "Health sector laws",
+        "University laws"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary session",
+    "House of Representatives",
+    "Presidential letter",
+    "Cabinet reshuffle",
+    "Ordinances",
+    "Legislation",
+    "Regulations",
+    "Public Procurement",
+    "Anti-Money Laundering",
+    "Cooperatives",
+    "Health",
+    "Education",
+    "Constitutional Council"
+  ],
+  "ministries_mentioned": [
+    "Office of the President",
+    "Finance Ministry",
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Land Management, Cooperatives and Poverty Alleviation",
+    "Ministry of Health and Population",
+    "Ministry of Education, Science and Technology"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Opening, Main Business"
+    },
+    {
+      "name": "Ganesh Parajuli",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Pratibha Rawal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Susmita Pokharel",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
