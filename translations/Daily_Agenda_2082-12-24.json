@@ -1,0 +1,63 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nFederal\nMeeting Number - 4\nNepal\nParliament\nDaily Agenda\nTuesday, Chaitra 24, 2082\n1:00 PM\nTable of Messages\nThe Secretary of the House of Representatives shall table the following messages related to bills received from the National Assembly:-\n(a) National Forensic Science Laboratory (Establishment and Operation) Bill, 2081\n(b) Tourism Bill, 2081\n(c) Film Bill, 2082\nBishnu Prasad Pandey\nSecretary General",
+  "session": {
+    "date_bs": "2082-01-24",
+    "date_ad": "2025-04-08",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "4",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Table of Messages",
+      "summary_en": "The Secretary of the House of Representatives tabled messages from the National Assembly regarding three bills. These bills included the National Forensic Science Laboratory (Establishment and Operation) Bill, 2081, the Tourism Bill, 2081, and the Film Bill, 2082.",
+      "speakers": [
+        {
+          "name": "Bishnu Prasad Pandey",
+          "party": null,
+          "topic": "Tabling messages from National Assembly regarding bills"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "National Forensic Science Laboratory (Establishment and Operation) Bill, 2081",
+          "status": "introduced"
+        },
+        {
+          "name": "Tourism Bill, 2081",
+          "status": "introduced"
+        },
+        {
+          "name": "Film Bill, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Bill messages from National Assembly",
+        "Legislative procedures"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Daily Agenda",
+    "Bills",
+    "National Assembly",
+    "Forensic Science",
+    "Tourism",
+    "Film",
+    "Legislation"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Bishnu Prasad Pandey",
+      "party": null,
+      "section": "Table of Messages"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

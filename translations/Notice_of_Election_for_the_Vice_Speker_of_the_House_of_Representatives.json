@@ -1,0 +1,71 @@
+{
+  "full_translation_en": "Federal Parliament (House of Representatives) Parliament Secretariat, Singha Durbar, Kathmandu, Nepal. Program Notice. Election of Deputy Speaker. In accordance with Rule 8 of the House of Representatives Regulations, 2079, the election of the Deputy Speaker of the House of Representatives shall be held on Friday, Chaitra 27, 2082, at 4:00 PM. The meeting will be held on Friday, Chaitra 27, 2082, at 4:00 PM. The date and time for the election of the Deputy Speaker have been determined as follows, as per Rule 8 of the House of Representatives Regulations, 2079. Program Publication. For the purpose of Sub-rule (1) of Rule 8, the following is published: S.N. Date Time Program 1. Chaitra 26, 2082 (Tuesday) 9:00 AM to 2:00 PM Registration of candidacies for the post of Deputy Speaker. Candidacy proposals to be registered at the House of Representatives Secretariat, Singha Durbar. 2. Chaitra 26, 2082 (Tuesday) 2:30 PM Publication of the list of candidates in order of registration. House of Representatives Secretariat, Singha Durbar. 3. Chaitra 27, 2082 (Wednesday) 4:00 PM Commencement of the House of Representatives meeting. Proposal for election of the Deputy Speaker, proposer to propose and supporter to support, discussion on candidacies in order of registration, and decision making. Meeting Hall, House of Representatives, Singha Durbar. Hakraj Rai, Secretary, House of Representatives. Date: Chaitra 25, 2082, Wednesday. Note: A copy of the photograph and Nepali citizenship of the proposed candidate Member shall be attached.",
+  "session": {
+    "date_bs": "2082-01-27",
+    "date_ad": "2025-04-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Program Publication",
+      "summary_en": "A notice is published regarding the election of the Deputy Speaker of the House of Representatives, scheduled for Chaitra 27, 2082. The notice outlines the schedule for candidate registration, list publication, and the election process itself.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker Election"
+      ]
+    },
+    {
+      "name": "Candidate Registration",
+      "summary_en": "The House of Representatives Secretariat will accept nominations for the Deputy Speaker position on Chaitra 26, 2082, between 9:00 AM and 2:00 PM at Singha Durbar.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker Candidacy Registration"
+      ]
+    },
+    {
+      "name": "Candidate List Publication",
+      "summary_en": "The list of registered candidates for the Deputy Speaker election will be published by the House of Representatives Secretariat on Chaitra 26, 2082, at 2:30 PM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker Candidate List"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The House of Representatives meeting will commence on Chaitra 27, 2082, at 4:00 PM for the election of the Deputy Speaker. The process will involve proposing, supporting, discussing candidacies, and making a decision.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker Election Process"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Deputy Speaker Election",
+    "Election Schedule",
+    "Nomination",
+    "Parliamentary Procedure",
+    "Singha Durbar"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Hakraj Rai",
+      "party": null,
+      "section": "Secretary, House of Representatives"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

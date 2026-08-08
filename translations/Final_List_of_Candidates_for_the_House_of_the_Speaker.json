@@ -1,0 +1,107 @@
+{
+  "full_translation_en": "This notice is published for the information of all concerned as a notice of candidacy has been received as per the provisions. As per Rule 7 of the House of Representatives Regulations, 2071, the period for submitting a notice of proposal to elect a Speaker of the House of Representatives has been set from 1:00 PM to 2:00 PM on March 20, 2082 (2082/12/20). The time for submitting the proposal is 2:30 PM on 2082/12/20. At 11:05 AM, Dol Prasad Aryal of the Rastriya Swatantra Party, residing at Balaju, Ward No. 16, Kathmandu Metropolitan City, aged 51, has submitted the final list of registered candidates for the position of Speaker. The proposer is Hon. Rabi Lamichhane and the supporters are Hon. Sobita Gautam, Hon. Sunil Lamshal, and Hon. Swarnim Wagle. The notice was published by the Secretary-General (Patra Prasad Pandey).",
+  "session": {
+    "date_bs": "2082-12-20",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "A notice regarding the candidacy for the Speaker of the House of Representatives has been received. The deadline for submitting proposals was set for March 20, 2082, between 1:00 PM and 2:00 PM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Speaker election process"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "Dol Prasad Aryal of the Rastriya Swatantra Party submitted the final list of registered candidates for the Speaker position. Hon. Rabi Lamichhane is listed as the proposer, with Hon. Sobita Gautam, Hon. Sunil Lamshal, and Hon. Swarnim Wagle as supporters.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": "Rastriya Swatantra Party",
+          "topic": "Submitted candidate list for Speaker"
+        },
+        {
+          "name": "Rabi Lamichhane",
+          "party": null,
+          "topic": "Proposer for Speaker candidate"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Supporter for Speaker candidate"
+        },
+        {
+          "name": "Sunil Lamshal",
+          "party": null,
+          "topic": "Supporter for Speaker candidate"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Supporter for Speaker candidate"
+        },
+        {
+          "name": "Patra Prasad Pandey",
+          "party": null,
+          "topic": "Secretary-General"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Speaker candidacy submission",
+        "Candidate nomination"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Speaker election",
+    "Candidacy",
+    "Nomination",
+    "Parliamentary procedure",
+    "Rastriya Swatantra Party"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": "Rastriya Swatantra Party",
+      "section": "Main Business"
+    },
+    {
+      "name": "Rabi Lamichhane",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sunil Lamshal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Patra Prasad Pandey",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,150 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nFederal\nParliament,\nNepal\nMeeting Number - 2\nNotice Paper - 2\n(Brief Minutes of the Meeting Proceedings)\nSunday, Chaitra 22, 2082\nThe meeting of the House of Representatives commenced today at 11:10 AM under the chairmanship of the Honorable Member/Right Honorable Speaker Arjun Narsingh KC.\nFirst, the Right Honorable Speaker informed that as per the program for the election of the Speaker of the House of Representatives, a proposal to elect Honorable Member Dol Prasad Aryal to the post of Speaker, as it was the only proposal received within the stipulated time, was presented.\nAfter that, the proposer of the said proposal, Honorable Ravi Lamichhane, presented the proposal stating, \"Let Honorable Member Dol Prasad Aryal be elected as the Speaker of the House of Representatives.\"\nSubsequently, the proposer of the said proposal, Honorable Finance Minister Swarnim Wagle, Honorable Minister for Physical Infrastructure and Transport and Minister for Urban Development Sunil Lamshal, and Honorable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam supported the proposal.\nThereafter, the Right Honorable Speaker, in accordance with Rule 7, Sub-rule (3) of the Rules of Procedure of the House of Representatives, 2079, declared that Honorable Dol Prasad Aryal has been unanimously elected as the Speaker of the House of Representatives, as it was the only proposal presented to elect Honorable Dol Prasad Aryal as the Speaker of the House of Representatives.\nSubsequently, the Right Honorable Speaker extended heartfelt congratulations and best wishes for a successful tenure to Honorable Dol Prasad Aryal on his unanimous election to the esteemed position of Speaker of the Federal Parliament, House of Representatives.\nThereafter, the next meeting of the House of Representatives was adjourned at 11:35 AM, scheduled to convene on Monday, Chaitra 23, 2082, at 1:00 PM.\nPadma Prasad Pandey\nSecretary-General\nPage 1/9",
+  "session": {
+    "date_bs": "2082-01-22",
+    "date_ad": "2026-04-06",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "2",
+    "chairperson": "Arjun Narsingh KC"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting commenced with the Speaker presiding. The Speaker announced that only one proposal was received to elect Dol Prasad Aryal as Speaker. The proposal was then presented.",
+      "speakers": [
+        {
+          "name": "Arjun Narsingh KC",
+          "party": null,
+          "topic": "Presided over meeting, announced election process"
+        },
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Nominated for Speaker"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Speaker election"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "Ravi Lamichhane proposed Dol Prasad Aryal for Speaker. Finance Minister Swarnim Wagle, Minister Sunil Lamshal, and Minister Sobita Gautam supported the proposal. Dol Prasad Aryal was then unanimously elected Speaker.",
+      "speakers": [
+        {
+          "name": "Ravi Lamichhane",
+          "party": null,
+          "topic": "Proposed Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Supported Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Sunil Lamshal",
+          "party": null,
+          "topic": "Supported Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Supported Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Elected Speaker of the House of Representatives"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Speaker election",
+        "Unanimous election"
+      ]
+    },
+    {
+      "name": "Closing",
+      "summary_en": "The Speaker congratulated the newly elected Speaker Dol Prasad Aryal. The meeting was then adjourned until the next day.",
+      "speakers": [
+        {
+          "name": "Arjun Narsingh KC",
+          "party": null,
+          "topic": "Congratulated new Speaker, adjourned meeting"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Congratulations",
+        "Adjournment"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Speaker Election",
+    "Legislative Proceedings",
+    "Parliamentary Meeting",
+    "Dol Prasad Aryal",
+    "Ravi Lamichhane",
+    "Swarnim Wagle",
+    "Sunil Lamshal",
+    "Sobita Gautam",
+    "Unanimous Election",
+    "Federal Parliament"
+  ],
+  "ministries_mentioned": [
+    "Finance",
+    "Physical Infrastructure and Transport",
+    "Urban Development",
+    "Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Arjun Narsingh KC",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Ravi Lamichhane",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sunil Lamshal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Arjun Narsingh KC",
+      "party": null,
+      "section": "Closing"
+    }
+  ],
+  "adjournment_time": "11:35 AM",
+  "next_meeting_date": "2082-01-23"
+}

@@ -1,0 +1,92 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nMeeting Number - 4\nDaily Agenda\nWednesday, Chaitra 25, 2082\n1:00 PM\n1. The Honorable Speaker will read out a letter received from the Office of the President regarding the order of precedence.\n2. The Honorable Speaker will set a date for the election of the Deputy Speaker of the House of Representatives in accordance with Rule 8 of the House of Representatives Regulations, 2079.\n3. The Honorable Prime Minister, Pushpa Kamal Dahal 'Prachanda', will present the \"Seventh Annual Report of the National Natural Resources and Fiscal Commission, 2082\".\n4. The Honorable Minister of Finance, Dr. Swarnim Wagle:\n(a) Will present a proposal seeking permission to introduce the \"Alternative Development Finance Mobilization Bill, 2082\".\n(b) Will introduce the \"Alternative Development Finance Mobilization Bill, 2082\".\n\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-04-25",
+    "date_ad": "2026-04-09",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "4",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Office of the President regarding the order of precedence. Following this, the Speaker will set a date for the election of the Deputy Speaker.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Reading Presidential letter and setting Deputy Speaker election date"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Order of precedence",
+        "Deputy Speaker election"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Prime Minister will present the Seventh Annual Report of the National Natural Resources and Fiscal Commission. The Minister of Finance will then seek permission to introduce and subsequently introduce the Alternative Development Finance Mobilization Bill, 2082.",
+      "speakers": [
+        {
+          "name": "Pushpa Kamal Dahal 'Prachanda'",
+          "party": null,
+          "topic": "Presenting Annual Report of National Natural Resources and Fiscal Commission"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Seeking permission to introduce and introducing Alternative Development Finance Mobilization Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Alternative Development Finance Mobilization Bill, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [
+        "Seventh Annual Report of the National Natural Resources and Fiscal Commission, 2082"
+      ],
+      "key_issues": [
+        "Annual report presentation",
+        "Alternative Development Finance Mobilization Bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Presidential Letter",
+    "Deputy Speaker Election",
+    "Annual Report",
+    "National Natural Resources and Fiscal Commission",
+    "Finance Bill",
+    "Legislative Business",
+    "Government Business"
+  ],
+  "ministries_mentioned": [
+    "Office of the President",
+    "Ministry of Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Pushpa Kamal Dahal 'Prachanda'",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,572 @@
+{
+  "full_translation_en": "House of Representatives, 2082\nFirst Session\nMeeting Number - 4\nParliamentary\nNepal\nNotice - 2\n(Brief details of the meeting proceedings)\nTuesday, Chaitra 24, 2082\nThe meeting of the House of Representatives today commenced at 1:20 PM under the chairmanship of the Right Honourable Speaker Dol Prasad Aryal.\nFirst, in the Zero Hour, which commenced today, the following Honourable Members expressed their views on contemporary issues:-\nHon. Achyut Lamicchhane\nHon. Kusum Maharjan\nHon. Anushka Shrestha\nHon. Kruparam Rana\nHon. Krishna Hari Budhathoki\nHon. Afsana Banu\nHon. Komal Jawali\nHon. Abhishek Pratap Shah\nHon. Amrita B.K.\nHon. Krantishikha Dhital\nHon. Khagendra Karna\nHon. Arvind Sah\nHon. Arjun Kumar Karki\nHon. Khagendra Sunar\nHon. Ashok Kumar Chaudhary\nHon. Khadak Bahadur Buda\nHon. Aakriti Awasthi\nHon. Khadga Shahi\nHon. Khima BK.\nHon. Aaren Rai\nHon. Khushbu Oli\nHon. Ashish Gajurel\nHon. Gajala Shamim Mikrani\nHon. Ashika Tamang\nHon. Ganesh Karki\nHon. Indira Rana Magar\nHon. Eliza Gurung\nHon. Ganesh Dhimal\nHon. Eshuda Kumari Baral\nHon. Ganesh Parajuli\nHon. Ain Bahadur Mahar\nHon. Ganesh Bahadur Bishwakarma\nHon. Ojashwi Sherchan\nHon. Ganesh Singh Thagutra\nHon. Ankita Thakur\nHon. Gita Gurung\nHon. Kamal Subedi\nHon. Guru Prasad Baral\nHon. Govinda Panthi\nHon. Karishma Kathariya\nHon. Kavinra Burlakoti\nHon. Ganga Chhantyal\nHon. Kamini Kumari\nHon. Gangadevi Shrestha\nHon. Kal Bahadur Sahakari\nHon. Gangalakshmi Awal\nHon. Chandan Kumar Singh\nHon. Kul Bhakta Shakya\nThereafter, the Right Honourable Speaker informed about the correction made to the House of Representatives Business Advisory Committee, formed as per Rule 13 of the House of Representatives Regulations, 2079, with Honourable Ninu Kumari Karna being included instead of the previously mentioned name.\nSubsequently, the Secretary of the House of Representatives, Hakraj Rai, tabled the bills received from the National Assembly: \"Forensic Science Laboratory (Establishment and Operation) Bill, 2081\", \"Tourism Bill, 2081\", and \"Film Bill, 2081\", along with the messages from the National Assembly.\nThereafter, the next meeting of the House of Representatives was adjourned at 2:20 PM, scheduled to convene on Wednesday, Chaitra 24, 2082, at 1:00 PM.\nPadma Prasad Pandey\nSecretary-General\nPage 1/9",
+  "session": {
+    "date_bs": "2082-12-24",
+    "date_ad": "2026-04-08",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "4",
+    "chairperson": "Dol Prasad Aryal"
+  },
+  "sections": [
+    {
+      "name": "Zero Hour",
+      "summary_en": "During the Zero Hour, several Honourable Members raised contemporary issues and expressed their views. The session began with the presiding Speaker Dol Prasad Aryal in the chair.",
+      "speakers": [
+        {
+          "name": "Achyut Lamicchhane",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Kusum Maharjan",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Anushka Shrestha",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Kruparam Rana",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Krishna Hari Budhathoki",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Afsana Banu",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Komal Jawali",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Abhishek Pratap Shah",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Amrita B.K.",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Krantishikha Dhital",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Khagendra Karna",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Arvind Sah",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Arjun Kumar Karki",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Khagendra Sunar",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ashok Kumar Chaudhary",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Khadak Bahadur Buda",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Aakriti Awasthi",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Khadga Shahi",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Khima BK.",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Aaren Rai",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Khushbu Oli",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ashish Gajurel",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Gajala Shamim Mikrani",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ashika Tamang",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ganesh Karki",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Indira Rana Magar",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Eliza Gurung",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ganesh Dhimal",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Eshuda Kumari Baral",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ganesh Parajuli",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ain Bahadur Mahar",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ganesh Bahadur Bishwakarma",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ojashwi Sherchan",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ganesh Singh Thagutra",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ankita Thakur",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Gita Gurung",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Kamal Subedi",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Guru Prasad Baral",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Govinda Panthi",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Karishma Kathariya",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Kavinra Burlakoti",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Ganga Chhantyal",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Kamini Kumari",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Gangadevi Shrestha",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Kal Bahadur Sahakari",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Gangalakshmi Awal",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Chandan Kumar Singh",
+          "party": null,
+          "topic": "Contemporary issues"
+        },
+        {
+          "name": "Kul Bhakta Shakya",
+          "party": null,
+          "topic": "Contemporary issues"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Contemporary issues"
+      ]
+    },
+    {
+      "name": "Other Business",
+      "summary_en": "The Speaker announced a correction to the composition of the House of Representatives Business Advisory Committee. Subsequently, the Secretary of the House of Representatives tabled three bills received from the National Assembly.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "Correction to Business Advisory Committee"
+        },
+        {
+          "name": "Hakraj Rai",
+          "party": null,
+          "topic": "Tabling of bills from National Assembly"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Forensic Science Laboratory (Establishment and Operation) Bill, 2081",
+          "status": "introduced"
+        },
+        {
+          "name": "Tourism Bill, 2081",
+          "status": "introduced"
+        },
+        {
+          "name": "Film Bill, 2081",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "House of Representatives Business Advisory Committee",
+        "Tabling of bills",
+        "National Assembly bills"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The meeting was adjourned until Wednesday, Chaitra 24, 2082, at 1:00 PM.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Zero Hour",
+    "Legislation",
+    "Bills",
+    "National Assembly",
+    "Committee Formation",
+    "Public Issues"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Other Business"
+    },
+    {
+      "name": "Hakraj Rai",
+      "party": null,
+      "section": "Other Business"
+    },
+    {
+      "name": "Achyut Lamicchhane",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Kusum Maharjan",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Anushka Shrestha",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Kruparam Rana",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Krishna Hari Budhathoki",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Afsana Banu",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Komal Jawali",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Abhishek Pratap Shah",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Amrita B.K.",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Krantishikha Dhital",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Khagendra Karna",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Arvind Sah",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Arjun Kumar Karki",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Khagendra Sunar",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ashok Kumar Chaudhary",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Khadak Bahadur Buda",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Aakriti Awasthi",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Khadga Shahi",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Khima BK.",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Aaren Rai",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Khushbu Oli",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ashish Gajurel",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Gajala Shamim Mikrani",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ashika Tamang",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ganesh Karki",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Indira Rana Magar",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Eliza Gurung",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ganesh Dhimal",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Eshuda Kumari Baral",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ganesh Parajuli",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ain Bahadur Mahar",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ganesh Bahadur Bishwakarma",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ojashwi Sherchan",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ganesh Singh Thagutra",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ankita Thakur",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Gita Gurung",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Kamal Subedi",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Guru Prasad Baral",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Govinda Panthi",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Karishma Kathariya",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Kavinra Burlakoti",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Ganga Chhantyal",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Kamini Kumari",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Gangadevi Shrestha",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Kal Bahadur Sahakari",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Gangalakshmi Awal",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Chandan Kumar Singh",
+      "party": null,
+      "section": "Zero Hour"
+    },
+    {
+      "name": "Kul Bhakta Shakya",
+      "party": null,
+      "section": "Zero Hour"
+    }
+  ],
+  "adjournment_time": "2:20 PM",
+  "next_meeting_date": "2082-12-24"
+}

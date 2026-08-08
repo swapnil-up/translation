@@ -1,56 +1,64 @@
 {
-  "full_translation_en": "Federal Parliament\nNotice Paper-4\n2083 Baisakh 25, Friday\nNotice regarding the convening of a joint meeting\nAs per Article 94 of the Constitution of Nepal, the Right Honorable President Ram Chandra Poudel will address the joint meeting of both houses of the Federal Parliament on Monday, Baisakh 28, 2083, at 16:00 hrs, and for that purpose, members are requested to be present. This notice has been published for the information of the members of the Federal Parliament.\nFurthermore, it is requested that all members of the House of Representatives be present in the House of Representatives (Multipurpose Hall, Singh Durbar) by 15:45 hrs on the said day and take their respective seats for the joint session meeting.\nPadma Prasad Pandey\nSecretary-General",
+  "full_translation_en": "Federal Parliament\nFederal Parliament\nNotice - 4\nNepal\nChaitra 25, 2082\nWednesday\nJoint Meeting\nInformation Regarding Convening\nAs per Article 94 of the Constitution of Nepal, the Honorable Ram Chandra Poudel, President, will address the joint meeting of both houses of the Federal Parliament on Chaitra 27, 2082, at 3:00 PM. This notice is published for the information of the members of the Federal Parliament. Members of the Federal Parliament are requested to be present in their respective seats in the Joint Meeting Hall, Singha Durbar, by 2:45 PM on the said day and take their seats.",
   "session": {
-    "date_bs": "2083-02-25",
-    "date_ad": null,
-    "meeting_type": "Joint Meeting of Both Houses",
+    "date_bs": "2082-04-12",
+    "date_ad": "2025-04-23",
+    "meeting_type": "Joint Meeting",
     "meeting_number": null,
-    "chairperson": null
+    "chairperson": "Ram Chandra Poudel"
   },
   "sections": [
     {
-      "name": "Notice of Joint Meeting",
-      "summary_en": "A notice is published informing members of the Federal Parliament about a joint meeting of both houses. The Right Honorable President will address the joint session on Baisakh 28, 2083, at 16:00 hrs.",
+      "name": "Opening",
+      "summary_en": "A notice is published informing members of the Federal Parliament about a joint meeting. The President, Ram Chandra Poudel, will address the joint meeting of both houses of the Federal Parliament on Chaitra 27, 2082, at 3:00 PM.",
       "speakers": [],
       "bills_discussed": [],
       "reports_presented": [],
       "key_issues": [
-        "Joint Session of Parliament",
-        "Presidential Address"
+        "Presidential address",
+        "Joint session of parliament"
       ]
     },
     {
-      "name": "Seating Arrangement and Arrival",
-      "summary_en": "Members of the House of Representatives are requested to be present in the House of Representatives (Multipurpose Hall, Singh Durbar) by 15:45 hrs on the day of the joint session to take their seats.",
+      "name": "Main Business",
+      "summary_en": "Members of the Federal Parliament are requested to be present in their respective seats in the Joint Meeting Hall by 2:45 PM on the day of the address.",
       "speakers": [],
       "bills_discussed": [],
       "reports_presented": [],
       "key_issues": [
-        "Member Attendance",
-        "Seating Arrangement"
+        "Parliamentary protocol",
+        "Attendance requirement"
       ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The notice concludes with the signature of the Secretary-General.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
     }
   ],
   "agenda_tags": [
-    "Federal Parliament",
-    "Joint Meeting",
+    "Parliament",
+    "Joint Session",
     "Presidential Address",
-    "Constitution of Nepal",
-    "House of Representatives",
-    "Parliamentary Notice",
-    "Baisakh 28, 2083"
+    "Constitution",
+    "Meeting Notice",
+    "Federal Parliament",
+    "Legislation"
   ],
   "ministries_mentioned": [],
   "all_speakers_mentioned": [
     {
       "name": "Ram Chandra Poudel",
       "party": null,
-      "section": "Notice of Joint Meeting"
+      "section": "Opening"
     },
     {
-      "name": "Padma Prasad Pandey",
+      "name": "Padam Prasad Pandey",
       "party": null,
-      "section": "Notice of Joint Meeting"
+      "section": "Adjournment"
     }
   ],
   "adjournment_time": null,

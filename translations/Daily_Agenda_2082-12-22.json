@@ -1,0 +1,90 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nFederal\nMeeting Number - 2\nNepal\nParliament,\nDaily Agenda\n2082 Chaitra 22, Sunday\n11:00 AM\nElection of the Speaker\nHonorable Rabi Lamichhane will present the following proposal:-\n\"That Honorable Member of Parliament Dol Prasad Aryal be elected to the post of Speaker.\"\nThis proposal will be supported by Honorable Minister of Law, Justice and Parliamentary Affairs Sobita Gautam, Honorable Minister of Finance Swarnim Wagle, and Honorable Minister of Physical Infrastructure and Transport and Minister of Urban Development Sunil Lamsal.\nPadma Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2082-12-22",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": 2,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting commenced with the election of the Speaker. Honorable Rabi Lamichhane proposed Dol Prasad Aryal for the position. The proposal was seconded by the Ministers of Law, Justice and Parliamentary Affairs, Finance, and Physical Infrastructure and Transport.",
+      "speakers": [
+        {
+          "name": "Rabi Lamichhane",
+          "party": null,
+          "topic": "Proposing Dol Prasad Aryal for Speaker"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Supporting the proposal for Speaker"
+        },
+        {
+          "name": "Swarnim Wagle",
+          "party": null,
+          "topic": "Supporting the proposal for Speaker"
+        },
+        {
+          "name": "Sunil Lamsal",
+          "party": null,
+          "topic": "Supporting the proposal for Speaker"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Election of Speaker"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Speaker Election",
+    "Legislation",
+    "Government Business"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance",
+    "Physical Infrastructure and Transport",
+    "Urban Development"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Rabi Lamichhane",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Swarnim Wagle",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Sunil Lamsal",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

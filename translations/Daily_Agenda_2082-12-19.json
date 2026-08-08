@@ -1,0 +1,115 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nDaily Agenda\nThursday, Chaitra 19, 2082\n2:00 PM\n1. Letter from the President\nThe Honorable Senior Member/The Honorable Speaker will read out the letter received from the Honorable President regarding the convening of the session.\n2. Letter from the Office of the President\nThe Honorable Speaker will read out the letters received from the Office of the President regarding the appointment of the Prime Minister and the formation of the Council of Ministers.\n3. Proposal to conduct proceedings as per the House of Representatives Rules of Procedure, 2079, to be presented and approved\nThe Honorable Speaker will present for approval a proposal to conduct proceedings as per the House of Representatives Rules of Procedure, 2079, until the House formulates its own rules as per Article 104 of the Constitution of Nepal.\n4. Nomination of members to chair the meeting\nThe Honorable Speaker will nominate Honorable Members to chair the meeting in the absence of the Speaker.\n5. Remarks on the occasion of the commencement of the session\nHonorable Members will present their respective remarks on a party basis on the occasion of the commencement of the session.\n6. Date to be set for the election of the Speaker\nThe Honorable Speaker will set a date for the election of the Speaker of the House of Representatives as per Rule 7 of the House of Representatives Rules of Procedure, 2079.\n7. Ordinances to be presented\nThe Honorable Home Minister, Sudhan Gurung, will present the following ordinances:-\n(a) \"Voter Roll (First Amendment) Ordinance, 2082\"\n(b) \"House of Representatives Member Election (First Amendment) Ordinance, 2082\"\n(c) \"Nepal Special Service (Second Amendment) Ordinance, 2082\"\n8. Condolence Motion\nThe Honorable Speaker will present condolence motions for the former members of the Constituent Assembly and members: Rishikesh Gautam, Mohammad Aftab Alam, Krishna Kumari Shrestha, Amod Prasad Upadhyay, Homanath Dahal, and Baldev Bohara, member of the Constituent Assembly and National Assembly.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-01-19",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": 9,
+    "chairperson": "The Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting will begin with the reading of a letter from the President regarding the convening of the session. Following this, letters from the Office of the President concerning the appointment of the Prime Minister and the formation of the Council of Ministers will be read. The House will then consider a proposal to conduct proceedings according to the existing rules until new ones are formed.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Convening of session",
+        "Prime Minister appointment",
+        "Cabinet formation",
+        "House Rules of Procedure"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The agenda includes the nomination of members to chair the meeting in the Speaker's absence, remarks by members on the session's commencement, and the setting of a date for the Speaker's election. The Home Minister will present three ordinances.",
+      "speakers": [
+        {
+          "name": "Sudhan Gurung",
+          "party": null,
+          "topic": "Presentation of ordinances"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Chairing the meeting",
+        "Session commencement remarks",
+        "Speaker election date",
+        "Ordinances"
+      ]
+    },
+    {
+      "name": "Condolence Motion",
+      "summary_en": "The Honorable Speaker will present condolence motions for several former members of the Constituent Assembly and National Assembly.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Condolence motion",
+        "Former members"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary session",
+    "House of Representatives",
+    "Presidential letter",
+    "Prime Minister appointment",
+    "Cabinet formation",
+    "Rules of Procedure",
+    "Speaker election",
+    "Ordinances",
+    "Condolence motion",
+    "Legislation"
+  ],
+  "ministries_mentioned": [
+    "Office of the President",
+    "Home Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "The Honorable Speaker",
+      "party": null,
+      "section": "Opening, Main Business, Condolence Motion"
+    },
+    {
+      "name": "Sudhan Gurung",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Rishikesh Gautam",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Mohammad Aftab Alam",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Krishna Kumari Shrestha",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Amod Prasad Upadhyay",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Homanath Dahal",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Baldev Bohara",
+      "party": null,
+      "section": "Condolence Motion"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

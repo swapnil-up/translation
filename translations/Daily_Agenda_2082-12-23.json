@@ -1,0 +1,174 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nFirst Session\nMeeting Number - 3\nFederal Parliament of Nepal\nDaily Agenda\n2082 Chaitra 23, Monday\n1:00 PM\n1. Nomination to the Business Advisory Committee\nThe Honorable Speaker will inform about the nomination of Honorable Members to the Business Advisory Committee.\n2. Formation of the Rules Drafting Committee\nHonorable Kabindra Burlakoti will present a proposal stating \"Let the Rules Drafting Committee of the House of Representatives be formed,\" along with the list of Honorable Members to be included in the committee.\nThe following Honorable Members will support the said proposal:-\n(1) Honorable Sita Thapaliya\n(2) Honorable Ganesh Singh Thaguna\n(3) Honorable Yuvaraj Dulal\n(4) Honorable Dhubraj Rai\n(5) Honorable Bharat Giri\n(6) Honorable Pushpa Kumari Chaudhary\n3. Business related to Ordinances\nThe Honorable Home Minister Sudhan Gurung will present a proposal stating \"Let the following ordinances be approved.\"\n(a) \"Voter List (First Amendment) Ordinance, 2082\"\n(b) \"House of Representatives Member Election (First Amendment) Ordinance, 2082\"\n(c) \"Nepal Special Service (Second Amendment) Ordinance, 2082\"\n4. Condolence Motion\nThe Honorable Speaker will present a condolence motion on the demise of former member Ramchandra Bhattarai.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-12-23",
+    "date_ad": "2026-04-07",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "3",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Nomination to the Business Advisory Committee",
+      "summary_en": "The Honorable Speaker will announce the nomination of members to the Business Advisory Committee. This section involves informing the house about the committee's composition.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Business Advisory Committee Nomination"
+      ]
+    },
+    {
+      "name": "Formation of the Rules Drafting Committee",
+      "summary_en": "Honorable Kabindra Burlakoti will propose the formation of the House of Representatives Rules Drafting Committee and present a list of proposed members. Several other Honorable Members will then support this proposal.",
+      "speakers": [
+        {
+          "name": "Kabindra Burlakoti",
+          "party": null,
+          "topic": "Proposal to form Rules Drafting Committee"
+        },
+        {
+          "name": "Sita Thapaliya",
+          "party": null,
+          "topic": "Support for Rules Drafting Committee proposal"
+        },
+        {
+          "name": "Ganesh Singh Thaguna",
+          "party": null,
+          "topic": "Support for Rules Drafting Committee proposal"
+        },
+        {
+          "name": "Yuvaraj Dulal",
+          "party": null,
+          "topic": "Support for Rules Drafting Committee proposal"
+        },
+        {
+          "name": "Dhubraj Rai",
+          "party": null,
+          "topic": "Support for Rules Drafting Committee proposal"
+        },
+        {
+          "name": "Bharat Giri",
+          "party": null,
+          "topic": "Support for Rules Drafting Committee proposal"
+        },
+        {
+          "name": "Pushpa Kumari Chaudhary",
+          "party": null,
+          "topic": "Support for Rules Drafting Committee proposal"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Rules Drafting Committee formation",
+        "Parliamentary procedures"
+      ]
+    },
+    {
+      "name": "Business related to Ordinances",
+      "summary_en": "The Home Minister will present proposals to approve three specific ordinances: the Voter List (First Amendment) Ordinance, the House of Representatives Member Election (First Amendment) Ordinance, and the Nepal Special Service (Second Amendment) Ordinance.",
+      "speakers": [
+        {
+          "name": "Sudhan Gurung",
+          "party": null,
+          "topic": "Proposal to approve ordinances"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Voter List (First Amendment) Ordinance, 2082",
+          "status": "introduced"
+        },
+        {
+          "name": "House of Representatives Member Election (First Amendment) Ordinance, 2082",
+          "status": "introduced"
+        },
+        {
+          "name": "Nepal Special Service (Second Amendment) Ordinance, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Ordinance approval",
+        "Voter registration",
+        "Election laws",
+        "Special service act"
+      ]
+    },
+    {
+      "name": "Condolence Motion",
+      "summary_en": "The Honorable Speaker will present a motion of condolence on the passing of former member Ramchandra Bhattarai.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Condolence motion",
+        "Demise of former member"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "Committee Formation",
+    "Legislation",
+    "Ordinances",
+    "Elections",
+    "Public Service",
+    "Condolence",
+    "House of Representatives"
+  ],
+  "ministries_mentioned": [
+    "Home Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Kabindra Burlakoti",
+      "party": null,
+      "section": "Formation of the Rules Drafting Committee"
+    },
+    {
+      "name": "Sita Thapaliya",
+      "party": null,
+      "section": "Formation of the Rules Drafting Committee"
+    },
+    {
+      "name": "Ganesh Singh Thaguna",
+      "party": null,
+      "section": "Formation of the Rules Drafting Committee"
+    },
+    {
+      "name": "Yuvaraj Dulal",
+      "party": null,
+      "section": "Formation of the Rules Drafting Committee"
+    },
+    {
+      "name": "Dhubraj Rai",
+      "party": null,
+      "section": "Formation of the Rules Drafting Committee"
+    },
+    {
+      "name": "Bharat Giri",
+      "party": null,
+      "section": "Formation of the Rules Drafting Committee"
+    },
+    {
+      "name": "Pushpa Kumari Chaudhary",
+      "party": null,
+      "section": "Formation of the Rules Drafting Committee"
+    },
+    {
+      "name": "Sudhan Gurung",
+      "party": null,
+      "section": "Business related to Ordinances"
+    },
+    {
+      "name": "Ramchandra Bhattarai",
+      "party": null,
+      "section": "Condolence Motion"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

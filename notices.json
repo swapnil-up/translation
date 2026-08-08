@@ -1113,119 +1113,161 @@
     "title": "Notice of Joint Meeting of Federal Parliament",
     "url": "https://hr.parliament.gov.np/en/notices/1775647504",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/atzvilvxqqptdyln.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Joint_Meeting_of_Federal_Parliament-ocr.txt",
+    "translated_path": "translations/Notice_of_Joint_Meeting_of_Federal_Parliament.txt",
+    "structured_path": "translations/Notice_of_Joint_Meeting_of_Federal_Parliament.json"
   },
   {
     "serial": "13.",
     "title": "Notice of Election for the Vice Speker of the House of Representatives",
     "url": "https://hr.parliament.gov.np/en/notices/1775646460",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/atow4gx4gdn4n2dg.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Election_for_the_Vice_Speker_of_the_House_of_Representatives-ocr.txt",
+    "translated_path": "translations/Notice_of_Election_for_the_Vice_Speker_of_the_House_of_Representatives.txt",
+    "structured_path": "translations/Notice_of_Election_for_the_Vice_Speker_of_the_House_of_Representatives.json"
   },
   {
     "serial": "14.",
     "title": "Daily Agenda 2082-12-25",
     "url": "https://hr.parliament.gov.np/en/notices/1775549707",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/9l6cbp4txwxvwrnw.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2082-12-25-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2082-12-25.txt",
+    "structured_path": "translations/Daily_Agenda_2082-12-25.json"
   },
   {
     "serial": "15.",
     "title": "Notice 2082-12-24",
     "url": "https://hr.parliament.gov.np/en/notices/1775549648",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/lzakfdvefq9vxnch.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2082-12-24-ocr.txt",
+    "translated_path": "translations/Notice_2082-12-24.txt",
+    "structured_path": "translations/Notice_2082-12-24.json"
   },
   {
     "serial": "16.",
     "title": "Daily Agenda 2082-12-24",
     "url": "https://hr.parliament.gov.np/en/notices/1775471818",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/ze4ueh28e4brolpa.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2082-12-24-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2082-12-24.txt",
+    "structured_path": "translations/Daily_Agenda_2082-12-24.json"
   },
   {
     "serial": "17.",
     "title": "Notice 2082-12-23",
     "url": "https://hr.parliament.gov.np/en/notices/1775459606",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/alrabs0ijfqwlct1.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2082-12-23-ocr.txt",
+    "translated_path": "translations/Notice_2082-12-23.txt",
+    "structured_path": "translations/Notice_2082-12-23.json"
   },
   {
     "serial": "18.",
     "title": "Notice 2082-12-22",
     "url": "https://hr.parliament.gov.np/en/notices/1775451727",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/zehtkjvlswwqaw1m.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2082-12-22-ocr.txt",
+    "translated_path": "translations/Notice_2082-12-22.txt",
+    "structured_path": "translations/Notice_2082-12-22.json"
   },
   {
     "serial": "19.",
     "title": "Daily Agenda 2082-12-23",
     "url": "https://hr.parliament.gov.np/en/notices/1775389139",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/tixrlwyrsjzsieqq.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2082-12-23-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2082-12-23.txt",
+    "structured_path": "translations/Daily_Agenda_2082-12-23.json"
   },
   {
     "serial": "20.",
     "title": "Daily Agenda 2082-12-22",
     "url": "https://hr.parliament.gov.np/en/notices/1775363025",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/uodff8nycea7egbi.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2082-12-22-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2082-12-22.txt",
+    "structured_path": "translations/Daily_Agenda_2082-12-22.json"
   },
   {
     "serial": "21.",
     "title": "Notice 2082-12-19",
     "url": "https://hr.parliament.gov.np/en/notices/1775362980",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/6jbk06idi9w4dgsn.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2082-12-19-ocr.txt",
+    "translated_path": "translations/Notice_2082-12-19.txt",
+    "structured_path": "translations/Notice_2082-12-19.json"
   },
   {
     "serial": "22.",
     "title": "Final List of Candidates for the House of the Speaker",
     "url": "https://hr.parliament.gov.np/en/notices/1775205015",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/mobjbv0ymhohkxj7.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Final_List_of_Candidates_for_the_House_of_the_Speaker-ocr.txt",
+    "translated_path": "translations/Final_List_of_Candidates_for_the_House_of_the_Speaker.txt",
+    "structured_path": "translations/Final_List_of_Candidates_for_the_House_of_the_Speaker.json"
   },
   {
     "serial": "23.",
     "title": "Notice of Election for the Speaker of the House",
     "url": "https://hr.parliament.gov.np/en/notices/1775128462",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/mxj2s86coolcaewq.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Election_for_the_Speaker_of_the_House-ocr.txt",
+    "translated_path": "translations/Notice_of_Election_for_the_Speaker_of_the_House.txt",
+    "structured_path": "translations/Notice_of_Election_for_the_Speaker_of_the_House.json"
   },
   {
     "serial": "24.",
     "title": "Daily Agenda 2082-12-19",
     "url": "https://hr.parliament.gov.np/en/notices/1775041231",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/puehkvn6dxh3sc8l.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Agenda_2082-12-19-ocr.txt",
+    "translated_path": "translations/Daily_Agenda_2082-12-19.txt",
+    "structured_path": "translations/Daily_Agenda_2082-12-19.json"
   },
   {
     "serial": "25.",
     "title": "Notice of Federal Parliament Session Call",
     "url": "https://hr.parliament.gov.np/en/notices/1774873078",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/tmey6lfgg5tlkdzy.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_of_Federal_Parliament_Session_Call-ocr.txt",
+    "translated_path": "translations/Notice_of_Federal_Parliament_Session_Call.txt",
+    "structured_path": "translations/Notice_of_Federal_Parliament_Session_Call.json"
   },
   {
     "serial": "26.",
     "title": "Question and Answers of sixth Session",
     "url": "https://hr.parliament.gov.np/en/notices/1759043236",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/oykb6ouslr1ouu2p.pdf",
-    "status": "pending",
+    "status": "skipped",
     "scraped_at": "2026-07-25"
   },
   {
@@ -1233,8 +1275,11 @@
     "title": "All works of 6th sessions",
     "url": "https://hr.parliament.gov.np/en/notices/1758187260",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/lkxkhshqrpgjhef8.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/All_works_of_6th_sessions-ocr.txt",
+    "translated_path": "translations/All_works_of_6th_sessions.txt",
+    "structured_path": "translations/All_works_of_6th_sessions.json"
   },
   {
     "serial": "28.",

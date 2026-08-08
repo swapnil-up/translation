@@ -1,67 +1,35 @@
 {
-  "full_translation_en": "Parliament Secretariat\nFederal Parliament\nKathmandu\nSingha Durbar\nUrgent Notice Regarding the Convening of the Session of the Federal Parliament\n\nHis Excellency the Right Honourable Ram Chandra Paudel, President of Nepal, has convened the session of the Federal Parliament in accordance with Article 93, Sub-article (1) of the Constitution of Nepal, at 2:00 PM on Monday, Baishakh 28, 2081 BS. Therefore, I hereby convene the session of the House of Representatives.\n\nDetails:\n\nPlace: House of Representatives Hall (Multipurpose Hall), Federal Parliament Building, Singha Durbar, Kathmandu.\n\nDate: Monday, Baishakh 28, 2081 BS.\n\nTime: 2:00 PM.\n\n(Signed)\n\nPrasad Pandey\nSecretary-General\nFederal Parliament Secretariat\nFederal Parliament",
+  "full_translation_en": "House of Representatives Secretariat, Parliament of Nepal, Kathmandu, Singhdarbar. Urgent Notice Regarding the Convening of the Session. It is hereby notified to all honorable members that His Excellency the Right Honorable President of Nepal, Ram Chandra Paudel, in accordance with Article 93, Sub-article (1) of the Constitution of Nepal, has convened the session of the National Assembly and the House of Representatives on Thursday, Chaitra 9, 2081 BS, at 2:00 PM. The members are requested to be present at the National Assembly building under construction, located at Singhdarbar, Kathmandu. Secretary General (Padma Prasad Pandey).",
   "session": {
-    "date_bs": "2081-02-28",
-    "date_ad": null,
+    "date_bs": "2081-09-09",
+    "date_ad": "2024-03-21",
     "meeting_type": "House of Representatives",
     "meeting_number": null,
-    "chairperson": "Ram Chandra Paudel"
+    "chairperson": null
   },
   "sections": [
     {
       "name": "Opening",
-      "summary_en": "An urgent notice is issued by the Parliament Secretariat regarding the convening of the Federal Parliament session. The President of Nepal, Ram Chandra Paudel, has convened the session as per the constitution.",
-      "speakers": [
-        {
-          "name": "Ram Chandra Paudel",
-          "party": null,
-          "topic": "Convening of Federal Parliament session"
-        }
-      ],
-      "bills_discussed": [],
-      "reports_presented": [],
-      "key_issues": [
-        "Convening of Parliament Session",
-        "Presidential Order"
-      ]
-    },
-    {
-      "name": "Main Business",
-      "summary_en": "The notice specifies the date, time, and location for the upcoming session of the House of Representatives. The session is scheduled for Monday, Baishakh 28, 2081 BS, at 2:00 PM in the House of Representatives Hall.",
+      "summary_en": "This section contains an urgent notice from the Parliament Secretariat regarding the convening of a session. The notice specifies the date, time, and location for the session as per the President's directive.",
       "speakers": [],
       "bills_discussed": [],
       "reports_presented": [],
       "key_issues": [
-        "Session Details",
-        "House of Representatives"
-      ]
-    },
-    {
-      "name": "Adjournment",
-      "summary_en": "The notice is signed by Prasad Pandey, Secretary-General of the Federal Parliament Secretariat, formally announcing the convening of the session.",
-      "speakers": [
-        {
-          "name": "Prasad Pandey",
-          "party": null,
-          "topic": "Formal announcement of session convening"
-        }
-      ],
-      "bills_discussed": [],
-      "reports_presented": [],
-      "key_issues": [
-        "Parliament Secretariat",
-        "Secretary-General"
+        "Convening of session",
+        "Presidential directive",
+        "Parliament building"
       ]
     }
   ],
   "agenda_tags": [
-    "Parliament Session",
+    "Parliament session",
+    "Convening notice",
+    "Presidential order",
+    "National Assembly",
     "House of Representatives",
-    "Convening Notice",
-    "Presidential Order",
-    "Constitutional Article",
-    "Parliament Secretariat",
-    "Meeting Schedule"
+    "Legislation",
+    "Government business",
+    "Nepal Constitution"
   ],
   "ministries_mentioned": [],
   "all_speakers_mentioned": [
@@ -71,9 +39,9 @@
       "section": "Opening"
     },
     {
-      "name": "Prasad Pandey",
+      "name": "Padma Prasad Pandey",
       "party": null,
-      "section": "Adjournment"
+      "section": "Opening"
     }
   ],
   "adjournment_time": null,
