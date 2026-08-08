@@ -1,0 +1,98 @@
+{
+  "full_translation_en": "Federal Parliament Secretariat, Federal Parliament, Singhdarbar. In accordance with Rule 8 of the House of Representatives Regulations, 2079, the period for giving notice of the proposal to elect the Deputy Speaker of the House of Representatives on March 26, 2082, from 11:00 AM to 2:00 PM has been set. The following candidate's notice has been registered within the specified date and time, and this notice is published for the information of all concerned. List of Final Candidates Registered. Candidate's Name and Related Proposer, Age, Gender, Address, Date and Time, Sl. No., Proposer, Party, Ma. Tahir Ali Bhat, Dhading, Ruby Valley, Ma. Sarawati Lama, 59 years, Female, Ma. Gyan Bahadur Shahi, Ma. Khushbu Oli, 1. Rastriya Prajatantra Party, Gaunpalika Ward No. 4, 9:45 AM, Ma. Bharat Giri, Ma. Ashok Kumar Chaudhary, Ma. Ruby Kumari, 2. 26 years, Female, Ma. Aren Rai, Dhanusha, Janakpurdham-9, 4, Ma. Ambika Devi Sangraula, Shram Sanskriti Party, 2:00 PM. Date: 2082/12/26, Time: 2:30 PM. (Harka Raj Rai), Secretary, House of Representatives. Scanned with CamScanner.",
+  "session": {
+    "date_bs": "2082-12-26",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "This section announces the schedule for the Deputy Speaker election, including the nomination period and the registered candidates. It serves as an official notification to all concerned parties.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker Election Program"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The final list of candidates for the Deputy Speaker position is published. Details include the candidate's name, proposer, party affiliation, age, gender, and address, along with the date and time of registration.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Deputy Speaker Candidates",
+        "Nomination Registration"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Deputy Speaker Election",
+    "Nomination",
+    "Candidates",
+    "Parliamentary Procedure",
+    "Election Program",
+    "Rastriya Prajatantra Party",
+    "Shram Sanskriti Party"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Tahir Ali Bhat",
+      "party": "Rastriya Prajatantra Party",
+      "section": "Main Business"
+    },
+    {
+      "name": "Sarawati Lama",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Gyan Bahadur Shahi",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Khushbu Oli",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Bharat Giri",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ashok Kumar Chaudhary",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ruby Kumari",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ambika Devi Sangraula",
+      "party": "Shram Sanskriti Party",
+      "section": "Main Business"
+    },
+    {
+      "name": "Aren Rai",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Harka Raj Rai",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": "2:30 PM",
+  "next_meeting_date": null
+}

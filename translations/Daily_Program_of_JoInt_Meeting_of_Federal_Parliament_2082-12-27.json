@@ -1,0 +1,72 @@
+{
+  "full_translation_en": "Federal Parliament\nSession, 2082\nJoint Meeting\nMeeting Number-1\nFederal Parliament of Nepal\nDaily Business Schedule\n2082 Chaitra 27, Friday\n3:00 PM\nAddress by the Right Honourable President\nThe Right Honourable President Ram Chandra Poudel will address the joint meeting of both houses of the Federal Parliament.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-12-27",
+    "date_ad": null,
+    "meeting_type": "Joint Meeting",
+    "meeting_number": "1",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The daily business schedule for the joint meeting of the Federal Parliament of Nepal was announced. The meeting was scheduled for 3:00 PM on Friday, Chaitra 27, 2082.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Right Honourable President Ram Chandra Poudel addressed the joint meeting of both houses of the Federal Parliament.",
+      "speakers": [
+        {
+          "name": "Ram Chandra Poudel",
+          "party": null,
+          "topic": "Address to the Federal Parliament"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Presidential Address"
+      ]
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The Secretary-General, Padma Prasad Pandey, announced the conclusion of the meeting.",
+      "speakers": [
+        {
+          "name": "Padma Prasad Pandey",
+          "party": null,
+          "topic": "Announcement of adjournment"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Federal Parliament",
+    "Joint Meeting",
+    "Presidential Address",
+    "Parliamentary Session",
+    "Nepal"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Ram Chandra Poudel",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

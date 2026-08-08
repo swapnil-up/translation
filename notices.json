@@ -1091,16 +1091,22 @@
     "title": "Daily Program of JoInt Meeting of Federal Parliament 2082-12-27",
     "url": "https://hr.parliament.gov.np/en/notices/1775733522",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/1qqf3hglfgvxa40v.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Daily_Program_of_JoInt_Meeting_of_Federal_Parliament_2082-12-27-ocr.txt",
+    "translated_path": "translations/Daily_Program_of_JoInt_Meeting_of_Federal_Parliament_2082-12-27.txt",
+    "structured_path": "translations/Daily_Program_of_JoInt_Meeting_of_Federal_Parliament_2082-12-27.json"
   },
   {
     "serial": "11.",
     "title": "Final List of Candidates for the House of the Deputy Speaker",
     "url": "https://hr.parliament.gov.np/en/notices/1775724912",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/t98wpt1laaubohl4.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Final_List_of_Candidates_for_the_House_of_the_Deputy_Speaker-ocr.txt",
+    "translated_path": "translations/Final_List_of_Candidates_for_the_House_of_the_Deputy_Speaker.txt",
+    "structured_path": "translations/Final_List_of_Candidates_for_the_House_of_the_Deputy_Speaker.json"
   },
   {
     "serial": "12.",
