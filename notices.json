@@ -1286,8 +1286,11 @@
     "title": "Notice 2082-05-19",
     "url": "https://hr.parliament.gov.np/en/notices/1758186743",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/egijnqwxdmairo4q.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Notice_2082-05-19-ocr.txt",
+    "translated_path": "translations/Notice_2082-05-19.txt",
+    "structured_path": "translations/Notice_2082-05-19.json"
   },
   {
     "serial": "29.",
