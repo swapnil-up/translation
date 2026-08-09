@@ -1,0 +1,178 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2079\nSixth Session\nMeeting Number - 48\nFederal\nDaily Business Schedule\nFriday, Bhadra 6, 2082\n1:00 PM\nMinistry-wise Question and Answer\nThe concerned ministers will answer oral questions related to the Ministry of Home Affairs, Ministry of Labour, Employment and Social Security, Ministry of Youth and Sports, and Ministry of Forest and Environment.\nPresentation of Committee Report\nHonorable Chairperson Kusum Devi Thapa of the Agriculture, Cooperatives and Natural Resources Committee will present the \"Report of the Committee on the Bill to Amend Some Nepal Laws Related to Land, 2082\".\nHonorable Chairperson Ammar Bahadur Thapa of the Education, Health and Information Technology Committee will present the \"Report on the School Education Bill, 2080\".\nManagement Work\nHonorable Minister of Agriculture and Livestock Development, Ramnath Adhikari, will present a proposal to \"Consider the Nepal Veterinary Council (First Amendment) Bill, 2082\".\nHonorable Minister of Science and Information Technology, Prithvi Subba Gurung, will present a proposal to \"Send the Information Technology and Cyber Security Bill, 2082 to the concerned committee for clause-wise discussion\".\nHonorable Minister of Youth and Sports, Tejulal Chaudhary, will present a proposal to \"Send the National Sports Development (First Amendment) Bill, 2082 to the concerned committee for clause-wise discussion\".\nHonorable Deputy Prime Minister and Minister of Finance, Bishnu Prasad Paudel:-\n(a) Will present a proposal to \"Discuss the Alternative Development Finance Mobilization Bill, 2082, along with the report of the Finance Committee\".\n(b) Will present a proposal to \"Pass the Alternative Development Finance Mobilization Bill, 2082\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-06-06",
+    "date_ad": "2025-08-22",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "48",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Ministry-wise Question and Answer",
+      "summary_en": "Ministers from the Ministry of Home Affairs, Ministry of Labour, Employment and Social Security, Ministry of Youth and Sports, and Ministry of Forest and Environment will respond to oral questions. This section is dedicated to interpellations and ministerial responses.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Oral questions to ministries",
+        "Ministerial responses"
+      ]
+    },
+    {
+      "name": "Presentation of Committee Report",
+      "summary_en": "The committee chairpersons will present reports on specific bills. Kusum Devi Thapa will present a report on the Land Bill amendment, and Ammar Bahadur Thapa will present a report on the School Education Bill.",
+      "speakers": [
+        {
+          "name": "Kusum Devi Thapa",
+          "party": null,
+          "topic": "Presenting report on Land Bill amendment"
+        },
+        {
+          "name": "Ammar Bahadur Thapa",
+          "party": null,
+          "topic": "Presenting report on School Education Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend Some Nepal Laws Related to Land, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "School Education Bill, 2080",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Committee on the Bill to Amend Some Nepal Laws Related to Land, 2082",
+        "Report on the School Education Bill, 2080"
+      ],
+      "key_issues": [
+        "Committee reports",
+        "Land law amendment",
+        "School education reform"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "Several bills will be presented for consideration and further discussion. This includes proposals to consider, send to committee for clause-wise discussion, or pass specific legislative proposals.",
+      "speakers": [
+        {
+          "name": "Ramnath Adhikari",
+          "party": null,
+          "topic": "Proposal for Nepal Veterinary Council Bill"
+        },
+        {
+          "name": "Prithvi Subba Gurung",
+          "party": null,
+          "topic": "Proposal for IT and Cyber Security Bill"
+        },
+        {
+          "name": "Tejulal Chaudhary",
+          "party": null,
+          "topic": "Proposal for National Sports Development Bill"
+        },
+        {
+          "name": "Bishnu Prasad Paudel",
+          "party": null,
+          "topic": "Proposal for Alternative Development Finance Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Veterinary Council (First Amendment) Bill, 2082",
+          "status": "discussed"
+        },
+        {
+          "name": "Information Technology and Cyber Security Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "National Sports Development (First Amendment) Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Alternative Development Finance Mobilization Bill, 2082",
+          "status": "discussed"
+        },
+        {
+          "name": "Alternative Development Finance Mobilization Bill, 2082",
+          "status": "passed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative proposals",
+        "Veterinary council",
+        "Information technology",
+        "Cyber security",
+        "Sports development",
+        "Development finance"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "House of Representatives",
+    "Question and Answer",
+    "Committee Reports",
+    "Legislation",
+    "Bills",
+    "Agriculture",
+    "Education",
+    "Information Technology",
+    "Sports",
+    "Finance",
+    "Veterinary Council",
+    "Land Law"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Home Affairs",
+    "Ministry of Labour, Employment and Social Security",
+    "Ministry of Youth and Sports",
+    "Ministry of Forest and Environment",
+    "Ministry of Agriculture and Livestock Development",
+    "Ministry of Science and Information Technology",
+    "Ministry of Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Kusum Devi Thapa",
+      "party": null,
+      "section": "Presentation of Committee Report"
+    },
+    {
+      "name": "Ammar Bahadur Thapa",
+      "party": null,
+      "section": "Presentation of Committee Report"
+    },
+    {
+      "name": "Ramnath Adhikari",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Prithvi Subba Gurung",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Tejulal Chaudhary",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Bishnu Prasad Paudel",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

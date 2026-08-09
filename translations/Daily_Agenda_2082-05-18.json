@@ -1,0 +1,124 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2079\n10th Session\nMeeting Number - 60\nFederal\nDaily Agenda\nWednesday, Bhadra 18, 2082\n1:00 PM\nLetter from the Office of the President\nThe Honorable Speaker will read out the letter received from the Office of the President regarding the additional responsibilities.\n1. Prime Minister and Council of Ministers' Office Letter\nThe Honorable Speaker will read out the letter received from the Prime Minister and Council of Ministers' Office regarding additional responsibilities.\n2. Table of Messages\nSecretary of the House of Representatives, Harkaraj Rai, will table the bill along with the message received from the House regarding the \"Water Resources Bill, 2081\".\n3. Management Work\nThe Honorable Minister of Agriculture and Livestock Development, Ramnath Adhikari, will present a proposal for consideration of the \"Nepal Veterinary Council (First Amendment) Bill, 2082\".\n4. The Honorable Home Minister, Ramesh Lekhak, will present a proposal for consideration of the amendments made by the National Assembly to the \"Nepal Citizenship (Second Amendment) Bill, 2081\".\n4. Pad Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-04-18",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": 60,
+    "chairperson": "The Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Letter from the Office of the President",
+      "summary_en": "The Speaker will read out a letter from the Office of the President concerning additional responsibilities.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "President's Office Letter",
+        "Additional Responsibilities"
+      ]
+    },
+    {
+      "name": "Prime Minister and Council of Ministers' Office Letter",
+      "summary_en": "The Speaker will read out a letter from the Prime Minister and Council of Ministers' Office regarding additional responsibilities.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Prime Minister's Office Letter",
+        "Additional Responsibilities"
+      ]
+    },
+    {
+      "name": "Table of Messages",
+      "summary_en": "The Secretary of the House of Representatives will table the \"Water Resources Bill, 2081\" along with a message from the House.",
+      "speakers": [
+        {
+          "name": "Harkaraj Rai",
+          "party": null,
+          "topic": "Table Water Resources Bill, 2081"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Water Resources Bill, 2081",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Water Resources Bill, 2081",
+        "Messages from House"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister of Agriculture and Livestock Development will present a proposal for consideration of the \"Nepal Veterinary Council (First Amendment) Bill, 2082\". The Home Minister will present a proposal for consideration of amendments to the \"Nepal Citizenship (Second Amendment) Bill, 2081\" made by the National Assembly.",
+      "speakers": [
+        {
+          "name": "Ramnath Adhikari",
+          "party": null,
+          "topic": "Consider Nepal Veterinary Council (First Amendment) Bill, 2082"
+        },
+        {
+          "name": "Ramesh Lekhak",
+          "party": null,
+          "topic": "Consider amendments to Nepal Citizenship (Second Amendment) Bill, 2081"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Veterinary Council (First Amendment) Bill, 2082",
+          "status": "discussed"
+        },
+        {
+          "name": "Nepal Citizenship (Second Amendment) Bill, 2081",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Nepal Veterinary Council (First Amendment) Bill, 2082",
+        "Nepal Citizenship (Second Amendment) Bill, 2081",
+        "National Assembly Amendments"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Bills",
+    "Legislation",
+    "Government Business",
+    "President's Office",
+    "Prime Minister's Office",
+    "Water Resources",
+    "Veterinary Council",
+    "Citizenship"
+  ],
+  "ministries_mentioned": [
+    "Prime Minister and Council of Ministers' Office",
+    "Ministry of Agriculture and Livestock Development",
+    "Home Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Harkaraj Rai",
+      "party": null,
+      "section": "Table of Messages"
+    },
+    {
+      "name": "Ramnath Adhikari",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Ramesh Lekhak",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

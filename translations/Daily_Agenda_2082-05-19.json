@@ -1,0 +1,137 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2079 BS\nSixth Session\nMeeting Number - 69\nFederal\nDaily Agenda\nThursday, Bhadra 19, 2082 BS\n1:00 PM\nMinistry-wise Question and Answer\nMinisters concerned will answer oral questions related to the Ministry of Science and Technology, Ministry of Health and Population, Ministry of Agriculture and Livestock Development, and Ministry of Energy, Water Resources and Irrigation.\nTabled Message\n2. Harka Raj Rai, Secretary of the House of Representatives, will table the bill along with the message received from the National Assembly regarding the \"Federal Civil Service Bill, 2080 BS\".\nManagement Work\n3. The Honorable Speaker will present the proposal for decision on \"Consideration of the Nepal Veterinary Council (First Amendment) Bill, 2082 BS\".\nThe Honorable Minister for Women, Children and Senior Citizens, Nawal Kishore Sah Sudi, will present the proposal to \"Send the Children Related (First Amendment) Bill, 2082 BS) to the relevant committee for clause-wise discussion\".\n4. The Honorable Prime Minister K.P. Sharma Oli will:\n(a) Present the proposal to \"Reconsider the Constitutional Council (Functions, Duties, Rights and Procedures) Related (First Amendment) Bill, 2079 BS, which has been returned with a message from the Honorable President\".\n(b) Present the proposal to \"Pass the Constitutional Council (Functions, Duties, Rights and Procedures) Related (First Amendment) Bill, 2079 BS, which has been returned with a message from the Honorable President\".\n\n\nPushpa Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-04-19",
+    "date_ad": "2025-09-04",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "69",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Ministry-wise Question and Answer",
+      "summary_en": "Ministers from the Ministry of Science and Technology, Ministry of Health and Population, Ministry of Agriculture and Livestock Development, and Ministry of Energy, Water Resources and Irrigation will answer oral questions related to their respective ministries.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Oral questions to ministries",
+        "Ministry of Science and Technology",
+        "Ministry of Health and Population",
+        "Ministry of Agriculture and Livestock Development",
+        "Ministry of Energy, Water Resources and Irrigation"
+      ]
+    },
+    {
+      "name": "Tabled Message",
+      "summary_en": "The Secretary of the House of Representatives, Harka Raj Rai, will table the Federal Civil Service Bill, 2080 BS, along with a message received from the National Assembly.",
+      "speakers": [
+        {
+          "name": "Harka Raj Rai",
+          "party": null,
+          "topic": "Table Federal Civil Service Bill, 2080 BS"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Federal Civil Service Bill, 2080 BS",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Federal Civil Service Bill, 2080 BS",
+        "National Assembly message"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Speaker will present the Nepal Veterinary Council (First Amendment) Bill, 2082 BS for decision. The Minister for Women, Children and Senior Citizens will propose sending the Children Related (First Amendment) Bill, 2082 BS to committee.",
+      "speakers": [
+        {
+          "name": "Nawal Kishore Sah Sudi",
+          "party": null,
+          "topic": "Send Children Related (First Amendment) Bill, 2082 BS to committee"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Veterinary Council (First Amendment) Bill, 2082 BS",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Children Related (First Amendment) Bill, 2082 BS",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Nepal Veterinary Council (First Amendment) Bill, 2082 BS",
+        "Children Related (First Amendment) Bill, 2082 BS"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Prime Minister will present proposals for reconsideration and passing of the Constitutional Council (Functions, Duties, Rights and Procedures) Related (First Amendment) Bill, 2079 BS, which was returned by the President with a message.",
+      "speakers": [
+        {
+          "name": "K.P. Sharma Oli",
+          "party": null,
+          "topic": "Reconsider and pass Constitutional Council (First Amendment) Bill, 2079 BS"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Constitutional Council (Functions, Duties, Rights and Procedures) Related (First Amendment) Bill, 2079 BS",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Constitutional Council (First Amendment) Bill, 2079 BS",
+        "Presidential message",
+        "Reconsideration of bill",
+        "Passing of bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Agenda",
+    "House of Representatives",
+    "Bill Discussion",
+    "Legislation",
+    "Question and Answer",
+    "Ministry Updates",
+    "Civil Service",
+    "Veterinary Council",
+    "Children's Rights",
+    "Constitutional Council",
+    "Prime Minister"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Science and Technology",
+    "Ministry of Health and Population",
+    "Ministry of Agriculture and Livestock Development",
+    "Ministry of Energy, Water Resources and Irrigation",
+    "Ministry for Women, Children and Senior Citizens"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Harka Raj Rai",
+      "party": null,
+      "section": "Tabled Message"
+    },
+    {
+      "name": "Nawal Kishore Sah Sudi",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "K.P. Sharma Oli",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

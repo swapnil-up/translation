@@ -1,0 +1,43 @@
+{
+  "full_translation_en": "Federal Parliament\nFederal Parliament\nHouse of Representatives\nNotice\nDate: Bhadra 19, 2082\nMonday\nInformation regarding the Election of the Chairperson\nThis notice has been published for the information of the members of the House of Representatives as per Rule 176, Sub-rule (1) of the Rules of Procedure of the House of Representatives, 2079, regarding the vacant Chairperson's post within the Good Governance and State Affairs Committee under the House of Representatives. The Speaker has scheduled the election for Wednesday, Bhadra 22, 2082. \n\nPad Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-04-19",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "A notice was published regarding the election of the Chairperson for the Good Governance and State Affairs Committee. The election is scheduled for Wednesday, Bhadra 22, 2082, as per the House of Representatives' Rules of Procedure.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Election of Committee Chairperson",
+        "Good Governance and State Affairs Committee",
+        "House of Representatives Rules of Procedure"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Notice",
+    "House of Representatives",
+    "Committee Election",
+    "Good Governance",
+    "State Affairs",
+    "Rules of Procedure",
+    "Chairperson Election"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Pad Prasad Pandey",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

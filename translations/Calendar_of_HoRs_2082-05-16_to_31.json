@@ -1,0 +1,135 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nMeeting Schedule\nFor the period of Bhadra 16 to 31, 2082 BS\nBi-weekly\nTentative\n(As per Rule 254 of the House of Representatives Regulations, 2079)\nHouse of Representatives Meeting Tentative Agenda\nDate\nSl. No.\nThursday\nSaturday\nZero Hour, Special Time, Table Message (Water Resources Bill), Nepal Veterinary Council Bill, 2082 (First Amendment) - Proposal to be presented for consideration\nSunday\nMonday\nTuesday\nFriday\nWednesday\n1.\n16th Bhadra\n18th Bhadra\nBill, 2082 (First Amendment) - Proposal to be presented for consideration\nNational Citizenship (Second Amendment) Bill, 2082 - Proposal to be presented for consideration\n4\n6\nPresented,\nConsideration\n93\n92\n94\n94\n96\n97\n29\n99\n98\nChildren's Bill, 2082 (First Amendment) - Proposal to be presented for consideration\n22\n23\n24\nQuestion and Answer Session,\n27\n28\n26\nMinistry-wise\nZero Hour,\nSent to the relevant committee for clause-by-clause discussion\nProposal\n2082\n39\n30\n-\nConstitutional Council Bill, 2079 (First Amendment) - Proposal for reconsideration to be presented\nPresidential Message,\n(Work, Rights and Procedures) Bill, 2079 - Proposal for reconsideration to be presented\nPublic\nPresented,\nUrgent\nProposals\nIn the House\nConsideration\nProposal\nfor\nreconsideration\n\"Let it be reconsidered\"\nProposal to be presented\n19th Bhadra\n20\n94\n96\n97\n29\n99\n98\n22\n23\n24\n27\n28\n26\n29\n30\n39\n2082\n-\n2079\n(Urgent\nProposals\nImportance/Resolution/Attention)\nNote: At the beginning of every meeting, depending on the seriousness of the subject matter, there may be an emergency time.\nSpecial Time, Report of the Education, Science and Technology Committee presented, Education Bill, 2080 - Proposal to be discussed and passed\n24th Bhadra\nZero Hour,\nSchool\n2.\n3.\nAgenda items may be added or removed to discuss/consider urgent matters (new bills presented, etc.) that are not included in the agenda.\n26th Bhadra\n\"Water Resources Bill, 2082 (First Amendment) - Proposal to be presented for consideration\nQuestion and Answer Session,\nZero Hour,\nMinistry-wise\n3.\n4.\n(Urgent\nProposals\nImportance/Resolution/Attention)\n4.\nZero Hour, Special Time, Nepal Veterinary Council (First Amendment) Bill, 2082 - Proposal to be sent to the relevant committee for clause-by-clause discussion\n27th Bhadra\nDays when the House will not meet are allocated for committee meetings, etc. Committee meetings can also be held on days when the House is meeting, before or after the House meeting.\nOther matters as per Chapters 24, 27, and 30 of the Regulations may be included in the agenda as needed.\nTime for the Honorable Minister to seek time for a statement of public importance will be provided at the beginning of the meeting, and time for responding to Zero Hour/Special Time/Emergency Time will be provided after Zero Hour.\nTime will be made available to the Leader of the Opposition, former Prime Ministers, former Speakers, etc., in accordance with parliamentary practice.\n",
+  "session": {
+    "date_bs": "2082-04-16",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The agenda for the House of Representatives meeting includes Zero Hour, Special Time, and the presentation of messages and bills. Key legislative items include the Water Resources Bill, Nepal Veterinary Council Bill, and National Citizenship Amendment Bill.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Water Resources Bill, 2082 (First Amendment)",
+          "status": "introduced"
+        },
+        {
+          "name": "Nepal Veterinary Council Bill, 2082 (First Amendment)",
+          "status": "introduced"
+        },
+        {
+          "name": "National Citizenship (Second Amendment) Bill, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative agenda",
+        "Bill introductions",
+        "Parliamentary procedures"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "This section details the legislative agenda for various dates, including discussions on the Children's Bill, Constitutional Council Bill, and the Work, Rights and Procedures Bill. It also includes provisions for question and answer sessions and ministry-wise discussions.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Children's Bill, 2082 (First Amendment)",
+          "status": "introduced"
+        },
+        {
+          "name": "Constitutional Council Bill, 2079 (First Amendment)",
+          "status": "introduced"
+        },
+        {
+          "name": "Work, Rights and Procedures Bill, 2079",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Bill discussions",
+        "Legislative process",
+        "Government accountability"
+      ]
+    },
+    {
+      "name": "Special Time and Committee Reports",
+      "summary_en": "The agenda includes Special Time and the presentation of the Education, Science and Technology Committee's report on the Education Bill, 2080, with a proposal for discussion and passage. It also mentions the possibility of urgent matters being added to the agenda.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Education Bill, 2080",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Education, Science and Technology Committee"
+      ],
+      "key_issues": [
+        "Education policy",
+        "Committee reports",
+        "Urgent legislative matters"
+      ]
+    },
+    {
+      "name": "Further Business",
+      "summary_en": "This section outlines further agenda items including discussions on the Water Resources Bill, ministry-wise discussions, and question and answer sessions. It also addresses the allocation of time for ministerial statements and responses.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Water Resources Bill, 2082 (First Amendment)",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Water resources management",
+        "Ministerial statements",
+        "Parliamentary time allocation"
+      ]
+    },
+    {
+      "name": "Additional Provisions",
+      "summary_en": "The agenda includes Zero Hour, Special Time, and the Nepal Veterinary Council Bill, with a proposal to send it for clause-by-clause discussion. It also notes that committee meetings can be held on days when the House is not in session and that other regulatory matters may be included.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Nepal Veterinary Council (First Amendment) Bill, 2082",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Veterinary council legislation",
+        "Committee work",
+        "Parliamentary regulations"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Agenda",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Committee Meetings",
+    "Zero Hour",
+    "Special Time",
+    "Question and Answer",
+    "Ministerial Statements",
+    "Nepal",
+    "Bhadra 2082"
+  ],
+  "ministries_mentioned": [
+    "Water Resources",
+    "Education, Science and Technology"
+  ],
+  "all_speakers_mentioned": [],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

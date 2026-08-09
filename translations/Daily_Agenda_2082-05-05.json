@@ -1,0 +1,100 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2079\n11th Session\nMeeting Number - 57\nFederal\nDaily Agenda\n2082 Bhadra 5, Thursday\n1:00 PM\n1. Presentation of Committee Report\nHonorable Chairperson Santosh Chalise of the Finance Committee will present the \"Report of the Committee on the Alternative Development Finance Mobilization Bill, 2082\".\n2. Management Work\nHonorable Minister for Industry, Commerce and Supplies, Damodar Bhandari will present a proposal to \"Send the Industrial Property Bill, 2082 for clause-by-clause discussion to the relevant committee\".\n3. Honorable Minister for Physical Infrastructure and Transport, Devendra Dahal will present a proposal to \"Send the Ship (Operation and Management) Bill, 2081, originating in the National Assembly, for clause-by-clause discussion to the relevant committee\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-05-05",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": "57",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Presentation of Committee Report",
+      "summary_en": "The Chairperson of the Finance Committee, Santosh Chalise, presented the committee's report on the Alternative Development Finance Mobilization Bill, 2082. This marks the formal presentation of a report to the House.",
+      "speakers": [
+        {
+          "name": "Santosh Chalise",
+          "party": null,
+          "topic": "Presentation of committee report on Alternative Development Finance Mobilization Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Alternative Development Finance Mobilization Bill, 2082",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Committee on the Alternative Development Finance Mobilization Bill, 2082"
+      ],
+      "key_issues": []
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Industry, Commerce and Supplies proposed sending the Industrial Property Bill, 2082 to a committee for clause-by-clause discussion. Subsequently, the Minister for Physical Infrastructure and Transport proposed sending the Ship (Operation and Management) Bill, 2081, which originated in the National Assembly, to a committee for similar discussion.",
+      "speakers": [
+        {
+          "name": "Damodar Bhandari",
+          "party": null,
+          "topic": "Proposal to send Industrial Property Bill to committee"
+        },
+        {
+          "name": "Devendra Dahal",
+          "party": null,
+          "topic": "Proposal to send Ship Bill to committee"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Industrial Property Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Ship (Operation and Management) Bill, 2081",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Procedure",
+    "Committee Reports",
+    "Legislation",
+    "Finance Bill",
+    "Industrial Property Bill",
+    "Maritime Bill",
+    "Bill Referral",
+    "House of Representatives",
+    "Daily Agenda"
+  ],
+  "ministries_mentioned": [
+    "Industry, Commerce and Supplies",
+    "Physical Infrastructure and Transport"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Santosh Chalise",
+      "party": null,
+      "section": "Presentation of Committee Report"
+    },
+    {
+      "name": "Damodar Bhandari",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Devendra Dahal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Secretary-General"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

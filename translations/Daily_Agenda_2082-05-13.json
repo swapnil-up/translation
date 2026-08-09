@@ -1,0 +1,103 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2079\nSixth Session\nMeeting Number - 49\nFederal\nDaily Business Schedule\nFriday, Bhadra 13, 2082\n1:00 PM\nTable of Message\n1. Harka Raj Rai, Secretary of the House of Representatives, will table the bill along with the message received from the National Assembly concerning the \"Nepal Citizenship (Second Amendment) Bill, 2082\".\n2. Reshuffle in Joint Committee\nHonorable Speaker will reshuffle the names of honorable members in the Parliamentary Hearing Committee within the Joint Committee.\nManagement Work\nHonorable Balram Adhikari, Minister for Land Management, Cooperatives, and Poverty Alleviation will:\n(a) Present a proposal to discuss the \"Bill to Amend Some Nepal Laws Related to Land, 2082\".\n(b) Present a proposal to pass the \"Bill to Amend Some Nepal Laws Related to Land, 2082\".\nPadma Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2082-05-13",
+    "date_ad": "2025-08-29",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "49",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Table of Message",
+      "summary_en": "The Secretary of the House of Representatives, Harka Raj Rai, will table a message from the National Assembly regarding the Nepal Citizenship (Second Amendment) Bill, 2082. This marks the formal introduction of the bill with amendments from the upper house.",
+      "speakers": [
+        {
+          "name": "Harka Raj Rai",
+          "party": null,
+          "topic": "Tabling Nepal Citizenship (Second Amendment) Bill, 2082"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Citizenship (Second Amendment) Bill, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Citizenship Bill",
+        "National Assembly Message"
+      ]
+    },
+    {
+      "name": "Reshuffle in Joint Committee",
+      "summary_en": "The Honorable Speaker will make changes to the membership of the Parliamentary Hearing Committee, which is part of the Joint Committee. This section deals with internal administrative adjustments within parliamentary committees.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Joint Committee",
+        "Parliamentary Hearing Committee",
+        "Membership Reshuffle"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "Minister Balram Adhikari will present proposals for discussion and passage of the Bill to Amend Some Nepal Laws Related to Land, 2082. This section focuses on legislative business concerning land laws.",
+      "speakers": [
+        {
+          "name": "Balram Adhikari",
+          "party": null,
+          "topic": "Bill to Amend Some Nepal Laws Related to Land, 2082"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend Some Nepal Laws Related to Land, 2082",
+          "status": "discussed"
+        },
+        {
+          "name": "Bill to Amend Some Nepal Laws Related to Land, 2082",
+          "status": "passed"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Agriculture, Cooperatives and Natural Resources Committee"
+      ],
+      "key_issues": [
+        "Land Laws",
+        "Legislative Amendments",
+        "Bill Discussion",
+        "Bill Passage"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "Legislation",
+    "Citizenship Bill",
+    "Land Law Amendment",
+    "Committee Reshuffle",
+    "National Assembly",
+    "House of Representatives",
+    "Nepal Laws"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Land Management, Cooperatives, and Poverty Alleviation"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Harka Raj Rai",
+      "party": null,
+      "section": "Table of Message"
+    },
+    {
+      "name": "Balram Adhikari",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
