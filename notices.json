@@ -1,6 +1,54 @@
 [
   {
     "serial": "1.",
+    "title": "Daily Agenda 2083-04-25(New)",
+    "url": "https://hr.parliament.gov.np/en/notices/1786255217",
+    "pdf_url": null,
+    "status": "pending",
+    "scraped_at": "2026-08-10"
+  },
+  {
+    "serial": "2.",
+    "title": "Notice 2083-04-22(New)",
+    "url": "https://hr.parliament.gov.np/en/notices/1786079418",
+    "pdf_url": null,
+    "status": "pending",
+    "scraped_at": "2026-08-10"
+  },
+  {
+    "serial": "3.",
+    "title": "Daily Agenda 2083-04-22",
+    "url": "https://hr.parliament.gov.np/en/notices/1785999309",
+    "pdf_url": null,
+    "status": "pending",
+    "scraped_at": "2026-08-10"
+  },
+  {
+    "serial": "4.",
+    "title": "Possible Calender of HoRs since Shrawan to Bhadra 2083",
+    "url": "https://hr.parliament.gov.np/en/notices/1785927223",
+    "pdf_url": null,
+    "status": "pending",
+    "scraped_at": "2026-08-10"
+  },
+  {
+    "serial": "5.",
+    "title": "Notice 2083-04-19",
+    "url": "https://hr.parliament.gov.np/en/notices/1785847169",
+    "pdf_url": null,
+    "status": "pending",
+    "scraped_at": "2026-08-10"
+  },
+  {
+    "serial": "7.",
+    "title": "Notice 2083-04-14",
+    "url": "https://hr.parliament.gov.np/en/notices/1785382951",
+    "pdf_url": null,
+    "status": "pending",
+    "scraped_at": "2026-08-10"
+  },
+  {
+    "serial": "1.",
     "title": "Possible Daily Agenda 2083-04-19(New)",
     "url": "https://hr.parliament.gov.np/en/notices/1785747212",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/qcgd8pfxfyfftxn6.pdf",
