@@ -1,0 +1,115 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nWork Schedule\nFortnightly\nTentative for the period of Bhadra 1 to 15, 2082\n(As per Rule 254 of the House of Representatives Regulations, 2079)\nTentative Agenda for House of Representatives Meeting\nDate\nNo.\nThursday\nSaturday\n4th\nMonday\n(First\nTuesday\nSunday\nFriday\nWednesday\nRegarding\nQuestion and Answer,\nDirect\nwith the Prime Minister,\nChild\n9.\nZero Hour,\nBill, 2082\nProposal to consider the Human Trafficking and\nSmuggling (Control) (First Amendment) Bill, 2082.\n4\nτ\nऱ\n4\nॠ\nव\n90\n99\n93\n92\n94\n(Control)\n(First\nAmendment)\n9\nBill, 2081\nClause-by-clause\nand\nto the concerned committee for discussion.\nProposal to send\n20\n94\n96\n97\n98\n99\n29\n24\n22\n23\n24\n26\n27\nIndustrial Property Related Bill, 2082 to the concerned committee for clause-by-clause discussion.\n2ट\nSpecial Time,\n4th\nZero Hour,\n2.\nProposal to send to the concerned committee for discussion.\nNational\nOrigin\nBill,\n2081\n(Operation and\nManagement)\nWater\nShip\nTo the concerned committee for clause-by-clause discussion.\nProposal to send.\nMeeting Day\nPublic Holiday\nCommittee Meeting etc.\n6th\nMedical\nCouncil (First\nQuestion and Answer,\nAnimal\nNepal\nAmendment)\nTime Ministry-wise\nZero\n3.\nNote:\nBill, 2082\nRegarding\nProposal to consider the Information Technology and Cyber\nSecurity Related Bill, 2082.\nFor discussion in the concerned committee.\nClause-by-clause\nProposal to send.\nBill, 2082\nRegarding\nProposal to send to the concerned committee for clause-by-clause discussion.\nNational Sports\nDevelopment\n(First\nAmendment)\nBill, 2082\nProposal to send to the concerned committee for clause-by-clause discussion.\n2.\nIn addition to the agenda, urgent matters (new bill submission, presentation of committee reports on bills, discussion on proposals, etc.) may be included or removed as needed.\n3. If the Honorable Minister requests time for a statement of public importance, it may be provided at the beginning of the meeting, and if time is requested for a response to Zero Hour/Special/Urgent Time, it may be provided after Zero Hour.\n4. Time will be made available to the Leader of the Opposition, former Prime Ministers, former Speakers, etc., in accordance with parliamentary practice.\n4. Days when the House does not meet are set aside for committee meetings etc. Committee meetings can be held before or after the House meeting on days when the House meets.\n6. Matters under Chapter 24, 27, and 30 of the Regulations, etc., may be included in the agenda as needed.\nNote: In the beginning of every meeting, an urgent time may be available depending on the seriousness of the subject matter.\nProposal to send to the concerned committee for clause-by-clause discussion.\n",
+  "session": {
+    "date_bs": "2082-04-15",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Zero Hour",
+      "summary_en": "During Zero Hour, MPs can raise urgent issues. The agenda includes proposals for considering and sending bills to committees for clause-by-clause discussion.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Human Trafficking and Smuggling (Control) (First Amendment) Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Industrial Property Related Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Water Ship Operation and Management Bill, 2081",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Information Technology and Cyber Security Related Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "National Sports Development (First Amendment) Bill, 2082",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Human Trafficking and Smuggling",
+        "Industrial Property",
+        "Water Ship Operation and Management",
+        "Information Technology and Cyber Security",
+        "National Sports Development"
+      ]
+    },
+    {
+      "name": "Special Time",
+      "summary_en": "Special Time allows for discussions on matters of public importance. The agenda indicates a proposal to send the National Sports Development (First Amendment) Bill, 2082 to a committee.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "National Sports Development (First Amendment) Bill, 2082",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "National Sports Development"
+      ]
+    },
+    {
+      "name": "Ministry-wise Question and Answer",
+      "summary_en": "This section is allocated for ministry-specific question and answer sessions. The agenda mentions a proposal related to the Medical Council (First Amendment) Bill, 2082.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Medical Council (First Amendment) Bill, 2082",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Medical Council"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The main business of the meeting involves considering and discussing various bills. Proposals include sending bills to committees for clause-by-clause deliberation.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The meeting schedule notes that days when the House does not sit are reserved for committee meetings. Committee meetings can also occur before or after House sittings.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Committee Meetings"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Legislation",
+    "Bill Discussion",
+    "Zero Hour",
+    "Special Time",
+    "Question and Answer",
+    "Committee Work",
+    "Human Trafficking",
+    "Cyber Security",
+    "Sports Development",
+    "Medical Council"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Information Technology and Cyber Security"
+  ],
+  "all_speakers_mentioned": [],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1426,8 +1426,11 @@
     "title": "Calendar of HoRs 2082-05-01 to 15",
     "url": "https://hr.parliament.gov.np/en/notices/1755682560",
     "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/buif8pktypayhi9q.pdf",
-    "status": "pending",
-    "scraped_at": "2026-07-25"
+    "status": "done",
+    "scraped_at": "2026-07-25",
+    "ocr_path": "translations/Calendar_of_HoRs_2082-05-01_to_15-ocr.txt",
+    "translated_path": "translations/Calendar_of_HoRs_2082-05-01_to_15.txt",
+    "structured_path": "translations/Calendar_of_HoRs_2082-05-01_to_15.json"
   },
   {
     "serial": "12.",
