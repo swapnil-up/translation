@@ -116,7 +116,9 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 ## Notice Automation Pipeline
 
 ### Scripts
-- `scripts/scrape_notices.py` — scrapes `hr.parliament.gov.np` notices table (44 pages, 1,302 entries). Two modes: `--list-only` (fast, incremental) and `--backfill` (fetches detail pages for PDF URLs). Output: `notices.json`.
+- `scripts/scrape_notices.py` — scrapes `hr.parliament.gov.np` notices table. Two modes: `--list-only` (fast, incremental) and `--backfill` (fetches detail pages for PDF URLs). Output: `notices.json`. Stops at the 7th-HoR boundary: notices dated pre-2082-12 (the 6th HoR, dissolved 2025-09-12) are skipped, so the manifest only tracks the current parliament.
+- `notices.json` — trimmed to the current (7th) House of Representatives (first session 2026-04-02). ~124 entries kept; older 6th-HoR notices moved to `notices-6th-hor.json`.
+- `notices-6th-hor.json` — archive of the removed 6th-HoR-era notices (1,185 entries), kept with `ocr_path`/`translated_path` links to any existing `translations/` files so translated bills remain discoverable.
 - `scripts/process_notice.py` — picks 1 pending notice from manifest, backfills PDF URL if missing, downloads PDF, runs PaddleOCR (OCR only), then calls Gemini with a structured JSON prompt. Saves three files: `{stem}-ocr.txt` (Devanagari), `{stem}.txt` (full English translation), `{stem}.json` (structured metadata with sections, speakers, bills, agenda tags).
 - `scripts/upsert_notice.py` — reads a structured `{stem}.json` file, chunks sections, generates embeddings via `text-embedding-004`, and upserts to pgvector (both notice record + chunks).
 - `scripts/init_db.py` — creates the pgvector schema (`notices` + `chunks` tables).
@@ -169,7 +171,7 @@ Uses `response_mime_type="application/json"` with a schema that returns both `fu
 ### Manifest (`notices.json`)
 | Field | Description |
 |-------|-------------|
-| `serial` | Row number from table |
+| `serial` | Global 1-based index in manifest order (renumbered on every scrape; the site's per-page row number is not stored) |
 | `title` | Notice title (e.g. "Notice 2083-03-31") |
 | `url` | Detail page URL |
 | `pdf_url` | Direct PDF attachment URL |

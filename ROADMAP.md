@@ -6,7 +6,7 @@
 |------|--------|
 | OCR pipeline (PaddleOCR) | Done — rasterizes everything, no pre-processing |
 | Gemini freeform translation | Done — block-based, no structured output |
-| Notice scraper | Done — `scripts/scrape_notices.py`, 1,302 entries |
+| Notice scraper | Done — `scripts/scrape_notices.py`, current 7th HoR only (~124 entries) |
 | Notice processor | Done — `scripts/process_notice.py`, GH Actions cron |
 | FastAPI backend | Done — upload → OCR → translate endpoints |
 | Vue.js frontend | Basic — upload + overlay/text view, no search |

@@ -19,6 +19,10 @@ DELAY = 0.3
 MAX_RETRIES = 3
 RETRY_DELAY = 5
 
+# 7th House of Representatives: elected 2026-03-05 (BS 2082-11), first session began 2026-04-02 (BS 2082-12).
+# Notices older than this belong to the dissolved 6th HoR and are excluded from the manifest.
+MIN_BS_YEAR, MIN_BS_MONTH = 2082, 12
+
 
 def load_manifest() -> list:
     if MANIFEST.exists():
@@ -27,6 +31,8 @@ def load_manifest() -> list:
 
 
 def save_manifest(notices: list):
+    for i, n in enumerate(notices, 1):
+        n["serial"] = f"{i}."
     MANIFEST.write_text(json.dumps(notices, indent=2, ensure_ascii=False))
     print(f"[manifest] wrote {len(notices)} entries", file=sys.stderr)
 
@@ -53,6 +59,23 @@ def fetch_page(url: str) -> BeautifulSoup | None:
     if resp:
         return BeautifulSoup(resp.text, "lxml")
     return None
+
+
+BS_DATE_RE = re.compile(r"(20\d{2})[-./]?(\d{1,2})?")
+
+
+def is_old_parliament(title: str) -> bool:
+    """True if title's BS/AD date predates the current (7th) HoR.
+
+    Undated titles (e.g. session-call notices) are treated as current-era
+    so they are never dropped or re-added as old noise.
+    """
+    m = BS_DATE_RE.search(title)
+    if not m:
+        return False
+    year = int(m.group(1))
+    month = int(m.group(2)) if m.group(2) else 1
+    return (year, month) < (MIN_BS_YEAR, MIN_BS_MONTH)
 
 
 def extract_notices(soup: BeautifulSoup) -> list[dict]:
@@ -108,10 +131,27 @@ def scrape_list_only():
         if not items:
             break
         total_pages = get_total_pages(soup)
+        seen_old = False
+        kept = []
         for n in items:
+            if is_old_parliament(n["title"]):
+                seen_old = True
+                break
             if n["url"] not in existing_urls:
-                new_notices.append(n)
-        print(f"  -> {len(items)} notices ({len(new_notices)} new so far)", file=sys.stderr)
+                kept.append(n)
+        new_notices.extend(kept)
+        print(
+            f"  -> {len(items)} notices ({len(new_notices)} new so far, "
+            f"old_parliament={seen_old})",
+            file=sys.stderr,
+        )
+        if seen_old:
+            print(
+                f"[done] stopped at page {page}: reached pre-7th-HoR notices "
+                f"(BS < {MIN_BS_YEAR}-{MIN_BS_MONTH})",
+                file=sys.stderr,
+            )
+            break
         if page >= total_pages:
             break
         page += 1

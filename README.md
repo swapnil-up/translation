@@ -154,7 +154,8 @@ python pdf_to_text.py notice.pdf --html --translate
 ├── .github/workflows/      # GitHub Actions
 │   ├── scrape-notices.yml  # Weekly scrape
 │   └── translate-notices.yml # Daily backfill translation
-├── notices.json            # Notice manifest (1,300+ entries)
+├── notices.json            # Notice manifest (current 7th HoR, ~124 entries)
+├── notices-6th-hor.json    # Archive of old 6th-HoR notices (1,185 entries, keeps translation links)
 ├── Dockerfile               # Production build
 └── requirements.txt         # Root dependencies
 ```
