@@ -1,0 +1,142 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 49\nFederal Parliament of Nepal\nDaily Agenda\nFriday, Shrawan 22, 2083\n1:00 PM\n1. Presentation of Committee Report on Bill\nHonorable Chairperson Hari Dhakal of the State Affairs and Good Governance Committee will present the \"Report of the Committee on the Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083\".\n2. Management Work\nOn behalf of the Right Honorable Prime Minister Balendra Shah, Honorable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will:\n(a) Present a proposal seeking permission to introduce the \"Bill to Amend the Remuneration, Service Conditions and Facilities of Office Bearers of Constitutional Bodies (First Amendment) Bill, 2083\".\n(b) Introduce the \"Bill to Amend the Remuneration, Service Conditions and Facilities of Office Bearers of Constitutional Bodies (First Amendment) Bill, 2083\".\n3. Honorable Minister for Foreign Affairs Shishir Khanal will:\n(a) Present a proposal seeking permission to introduce the \"Passport (First Amendment) Bill, 2083\".\n(b) Introduce the \"Passport (First Amendment) Bill, 2083\".\n4. Honorable Minister for Women, Children, Lesbian, Gay, Bisexual, Transgender, Intersex and Social Security Sita Poudel will:\n(a) Present a proposal seeking permission to introduce the \"Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083\".\n(b) Introduce the \"Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083\".\n5. Honorable Minister for Industry, Commerce and Supplies Gauri Kumari will:\n(a) Present a proposal seeking permission to introduce the \"Mine and Minerals Bill, 2083\".\n(b) Introduce the \"Mine and Minerals Bill, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-22",
+    "date_ad": "2026-08-07",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "49",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Presentation of Committee Report on Bill",
+      "summary_en": "The Chairperson of the State Affairs and Good Governance Committee, Hari Dhakal, will present a committee report regarding the revival of provisions in the Nepal Special Service Act, 2042.",
+      "speakers": [
+        {
+          "name": "Hari Dhakal",
+          "party": null,
+          "topic": "Presentation of committee report on Nepal Special Service Act"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Committee on the Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, 2083"
+      ],
+      "key_issues": []
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will seek permission to introduce and then introduce an amendment bill concerning the remuneration and service conditions of constitutional body officials. Subsequently, the Minister for Foreign Affairs, Shishir Khanal, will do the same for a passport amendment bill.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Introduction of Constitutional Bodies Remuneration Amendment Bill"
+        },
+        {
+          "name": "Shishir Khanal",
+          "party": null,
+          "topic": "Introduction of Passport Amendment Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend the Remuneration, Service Conditions and Facilities of Office Bearers of Constitutional Bodies (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Passport (First Amendment) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Women, Children, Lesbian, Gay, Bisexual, Transgender, Intersex and Social Security, Sita Poudel, will seek permission to introduce and then introduce an amendment bill on human trafficking and transportation. Following this, the Minister for Industry, Commerce and Supplies, Gauri Kumari, will seek permission to introduce and then introduce a bill on mines and minerals.",
+      "speakers": [
+        {
+          "name": "Sita Poudel",
+          "party": null,
+          "topic": "Introduction of Human Trafficking Amendment Bill"
+        },
+        {
+          "name": "Gauri Kumari",
+          "party": null,
+          "topic": "Introduction of Mine and Minerals Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Mine and Minerals Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Procedure",
+    "Bill Introduction",
+    "Legislation",
+    "Special Service Act",
+    "Constitutional Bodies",
+    "Remuneration",
+    "Service Conditions",
+    "Passport",
+    "Human Trafficking",
+    "Minerals",
+    "Committee Report"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Foreign Affairs",
+    "Women, Children, Lesbian, Gay, Bisexual, Transgender, Intersex and Social Security",
+    "Industry, Commerce and Supplies"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Hari Dhakal",
+      "party": null,
+      "section": "Presentation of Committee Report on Bill"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Shishir Khanal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sita Poudel",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Gauri Kumari",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,164 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 42\nDaily Business\nFederal Parliament of Nepal\nMonday, Shrawan 25, 2083\n1:00 PM\nMinistry-wise Question and Answer\nRegarding oral questions related to the Ministry of Agriculture and the Ministry of Youth, Labor, and Employment, the respective ministers will provide answers.\n1.\nManagement Work\nHonorable Finance Minister Dr. Swarnim Wagle:-\n2.\n(a) To present a proposal seeking leave to introduce the \"Employees' Provident Fund (Tenth Amendment) Bill, 2083\".\n(b) To present the \"Employees' Provident Fund (Tenth Amendment) Bill, 2083\".\nHonorable Minister for Law, Justice, and Parliamentary Affairs Sobita Gautam:-\n3.\n(a) To present a proposal seeking leave to introduce the \"Mediation (Second Amendment) Bill, 2083\".\n(b) To present the \"Mediation (Second Amendment) Bill, 2083\".\nHonorable Minister for Youth, Labor, and Employment Ramji Yadav:-\n4.\n(a) To present a proposal seeking leave to introduce the \"Child Labor (Prohibition and Regulation) Bill, 2083\".\n(b) To present the \"Child Labor (Prohibition and Regulation) Bill, 2083\".\nOn behalf of the Right Honorable Prime Minister Balendra Shah, Honorable Minister for Law, Justice, and Parliamentary Affairs Sobita Gautam will present a proposal for consideration of the \"Constitutional Bodies' Remuneration, Service Conditions, and Facilities (First Amendment) Bill, 2083\".\n5.\nOn behalf of the Right Honorable Prime Minister Balendra Shah, Honorable Minister for Law, Justice, and Parliamentary Affairs Sobita Gautam:-\n6.\n(a) To present a proposal for discussion on the \"Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, along with the Report of the State Management and Good Governance Committee, 2083\".\n(b) To present a proposal for the \"Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042\" to be passed.\nPan Prasad Poudel\nSecretary General",
+  "session": {
+    "date_bs": "2083-04-25",
+    "date_ad": "2026-08-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "42",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Ministry-wise Question and Answer",
+      "summary_en": "The respective ministers will answer oral questions related to the Ministry of Agriculture and the Ministry of Youth, Labor, and Employment. This section involves direct questioning and ministerial responses.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Ministry of Agriculture",
+        "Ministry of Youth, Labor, and Employment",
+        "Oral Questions"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister will seek leave to introduce and then present the Employees' Provident Fund (Tenth Amendment) Bill, 2083. Following this, the Minister for Law, Justice, and Parliamentary Affairs will seek leave to introduce and present the Mediation (Second Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Introduce Employees' Provident Fund (Tenth Amendment) Bill, 2083"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Introduce Mediation (Second Amendment) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Employees' Provident Fund (Tenth Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Mediation (Second Amendment) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Employees' Provident Fund",
+        "Mediation",
+        "Bill Introduction"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Youth, Labor, and Employment will seek leave to introduce and present the Child Labor (Prohibition and Regulation) Bill, 2083. Subsequently, on behalf of the Prime Minister, the Minister for Law, Justice, and Parliamentary Affairs will present a proposal for consideration of the Constitutional Bodies' Remuneration, Service Conditions, and Facilities (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Ramji Yadav",
+          "party": null,
+          "topic": "Introduce Child Labor (Prohibition and Regulation) Bill, 2083"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Consider Constitutional Bodies' Remuneration, Service Conditions, and Facilities (First Amendment) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Child Labor (Prohibition and Regulation) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Constitutional Bodies' Remuneration, Service Conditions, and Facilities (First Amendment) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Child Labor",
+        "Constitutional Bodies",
+        "Remuneration and Facilities",
+        "Bill Consideration"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice, and Parliamentary Affairs will present a proposal for discussion on the Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042, along with the report from the State Management and Good Governance Committee. Following this, a proposal will be presented to pass the said bill.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Discuss and pass Bill to Revive Nepal Special Service Act, 2042"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Revive the Previous Provisions of the Nepal Special Service Act, 2042",
+          "status": "passed"
+        }
+      ],
+      "reports_presented": [
+        "Report of the State Management and Good Governance Committee"
+      ],
+      "key_issues": [
+        "Nepal Special Service Act",
+        "Bill Revival",
+        "Committee Report",
+        "Legislation"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "Legislation",
+    "Bill Introduction",
+    "Bill Discussion",
+    "Bill Passage",
+    "Question and Answer",
+    "Ministry Reports",
+    "Finance",
+    "Law",
+    "Labor",
+    "Civil Service",
+    "Constitutional Bodies"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Agriculture",
+    "Ministry of Youth, Labor, and Employment",
+    "Ministry of Finance",
+    "Ministry of Law, Justice, and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Ramji Yadav",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Pan Prasad Poudel",
+      "party": null,
+      "section": "Closing"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
