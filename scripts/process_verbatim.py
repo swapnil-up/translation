@@ -10,11 +10,22 @@ Big files (OCR text, full English translation) go to output/verbatims/
 (gitignored). Only the structured JSON lands in translations/ so the repo
 stays lean at ~50KB per verbatim.
 
+Per-segment checkpointing: each completed segment is written to
+output/verbatims/{stem}.segments/{idx}-{hash}.json as it finishes, so if
+Gemini credits run out mid-document the next run resumes at the first
+unfinished segment instead of re-translating from segment 1. The cache is
+keyed on the segment text hash so any OCR drift invalidates only the
+affected segments. The cache directory is deleted once the whole verbatim
+is merged and saved. On GitHub Actions the output/verbatims dir is
+persisted across runs via the actions/cache service (see
+translate-verbatims.yml).
+
 Usage:
     .venv/bin/python scripts/process_verbatim.py --max-count 1
 """
 
 import argparse
+import hashlib
 import json
 import os
 import subprocess
@@ -162,8 +173,15 @@ def dedup_lines(text: str) -> str:
 
 
 def run_ocr(pdf_path: Path) -> str:
+    """Extract Devanagari text. Reuses an existing {stem}-ocr.txt so
+    segment inputs stay deterministic across runs (the resume anchor)."""
     stem = pdf_path.stem
     ocr_txt = OUTPUT_DIR / f"{stem}-ocr.txt"
+
+    if ocr_txt.exists():
+        text = ocr_txt.read_text(encoding="utf-8")
+        print(f"[ocr] reused cached {ocr_txt} ({len(text):,} chars)", file=sys.stderr)
+        return text
 
     cmd = [
         sys.executable, "pdf_to_text.py",
@@ -200,6 +218,66 @@ def segment_text(text: str, target_chars: int = SEGMENT_CHARS) -> list[str]:
     if cur:
         segments.append("".join(cur))
     return segments
+
+
+def compute_segment_hash(text: str) -> str:
+    """Stable 10-char SHA-1 of segment content, used to key the checkpoint."""
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()[:10]
+
+
+def get_segment_cache_path(stem: str, idx: int, text: str) -> Path:
+    """Path to output/verbatims/{stem}.segments/{idx:03d}-{hash}.json."""
+    cache_dir = OUTPUT_DIR / f"{stem}.segments"
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    return cache_dir / f"{idx:03d}-{compute_segment_hash(text)}.json"
+
+
+def load_cached_segment(cache_path: Path) -> dict | None:
+    """Return the cached segment result, or None if missing/corrupt.
+
+    A corrupt or 0-byte file (abrupt runner death, bad cache restore) is
+    deleted and treated as a cache miss so it gets re-translated.
+    """
+    if not cache_path.exists():
+        return None
+    try:
+        with open(cache_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if isinstance(data, dict) and data.get("full_translation_en"):
+            return data
+        raise ValueError("incomplete segment result")
+    except Exception as e:
+        print(f"[cache] corrupt {cache_path.name} ({e}) — dropping", file=sys.stderr)
+        try:
+            cache_path.unlink(missing_ok=True)
+        except OSError:
+            pass
+        return None
+
+
+def save_cached_segment(cache_path: Path, data: dict):
+    """Atomically write a segment result to disk."""
+    temp_path = cache_path.with_suffix(".tmp")
+    with open(temp_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False)
+    os.replace(temp_path, cache_path)
+
+
+def cleanup_segment_cache(stem: str):
+    """Delete the segment checkpoint dir after a full successful merge."""
+    cache_dir = OUTPUT_DIR / f"{stem}.segments"
+    if not cache_dir.exists():
+        return
+    for f in cache_dir.iterdir():
+        try:
+            f.unlink()
+        except OSError:
+            pass
+    try:
+        cache_dir.rmdir()
+        print(f"[cache] cleared {cache_dir}", file=sys.stderr)
+    except OSError:
+        pass
 
 
 def _classify_gemini_error(err: str) -> str:
@@ -376,9 +454,21 @@ def process_one(verbatim: dict, index: int, verbatims: list) -> bool:
                 segments = segment_text(ocr_text)
                 print(f"[translate] {len(segments)} segments ({SEGMENT_CHARS} chars each)...", file=sys.stderr)
                 results = []
+                resumed = 0
                 for seg_idx, seg in enumerate(segments, 1):
+                    cache_path = get_segment_cache_path(stem, seg_idx, seg)
+                    cached = load_cached_segment(cache_path)
+                    if cached:
+                        resumed += 1
+                        print(f"  [seg] {seg_idx}/{len(segments)} (cached)", file=sys.stderr)
+                        results.append(cached)
+                        continue
                     print(f"  [seg] {seg_idx}/{len(segments)} ({len(seg):,} chars)...", file=sys.stderr)
-                    results.append(call_gemini_segment(seg, seg_idx, len(segments), api_key))
+                    res = call_gemini_segment(seg, seg_idx, len(segments), api_key)
+                    save_cached_segment(cache_path, res)
+                    results.append(res)
+                if resumed:
+                    print(f"[cache] resumed {resumed}/{len(segments)} segments", file=sys.stderr)
 
                 structured = merge_segments(results)
                 structured["_trigger"] = "verbatim"
@@ -408,6 +498,8 @@ def process_one(verbatim: dict, index: int, verbatims: list) -> bool:
             verbatims[index].update(result)
             verbatims[index]["status"] = "done"
             save_manifest(verbatims)
+            if api_key:
+                cleanup_segment_cache(stem)
             print(f"[done] {verbatim.get('title', stem)}")
             return True
 

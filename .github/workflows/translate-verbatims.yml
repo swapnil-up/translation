@@ -33,6 +33,13 @@ jobs:
         with:
           path: ~/.paddlex
           key: paddlex-${{ runner.os }}
+      - name: Restore partial verbatim segment cache
+        uses: actions/cache/restore@v4
+        with:
+          path: output/verbatims
+          key: verbatim-segment-cache-${{ github.run_id }}
+          restore-keys: |
+            verbatim-segment-cache-
       - name: Install system deps
         run: |
           sudo apt-get update
@@ -44,6 +51,13 @@ jobs:
         run: python scripts/init_db.py
       - name: Process verbatims until quota exhausted
         run: python scripts/process_verbatim.py --max-count ${{ github.event.inputs.count || '0' }}
+      - name: Save partial verbatim segment cache
+        if: always()
+        continue-on-error: true
+        uses: actions/cache/save@v4
+        with:
+          path: output/verbatims
+          key: verbatim-segment-cache-${{ github.run_id }}
       - name: Upsert to pgvector (if DATABASE_URL configured)
         if: env.DATABASE_URL != ''
         continue-on-error: true

@@ -209,6 +209,15 @@ meetings, 30+ page transcripts). Text-layer PDFs — OCR route via `pdf_to_text.
   - Why segmentation: verbatims are 60-170KB of OCR text — too large for one
     Gemini call. `SEGMENT_CHARS = 10000`; each segment gets its own structured
     call; `merge_segments()` unions lists and first-wins session metadata.
+  - **Checkpointing:** each completed segment is written to
+    `output/verbatims/{stem}.segments/{idx}-{sha1hash}.json`, so if Gemini
+    credits run out mid-verbatim the next run resumes at the first unfinished
+    segment (keyed on content hash — OCR drift invalidates only affected
+    segments). Existing `{stem}-ocr.txt` is reused so segment inputs stay
+    deterministic. Cache is deleted only on full success; kept on
+    pending/skipped/failed. On GitHub Actions the whole `output/verbatims/`
+    dir persists across runs via the actions/cache service
+    (`verbatim-segment-cache-*` keys).
   - Big files (OCR text, full translation) → `output/verbatims/` (gitignored);
     only the merged structured JSON → `translations/Verbatim_{na_id}.json`
     (tracked, ~50KB).
