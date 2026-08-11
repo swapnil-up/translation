@@ -1,0 +1,30 @@
+name: Scrape Verbatims
+
+on:
+  schedule:
+    - cron: '30 6 * * 1'
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+      - name: Install deps
+        run: pip install requests
+      - name: Scrape verbatims
+        run: python scripts/scrape_verbatims.py
+      - name: Commit manifest
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add verbatims.json
+          git diff --cached --quiet || (git commit -m "update verbatims manifest" && git push)

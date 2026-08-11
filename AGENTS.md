@@ -187,3 +187,71 @@ Uses `response_mime_type="application/json"` with a schema that returns both `fu
 
 ### SSL Note
 The parliament site has a misconfigured SSL cert — both scripts use `verify=False`. The GitHub Actions runners also hit this issue; the `urllib3.disable_warnings()` in the scripts suppresses the noise.
+
+## Verbatim Pipeline (National Assembly)
+
+### Overview
+Mirrors the notice pipeline for National Assembly meeting verbatims (ra.sabha / NA
+meetings, 30+ page transcripts). Text-layer PDFs — OCR route via `pdf_to_text.py`
+(no pdftotext decoder). Source: `na.parliament.gov.np/api/v1/verbatims?limit=500`.
+
+### Scripts
+- `scripts/scrape_verbatims.py` — pulls all verbatims from the NA API into
+  `verbatims.json` (single request, no pagination loop; keyed on stable API
+  `na_id`). Keeps only verbatims from the **19th NA session onward** (BS 2082-10
+  ~ Dec 2025 — a little before the 7th HoR, first session 2026-04-02 / BS
+  2082-12); older sessions are skipped so they never re-enter the manifest.
+  The 379 pre-19th-session entries live in `verbatims-archive.json`; 3 entries
+  in the current set have no PDF → `status: no_pdf`.
+- `scripts/process_verbatim.py` — picks 1 pending verbatim, downloads PDF,
+  runs OCR, splits the Devanagari text into ~10KB segments, calls Gemini
+  per-segment, then **merges** the segment JSON back into one document.
+  - Why segmentation: verbatims are 60-170KB of OCR text — too large for one
+    Gemini call. `SEGMENT_CHARS = 10000`; each segment gets its own structured
+    call; `merge_segments()` unions lists and first-wins session metadata.
+  - Big files (OCR text, full translation) → `output/verbatims/` (gitignored);
+    only the merged structured JSON → `translations/Verbatim_{na_id}.json`
+    (tracked, ~50KB).
+- `scripts/upsert_verbatim.py` — reads `translations/Verbatim_*.json`, chunks
+  sections, embeds via `gemini-embedding-001`, upserts to pgvector
+  (`verbatims` + `verbatim_chunks` tables). Dedup key: `na_id` when present,
+  else `title`.
+
+### DB tables (`verbatims`, `verbatim_chunks`)
+Mirror the `notices`/`chunks` schema but keyed on `na_id UNIQUE` (the NA API id)
+and `title UNIQUE`. Same chunk columns (speaker_names, key_issues, embedding
+VECTOR(768), etc.).
+
+### Running
+```bash
+# Scrape manifest (one-shot; keeps sessions 19+, 52 entries)
+.venv/bin/python scripts/scrape_verbatims.py
+
+# Process one verbatim (download → OCR → segmented translation)
+GEMINI_API_KEY=$key .venv/bin/python scripts/process_verbatim.py --max-count 1
+
+# Upsert to pgvector
+.venv/bin/python scripts/init_db.py --url "postgresql://..."
+.venv/bin/python scripts/upsert_verbatim.py translations/Verbatim_*.json --url "postgresql://..."
+```
+
+### GitHub Actions
+- `scrape-verbatims.yml` — weekly Monday 6:30am, commits new verbatims to `verbatims.json`
+- `translate-verbatims.yml` — daily 4:30am/4:30pm, processes verbatims until quota, commits output
+
+### Verbatim manifest (`verbatims.json`)
+| Field | Description |
+|-------|-------------|
+| `serial` | Global 1-based index in manifest order |
+| `na_id` | Stable NA API id (dedup key for upsert) |
+| `title` | English title (e.g. "Complete Proceedings of the Twenty-First Session ... Meeting no. 33") |
+| `title_np` | Devanagari title |
+| `published_at` | Publication date (null on ~22 pre-2022 entries; BS date is in the title) |
+| `attachment_url` | Direct PDF URL |
+| `status` | `pending` / `done` / `failed` / `skipped` / `no_pdf` |
+| `scraped_at` | Date first discovered |
+| `ocr_path` / `translated_path` / `structured_path` | Paths to saved outputs (when done) |
+
+`verbatims-archive.json` — the 379 pre-19th-session verbatims (sessions 1–18),
+kept so the API ids stay discoverable; not reprocessed by any script.
+

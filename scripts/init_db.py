@@ -54,10 +54,52 @@ CREATE TABLE IF NOT EXISTS chunks (
 CREATE INDEX IF NOT EXISTS idx_chunks_notice_id ON chunks(notice_id);
 CREATE INDEX IF NOT EXISTS idx_chunks_embedding ON chunks
     USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
+
+CREATE TABLE IF NOT EXISTS verbatims (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    na_id INT UNIQUE,
+    title TEXT UNIQUE,
+    title_np TEXT,
+    published_at DATE,
+    date_bs TEXT,
+    date_ad DATE,
+    meeting_type TEXT,
+    meeting_number TEXT,
+    chairperson TEXT,
+    adjournment_time TEXT,
+    next_meeting_date TEXT,
+    source_pdf TEXT,
+    agenda_tags TEXT[],
+    ministries_mentioned TEXT[],
+    full_translation_en TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS verbatim_chunks (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    verbatim_id UUID NOT NULL REFERENCES verbatims(id) ON DELETE CASCADE,
+    chunk_index INT NOT NULL,
+    section_name TEXT,
+    chunk_text TEXT NOT NULL,
+    embedding VECTOR(768),
+    summary_en TEXT,
+    speaker_names TEXT[],
+    speaker_parties TEXT[],
+    key_issues TEXT[],
+    bills_discussed TEXT[],
+    reports_presented TEXT[]
+);
+
+CREATE INDEX IF NOT EXISTS idx_verbatim_chunks_verbatim_id ON verbatim_chunks(verbatim_id);
+CREATE INDEX IF NOT EXISTS idx_verbatim_chunks_embedding ON verbatim_chunks
+    USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
 """
 
 
 DROP_SQL = """
+DROP TABLE IF EXISTS verbatim_chunks;
+DROP TABLE IF EXISTS verbatims;
 DROP TABLE IF EXISTS chunks;
 DROP TABLE IF EXISTS notices;
 """

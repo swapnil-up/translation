@@ -8,6 +8,8 @@
 | Gemini freeform translation | Done — block-based, no structured output |
 | Notice scraper | Done — `scripts/scrape_notices.py`, current 7th HoR only (~124 entries) |
 | Notice processor | Done — `scripts/process_notice.py`, GH Actions cron |
+| **Verbatim scraper** | Done — `scripts/scrape_verbatims.py`, NA API, sessions 19+ (52 entries) |
+| **Verbatim processor** | Done — `scripts/process_verbatim.py`, segmented Gemini translation (10KB/segment) + merge |
 | FastAPI backend | Done — upload → OCR → translate endpoints |
 | Vue.js frontend | Basic — upload + overlay/text view, no search |
 | Budget PDF extraction (v3) | Working — PyMuPDF + CID fixups for redbook8283.pdf |

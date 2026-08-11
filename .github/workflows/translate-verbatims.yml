@@ -1,13 +1,13 @@
-name: Translate Notices (Backfill)
+name: Translate Verbatims (Backfill)
 
 on:
   schedule:
-    - cron: '0 4 * * *'   # 4 AM — picks up where previous run stopped
-    - cron: '0 16 * * *'  # 4 PM — catches quota window from earlier expiry
+    - cron: '30 4 * * *'
+    - cron: '30 16 * * *'
   workflow_dispatch:
     inputs:
       count:
-        description: Notices to process per run (0 = unlimited, stops when Gemini quota exhausted)
+        description: Verbatims to process per run (0 = unlimited, stops when Gemini quota exhausted)
         default: '0'
         required: false
 
@@ -16,7 +16,7 @@ env:
   DATABASE_URL: ${{ secrets.DATABASE_URL }}
 
 jobs:
-  translate-notices:
+  translate-verbatims:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -42,15 +42,15 @@ jobs:
       - name: Ensure schema exists (idempotent)
         if: env.DATABASE_URL != ''
         run: python scripts/init_db.py
-      - name: Process notices until quota exhausted
-        run: python scripts/process_notice.py --max-count ${{ github.event.inputs.count || '0' }}
+      - name: Process verbatims until quota exhausted
+        run: python scripts/process_verbatim.py --max-count ${{ github.event.inputs.count || '0' }}
       - name: Upsert to pgvector (if DATABASE_URL configured)
         if: env.DATABASE_URL != ''
         continue-on-error: true
-        run: python scripts/upsert_notice.py translations/*.json
+        run: python scripts/upsert_verbatim.py translations/Verbatim_*.json
       - name: Commit results
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add notices.json translations/
-          git diff --cached --quiet || (git commit -m "translate notices" && git push)
+          git add verbatims.json translations/Verbatim_*.json
+          git diff --cached --quiet || (git commit -m "translate verbatims" && git push)
