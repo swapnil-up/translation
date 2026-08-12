@@ -20,6 +20,9 @@ Extract Devanagari text from Nepali government PDFs. Three pipelines:
   `tests/gold/README.md`); `tests/gold/record_gold.py` seeds drafts from a DB.
 - **CLI:** `redbook-env/bin/python -m redbook_parser.cli extract <pdf> --sqlite -o out.db`
   and `... verify <db>` (math audit of extracted rows vs stated totals).
+  The unknown-CID workflow is `... census <pdf>` (list), `... review <pdf>`
+  (HTML sheet to fill in the printed words), and `... derive <pdf> <cid_corrections.json>`
+  (diff typed words against logical-order text to get per-CID Devanagari mappings).
 
 ### v3 Pipeline (baseline, being replaced)
 

@@ -400,16 +400,16 @@ body{{font-family:sans-serif;background:#13161b;color:#e6e6e6;margin:0;padding:1
 .cards{{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}}
 .card{{background:#1b2027;border:1px solid #2c333d;border-radius:8px;padding:10px 12px;overflow:hidden;display:flex;flex-direction:column}}
 .h{{display:flex;justify-content:space-between;align-items:baseline;gap:8px}}
-.meta{{color:#7f8c9d;font-size:.78em}}
+.meta{{color:#7f8c9d;font-size:1.05em}}
 .show{{display:flex;flex-direction:column;gap:8px;margin:8px 0}}
 .show img{{border:1px solid #3a4350;border-radius:4px;background:#fff}}
 .show img.g{{image-rendering:pixelated;min-width:96px;min-height:48px;border:2px solid #2f81f7;max-width:100%;height:auto}}
 .w-wrap{{position:relative;display:inline-block;max-width:100%;overflow:hidden}}
 .w-wrap img.w{{display:block;max-width:100%;height:auto;max-height:200px;object-fit:contain}}
 .w-box{{position:absolute;pointer-events:none;box-sizing:border-box;border:2px solid #ff3333;background:rgba(255,0,0,0.15)}}
-.ctx-ref{{font-family:monospace;font-size:.75em;color:#9aa7b8;margin-top:2px;word-break:break-all;line-height:1.4}}
+.ctx-ref{{font-family:'Noto Sans Devanagari',monospace;font-size:1.4em;color:#9aa7b8;margin-top:2px;word-break:break-all;line-height:1.4}}
 .nope{{color:#666;font-size:.8em}}
-.ctx{{color:#9aa7b8;font-size:.78em;line-height:1.5;word-break:break-all}}
+.ctx{{color:#c8d2e0;font-family:'Noto Sans Devanagari',sans-serif;font-size:1.5em;line-height:1.6;word-break:break-all}}
 .fill{{margin-top:8px}}
 input.correct{{width:100%;box-sizing:border-box;padding:5px 8px;font-size:1.15em;background:#0f1216;color:#fff;border:1px solid #3d4a5a;border-radius:4px}}
 .cur{{display:block;color:#b78e3b;font-size:.75em;margin-top:3px}}

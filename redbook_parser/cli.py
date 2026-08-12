@@ -92,6 +92,47 @@ def cmd_review(args) -> int:
     return 0
 
 
+def cmd_derive(args) -> int:
+    from .derive import derive
+    import fitz  # lazy
+
+    if not os.path.exists(args.pdf):
+        print(f"Error: {args.pdf} not found", file=sys.stderr)
+        return 1
+    if not os.path.exists(args.corrections):
+        print(f"Error: {args.corrections} not found", file=sys.stderr)
+        return 1
+
+    with open(args.corrections, encoding="utf-8") as f:
+        recs = json.load(f)
+    corrections = {}
+    for r in recs:
+        w = (r.get("correct") or "").strip()
+        if w:
+            corrections[int(r["cid"])] = w
+    if not corrections:
+        print("No non-empty corrections found in the file", file=sys.stderr)
+        return 1
+
+    doc = fitz.open(args.pdf)
+    results = derive(doc, corrections, max_span_evidence=200,
+                     max_pages=args.max_pages)
+
+    out = args.output or "output/cid_mappings.json"
+    os.makedirs(os.path.dirname(out) or ".", exist_ok=True)
+    with open(out, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+
+    flags = {"ok": "OK", "partial": "PARTIAL", "ambiguous": "AMBIG",
+             "no-solution": "NONE", "no-windows": "NOWIN"}
+    for cid, r in sorted(results.items(), key=lambda kv: int(kv[0])):
+        print(f"  [{flags[r['mode']]}] cid={cid:<3} -> {r['mapping']!r} "
+              f"cands={r['candidates']} sol={r['windows_solved']}/{r['windows_total']}")
+    n_ok = sum(r["mode"] in ("ok", "partial") for r in results.values())
+    print(f"{n_ok}/{len(results)} CIDs resolved", file=sys.stderr)
+    return 0 if n_ok == len(results) else 1
+
+
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(prog="redbook",
                                      description="Spatial-first redbook budget extraction")
@@ -121,6 +162,15 @@ def main(argv=None) -> int:
     rv.add_argument("--cids", type=lambda s: {int(x) for x in s.split(",")},
                     default=None, help="restrict to these CIDs (comma-separated)")
     rv.set_defaults(fn=cmd_review)
+
+    dr = sub.add_parser("derive",
+                        help="Turn typed word corrections into per-CID Devanagari mappings")
+    dr.add_argument("pdf")
+    dr.add_argument("corrections",
+                    help="JSON list of {cid, correct} words exported from the review sheet")
+    dr.add_argument("--output", "-o", default="output/cid_mappings.json")
+    dr.add_argument("--max-pages", type=int, default=None)
+    dr.set_defaults(fn=cmd_derive)
 
     args = parser.parse_args(argv)
     return args.fn(args)
