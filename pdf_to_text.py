@@ -69,6 +69,34 @@ def lines_to_plain(lines: list) -> str:
     return "\n".join(r["text"] for r in lines)
 
 
+def decode_text_layer(pdf_path: str, store_path: str = "cidmap/data/cid_mappings.json",
+                      max_pages: int | None = None) -> list[str]:
+    """Try the text layer first (fast, exact); OCR the pages that fail.
+
+    Returns per-page Devanagari text. A page falls back to OCR when more than
+    ``FALLBACK_UNKNOWN`` of its glyphs stay unmapped after the store lookup.
+    """
+    import pymupdf
+    from cidmap.decoder import decode_page, coverage
+    from cidmap.mappings import load
+
+    store = load(store_path)
+    doc = pymupdf.open(pdf_path)
+    pages = range(len(doc)) if max_pages is None else range(min(max_pages, len(doc)))
+    out = []
+    for pn in pages:
+        text = decode_page(doc[pn], store)
+        mapped, unk = coverage(text)
+        if unk / max(mapped + unk, 1) > 0.25:
+            print(f"[decode]  p{pn + 1}: fallback to OCR ({unk} unmapped of {mapped + unk})",
+                  file=sys.stderr, flush=True)
+            from cidmap.ocr import render_page
+            out.append("\n".join(r["text"] for r in extract_lines([render_page(doc[pn])])))
+        else:
+            out.append(text)
+    return out
+
+
 def group_into_blocks(lines: list, y_gap: int = 20) -> list:
     blocks = []
     cur = [lines[0]]
@@ -250,6 +278,9 @@ def main():
     parser.add_argument("--output", "-o", help="Output file path (default: stdout)")
     parser.add_argument("--html", action="store_true", help="Generate positioned HTML overlay")
     parser.add_argument("--night", action="store_true", help="Night mode (dark background, dimmed image, warm text)")
+    parser.add_argument("--decode", action="store_true",
+                        help="Decode the text layer via the cidmap store first; "
+                             "OCR only pages whose decode coverage is low")
     parser.add_argument(
         "--translate", nargs="?", const="env", metavar="API_KEY",
         help="Translate to English via Gemini. Pass API key, or omit to use GEMINI_API_KEY env var",
@@ -260,6 +291,31 @@ def main():
     if not pdf.exists():
         print(f"Error: {pdf} not found", file=sys.stderr)
         sys.exit(1)
+
+    if args.decode:
+        print(f"[stage] 1/3 — Decode text layer (cidmap store)", file=sys.stderr, flush=True)
+        pages = decode_text_layer(str(pdf))
+        images = None
+        lines = [{"y": i * 100, "x": 0, "w": 500, "h": 40, "text": t, "page": i}
+                 for i, t in enumerate(pages)]
+        print(f"[stage] 1/3 — Decoded {len(pages)} pages", file=sys.stderr, flush=True)
+        if not args.translate:
+            text = "\n".join(pages)
+            if args.output:
+                out_path = Path(args.output)
+                out_path.write_text(text, encoding="utf-8")
+                print(f"Written to {out_path}")
+            else:
+                print(text)
+            return 0
+        lines = translate_lines(lines, os.environ["GEMINI_API_KEY"])
+        text = "\n".join(l.get("translation", l["text"]) for l in lines)
+        if args.output:
+            Path(args.output).write_text(text, encoding="utf-8")
+            print(f"Written to {args.output}")
+        else:
+            print(text)
+        return 0
 
     print(f"[stage] 1/4 — Rasterise PDF", file=sys.stderr, flush=True)
     images = pdf_to_images(str(pdf), dpi=args.dpi)

@@ -1,0 +1,102 @@
+"""OCR cross-check: render pages, read the printed words at unknown-CID spots.
+
+The text layer cannot tell us what an unknown CID *prints* as -- only the glyph
+ink can. Rasterising the page and running a Devanagari OCR model gives the
+ground-truth word at each unknown glyph position. Those reads feed (a) the
+review sheet's candidate guesses and (b) an independent check on derive results.
+
+PaddleOCR is heavy; every page is rasterised once and OCR'd once, and the word
+boxes are matched to glyph origins inside this module.
+"""
+
+from __future__ import annotations
+
+from .decode import is_unknown, glyphs, cluster_lines
+
+RENDER_SCALE = 300 / 72.0  # 300 dpi
+
+
+def _ocr_engine(**kwargs):
+    from paddleocr import PaddleOCR  # heavy; import on first use
+    return PaddleOCR(
+        text_recognition_model_name="devanagari_PP-OCRv5_mobile_rec",
+        text_detection_model_name="PP-OCRv5_mobile_det",
+        use_doc_orientation_classify=False,
+        use_doc_unwarping=False,
+        use_textline_orientation=False,
+        **kwargs,
+    )
+
+
+def render_page(page):
+    import fitz  # noqa: F401 (imports pymupdf for matrix)
+    pix = page.get_pixmap(matrix=fitz.Matrix(RENDER_SCALE, RENDER_SCALE))
+    import numpy as np
+    arr = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
+        pix.height, pix.width, pix.n)
+    return arr[:, :, :3]
+
+
+def ocr_words(engine, page_array):
+    """OCR a rendered page array; return [(text, x0pt, y0pt, x1pt, y1pt)]."""
+    result = engine.predict(page_array)
+    if not result:
+        return []
+    r = result[0]
+    out = []
+    for i, t in enumerate(r["rec_texts"]):
+        b = r["rec_boxes"]
+        # rec_boxes are flat (x0, y0, x1, y1) in the rendered pixel space.
+        out.append((t,
+                    float(b[i][0]) / RENDER_SCALE,
+                    float(b[i][1]) / RENDER_SCALE,
+                    float(b[i][2]) / RENDER_SCALE,
+                    float(b[i][3]) / RENDER_SCALE))
+    return out
+
+
+def word_at(words, x_pt, y_pt):
+    """Return the OCR word whose box contains (x, y) in PDF points."""
+    for t, x0, y0, x1, y1 in words:
+        if x0 <= x_pt <= x1 and y0 <= y_pt <= y1:
+            return t
+    return None
+
+
+def cross_check(doc, census_result, max_pages=None,
+                log=None) -> dict:
+    """For each unknown (font,cid), collect the OCR words it appears in.
+
+    Returns {font: {cid: {word: count}}} plus per-glyph reads
+    {font: {cid: [{page, word, x, y}]}}.
+    """
+    engine = _ocr_engine()
+    reads: dict[str, dict[int, list[dict]]] = {}
+    counts: dict[str, dict[int, dict]] = {}
+
+    pages = range(len(doc)) if max_pages is None else range(
+        min(max_pages, len(doc)))
+
+    for pn in pages:
+        page = doc[pn]
+        arr = render_page(page)
+        words = ocr_words(engine, arr)
+        if log:
+            log(f"  OCR p{pn + 1}: {len(words)} words")
+        for line in cluster_lines(glyphs(page)):
+            for g in line:
+                if not is_unknown(g["c"]):
+                    continue
+                font = g["font"] or ""
+                ox, oy = g["origin"][0], g["origin"][1]
+                w = word_at(words, ox, oy)
+                if not w:
+                    continue
+                reads.setdefault(font, {}).setdefault(g["cid"], []).append({
+                    "page": pn + 1, "word": w, "x": ox, "y": oy})
+                cnt = counts.setdefault(font, {}).setdefault(g["cid"], {})
+                cnt[w] = cnt.get(w, 0) + 1
+    if log:
+        nf = sum(len(v) for v in counts.values())
+        log(f"  reads for {nf} (font,cid) pairs across {len(counts)} fonts")
+    return {"reads": reads, "counts": counts}
