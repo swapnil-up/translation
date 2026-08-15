@@ -10,6 +10,7 @@ from pathlib import Path
 import pytest
 
 from redbook_parser.pipeline import extract_pdf
+from redbook_parser.verify import BudgetVerificationEngine
 
 GOLD_DIR = Path(__file__).parent / "gold"
 MANIFEST = json.loads((GOLD_DIR / "manifest.json").read_text())
@@ -71,3 +72,28 @@ def test_manifest_has_gold_targets():
     assert len(pages) >= 5, "gold manifest should cover the template space"
     templates = {p["template"] for p in pages}
     assert {"detail", "summary"}.issubset(templates)
+
+
+@pytest.mark.parametrize("entry,page_file,pdf", page_objects())
+def test_gold_page_verification(entry, page_file, pdf):
+    """Gold pages should pass the math audit (no FAIL checks)."""
+    if not page_file.exists():
+        pytest.skip(f"gold file missing: {page_file}")
+    if not pdf.exists():
+        pytest.skip(f"source PDF missing: {pdf}")
+
+    gold = json.loads(page_file.read_text())
+    if not gold.get("verified"):
+        pytest.skip("gold page not verified")
+
+    parsed_all, report = extract_pdf(str(pdf), start_page=1,
+                                     max_pages=entry["page"],
+                                     progress=False, verify=True)
+    page_rows = [r for r in parsed_all if r.page == entry["page"]]
+    page_report = BudgetVerificationEngine().verify_rows(page_rows)
+
+    # Gold pages should have no hard failures.
+    assert not page_report.failures, (
+        f"gold page {entry['page']} has verification failures: "
+        + "; ".join(str(c) for c in page_report.failures)
+    )

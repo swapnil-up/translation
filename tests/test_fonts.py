@@ -14,6 +14,7 @@ from redbook_parser.fonts import (
     decode_sequence,
     get_unmapped_log,
     is_clean_char,
+    reset_font_cid_maps,
     reset_unmapped_log,
 )
 
@@ -71,6 +72,20 @@ class TestDecodeChar:
         decode_char("\x04", "Kalimati-1", cid=4, page=17)
         entry = get_unmapped_log()[0]
         assert entry == {"font": "Kalimati-1", "cid": 4, "page": 17, "char": "\x04"}
+
+    def test_ascii_artifact_cid_derived_from_ord(self):
+        """When cid is None and char is an ASCII artifact, cid = ord(char)."""
+        # ';' (chr(59)) is in _ASCII_ARTIFACTS.  cid=None → derived as 59.
+        out = decode_char(";", "Kalimati-1", cid=None)
+        assert "\u27e6cid:59\u27e7" in out
+
+    def test_ascii_artifact_store_lookup(self):
+        """ASCII artifact: cid derived from ord, then store lookup fires."""
+        monkeypatch = pytest.MonkeyPatch()
+        monkeypatch.setitem(fonts.FONT_CID_MAPS, "Kalimati-1", {59: "\u0935"})
+        out = decode_char(";", "Kalimati-1", cid=None)
+        assert out == "\u0935"  # व from store
+        monkeypatch.undo()
 
 
 class TestDecodeSequence:

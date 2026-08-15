@@ -64,11 +64,11 @@ class TestMultiLine:
         assert len(rows) == 1
         assert rows[0].description == "शीर्ष मन्त्रालय कार्यालय सामग्री"
 
-    def test_desc_without_keyword_is_dropped(self):
-        # Bug #2 (STRATEGY.md §5.2): non-whitelist desc lines vanish.
+    def test_desc_without_keyword_is_kept(self):
+        # Bug #2 fix: positional logic captures all non-keyword desc lines.
         lines = ["111111 शीर्ष", "आयोग", "1,000"]
         rows = process_page_lines(lines, 17)
-        assert rows[0].description == "शीर्ष"
+        assert rows[0].description == "शीर्ष आयोग"
 
 
 class TestTotals:
@@ -78,14 +78,14 @@ class TestTotals:
         assert rows[0].is_total
         assert rows[0].total == 5000
 
-    def test_total_after_amounts_is_dropped(self):
-        # Bug #1 (STRATEGY.md §5.1): the finalizing line is consumed and lost.
+    def test_total_after_amounts_is_not_dropped(self):
+        # Regression test: Bug #1 fix ensures the total line is reprocessed.
         lines = ["111111 शीर्ष", "1,000", "2,000", "जम्मा 5,000"]
         rows = process_page_lines(lines, 17)
-        assert all(not r.is_total for r in rows)
+        totals = [r for r in rows if r.is_total]
+        assert len(totals) == 1
+        assert totals[0].total == 5000
 
-    @pytest.mark.xfail(reason="STRATEGY.md §5.1 dropped-line bug; Step 3 fix",
-                       strict=False)
     def test_total_after_amounts_is_kept(self):
         lines = ["111111 शीर्ष", "1,000", "2,000", "जम्मा 5,000"]
         rows = process_page_lines(lines, 17)

@@ -84,6 +84,11 @@ def reset_unmapped_log() -> None:
     _unmapped_log.clear()
 
 
+def reset_font_cid_maps() -> None:
+    """Reset FONT_CID_MAPS to empty (for test isolation)."""
+    FONT_CID_MAPS.clear()
+
+
 def decode_char(char: str, font: str, cid: int | None = None,
                 page: int | None = None, strict: bool = False) -> str:
     """Decode one glyph: clean PyMuPDF output wins; else font-scoped map.
@@ -98,9 +103,20 @@ def decode_char(char: str, font: str, cid: int | None = None,
     Returns:
         The decoded Devanagari, or a visible marker ``⟦cid:N⟧`` when unmapped
         (and strict=False).
+
+    ASCII-artifact fallback: when ``cid`` is None and ``char`` is an
+    Identity-H artifact (control char or ASCII glyph for an unmapped high
+    CID), ``cid`` is derived from ``ord(char)`` so the store lookup still
+    fires.
     """
     if is_clean_char(char):
         return char
+
+    # Derive CID from the char itself when caller didn't supply one.
+    # This happens when the flat text path feeds a control-char or
+    # ASCII artifact — chr(cid) encodes the CID directly.
+    if cid is None and char and ord(char) < 128:
+        cid = ord(char)
 
     if cid is not None:
         scoped = FONT_CID_MAPS.get(font, {})

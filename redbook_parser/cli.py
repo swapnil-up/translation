@@ -24,8 +24,29 @@ def cmd_extract(args) -> int:
         base = os.path.splitext(os.path.basename(args.pdf))[0]
         output_path = f"output/{base}.db"
 
+    # Load store-backed CID map if requested.
+    cid_map = None
+    if args.cid_map:
+        from .loader import load_store
+        approved, rejections = load_store(args.cid_map)
+        cid_map = approved
+        for reason, entries in rejections.items():
+            for e in entries:
+                print(f"  reject cid={e['cid']:<3} value={e['value']!r} "
+                      f"reason={reason}", file=sys.stderr)
+        print(f"Loaded {len(approved)} CID mappings from {args.cid_map}",
+              file=sys.stderr)
+
     rows = extract_pdf(args.pdf, max_pages=args.max_pages,
-                       start_page=args.start_page)
+                       start_page=args.start_page, cid_map=cid_map,
+                       verify=args.verify)
+    if args.verify:
+        rows, report = rows
+        print(report.summary(), file=sys.stderr)
+        for c in report.failures:
+            print(f"  FAIL  {c}", file=sys.stderr)
+        for c in report.need_review:
+            print(f"  REVIEW {c}", file=sys.stderr)
     if args.sqlite and output_path:
         import fitz  # lazy
         doc = fitz.open(args.pdf)
@@ -144,6 +165,11 @@ def main(argv=None) -> int:
     ex.add_argument("--max-pages", type=int)
     ex.add_argument("--sqlite", action="store_true")
     ex.add_argument("--output", "-o")
+    ex.add_argument("--cid-map", type=str, default=None,
+                    help="Path to cidmap store JSON (default: cidmap/data/cid_mappings.json). "
+                         "When set, font-scoped decode replaces legacy fix_text.")
+    ex.add_argument("--verify", action="store_true",
+                    help="Run math audit after extraction and report results.")
     ex.set_defaults(fn=cmd_extract)
 
     ve = sub.add_parser("verify", help="Run the math audit against a DB")

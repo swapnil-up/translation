@@ -18,8 +18,11 @@ from .numbers import parse_number
 from .spatial import PageTemplate
 
 TOTAL_KEYWORDS = ("जम्मा", "कुल", "जोड", "कूल", "योग")
+TOTAL_KEYWORD_RE = re.compile(
+    r"^(जम्मा|कुल|जोड|कूल|योग)\s+([\d,.\-]+)$"
+)
 
-HEADER_KEYWORDS = ["शीर्षक", "स्रोत", "अनुदान", "विवरण", "यथार्थ", "संशोधित",
+HEADER_KEYWORDS = ["शीर्षक", "अनुदान", "विवरण", "यथार्थ", "संशोधित",
                    "प्राथमिकता", "दिगो", "लैङ्गिक", "वैदेशिक",
                    "संघीय", "व्ययभार", "आर्थिक", "बजेट", "एकीकृत"]
 # Section headings that should be captured as heading rows (not skipped).
@@ -61,7 +64,7 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1,
         if not current_code and not current_total:
             return
         desc = " ".join(current_desc_parts).strip()
-        if not current_code and not desc:
+        if not current_code and not desc and not current_amounts:
             return
         row = BudgetRow(
             code=current_code,
@@ -77,7 +80,10 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1,
             row.laigik_sanket = current_laigik
         if current_amounts:
             amounts = [a * scale for a in current_amounts]
-            if template == PageTemplate.SUMMARY:
+            if current_total:
+                # Total rows: sum all amounts into the total field.
+                row.total = sum(amounts)
+            elif template == PageTemplate.SUMMARY:
                 # SUMMARY-template column semantics (confirmed on page 36):
                 # 8 amount columns = year_actual/revised/estimate then the
                 # current/capital split + financing:
@@ -152,6 +158,7 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1,
 
         # Skip remaining header keywords (column labels).
         if any(stripped.startswith(kw.replace(" ", "")) for kw in HEADER_KEYWORDS):
+            current_total = False
             continue
 
         # Skip year labels.
@@ -162,8 +169,23 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1,
         if line in ("खर्च", "जम्मा"):
             continue
 
-        # Total check.
-        is_total = any(kw in line for kw in TOTAL_KEYWORDS)
+        # Total check — only when NOT in an active row (code set with amounts
+        # pending).  Total keywords inside an active row are part of the
+        # description (e.g. "स्रोत जम्मा नेपाल" as a ministry name).
+        if not current_code:
+            # "जम्मा 5,000" — total keyword with inline amount.
+            total_match = TOTAL_KEYWORD_RE.match(line)
+            if total_match:
+                n = parse_number(total_match.group(2))
+                if n is not None:
+                    row = BudgetRow(is_total=True, page=page, total=n * scale)
+                    rows.append(row)
+                continue
+
+            is_total = any(kw in line for kw in TOTAL_KEYWORDS)
+            if is_total:
+                current_total = True
+                continue
 
         # Budget code from the start of the line.
         code_match = None
@@ -210,7 +232,7 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1,
             continue
 
         # In a row.
-        if current_code:
+        if current_code or current_total:
             if _is_amount_line(line):
                 n = parse_number(line)
                 if n is not None:
@@ -224,7 +246,11 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1,
                 current_nikasa_vidhi = line
                 continue
 
-            if any(kw in line for kw in DESC_CONTINUE_KEYWORDS):
+            # Description continuation: any line that is not a code, header,
+            # amount, source, or keyword extends the description.  Positional
+            # logic replaces the hardcoded DESC_CONTINUE_KEYWORDS whitelist
+            # (STRATEGY.md §5.2 fix).
+            if not current_amounts:
                 current_desc_parts.append(line)
                 continue
 
@@ -242,7 +268,7 @@ def process_page_lines(lines: list[str], page: int, scale: int = 1,
             if current_amounts:
                 finalize_current()
                 reset_all()
-                # BUG #1: the consumed `line` is never reprocessed.
+                i -= 1  # reprocess this line (STRATEGY.md §5.1 fix)
             continue
 
         # Not in a row.
