@@ -161,9 +161,12 @@
     "title_np": "एक्काइसौँ अधिवेशन_कार्यवाहीको सम्पूर्ण विवरण_१८ असार २०८३ बिहीवार (बैठक सङ्ख्या- २४)",
     "published_at": "2026-07-06",
     "attachment_url": "https://na.parliament.gov.np/uploads/attachments/danvrmrgdjpdknsa.pdf",
-    "status": "pending",
+    "status": "done",
     "scraped_at": "2026-08-10",
-    "serial": "13."
+    "serial": "13.",
+    "ocr_path": "output/verbatims/Verbatim_2970-ocr.txt",
+    "translated_path": "output/verbatims/Verbatim_2970.txt",
+    "structured_path": "translations/Verbatim_2970.json"
   },
   {
     "id": 2969,
