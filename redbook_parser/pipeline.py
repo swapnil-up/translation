@@ -59,6 +59,29 @@ def decode_text(text: str, font: str = "") -> str:
     return result
 
 
+# ---- Section inference ----
+
+# Ministry-level codes are 3 digits (e.g. 101, 102, 204).  All subsequent
+# rows with longer codes belong to that ministry's section until the next
+# 3-digit code appears.  This lets the verification engine check sub-totals
+# against their own detail rows instead of a page-wide sum.
+_MINISTRY_CODE_RE = re.compile(r"^\d{3}$")
+
+
+def infer_sections(rows: list[BudgetRow]) -> None:
+    """Assign ``section`` to each row based on 3-digit ministry codes.
+
+    Mutates rows in place.  Headings and total rows without codes inherit
+    the last seen section so they stay scoped correctly for verification.
+    """
+    current_section = ""
+    for row in rows:
+        if row.code and _MINISTRY_CODE_RE.match(row.code):
+            current_section = row.code
+        if current_section:
+            row.section = current_section
+
+
 def extract_pdf(pdf_path: str, max_pages: int | None = None,
                 start_page: int = 1, progress=True,
                 cid_map: dict[int, str] | None = None,
@@ -113,7 +136,11 @@ def extract_pdf(pdf_path: str, max_pages: int | None = None,
     if progress:
         sys.stderr.write("\n")
 
+    infer_sections(all_rows)
+
     if verify:
-        report = BudgetVerificationEngine().verify_rows(all_rows)
+        engine = BudgetVerificationEngine()
+        report = engine.verify_rows(all_rows)
+        report.cross_page = engine.verify_cross_page(all_rows)
         return all_rows, report
     return all_rows

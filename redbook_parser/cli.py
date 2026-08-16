@@ -47,6 +47,8 @@ def cmd_extract(args) -> int:
             print(f"  FAIL  {c}", file=sys.stderr)
         for c in report.need_review:
             print(f"  REVIEW {c}", file=sys.stderr)
+        for c in report.cross_failures:
+            print(f"  XFAIL {c}", file=sys.stderr)
     if args.sqlite and output_path:
         import fitz  # lazy
         doc = fitz.open(args.pdf)
