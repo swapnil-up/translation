@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-MANIFEST = Path("notices.json")
+MANIFEST = Path(__file__).resolve().parent.parent / "notices.json"
 TRANSLATIONS_DIR = Path("translations")
 OUTPUT_DIR = Path("output")
 BASE = "https://hr.parliament.gov.np"
@@ -81,7 +81,7 @@ def save_manifest(notices: list):
 
 
 def load_env():
-    env_path = Path(".env")
+    env_path = Path(__file__).resolve().parent.parent / ".env"
     if env_path.exists():
         for line in env_path.read_text().splitlines():
             line = line.strip()
@@ -192,8 +192,9 @@ def run_ocr(pdf_path: Path) -> dict:
     ocr_txt = TRANSLATIONS_DIR / f"{stem}-ocr.txt"
     api_key = os.environ.get("GEMINI_API_KEY", "")
 
+    bill_tracker = Path(__file__).resolve().parent.parent
     cmd = [
-        sys.executable, "pdf_to_text.py",
+        sys.executable, str(bill_tracker / "pdf_to_text.py"),
         str(pdf_path),
         "-o", str(ocr_txt),
     ]

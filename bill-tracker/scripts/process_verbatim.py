@@ -38,7 +38,7 @@ import requests
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-MANIFEST = Path("verbatims.json")
+MANIFEST = Path(__file__).resolve().parent.parent / "verbatims.json"
 TRANSLATIONS_DIR = Path("translations")
 OUTPUT_DIR = Path("output") / "verbatims"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
@@ -111,7 +111,7 @@ def save_manifest(verbatims: list):
 
 
 def load_env():
-    env_path = Path(".env")
+    env_path = Path(__file__).resolve().parent.parent / ".env"
     if env_path.exists():
         for line in env_path.read_text().splitlines():
             line = line.strip()
@@ -183,8 +183,9 @@ def run_ocr(pdf_path: Path) -> str:
         print(f"[ocr] reused cached {ocr_txt} ({len(text):,} chars)", file=sys.stderr)
         return text
 
+    bill_tracker = Path(__file__).resolve().parent.parent
     cmd = [
-        sys.executable, "pdf_to_text.py",
+        sys.executable, str(bill_tracker / "pdf_to_text.py"),
         str(pdf_path),
         "-o", str(ocr_txt),
     ]

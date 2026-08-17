@@ -20,10 +20,10 @@ jobs:
       - name: Install deps
         run: pip install beautifulsoup4 lxml requests
       - name: Scrape notices
-        run: python scripts/scrape_notices.py
+        run: python bill-tracker/scripts/scrape_notices.py
       - name: Commit manifest
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add notices.json
+          git add bill-tracker/notices.json
           git diff --cached --quiet || (git commit -m "update notices manifest" && git push)

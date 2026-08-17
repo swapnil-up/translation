@@ -1,5 +1,29 @@
 # AGENTS.md — Nepali Admin Copilot
 
+## Repo Structure
+
+```
+translation/
+├── cidmap/              # CID mapping: font-scoped CID → Devanagari
+├── redbook_parser/      # Active budget extraction (PyMuPDF + spatial-first)
+├── dictionary/          # Nepali-English dictionary builder
+├── bill-tracker/        # Parliamentary notice/verbatim pipeline
+│   ├── scripts/         # Python CLI (scrape, process, upsert)
+│   ├── backend/         # FastAPI web app
+│   ├── frontend/        # Vue 3 SPA
+│   ├── pdf_to_text.py   # OCR CLI (used by bill-tracker scripts)
+│   ├── notices.json     # Notice manifest (7th HoR)
+│   ├── verbatims.json   # Verbatim manifest (NA sessions 19+)
+│   ├── .env             # API keys (GEMINI_API_KEY, DATABASE_URL)
+│   └── .venv/           # Python venv for bill-tracker
+├── archive/budget/      # Frozen legacy budget extraction (v1/v2/v3)
+├── tests/               # Pytest suite (tests redbook_parser)
+├── ocr-env/             # Python venv for OCR (root-level, shared)
+├── translations/        # Tracked output: OCR text, translations, JSON
+├── output/              # Gitignored: generated files
+└── .github/workflows/   # CI: scrape + translate (daily/weekly)
+```
+
 ## Project Goal
 Extract Devanagari text from Nepali government PDFs. Three pipelines:
 - **OCR** — legacy fonts (Preeti/Kantipur): flatten-to-image + PaddleOCR + optional Gemini translation
@@ -11,7 +35,7 @@ Extract Devanagari text from Nepali government PDFs. Three pipelines:
 ### Redbook parser consolidation (in progress)
 - **`redbook_parser/`** is now the active budget module — the spatial-first /
   scoped-encoding redesign. Full design: `redbook_parser/STRATEGY.md`.
-- **`budget/*.py` is frozen legacy** (v1/v2/v3) — reference only, do not edit.
+- **`archive/budget/*.py` is frozen legacy** (v1/v2/v3) — reference only, do not edit.
 - **Tests:** `tests/` via pytest (uses the `redbook-env/` venv, gitignored):
   ```bash
   redbook-env/bin/python -m pytest tests/ -q
@@ -69,23 +93,23 @@ Uses PyMuPDF's built-in ToUnicode CMap decoding, supplemented with:
 
 ### OCR
 ```bash
-ocr-env/bin/python pdf_to_text.py notice.pdf                          # Devanagari
-ocr-env/bin/python pdf_to_text.py notice.pdf --html                   # HTML overlay
-export GEMINI_API_KEY='key' && ocr-env/bin/python pdf_to_text.py notice.pdf --translate
+ocr-env/bin/python bill-tracker/pdf_to_text.py notice.pdf                          # Devanagari
+ocr-env/bin/python bill-tracker/pdf_to_text.py notice.pdf --html                   # HTML overlay
+export GEMINI_API_KEY='key' && ocr-env/bin/python bill-tracker/pdf_to_text.py notice.pdf --translate
 ```
 
 ### v3 (redbook8283.pdf)
 ```bash
 # Pages 1-60 → SQLite
-python3 pdf_to_excel_v3.py output/redbook8283.pdf --max-pages 60 --sqlite -o output/redbook-v3-60.db
+python3 archive/budget/pdf_to_excel_v3.py output/redbook8283.pdf --max-pages 60 --sqlite -o output/redbook-v3-60.db
 
 # Full extraction
-python3 pdf_to_excel_v3.py output/redbook8283.pdf --sqlite -o output/redbook-v3.db
+python3 archive/budget/pdf_to_excel_v3.py output/redbook8283.pdf --sqlite -o output/redbook-v3.db
 ```
 
 ### v2 (redbook.pdf)
 ```bash
-ocr-env/bin/python pdf_to_excel_v2.py output/redbook.pdf --max-pages 20 --sqlite
+ocr-env/bin/python archive/budget/pdf_to_excel_v2.py output/redbook.pdf --max-pages 20 --sqlite
 make slice PDF=output/redbook.pdf FROM=30 TO=50 DB=output/slice-30-50.db
 ```
 
@@ -96,11 +120,10 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 ```
 
 ## Conventions
-- **Venv:** `ocr-env/` (gitignored)
+- **Venvs:** `ocr-env/` (root-level, gitignored); `bill-tracker/.venv/` (bill-tracker, gitignored); `redbook-env/` (redbook_parser, gitignored)
 - **Output:** `output/` (gitignored — png, html, txt, db, xlsx, csv)
 - **Translations:** `translations/` (tracked — committed OCR text + English translations)
 - **Dictionary data:** `dictionary/` (tracked); binaries in `dictionary-data/` (gitignored)
-- **`llm/idea.md`** — full architecture blueprint
 
 ## Font Architecture (redbook8283.pdf)
 - Type0 font with Identity-H encoding, per-page font subsets each with own ToUnicode CMap
@@ -119,12 +142,12 @@ uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
 ## Notice Automation Pipeline
 
 ### Scripts
-- `scripts/scrape_notices.py` — scrapes `hr.parliament.gov.np` notices table. Two modes: `--list-only` (fast, incremental) and `--backfill` (fetches detail pages for PDF URLs). Output: `notices.json`. Stops at the 7th-HoR boundary: notices dated pre-2082-12 (the 6th HoR, dissolved 2025-09-12) are skipped, so the manifest only tracks the current parliament.
+- `bill-tracker/scripts/scrape_notices.py` — scrapes `hr.parliament.gov.np` notices table. Two modes: `--list-only` (fast, incremental) and `--backfill` (fetches detail pages for PDF URLs). Output: `notices.json`. Stops at the 7th-HoR boundary: notices dated pre-2082-12 (the 6th HoR, dissolved 2025-09-12) are skipped, so the manifest only tracks the current parliament.
 - `notices.json` — trimmed to the current (7th) House of Representatives (first session 2026-04-02). ~124 entries kept; older 6th-HoR notices moved to `notices-6th-hor.json`.
 - `notices-6th-hor.json` — archive of the removed 6th-HoR-era notices (1,185 entries), kept with `ocr_path`/`translated_path` links to any existing `translations/` files so translated bills remain discoverable.
-- `scripts/process_notice.py` — picks 1 pending notice from manifest, backfills PDF URL if missing, downloads PDF, runs PaddleOCR (OCR only), then calls Gemini with a structured JSON prompt. Saves three files: `{stem}-ocr.txt` (Devanagari), `{stem}.txt` (full English translation), `{stem}.json` (structured metadata with sections, speakers, bills, agenda tags).
-- `scripts/upsert_notice.py` — reads a structured `{stem}.json` file, chunks sections, generates embeddings via `text-embedding-004`, and upserts to pgvector (both notice record + chunks).
-- `scripts/init_db.py` — creates the pgvector schema (`notices` + `chunks` tables).
+- `bill-tracker/scripts/process_notice.py` — picks 1 pending notice from manifest, backfills PDF URL if missing, downloads PDF, runs PaddleOCR (OCR only), then calls Gemini with a structured JSON prompt. Saves three files: `{stem}-ocr.txt` (Devanagari), `{stem}.txt` (full English translation), `{stem}.json` (structured metadata with sections, speakers, bills, agenda tags).
+- `bill-tracker/scripts/upsert_notice.py` — reads a structured `{stem}.json` file, chunks sections, generates embeddings via `text-embedding-004`, and upserts to pgvector (both notice record + chunks).
+- `bill-tracker/scripts/init_db.py` — creates the pgvector schema (`notices` + `chunks` tables).
 
 ### Output files (per notice)
 | File | Content |
@@ -149,23 +172,23 @@ chunks (id, notice_id FK, chunk_index, section_name, chunk_text,
 **With Docker:**
 ```bash
 docker compose up -d                              # start pgvector container
-.venv/bin/python scripts/init_db.py               # create schema
-GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py --max-count 1
-.venv/bin/python scripts/upsert_notice.py translations/Notice_*.json
+.venv/bin/python bill-tracker/scripts/init_db.py               # create schema
+GEMINI_API_KEY=$key .venv/bin/python bill-tracker/scripts/process_notice.py --max-count 1
+.venv/bin/python bill-tracker/scripts/upsert_notice.py translations/Notice_*.json
 ```
 
 **With Supabase/Neon (no Docker):**
 ```bash
-.venv/bin/python scripts/init_db.py --url "postgresql://..."
-GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py --max-count 1
-.venv/bin/python scripts/upsert_notice.py translations/Notice_*.json --url "postgresql://..."
+.venv/bin/python bill-tracker/scripts/init_db.py --url "postgresql://..."
+GEMINI_API_KEY=$key .venv/bin/python bill-tracker/scripts/process_notice.py --max-count 1
+.venv/bin/python bill-tracker/scripts/upsert_notice.py translations/Notice_*.json --url "postgresql://..."
 ```
 
 ### Running with Supabase/Neon
 ```bash
 # Create free project at supabase.com or neon.tech, get connection string
-.venv/bin/python scripts/init_db.py --url "postgresql://user:pass@host:5432/db"
-.venv/bin/python scripts/upsert_notice.py translations/*.json
+.venv/bin/python bill-tracker/scripts/init_db.py --url "postgresql://user:pass@host:5432/db"
+.venv/bin/python bill-tracker/scripts/upsert_notice.py translations/*.json
 ```
 
 ### Gemini structured prompt
@@ -199,14 +222,14 @@ meetings, 30+ page transcripts). Text-layer PDFs — OCR route via `pdf_to_text.
 (no pdftotext decoder). Source: `na.parliament.gov.np/api/v1/verbatims?limit=500`.
 
 ### Scripts
-- `scripts/scrape_verbatims.py` — pulls all verbatims from the NA API into
+- `bill-tracker/scripts/scrape_verbatims.py` — pulls all verbatims from the NA API into
   `verbatims.json` (single request, no pagination loop; keyed on stable API
   `na_id`). Keeps only verbatims from the **19th NA session onward** (BS 2082-10
   ~ Dec 2025 — a little before the 7th HoR, first session 2026-04-02 / BS
   2082-12); older sessions are skipped so they never re-enter the manifest.
   The 379 pre-19th-session entries live in `verbatims-archive.json`; 3 entries
   in the current set have no PDF → `status: no_pdf`.
-- `scripts/process_verbatim.py` — picks 1 pending verbatim, downloads PDF,
+- `bill-tracker/scripts/process_verbatim.py` — picks 1 pending verbatim, downloads PDF,
   runs OCR, splits the Devanagari text into ~10KB segments, calls Gemini
   per-segment, then **merges** the segment JSON back into one document.
   - Why segmentation: verbatims are 60-170KB of OCR text — too large for one
@@ -224,7 +247,7 @@ meetings, 30+ page transcripts). Text-layer PDFs — OCR route via `pdf_to_text.
   - Big files (OCR text, full translation) → `output/verbatims/` (gitignored);
     only the merged structured JSON → `translations/Verbatim_{na_id}.json`
     (tracked, ~50KB).
-- `scripts/upsert_verbatim.py` — reads `translations/Verbatim_*.json`, chunks
+- `bill-tracker/scripts/upsert_verbatim.py` — reads `translations/Verbatim_*.json`, chunks
   sections, embeds via `gemini-embedding-001`, upserts to pgvector
   (`verbatims` + `verbatim_chunks` tables). Dedup key: `na_id` when present,
   else `title`.
@@ -237,14 +260,14 @@ VECTOR(768), etc.).
 ### Running
 ```bash
 # Scrape manifest (one-shot; keeps sessions 19+, 52 entries)
-.venv/bin/python scripts/scrape_verbatims.py
+.venv/bin/python bill-tracker/scripts/scrape_verbatims.py
 
 # Process one verbatim (download → OCR → segmented translation)
-GEMINI_API_KEY=$key .venv/bin/python scripts/process_verbatim.py --max-count 1
+GEMINI_API_KEY=$key .venv/bin/python bill-tracker/scripts/process_verbatim.py --max-count 1
 
 # Upsert to pgvector
-.venv/bin/python scripts/init_db.py --url "postgresql://..."
-.venv/bin/python scripts/upsert_verbatim.py translations/Verbatim_*.json --url "postgresql://..."
+.venv/bin/python bill-tracker/scripts/init_db.py --url "postgresql://..."
+.venv/bin/python bill-tracker/scripts/upsert_verbatim.py translations/Verbatim_*.json --url "postgresql://..."
 ```
 
 ### GitHub Actions

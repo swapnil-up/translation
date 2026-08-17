@@ -48,9 +48,9 @@ jobs:
         run: pip install -r requirements.txt
       - name: Ensure schema exists (idempotent)
         if: env.DATABASE_URL != ''
-        run: python scripts/init_db.py
+        run: python bill-tracker/scripts/init_db.py
       - name: Process verbatims until quota exhausted
-        run: python scripts/process_verbatim.py --max-count ${{ github.event.inputs.count || '0' }}
+        run: python bill-tracker/scripts/process_verbatim.py --max-count ${{ github.event.inputs.count || '0' }}
       - name: Save partial verbatim segment cache
         if: always()
         continue-on-error: true
@@ -61,10 +61,10 @@ jobs:
       - name: Upsert to pgvector (if DATABASE_URL configured)
         if: env.DATABASE_URL != ''
         continue-on-error: true
-        run: python scripts/upsert_verbatim.py translations/Verbatim_*.json
+        run: python bill-tracker/scripts/upsert_verbatim.py translations/Verbatim_*.json
       - name: Commit results
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add verbatims.json translations/Verbatim_*.json
+          git add bill-tracker/verbatims.json translations/Verbatim_*.json
           git diff --cached --quiet || (git commit -m "translate verbatims" && git push)

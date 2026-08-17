@@ -1,9 +1,9 @@
 # === Stage 1: Build Vue Frontend ===
 FROM node:20-slim AS frontend-builder
 WORKDIR /build
-COPY frontend/package*.json ./
+COPY bill-tracker/frontend/package*.json ./
 RUN npm ci
-COPY frontend/ ./
+COPY bill-tracker/frontend/ ./
 RUN npm run build
 
 # === Stage 2: Final Python Runtime ===
@@ -27,11 +27,11 @@ ENV PADDLEX_HOME=/root/.paddlex \
     PIP_DEFAULT_TIMEOUT=300 \
     PIP_NO_CACHE_DIR=1
 
-COPY backend/requirements.txt .
+COPY bill-tracker/backend/requirements.txt .
 RUN pip install --upgrade pip setuptools wheel && \
     pip install --prefer-binary -r requirements.txt
 
-COPY backend/ ./
+COPY bill-tracker/backend/ ./
 RUN python download_models.py
 
 COPY --from=frontend-builder /build/dist ./static_dist

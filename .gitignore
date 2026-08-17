@@ -11,5 +11,4 @@ static_dist/
 *.egg-info/
 tmpvenv/
 redbook-env/
-
-.venv
+bill-tracker/.venv

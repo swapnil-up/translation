@@ -106,7 +106,7 @@ DROP TABLE IF EXISTS notices;
 
 
 def load_env():
-    env_path = Path(".env")
+    env_path = Path(__file__).resolve().parent.parent / ".env"
     if env_path.exists():
         for line in env_path.read_text().splitlines():
             line = line.strip()

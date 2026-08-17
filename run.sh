@@ -3,7 +3,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 VENV_PYTHON="$SCRIPT_DIR/ocr-env/bin/python"
-MAIN="$SCRIPT_DIR/pdf_to_text.py"
+MAIN="$SCRIPT_DIR/bill-tracker/pdf_to_text.py"
 
 usage() {
     cat <<'HELP'

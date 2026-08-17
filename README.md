@@ -69,26 +69,26 @@ Both pipelines are exposed as a **FastAPI web app** with a **Vue 3 SPA** fronten
 - Download as TXT or CSV
 
 ### CLI Tools
-- `pdf_to_text.py` — single-file OCR with optional translation and HTML overlay
+- `bill-tracker/pdf_to_text.py` — single-file OCR with optional translation and HTML overlay
 - `run.sh` — orchestrator wrapper
-- `pdf_to_excel_v2.py` / `pdf_to_excel_v3.py` — budget extraction
-- `verify_budget.py` — cross-verify extracted totals
+- `archive/budget/pdf_to_excel_v2.py` / `pdf_to_excel_v3.py` — budget extraction
+- `archive/budget/verify_budget.py` — cross-verify extracted totals
 
 ### Notice Automation Pipeline
-- `scripts/scrape_notices.py` — scrapes parliament notices list (1,300+ entries) and backfills PDF URLs
-- `scripts/process_notice.py` — picks 1 pending notice, downloads PDF, runs OCR + translation, saves both
-- `notices.json` — manifest tracking status (pending/done/failed) for all notices
+- `bill-tracker/scripts/scrape_notices.py` — scrapes parliament notices list (1,300+ entries) and backfills PDF URLs
+- `bill-tracker/scripts/process_notice.py` — picks 1 pending notice, downloads PDF, runs OCR + translation, saves both
+- `bill-tracker/notices.json` — manifest tracking status (pending/done/failed) for all notices
 - GitHub Actions: weekly scrape + daily backfill translation (`GEMINI_API_KEY` secret required)
 
 ```bash
 # Scrape notice list (fast, incremental)
-.venv/bin/python scripts/scrape_notices.py
+bill-tracker/.venv/bin/python bill-tracker/scripts/scrape_notices.py
 
 # Backfill PDF URLs
-.venv/bin/python scripts/scrape_notices.py --backfill
+bill-tracker/.venv/bin/python bill-tracker/scripts/scrape_notices.py --backfill
 
 # Process one notice (download, OCR, translate)
-GEMINI_API_KEY=$key .venv/bin/python scripts/process_notice.py
+GEMINI_API_KEY=$key bill-tracker/.venv/bin/python bill-tracker/scripts/process_notice.py
 
 # Output: output/{title}.txt (translation) + output/{title}-ocr.txt (Devanagari)
 ```
@@ -127,35 +127,25 @@ python pdf_to_text.py notice.pdf --html --translate
 ## Project Structure
 
 ```
-├── backend/                  # FastAPI app
-│   ├── app/
-│   │   ├── main.py          # App entry, routes, CORS
-│   │   ├── config.py        # Pydantic settings
-│   │   ├── schemas.py       # Pydantic models
-│   │   ├── api/ocr.py       # OCR API endpoints
-│   │   └── services/
-│   │       ├── ocr_service.py    # Async OCR pipeline
-│   │       └── translation.py    # Gemini translation
-│   └── requirements.txt
-├── frontend/                 # Vue 3 SPA
-│   └── src/
-│       ├── views/           # UploadView, ResultView
-│       ├── components/      # FileUpload, OcrProgress, OcrResult, OcrOverlay
-│       ├── services/api.ts  # API client
-│       └── router/          # Vue Router
-├── budget/                  # Budget extraction tools
-│   ├── pdf_to_excel_v2.py  # pdfplumber engine
-│   ├── pdf_to_excel_v3.py  # PyMuPDF engine
-│   └── verify_budget.py    # Cross-verification
+├── bill-tracker/             # Parliamentary notice/verbatim pipeline
+│   ├── scripts/
+│   │   ├── scrape_notices.py   # Scraper (list + PDF backfill)
+│   │   └── process_notice.py   # Download, OCR, translate pipeline
+│   ├── backend/                # FastAPI app
+│   │   └── app/
+│   ├── frontend/               # Vue 3 SPA
+│   ├── pdf_to_text.py          # OCR CLI
+│   ├── notices.json            # Notice manifest (current 7th HoR, ~124 entries)
+│   └── .env                    # API keys (GEMINI_API_KEY, DATABASE_URL)
+├── cidmap/                  # CID mapping: font-scoped CID → Devanagari
+├── redbook_parser/          # Budget extraction (PyMuPDF + spatial-first)
 ├── dictionary/              # Nepali-English dict builder
-├── scripts/                 # Notice automation
-│   ├── scrape_notices.py   # Scraper (list + PDF backfill)
-│   └── process_notice.py   # Download, OCR, translate pipeline
-├── .github/workflows/      # GitHub Actions
-│   ├── scrape-notices.yml  # Weekly scrape
+├── archive/budget/          # Frozen legacy budget extraction (v1/v2/v3)
+├── tests/                   # Pytest suite (tests redbook_parser)
+├── translations/            # Tracked output: OCR text, translations, JSON
+├── .github/workflows/       # GitHub Actions
+│   ├── scrape-notices.yml   # Weekly scrape
 │   └── translate-notices.yml # Daily backfill translation
-├── notices.json            # Notice manifest (current 7th HoR, ~124 entries)
-├── notices-6th-hor.json    # Archive of old 6th-HoR notices (1,185 entries, keeps translation links)
 ├── Dockerfile               # Production build
 └── requirements.txt         # Root dependencies
 ```

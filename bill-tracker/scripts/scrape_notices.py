@@ -12,7 +12,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 BASE = "https://hr.parliament.gov.np"
 LIST_URL = f"{BASE}/en/parliamentary-notices"
-MANIFEST = Path("notices.json")
+MANIFEST = Path(__file__).resolve().parent.parent / "notices.json"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 DELAY = 0.3

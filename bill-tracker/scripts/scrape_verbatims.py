@@ -39,7 +39,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 LIST_URL = "https://na.parliament.gov.np/api/v1/verbatims"
 ATTACH_BASE = "https://na.parliament.gov.np/uploads/attachments"
-MANIFEST = Path("verbatims.json")
+MANIFEST = Path(__file__).resolve().parent.parent / "verbatims.json"
 HEADERS = {"User-Agent": "Mozilla/5.0"}
 
 # Verbatims from the 19th NA session onward (BS 2082-10 ~ Dec 2025) are kept
