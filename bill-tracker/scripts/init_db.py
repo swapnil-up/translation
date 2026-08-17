@@ -14,6 +14,8 @@ from pathlib import Path
 import psycopg
 from psycopg import sql
 
+from config import load_env
+
 
 SCHEMA_SQL = """
 CREATE EXTENSION IF NOT EXISTS vector;
@@ -103,16 +105,6 @@ DROP TABLE IF EXISTS verbatims;
 DROP TABLE IF EXISTS chunks;
 DROP TABLE IF EXISTS notices;
 """
-
-
-def load_env():
-    env_path = Path(__file__).resolve().parent.parent / ".env"
-    if env_path.exists():
-        for line in env_path.read_text().splitlines():
-            line = line.strip()
-            if line and not line.startswith("#") and "=" in line:
-                key, _, val = line.partition("=")
-                os.environ.setdefault(key.strip(), val.strip())
 
 
 def main():

@@ -1,5 +1,10 @@
 """Page text / glyph extraction via PyMuPDF (imported lazily).
 
+Glyph extraction and line clustering are delegated to ``cidmap.decode`` — the
+single source of truth for texttrace-based glyph extraction. This module
+re-exports them for backward compatibility and adds ``extract_page_text``
+(redbook-specific flat text extraction).
+
 SPIKE RESULT (validated on Type0/Identity-H notice PDFs, PyMuPDF 1.28):
 
 - ``page.get_texttrace()`` returns span dicts with the **font subset name**
@@ -24,80 +29,4 @@ def extract_page_text(doc, pno: int) -> str:
     return page.get_text("text")
 
 
-def extract_glyphs(page, dedup: bool = True) -> list[dict]:
-    """Return per-glyph records ``{font, cid, c, origin, bbox}`` in reading order.
-
-    Uses ``get_texttrace()`` only (see SPIKE RESULT above). ``c`` is the
-    Unicode PyMuPDF decoded; ``U+FFFD`` means the CID was not in the subset's
-    ToUnicode CMap and ``cid`` holds the fallback key for FONT_CID_MAPS.
-
-    ``dedup``: the redbook overprints every glyph (two copies ~0.3pt apart),
-    which texttrace reports as separate glyphs. When enabled, glyphs sharing
-    ``(font, cid)`` and a 1pt origin cell collapse to one.
-    """
-    import fitz  # noqa: F401
-
-    out = []
-    seen = set()
-    for span in page.get_texttrace():
-        font = span["font"]
-        chars = span.get("chars", [])
-        
-        # If PyMuPDF provides per-glyph bboxes in chars, use them directly
-        if chars:
-            for (u, glyph, origin, bbox) in chars:
-                if dedup:
-                    key = (font, glyph, round(origin[1]), round(origin[0]))
-                    if key in seen:
-                        continue
-                    seen.add(key)
-                out.append({
-                    "font": font,
-                    "cid": glyph,          # == CID for Identity-H
-                    "c": chr(u) if u else "",
-                    "origin": origin,
-                    "bbox": bbox,
-                })
-        else:
-            # Fallback: span-level bbox only; divide equally across text
-            sb = span["bbox"]
-            text = span.get("text", "")
-            n_chars = max(len(text), 1)
-            span_w = (sb[2] - sb[0]) / n_chars
-            for idx, ch in enumerate(text):
-                origin = (sb[0] + idx * span_w, sb[1])
-                char_x0 = sb[0] + idx * span_w
-                char_x1 = char_x0 + span_w
-                if dedup:
-                    key = (font, idx, round(origin[1]), round(origin[0]))
-                    if key in seen:
-                        continue
-                    seen.add(key)
-                out.append({
-                    "font": font,
-                    "cid": 0,  # CID unknown at span level
-                    "c": ch,
-                    "origin": origin,
-                    "bbox": (char_x0, sb[1], char_x1, sb[3]),
-                })
-    return out
-
-
-def cluster_lines(glyphs, y_gap: float = 3.0) -> list[list[dict]]:
-    """Group glyphs into reading-order lines by their y baseline.
-
-    Glyphs are sorted by y then x; a new line starts when the y jump between
-    consecutive glyphs exceeds ``y_gap``. This is the spatial replacement for
-    the text-stream ``split("\\n")`` of the v3 baseline.
-    """
-    if not glyphs:
-        return []
-    ordered = sorted(glyphs, key=lambda g: (round(g["origin"][1], 1), g["origin"][0]))
-    lines = [[ordered[0]]]
-    prev_y = ordered[0]["origin"][1]
-    for g in ordered[1:]:
-        if abs(g["origin"][1] - prev_y) > y_gap:
-            lines.append([])
-        lines[-1].append(g)
-        prev_y = g["origin"][1]
-    return lines
+from cidmap.decode import glyphs as extract_glyphs, cluster_lines  # noqa: E402

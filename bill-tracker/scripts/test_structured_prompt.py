@@ -19,61 +19,17 @@ from pathlib import Path
 
 import requests
 
-GEMINI_MODEL = "gemini-2.5-flash-lite"
-GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/models"
+from config import (
+    GEMINI_API,
+    GEMINI_MODEL,
+    GEMINI_SYSTEM_INSTRUCTION,
+    GEMINI_TEMPERATURE,
+    load_env,
+)
+from schema import NOTICE_PROMPT, build_schema
 
-_SCHEMA_DESC = """
-- full_translation_en: The complete English translation of the entire document as a single narrative string. Preserve all names, dates, numbers, and bill references exactly.
-- session.date_bs: Nepali date (e.g. 2081-04-12)
-- session.date_ad: Approximate AD date if inferrable, else null
-- session.meeting_type: Type of session (e.g. House of Representatives, Zero Hour, Special Time)
-- session.meeting_number: Meeting/sitting number if mentioned
-- session.chairperson: Name of presiding officer
-- sections[].name: Section name (e.g. Opening, Impromptu Session, Zero Hour, Main Business, Adjournment)
-- sections[].summary_en: 1-3 sentence summary of what happened in this section
-- sections[].speakers[].name: Full name of the MP or minister
-- sections[].speakers[].party: Party abbreviation if mentioned, else null
-- sections[].speakers[].topic: What they spoke about in 5-10 words
-- sections[].bills_discussed[].name: Full bill name
-- sections[].bills_discussed[].status: introduced | discussed | passed | ratified | sent_to_committee
-- sections[].reports_presented[]: Report names if any
-- sections[].key_issues[]: Key issues/topics raised in this section
-- agenda_tags[]: 5-15 freeform topical keywords for searching across notices
-- ministries_mentioned[]: Ministry names referenced
-- all_speakers_mentioned[].name: Speaker name
-- all_speakers_mentioned[].party: Party if mentioned
-- all_speakers_mentioned[].section: Which section they appeared in
-- adjournment_time: Time of adjournment if mentioned
-- next_meeting_date: Next meeting date if announced
-"""
-
-STRUCTURED_PROMPT = """You are an expert translator of Nepali parliamentary documents.
-
-Translate the following Nepali Devanagari OCR text from a House of Representatives meeting notice into English.
-
-Return a JSON object with exactly this structure — no markdown, no code fences, pure JSON:{schema}
-Rules:
-- full_translation_en must be the COMPLETE translation. Do not summarize or truncate it.
-- All names, dates, amounts, and bill references must be preserved exactly.
-- speakers lists per section: include every named MP or minister who spoke.
-- If a party is not explicitly stated in text, set to null.
-- agenda_tags: extract 5-15 topical keywords that would help someone search for this notice later.
-- If a field has no data, use null or empty array — never omit the field.
-- Output valid JSON only.
-
---- BEGIN OCR TEXT ---
-{ocr_text}
---- END OCR TEXT ---"""
-
-
-def load_env():
-    env_path = Path(__file__).resolve().parent.parent / ".env"
-    if env_path.exists():
-        for line in env_path.read_text().splitlines():
-            line = line.strip()
-            if line and not line.startswith("#") and "=" in line:
-                key, _, val = line.partition("=")
-                os.environ.setdefault(key.strip(), val.strip())
+_SCHEMA_DESC = build_schema()
+STRUCTURED_PROMPT = NOTICE_PROMPT
 
 
 def read_file(path: Path) -> str:
@@ -88,13 +44,13 @@ def call_gemini_structured(ocr_text: str, api_key: str) -> dict:
         headers={"Content-Type": "application/json"},
         params={"key": api_key},
         json={
-            "system_instruction": {
-                "parts": [{"text": "You are an expert translator of Nepali parliamentary documents. Output JSON only."}]
-            },
-            "contents": [{"parts": [{"text": prompt}]}],
-            "generationConfig": {
-                "response_mime_type": "application/json",
-                "temperature": 0.2,
+                "system_instruction": {
+                    "parts": [{"text": GEMINI_SYSTEM_INSTRUCTION}]
+                },
+                "contents": [{"parts": [{"text": prompt}]}],
+                "generationConfig": {
+                    "response_mime_type": "application/json",
+                    "temperature": GEMINI_TEMPERATURE,
                 "maxOutputTokens": 16384,
             },
         },

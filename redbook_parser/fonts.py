@@ -50,12 +50,15 @@ def is_clean_char(ch: str) -> bool:
     """True if PyMuPDF's decoded char can be trusted as-is.
 
     Trusted: Devanagari, ASCII digits/whitespace/punct, and any printable
-    non-ASCII that is not a control char. Untrusted: control chars and the
-    ASCII artifact set produced by Identity-H fallback for unmapped CIDs.
+    non-ASCII that is not a control char. Untrusted: U+FFFD (CID absent from
+    ToUnicode CMap), control chars, and the ASCII artifact set produced by
+    Identity-H fallback for unmapped CIDs.
     """
     if not ch:
         return False
     code = ord(ch)
+    if code == 0xFFFD:  # U+FFFD replacement char = CID absent from ToUnicode
+        return False
     if code in _CONTROL:
         return False
     if ch in _ASCII_ARTIFACTS:

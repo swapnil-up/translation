@@ -9,7 +9,7 @@ Usage:
 Pipeline:
     1. Load structured JSON
     2. Upsert notice record (title as dedup key)
-    3. Chunk sections → build context-prefixed text
+    3. Chunk sections -> build context-prefixed text
     4. Generate embeddings via Gemini text-embedding-004
     5. Upsert all chunks
 """
@@ -24,18 +24,7 @@ from pathlib import Path
 import psycopg
 import requests
 
-EMBED_MODEL = "gemini-embedding-001"
-GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/models"
-
-
-def load_env():
-    env_path = Path(__file__).resolve().parent.parent / ".env"
-    if env_path.exists():
-        for line in env_path.read_text().splitlines():
-            line = line.strip()
-            if line and not line.startswith("#") and "=" in line:
-                key, _, val = line.partition("=")
-                os.environ.setdefault(key.strip(), val.strip())
+from config import EMBED_MODEL, GEMINI_API, load_env
 
 
 def get_embeddings(texts: list[str], api_key: str) -> list[list[float]]:

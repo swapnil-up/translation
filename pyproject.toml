@@ -1,0 +1,66 @@
+[project]
+name = "translation"
+version = "0.1.0"
+description = "Nepali government PDF extraction and translation pipeline"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["redbook_parser*", "cidmap*", "dictionary*"]
+exclude = ["archive*", "output*", "tmpvenv*", "bill-tracker*", "tests*"]
+
+[project.optional-dependencies]
+# Budget PDF extraction (redbook_parser, cidmap)
+redbook = [
+    "pymupdf",
+    "numpy",
+]
+
+# OCR pipeline (PaddleOCR-based extraction for legacy fonts)
+ocr = [
+    "paddleocr>=3.5.0",
+    "paddlepaddle<3.3,>=3.1",
+    "pdf2image>=1.17.0",
+    "numpy",
+]
+
+# Bill-tracker scripts (scrape, process, upsert)
+billtracker = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=4.9.0",
+    "psycopg[binary]>=3.2.0",
+]
+
+# FastAPI backend
+backend = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pydantic-settings",
+    "python-multipart",
+    "python-dotenv",
+    "Pillow",
+    "paddleocr>=3.5.0",
+    "paddlepaddle<3.3,>=3.1",
+    "pdf2image>=1.17.0",
+    "google-genai",
+]
+
+# Testing
+test = [
+    "pytest",
+]
+
+# All bill-tracker components (scripts + backend + ocr)
+billtracker-full = [
+    "translation[billtracker,ocr,backend]",
+]
+
+# Everything except the backend (for CLI/CI work)
+dev = [
+    "translation[redbook,billtracker,ocr,test]",
+]
+
+# Full install (all components)
+all = [
+    "translation[redbook,billtracker,ocr,backend,test]",
+]

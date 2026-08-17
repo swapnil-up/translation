@@ -36,67 +36,38 @@ from pathlib import Path
 
 import requests
 
+from config import (
+    ADAPTIVE_BUDGET_RETRIES,
+    GEMINI_API,
+    GEMINI_MODEL,
+    GEMINI_SYSTEM_INSTRUCTION,
+    GEMINI_TEMPERATURE,
+    HEADERS,
+    MAX_OUTPUT_TOKENS,
+    MAX_RETRIES,
+    OUTPUT_DIR,
+    RETRY_DELAY,
+    SEGMENT_CHARS,
+    TRANSLATIONS_DIR,
+    VERBATIM_TIMEOUT,
+    VERBATIMS_MANIFEST,
+    VERBATIMS_OUTPUT_DIR,
+    load_env,
+)
+from schema import VERBATIM_PROMPT, build_schema
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-MANIFEST = Path(__file__).resolve().parent.parent / "verbatims.json"
-TRANSLATIONS_DIR = Path("translations")
-OUTPUT_DIR = Path("output") / "verbatims"
-HEADERS = {"User-Agent": "Mozilla/5.0"}
+MANIFEST = VERBATIMS_MANIFEST
 
-MAX_RETRIES = 3
-RETRY_DELAY = 5
-
-GEMINI_MODEL = "gemini-2.5-flash-lite"
-GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/models"
-
-# Split OCR text into segments of roughly this many characters. A verbatim
-# of N chars becomes ceil(N / SEGMENT_CHARS) Gemini calls.
-SEGMENT_CHARS = 10000
-
-VERBATIM_SCHEMA_DESC = """
-- full_translation_en: The complete English translation of this segment as a single narrative string. Preserve all names, dates, numbers, and bill references exactly.
-- session.date_bs: Nepali date (e.g. 2081-04-12) if mentioned
-- session.date_ad: Approximate AD date if inferrable, else null
-- session.meeting_type: Type of session (e.g. National Assembly, Zero Hour, Special Time)
-- session.meeting_number: Meeting/sitting number if mentioned
-- session.chairperson: Name of presiding officer
-- sections[].name: Section name (e.g. Opening, Questions, Zero Hour, Main Business, Adjournment)
-- sections[].summary_en: 1-3 sentence summary of what happened in this section
-- sections[].speakers[].name: Full name of the speaker
-- sections[].speakers[].party: Party abbreviation if mentioned, else null
-- sections[].speakers[].topic: What they spoke about in 5-10 words
-- sections[].bills_discussed[].name: Full bill name
-- sections[].bills_discussed[].status: introduced | discussed | passed | ratified | sent_to_committee
-- sections[].reports_presented[]: Report names if any
-- sections[].key_issues[]: Key issues/topics raised in this section
-- agenda_tags[]: 5-15 freeform topical keywords for searching across verbatims
-- ministries_mentioned[]: Ministry names referenced
-- all_speakers_mentioned[].name: Speaker name
-- all_speakers_mentioned[].party: Party if mentioned
-- all_speakers_mentioned[].section: Which section they appeared in
-- adjournment_time: Time of adjournment if mentioned
-- next_meeting_date: Next meeting date if announced
-"""
-
-VERBATIM_PROMPT = """You are an expert translator of Nepali parliamentary documents.
-
-A National Assembly meeting verbatim has been split into {total} segments.
-This is segment {idx} of {total}. Translate the Devanagari text below into English.
-
-Return a JSON object with exactly this structure — no markdown, no code fences, pure JSON:{schema}
-Rules:
-- full_translation_en must be the COMPLETE translation of this segment. Do not summarize or truncate it.
-- Only fill session/meeting fields if they are mentioned in THIS segment; otherwise null.
-- All names, dates, amounts, and bill references must be preserved exactly.
-- speakers lists per section: include every named speaker in this segment.
-- If a party is not explicitly stated in text, set to null.
-- agenda_tags: extract topical keywords from this segment that would help someone search later.
-- If a field has no data, use null or empty array — never omit the field.
-- Output valid JSON only.
-
---- BEGIN SEGMENT TEXT ---
-{segment_text}
---- END SEGMENT TEXT ---"""
+VERBATIM_SCHEMA_DESC = build_schema(
+    body="National Assembly",
+    context="this segment as a single narrative string",
+    date_suffix=" if mentioned",
+    section_examples="Opening, Questions, Zero Hour, Main Business, Adjournment",
+    speaker_label="speaker",
+    search_label="verbatims",
+)
 
 
 def load_manifest() -> list:
@@ -108,16 +79,6 @@ def load_manifest() -> list:
 def save_manifest(verbatims: list):
     MANIFEST.write_text(json.dumps(verbatims, indent=2, ensure_ascii=False))
     print(f"[manifest] saved {len(verbatims)} entries", file=sys.stderr)
-
-
-def load_env():
-    env_path = Path(__file__).resolve().parent.parent / ".env"
-    if env_path.exists():
-        for line in env_path.read_text().splitlines():
-            line = line.strip()
-            if line and not line.startswith("#") and "=" in line:
-                key, _, val = line.partition("=")
-                os.environ.setdefault(key.strip(), val.strip())
 
 
 def pick_pending(verbatims: list) -> int | None:
@@ -135,7 +96,7 @@ def fetch_with_retry(url: str, **kwargs) -> requests.Response | None:
     last_err = None
     for attempt in range(MAX_RETRIES):
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=90, verify=False, **kwargs)
+            resp = requests.get(url, headers=HEADERS, timeout=VERBATIM_TIMEOUT, verify=False, **kwargs)
             resp.raise_for_status()
             return resp
         except requests.exceptions.RequestException as e:
@@ -292,11 +253,7 @@ def _classify_gemini_error(err: str) -> str:
 
 def _output_token_budget(segment_text: str) -> int:
     chars = len(segment_text)
-    return max(8192, min(chars // 2, 65536))
-
-
-MAX_OUTPUT_TOKENS = 65536
-ADAPTIVE_BUDGET_RETRIES = 4
+    return max(8192, min(chars // 2, MAX_OUTPUT_TOKENS))
 
 
 def call_gemini_segment(segment_text: str, idx: int, total: int, api_key: str) -> dict:
@@ -315,12 +272,12 @@ def call_gemini_segment(segment_text: str, idx: int, total: int, api_key: str) -
             params={"key": api_key},
             json={
                 "system_instruction": {
-                    "parts": [{"text": "You are an expert translator of Nepali parliamentary documents. Output JSON only."}]
+                    "parts": [{"text": GEMINI_SYSTEM_INSTRUCTION}]
                 },
                 "contents": [{"parts": [{"text": prompt}]}],
                 "generationConfig": {
                     "response_mime_type": "application/json",
-                    "temperature": 0.2,
+                    "temperature": GEMINI_TEMPERATURE,
                     "maxOutputTokens": budget,
                 },
             },

@@ -35,18 +35,29 @@ from pathlib import Path
 
 import requests
 
+from config import (
+    HEADERS,
+    MAX_RETRIES,
+    MIN_NA_SESSION,
+    NA_ATTACH_BASE,
+    NA_LIST_URL,
+    REQUEST_TIMEOUT,
+    RETRY_DELAY,
+    VERBATIMS_MANIFEST,
+    load_env,
+)
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-LIST_URL = "https://na.parliament.gov.np/api/v1/verbatims"
-ATTACH_BASE = "https://na.parliament.gov.np/uploads/attachments"
-MANIFEST = Path(__file__).resolve().parent.parent / "verbatims.json"
-HEADERS = {"User-Agent": "Mozilla/5.0"}
+LIST_URL = NA_LIST_URL
+ATTACH_BASE = NA_ATTACH_BASE
+MANIFEST = VERBATIMS_MANIFEST
 
 # Verbatims from the 19th NA session onward (BS 2082-10 ~ Dec 2025) are kept
 # in the manifest — the current-parliament era (7th HoR first session began
 # 2026-04-02 / BS 2082-12, with session 19 a little before that). Older
 # sessions live in verbatims-archive.json and are never re-added.
-MIN_SESSION = 19
+MIN_SESSION = MIN_NA_SESSION
 
 # Devanagari session ordinals as they appear in title_np (e.g. "एक्काइसौँ अधिवेशन").
 SESSION_NUMBERS = {
@@ -61,9 +72,6 @@ SESSION_NUMBERS = {
 }
 
 SESSION_PREFIX_RE = re.compile(r"^[\s\-_]*([\u0900-\u097f]{3,})\s*अधिवेशन")
-
-MAX_RETRIES = 3
-RETRY_DELAY = 5
 
 
 def load_manifest() -> list:
@@ -83,7 +91,7 @@ def fetch_with_retry(url: str) -> requests.Response | None:
     last_err = None
     for attempt in range(MAX_RETRIES):
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=30, verify=False)
+            resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, verify=False)
             resp.raise_for_status()
             return resp
         except requests.exceptions.RequestException as e:

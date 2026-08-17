@@ -114,10 +114,30 @@ make slice PDF=output/redbook.pdf FROM=30 TO=50 DB=output/slice-30-50.db
 ```
 
 ## Setup
+
+Dependencies are declared in `pyproject.toml` with optional groups. Install
+into a venv with `pip install -e .[group]`:
+
 ```bash
+# redbook_parser + cidmap (PyMuPDF extraction, tests)
+uv venv redbook-env --python 3.12
+uv pip install --python redbook-env/bin/python -e ".[redbook,test]"
+
+# bill-tracker scripts (scrape, process, upsert)
+uv venv bill-tracker/.venv --python 3.12
+uv pip install --python bill-tracker/.venv/bin/python -e ".[billtracker]"
+
+# OCR pipeline (PaddleOCR for legacy fonts)
 uv venv ocr-env --python 3.10
-uv pip install --python ocr-env/bin/python -r requirements.txt setuptools
+uv pip install --python ocr-env/bin/python -e ".[ocr]"
+
+# Everything except backend
+uv venv dev-env --python 3.12
+uv pip install --python dev-env/bin/python -e ".[dev]"
 ```
+
+Available groups: `redbook`, `ocr`, `billtracker`, `backend`, `test`, `dev`, `all`.
+Run `pip install -e .[all]` for a full install.
 
 ## Conventions
 - **Venvs:** `ocr-env/` (root-level, gitignored); `bill-tracker/.venv/` (bill-tracker, gitignored); `redbook-env/` (redbook_parser, gitignored)

@@ -8,20 +8,25 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+from config import (
+    HEADERS,
+    HR_BASE,
+    HR_LIST_URL,
+    MAX_RETRIES,
+    MIN_BS_MONTH,
+    MIN_BS_YEAR,
+    NOTICES_MANIFEST,
+    REQUEST_TIMEOUT,
+    RETRY_DELAY,
+    SCRAPE_DELAY,
+    load_env,
+)
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-BASE = "https://hr.parliament.gov.np"
-LIST_URL = f"{BASE}/en/parliamentary-notices"
-MANIFEST = Path(__file__).resolve().parent.parent / "notices.json"
-HEADERS = {"User-Agent": "Mozilla/5.0"}
-
-DELAY = 0.3
-MAX_RETRIES = 3
-RETRY_DELAY = 5
-
-# 7th House of Representatives: elected 2026-03-05 (BS 2082-11), first session began 2026-04-02 (BS 2082-12).
-# Notices older than this belong to the dissolved 6th HoR and are excluded from the manifest.
-MIN_BS_YEAR, MIN_BS_MONTH = 2082, 12
+BASE = HR_BASE
+LIST_URL = HR_LIST_URL
+MANIFEST = NOTICES_MANIFEST
 
 
 def load_manifest() -> list:
@@ -41,7 +46,7 @@ def fetch_with_retry(url: str) -> requests.Response | None:
     last_err = None
     for attempt in range(MAX_RETRIES):
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=30, verify=False)
+            resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT, verify=False)
             resp.raise_for_status()
             return resp
         except requests.exceptions.RequestException as e:
@@ -155,7 +160,7 @@ def scrape_list_only():
         if page >= total_pages:
             break
         page += 1
-        time.sleep(DELAY)
+        time.sleep(SCRAPE_DELAY)
     if new_notices:
         existing[0:0] = new_notices
         save_manifest(existing)
@@ -177,7 +182,7 @@ def backfill_pdfs():
             print(f"    -> none", file=sys.stderr)
             notices[i]["status"] = "no_pdf"
         changed += 1
-        time.sleep(DELAY)
+        time.sleep(SCRAPE_DELAY)
         if changed % 20 == 0:
             save_manifest(notices)
     if changed:

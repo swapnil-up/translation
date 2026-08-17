@@ -42,30 +42,49 @@ def glyphs(page, dedup=True) -> list[dict]:
 
     ``dedup`` merges glyphs the text layer draws twice at ~the same spot
     (redbook shadow/outline artifact: same (font, cid) within X_TOL pt).
+
+    Falls back to span-level bbox division when per-glyph chars are absent.
     """
     out = []
     for span in page.get_texttrace():
         font = span["font"]
-        for (u, glyph, origin, bbox) in span.get("chars", []):
-            out.append({
-                "cid": glyph,          # == CID for Identity-H
-                "c": chr(u) if u else "",
-                "font": font,
-                "origin": origin,
-                "bbox": bbox,
-            })
+        chars = span.get("chars", [])
+        if chars:
+            for (u, glyph, origin, bbox) in chars:
+                out.append({
+                    "cid": glyph,          # == CID for Identity-H
+                    "c": chr(u) if u else "",
+                    "font": font,
+                    "origin": origin,
+                    "bbox": bbox,
+                })
+        else:
+            sb = span["bbox"]
+            text = span.get("text", "")
+            n_chars = max(len(text), 1)
+            span_w = (sb[2] - sb[0]) / n_chars
+            for idx, ch in enumerate(text):
+                origin = (sb[0] + idx * span_w, sb[1])
+                char_x0 = sb[0] + idx * span_w
+                char_x1 = char_x0 + span_w
+                out.append({
+                    "font": font,
+                    "cid": 0,  # CID unknown at span level
+                    "c": ch,
+                    "origin": origin,
+                    "bbox": (char_x0, sb[1], char_x1, sb[3]),
+                })
     if not dedup:
         return out
-    kept = []
-    for g in sorted(out, key=lambda x: (round(x["origin"][1], 0),
-                                        x["origin"][0])):
-        dup = next((k for k in kept if
-                    abs(k["origin"][1] - g["origin"][1]) <= 1.0 and
-                    abs(k["origin"][0] - g["origin"][0]) <= 1.5 and
-                    k["cid"] == g["cid"] and k["font"] == g["font"]), None)
-        if dup is None:
-            kept.append(g)
-    return kept
+    seen = set()
+    deduped = []
+    for g in out:
+        key = (g["font"], g["cid"], round(g["origin"][1]), round(g["origin"][0]))
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(g)
+    return deduped
 
 
 def cluster_lines(glyphs, y_gap=3.0) -> list[list[dict]]:
