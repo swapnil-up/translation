@@ -1,0 +1,113 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 44\nDaily Business Schedule\nFederal Parliament of Nepal\nMonday, Bhadra 1, 2083\n1:00 PM\nManagement Work\n1. The Honorable Speaker will present the proposal to \"Consider the Mines and Minerals Bill, 2083\".\n2. Honorable Minister for Women, Children, Senior Citizens and Social Security, Sita Kumari Poudel,\na) Will present a proposal seeking permission to introduce the \"Child Related (First Amendment) Bill, 2083\".\nb) Will introduce the \"Child Related (First Amendment) Bill, 2083\".\n3. Honorable Foreign Minister, Shishir Khanal, will present a proposal to \"Consider the Passport (First Amendment) Bill, 2083\".\n4. Honorable Minister for Women, Children, Senior Citizens and Social Security, Sita Kumari Poudel, will present a proposal to \"Consider the Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-01-01",
+    "date_ad": "2026-08-18",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "44",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The session began with the Honorable Speaker presenting a proposal for consideration of the Mines and Minerals Bill, 2083. Subsequently, the Minister for Women, Children, Senior Citizens and Social Security sought permission to introduce and then introduced the Child Related (First Amendment) Bill, 2083. The Foreign Minister then presented a proposal to consider the Passport (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Consideration of Mines and Minerals Bill, 2083"
+        },
+        {
+          "name": "Sita Kumari Poudel",
+          "party": null,
+          "topic": "Introduction of Child Related (First Amendment) Bill, 2083"
+        },
+        {
+          "name": "Shishir Khanal",
+          "party": null,
+          "topic": "Consideration of Passport (First Amendment) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Mines and Minerals Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Child Related (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Passport (First Amendment) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Mines and Minerals Bill",
+        "Child Related Bill",
+        "Passport Bill"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister for Women, Children, Senior Citizens and Social Security presented a proposal for consideration of the Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sita Kumari Poudel",
+          "party": null,
+          "topic": "Consideration of Human Trafficking Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Human Trafficking and Transportation Bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Session",
+    "House of Representatives",
+    "Legislation",
+    "Mines and Minerals",
+    "Children's Rights",
+    "Passports",
+    "Human Trafficking",
+    "Bill Introduction",
+    "Bill Consideration"
+  ],
+  "ministries_mentioned": [
+    "Ministry for Women, Children, Senior Citizens and Social Security",
+    "Ministry of Foreign Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sita Kumari Poudel",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Shishir Khanal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sita Kumari Poudel",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
