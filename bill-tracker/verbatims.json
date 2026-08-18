@@ -213,9 +213,12 @@
     "title_np": "एक्काइसौँ अधिवेशन_कार्यवाहीको सम्पूर्ण विवरण_१२ असार २०८३ शुक्रवार (बैठक सङ्ख्या- २०)",
     "published_at": "2026-06-30",
     "attachment_url": "https://na.parliament.gov.np/uploads/attachments/ojdmi91zhciqzoj3.pdf",
-    "status": "pending",
+    "status": "done",
     "scraped_at": "2026-08-10",
-    "serial": "17."
+    "serial": "17.",
+    "ocr_path": "/home/runner/work/translation/translation/output/Verbatim_2966-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/output/Verbatim_2966.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Verbatim_2966.json"
   },
   {
     "id": 2965,
@@ -223,9 +226,12 @@
     "title_np": "एक्काइसौँ अधिवेशन_कार्यवाहीको सम्पूर्ण विवरण_०५ असार २०८३ शुक्रवार (बैठक सङ्ख्या- १९)",
     "published_at": "2026-06-23",
     "attachment_url": "https://na.parliament.gov.np/uploads/attachments/fcbxoy2prjnn5bir.pdf",
-    "status": "pending",
+    "status": "done",
     "scraped_at": "2026-08-10",
-    "serial": "18."
+    "serial": "18.",
+    "ocr_path": "/home/runner/work/translation/translation/output/Verbatim_2965-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/output/Verbatim_2965.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Verbatim_2965.json"
   },
   {
     "id": 2964,
