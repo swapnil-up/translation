@@ -1,0 +1,272 @@
+{
+  "source": {
+    "title": "अत्यन्त जरुरी सूचना",
+    "date_bs": "064।06।10",
+    "date_ad": "2007-09-26",
+    "gazette_number": null,
+    "document_type": "notice"
+  },
+  "drugs": [
+    {
+      "drug_name_en": "Oral Rehydration Salt for 1 Ltr.",
+      "drug_name_np": null,
+      "strength": null,
+      "dosage_form": null,
+      "unit": "Sachet",
+      "mrp_npr": 10.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Albendazole",
+      "drug_name_np": null,
+      "strength": "400 mg",
+      "dosage_form": "Tablet",
+      "unit": null,
+      "mrp_npr": 10.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Albendazole Suspension",
+      "drug_name_np": null,
+      "strength": "400 mg/10 ml",
+      "dosage_form": "Suspension",
+      "unit": "10 ml Bottle",
+      "mrp_npr": 18.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Ibuprofen + Paracetamol Suspension",
+      "drug_name_np": null,
+      "strength": "100 mg + 125 mg /5 ml",
+      "dosage_form": "Suspension",
+      "unit": "60 ml Bottle",
+      "mrp_npr": 32.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Paracetamol + Ibuprofen Tablet",
+      "drug_name_np": null,
+      "strength": "500 mg + 400 mg",
+      "dosage_form": "Tablet",
+      "unit": null,
+      "mrp_npr": 2.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Paracetamol",
+      "drug_name_np": null,
+      "strength": "500 mg",
+      "dosage_form": "Tablet",
+      "unit": null,
+      "mrp_npr": 1.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Paracetamol Syrup or Suspension",
+      "drug_name_np": null,
+      "strength": "120 or 125 mg/5 ml",
+      "dosage_form": "Syrup/Suspension",
+      "unit": "60 ml bottle",
+      "mrp_npr": 30.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Paracetamol Syrup or Suspension",
+      "drug_name_np": null,
+      "strength": "120 or 125 mg/5 ml",
+      "dosage_form": "Syrup/Suspension",
+      "unit": "50 ml Bottle",
+      "mrp_npr": 25.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Paracetamol Syrup or Suspension",
+      "drug_name_np": null,
+      "strength": "120 or 125 mg/5 ml",
+      "dosage_form": "Syrup/Suspension",
+      "unit": "30 ml Bottle",
+      "mrp_npr": 20.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Paracetamol Drops",
+      "drug_name_np": null,
+      "strength": "100 mg/ml",
+      "dosage_form": "Drops",
+      "unit": "10 ml Bottle",
+      "mrp_npr": 25.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Paracetamol Dispersible Tablet",
+      "drug_name_np": null,
+      "strength": "500 mg",
+      "dosage_form": "Tablet",
+      "unit": null,
+      "mrp_npr": 1.25,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Normal Saline",
+      "drug_name_np": null,
+      "strength": "500/540 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 50.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Normal Saline",
+      "drug_name_np": null,
+      "strength": "1000 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 73.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "5% Dextrose",
+      "drug_name_np": null,
+      "strength": "500/540 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 53.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "5% Dextrose",
+      "drug_name_np": null,
+      "strength": "1000 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 73.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Dextrose Saline",
+      "drug_name_np": null,
+      "strength": "500/540 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 65.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Dextrose Saline",
+      "drug_name_np": null,
+      "strength": "1000 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 73.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "10% Dextrose",
+      "drug_name_np": null,
+      "strength": "500/540 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 70.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "10% Dextrose Saline",
+      "drug_name_np": null,
+      "strength": "1000 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 70.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Ringer's Lactate",
+      "drug_name_np": null,
+      "strength": "500/540 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 63.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    },
+    {
+      "drug_name_en": "Ringer's Lactate",
+      "drug_name_np": null,
+      "strength": "1000 ml",
+      "dosage_form": "Bottle",
+      "unit": null,
+      "mrp_npr": 83.0,
+      "category": null,
+      "manufacturer": null,
+      "pack_size": null,
+      "schedule": null
+    }
+  ],
+  "summary": {
+    "total_drugs": 21,
+    "categories_found": [],
+    "price_range": {
+      "min": 1.0,
+      "max": 83.0
+    },
+    "avg_price": 43.14
+  }
+}

@@ -96,10 +96,47 @@ CREATE TABLE IF NOT EXISTS verbatim_chunks (
 CREATE INDEX IF NOT EXISTS idx_verbatim_chunks_verbatim_id ON verbatim_chunks(verbatim_id);
 CREATE INDEX IF NOT EXISTS idx_verbatim_chunks_embedding ON verbatim_chunks
     USING ivfflat (embedding vector_cosine_ops) WITH (lists = 100);
+
+CREATE TABLE IF NOT EXISTS dda_medicines (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    source_title TEXT,
+    source_date_bs TEXT,
+    source_date_ad DATE,
+    source_type TEXT,
+    drug_name_en TEXT NOT NULL,
+    drug_name_np TEXT,
+    strength TEXT,
+    dosage_form TEXT,
+    unit TEXT,
+    mrp_npr NUMERIC,
+    category TEXT,
+    manufacturer TEXT,
+    pack_size TEXT,
+    schedule TEXT,
+    source_file TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_dda_medicines_drug_name ON dda_medicines(drug_name_en);
+CREATE INDEX IF NOT EXISTS idx_dda_medicines_strength ON dda_medicines(strength);
+
+CREATE TABLE IF NOT EXISTS dda_prices (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    medicine_id UUID NOT NULL REFERENCES dda_medicines(id) ON DELETE CASCADE,
+    price_npr NUMERIC NOT NULL,
+    effective_date DATE,
+    source TEXT,
+    created_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_dda_prices_medicine_id ON dda_prices(medicine_id);
 """
 
 
 DROP_SQL = """
+DROP TABLE IF EXISTS dda_prices;
+DROP TABLE IF EXISTS dda_medicines;
 DROP TABLE IF EXISTS verbatim_chunks;
 DROP TABLE IF EXISTS verbatims;
 DROP TABLE IF EXISTS chunks;

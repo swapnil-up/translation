@@ -17,11 +17,18 @@ REPO_ROOT = BILLTRACKER_ROOT.parent
 # --- Manifests ---
 NOTICES_MANIFEST = BILLTRACKER_ROOT / "notices.json"
 VERBATIMS_MANIFEST = BILLTRACKER_ROOT / "verbatims.json"
+DDA_MANIFEST = BILLTRACKER_ROOT / "dda_medicines.json"
 
 # --- Output paths ---
 TRANSLATIONS_DIR = REPO_ROOT / "translations"
 OUTPUT_DIR = REPO_ROOT / "output"
 VERBATIMS_OUTPUT_DIR = OUTPUT_DIR / "verbatims"
+DDA_OUTPUT_DIR = OUTPUT_DIR / "dda"
+
+# --- DDA URLs ---
+DDA_MRP_PAGE = "https://dda.gov.np/category/mrp-of-medicines/"
+DDA_BASE = "https://dda.gov.np"
+DDA_MEDIA_BASE = "https://giwmscdnone.gov.np/media"
 
 # --- Parliament URLs ---
 HR_BASE = "https://hr.parliament.gov.np"
@@ -58,6 +65,12 @@ MIN_NA_SESSION = 19
 
 # --- Scrape throttle ---
 SCRAPE_DELAY = 0.3
+
+# --- DDA column regions ---
+DDA_COLUMN_REGIONS = BILLTRACKER_ROOT / "dda_column_regions.json"
+
+# --- External tools ---
+MARK_BOXES_DIR = Path.home() / "github" / "agent-tools" / "mark-boxes"
 
 
 def load_env():

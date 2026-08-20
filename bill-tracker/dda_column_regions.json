@@ -1,0 +1,131 @@
+{
+  "gazette_left": {
+    "dpi": 300.0,
+    "description": "Left table - existing products (तालिका १)",
+    "columns": {
+      "serial": {
+        "px": [
+          387,
+          210,
+          510,
+          1272
+        ]
+      },
+      "drug_name": {
+        "px": [
+          510,
+          204,
+          1002,
+          1272
+        ]
+      },
+      "strength": {
+        "px": [
+          1002,
+          204,
+          1368,
+          1275
+        ]
+      },
+      "unit_price": {
+        "px": [
+          1368,
+          204,
+          1623,
+          1275
+        ]
+      }
+    },
+    "row_scan": {
+      "y_start": 210,
+      "row_gap": 35,
+      "header_skip_y": 184
+    }
+  },
+  "gazette_left_2": {
+    "dpi": 300.0,
+    "description": "Left table - section 2 (below separator)",
+    "columns": {
+      "serial": {
+        "px": [
+          420,
+          1446,
+          543,
+          2142
+        ]
+      },
+      "drug_name": {
+        "px": [
+          543,
+          1446,
+          1020,
+          2142
+        ]
+      },
+      "strength": {
+        "px": [
+          1020,
+          1446,
+          1311,
+          2142
+        ]
+      },
+      "unit_price": {
+        "px": [
+          1311,
+          1446,
+          1623,
+          2142
+        ]
+      }
+    },
+    "row_scan": {
+      "y_start": 1443,
+      "row_gap": 35,
+      "header_skip_y": 1443
+    }
+  },
+  "gazette_right": {
+    "dpi": 300.0,
+    "description": "Right table - new products (तालिका २)",
+    "columns": {
+      "serial": {
+        "px": [
+          1959,
+          213,
+          2082,
+          2160
+        ]
+      },
+      "drug_name": {
+        "px": [
+          2082,
+          210,
+          2559,
+          2160
+        ]
+      },
+      "strength": {
+        "px": [
+          2559,
+          210,
+          2850,
+          2163
+        ]
+      },
+      "unit_price": {
+        "px": [
+          2850,
+          210,
+          3162,
+          2163
+        ]
+      }
+    },
+    "row_scan": {
+      "y_start": 213,
+      "row_gap": 35,
+      "header_skip_y": 187
+    }
+  }
+}
