@@ -239,7 +239,7 @@
     "title_np": "एक्काइसौँ अधिवेशन_कार्यवाहीको सम्पूर्ण विवरण_०१  असार  २०८३ सोमवार (बैठक सङ्ख्या- १८)",
     "published_at": "2026-06-23",
     "attachment_url": "https://na.parliament.gov.np/uploads/attachments/wmtemvpohxtqxgfk.pdf",
-    "status": "pending",
+    "status": "skipped",
     "scraped_at": "2026-08-10",
     "serial": "19."
   },
@@ -249,9 +249,12 @@
     "title_np": "एक्काइसौँ अधिवेशन_कार्यवाहीको सम्पूर्ण विवरण_२९ जेठ २०८३ शुक्रवार (बैठक सङ्ख्या- १७)",
     "published_at": "2026-06-23",
     "attachment_url": "https://na.parliament.gov.np/uploads/attachments/x8cx0zgotvkdm3qo.pdf",
-    "status": "pending",
+    "status": "done",
     "scraped_at": "2026-08-10",
-    "serial": "20."
+    "serial": "20.",
+    "ocr_path": "/home/runner/work/translation/translation/output/Verbatim_2962-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/output/Verbatim_2962.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Verbatim_2962.json"
   },
   {
     "id": 2961,
