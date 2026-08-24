@@ -1,0 +1,76 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 46\nFederal Parliament\nNepal\nDaily Agenda\n2083 Bhadra 3, Wednesday\n1:00 PM\nManagement Work\n1. The Honorable Minister of Finance Dr. Swarnim Wagle will present a proposal to \"Consider the Staff Provident Fund (Tenth Amendment) Bill, 2083\".\n2. The Honorable Minister of Youth, Employment and Labor Ramji Yadav will present a proposal to \"Consider the Child Labor (Prohibition and Regulation) Bill, 2083\".\nPadma Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2083-04-12",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": 46,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister of Finance, Dr. Swarnim Wagle, will present a proposal to consider the Staff Provident Fund (Tenth Amendment) Bill, 2083. The Minister of Youth, Employment and Labor, Ramji Yadav, will present a proposal to consider the Child Labor (Prohibition and Regulation) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Consideration of Staff Provident Fund (Tenth Amendment) Bill, 2083"
+        },
+        {
+          "name": "Ramji Yadav",
+          "party": null,
+          "topic": "Consideration of Child Labor (Prohibition and Regulation) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Staff Provident Fund (Tenth Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Child Labor (Prohibition and Regulation) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Staff Provident Fund (Tenth Amendment) Bill, 2083",
+        "Child Labor (Prohibition and Regulation) Bill, 2083"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Agenda",
+    "House of Representatives",
+    "Legislation",
+    "Finance Bill",
+    "Labor Bill",
+    "Staff Provident Fund",
+    "Child Labor",
+    "Bill Consideration"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Finance",
+    "Ministry of Youth, Employment and Labor"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Ramji Yadav",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "General Secretary"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,119 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 47\nFederal Parliament of Nepal\nDaily Business Schedule\nMonday, Bhadra 8, 2083\n1:00 PM\nMinistry-wise Question and Answer\nThe concerned minister will answer oral questions related to the Ministry of Industry, Commerce and Supplies.\n1. Management Work\nOn behalf of the Right Honourable Prime Minister Balendra Shah, the Honourable Finance Minister Dr. Swarnim Wagle will present a proposal to \"Send the Constitutional Bodies (Remuneration, Service Conditions and Facilities) (First Amendment) Bill, 2083 to the concerned committee for clause-wise discussion.\"\n2. The Honourable Minister for Foreign Affairs, Shishir Khanal, will present a proposal to \"Send the Passport (First Amendment) Bill, 2083 to the concerned committee for clause-wise discussion.\"\n3. The Honourable Minister for Women, Children, Senior Citizens and Social Security, Sita Badi, will present a proposal to \"Send the Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083 to the concerned committee for clause-wise discussion.\"\n4. The Honourable Minister for Industry, Commerce and Supplies, Gauri Kumari, will present a proposal to \"Send the Mines and Minerals Bill, 2083 to the concerned committee for clause-wise discussion.\"\nPadma Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2083-05-08",
+    "date_ad": "2026-08-24",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "47",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Ministry-wise Question and Answer",
+      "summary_en": "The Minister for Industry, Commerce and Supplies will answer oral questions related to the ministry. This section is a placeholder for the actual question and answer session.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Ministry of Industry, Commerce and Supplies",
+        "Oral Questions"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "Several bills were proposed to be sent to respective committees for clause-wise discussion. These include amendments to bills concerning constitutional bodies, passports, human trafficking, and mines and minerals.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Constitutional Bodies (First Amendment) Bill, 2083"
+        },
+        {
+          "name": "Shishir Khanal",
+          "party": null,
+          "topic": "Passport (First Amendment) Bill, 2083"
+        },
+        {
+          "name": "Sita Badi",
+          "party": null,
+          "topic": "Human Trafficking and Transportation (First Amendment) Bill, 2083"
+        },
+        {
+          "name": "Gauri Kumari",
+          "party": null,
+          "topic": "Mines and Minerals Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Constitutional Bodies (Remuneration, Service Conditions and Facilities) (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Passport (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Human Trafficking and Transportation (Control) (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Mines and Minerals Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative Process",
+        "Bill Committee Referral",
+        "Constitutional Bodies",
+        "Passports",
+        "Human Trafficking",
+        "Mines and Minerals"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "House of Representatives",
+    "Legislation",
+    "Bill Discussion",
+    "Committee Referral",
+    "Constitutional Bodies",
+    "Passports",
+    "Human Trafficking",
+    "Mines and Minerals",
+    "Ministry of Industry, Commerce and Supplies",
+    "Oral Questions"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Industry, Commerce and Supplies",
+    "Ministry of Finance",
+    "Ministry of Foreign Affairs",
+    "Ministry of Women, Children, Senior Citizens and Social Security"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Shishir Khanal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sita Badi",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Gauri Kumari",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

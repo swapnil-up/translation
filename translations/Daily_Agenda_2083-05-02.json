@@ -1,0 +1,154 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 44\nDaily Agenda\nFederal Parliament, Nepal\nTuesday, Bhadra 2, 2083\n11:00 AM\nMinistry-wise Discussion\nMinistry of Foreign Affairs, Ministry of Energy, Water Resources and Irrigation, Ministry of Culture, Tourism and Civil Aviation\n1. The concerned Minister will answer oral questions related to the Ministry of Agriculture, Forest and Environment.\nPresentation of Annual Report\n2. The \"Seventh Annual Report of the Tharu Commission (2081 Shrawan - 2082 Ashadh)\" will be presented by the Honorable Minister of Law, Justice and Parliamentary Affairs, Sobita Gautam, on behalf of the Right Honorable Prime Minister Balendra Shah.\nLegislative Work\n3. Honorable Minister of Foreign Affairs, Shishir Khanal, will present the proposal \"Consider the Passport (First Amendment) Bill, 2083\".\n4. Honorable Minister of Law, Justice and Parliamentary Affairs, Sobita Gautam, will present the proposal \"Consider the Mediation (Second Amendment) Bill, 2083\".\nTreaty-related Work\n4. Honorable Minister of Law, Justice and Parliamentary Affairs, Sobita Gautam, will present the proposal \"Consider the ratification of the United Nations Convention against Transnational Organized Crime and its Protocol to Prevent, Suppress and Punish Trafficking in Persons, Especially Women and Children\" and \"Consider the ratification of the Convention on the Law of the Sea and the Convention on the Conservation and Sustainable Use of Marine Biological Diversity of Areas Beyond National Jurisdiction\".\nPan Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-02-02",
+    "date_ad": "2026-08-19",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "44",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Ministry-wise Discussion",
+      "summary_en": "The Minister will respond to oral questions concerning the Ministry of Agriculture, Forest and Environment. Discussions are also scheduled for the Ministry of Foreign Affairs, Ministry of Energy, Water Resources and Irrigation, and Ministry of Culture, Tourism and Civil Aviation.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Oral questions to ministries",
+        "Ministry of Agriculture, Forest and Environment",
+        "Ministry of Foreign Affairs",
+        "Ministry of Energy, Water Resources and Irrigation",
+        "Ministry of Culture, Tourism and Civil Aviation"
+      ]
+    },
+    {
+      "name": "Presentation of Annual Report",
+      "summary_en": "The Seventh Annual Report of the Tharu Commission (2081 Shrawan - 2082 Ashadh) will be presented by the Minister of Law, Justice and Parliamentary Affairs, Sobita Gautam, on behalf of the Prime Minister.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Tharu Commission Annual Report"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Seventh Annual Report of the Tharu Commission (2081 Shrawan - 2082 Ashadh)"
+      ],
+      "key_issues": [
+        "Tharu Commission",
+        "Annual Report"
+      ]
+    },
+    {
+      "name": "Legislative Work",
+      "summary_en": "The House will consider the Passport (First Amendment) Bill, 2083, and the Mediation (Second Amendment) Bill, 2083. These legislative proposals were presented for consideration.",
+      "speakers": [
+        {
+          "name": "Shishir Khanal",
+          "party": null,
+          "topic": "Presentation of Passport (First Amendment) Bill, 2083"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Mediation (Second Amendment) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Passport (First Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Mediation (Second Amendment) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Passport Bill",
+        "Mediation Bill",
+        "Legislative Amendments"
+      ]
+    },
+    {
+      "name": "Treaty-related Work",
+      "summary_en": "The House will consider the ratification of the United Nations Convention against Transnational Organized Crime and its Protocol to Prevent, Suppress and Punish Trafficking in Persons, Especially Women and Children, and the Convention on the Law of the Sea and the Convention on the Conservation and Sustainable Use of Marine Biological Diversity of Areas Beyond National Jurisdiction.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Consideration of UN Conventions ratification"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Treaty Ratification",
+        "United Nations Conventions",
+        "Transnational Organized Crime",
+        "Trafficking in Persons",
+        "Law of the Sea",
+        "Marine Biological Diversity"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Daily Agenda",
+    "Ministry Questions",
+    "Annual Reports",
+    "Legislation",
+    "Bills",
+    "Treaties",
+    "International Conventions",
+    "Tharu Commission",
+    "Passport Bill",
+    "Mediation Bill",
+    "UN Conventions"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Foreign Affairs",
+    "Ministry of Energy, Water Resources and Irrigation",
+    "Ministry of Culture, Tourism and Civil Aviation",
+    "Ministry of Agriculture, Forest and Environment",
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Presentation of Annual Report"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Report"
+    },
+    {
+      "name": "Shishir Khanal",
+      "party": null,
+      "section": "Legislative Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Legislative Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Treaty-related Work"
+    },
+    {
+      "name": "Pan Prasad Pandey",
+      "party": null,
+      "section": null
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

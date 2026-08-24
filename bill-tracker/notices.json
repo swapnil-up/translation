@@ -3,49 +3,67 @@
     "serial": "1.",
     "title": "Possible Daily Agenda 2083-05-08",
     "url": "https://hr.parliament.gov.np/en/notices/1787465494",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-24"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/ov0iknr0dttkgkh3.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-24",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Possible_Daily_Agenda_2083-05-08-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Possible_Daily_Agenda_2083-05-08.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Possible_Daily_Agenda_2083-05-08.json"
   },
   {
     "serial": "2.",
     "title": "Notice 2083-05-03",
     "url": "https://hr.parliament.gov.np/en/notices/1787120387",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-24"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/v0pgs4xskmprrxyl.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-24",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-03-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-03.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-03.json"
   },
   {
     "serial": "3.",
     "title": "Notice 2083-05-02",
     "url": "https://hr.parliament.gov.np/en/notices/1787029645",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-24"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/lbo4r4wgkr1t3vp0.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-24",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-02-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-02.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-02.json"
   },
   {
     "serial": "4.",
     "title": "Daily Agenda 2083-05-03",
     "url": "https://hr.parliament.gov.np/en/notices/1787052404",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-24"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/ofkcwrarniqcciqa.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-24",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-03-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-03.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-03.json"
   },
   {
     "serial": "5.",
     "title": "Daily Agenda 2083-05-02",
     "url": "https://hr.parliament.gov.np/en/notices/1786949035",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-24"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/rf1sf0asd42wfeuc.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-24",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-02-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-02.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-02.json"
   },
   {
     "serial": "6.",
     "title": "Notice 2083-05-01",
     "url": "https://hr.parliament.gov.np/en/notices/1786943335",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-24"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/cxzgqzgjnpv2hnxq.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-24",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-01-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-01.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-01.json"
   },
   {
     "serial": "7.",
