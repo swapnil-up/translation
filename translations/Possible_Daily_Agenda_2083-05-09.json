@@ -1,0 +1,110 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 40\nFederal\nNepal\nDaily Agenda\nParliament\nTuesday, Bhadra 9, 2082\n1:00 PM\n(Tentative)\nManagement Work\nHonorable Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam:\n1. a) To present a proposal seeking permission to introduce the \"Nepal Law Commission (First Amendment) Bill, 2082\".\nb) To introduce the \"Nepal Law Commission (First Amendment) Bill, 2082\".\n2. Honorable Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam, to present a proposal to consider the \"Mediation (Second Amendment) Bill, 2082\".\n3. Honorable Minister for Youth, Labour and Employment, Ramji Yadav, to present a proposal to send the \"Child Labour (Prohibition and Regulation) Bill, 2082\" to the relevant committee for clause-by-clause discussion.\nTreaty Related Work\n4. Honorable Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam, to present the \"Agreement on the Conservation and Sustainable Use of Marine Biological Diversity of Areas Beyond National Jurisdiction under the United Nations Convention on the Law of the Sea\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2082-04-09",
+    "date_ad": "2025-08-26",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "40",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs sought permission to introduce the Nepal Law Commission (First Amendment) Bill, 2082, and then introduced it. The Minister also presented a proposal for consideration of the Mediation (Second Amendment) Bill, 2082. The Minister for Youth, Labour and Employment proposed sending the Child Labour (Prohibition and Regulation) Bill, 2082 to a committee for clause-by-clause discussion.",
+      "speakers": [
+        {
+          "name": "Sovita Gautam",
+          "party": null,
+          "topic": "Introduction of Nepal Law Commission Bill"
+        },
+        {
+          "name": "Sovita Gautam",
+          "party": null,
+          "topic": "Consideration of Mediation Bill"
+        },
+        {
+          "name": "Ramji Yadav",
+          "party": null,
+          "topic": "Referral of Child Labour Bill to committee"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Law Commission (First Amendment) Bill, 2082",
+          "status": "introduced"
+        },
+        {
+          "name": "Mediation (Second Amendment) Bill, 2082",
+          "status": "discussed"
+        },
+        {
+          "name": "Child Labour (Prohibition and Regulation) Bill, 2082",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative agenda",
+        "Bill introduction",
+        "Committee referral"
+      ]
+    },
+    {
+      "name": "Treaty Related Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs presented the Agreement on the Conservation and Sustainable Use of Marine Biological Diversity of Areas Beyond National Jurisdiction under the United Nations Convention on the Law of the Sea.",
+      "speakers": [
+        {
+          "name": "Sovita Gautam",
+          "party": null,
+          "topic": "Presentation of Marine Biodiversity Agreement"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Agreement on the Conservation and Sustainable Use of Marine Biological Diversity of Areas Beyond National Jurisdiction under the United Nations Convention on the Law of the Sea"
+      ],
+      "key_issues": [
+        "International treaties",
+        "Marine biodiversity",
+        "Environmental law"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary proceedings",
+    "House of Representatives",
+    "Legislation",
+    "Bill introduction",
+    "Bill amendment",
+    "Mediation",
+    "Child labor",
+    "International agreements",
+    "Marine biodiversity",
+    "Environmental protection",
+    "Treaties",
+    "Law Commission"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Youth, Labour and Employment"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sovita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Ramji Yadav",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sovita Gautam",
+      "party": null,
+      "section": "Treaty Related Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

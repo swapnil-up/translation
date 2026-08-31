@@ -3,57 +3,78 @@
     "serial": "1.",
     "title": "Notice regarding meeting halt 2083-05-10",
     "url": "https://hr.parliament.gov.np/en/notices/1787745043",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-31"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/ueh05eetrvqjjgdz.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-31",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Notice_regarding_meeting_halt_2083-05-10-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Notice_regarding_meeting_halt_2083-05-10.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Notice_regarding_meeting_halt_2083-05-10.json"
   },
   {
     "serial": "2.",
     "title": "Daily Agenda 2083-05-10",
     "url": "https://hr.parliament.gov.np/en/notices/1787645206",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-31"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/kh4nskm2geofo6re.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-31",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-10-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-10.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Daily_Agenda_2083-05-10.json"
   },
   {
     "serial": "3.",
     "title": "Notice regarding Change of Meeting's Date & Time 2083-05-09",
     "url": "https://hr.parliament.gov.np/en/notices/1787631701",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-31"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/frw2s0nidkuvjmzj.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-31",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Notice_regarding_Change_of_Meeting's_Date_&_Time_2083-05-09-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Notice_regarding_Change_of_Meeting's_Date_&_Time_2083-05-09.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Notice_regarding_Change_of_Meeting's_Date_&_Time_2083-05-09.json"
   },
   {
     "serial": "4.",
     "title": "Notice 2083-05-10",
     "url": "https://hr.parliament.gov.np/en/notices/1787630553",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-31"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/errdmm1v8psfbr44.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-31",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-10-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-10.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-10.json"
   },
   {
     "serial": "5.",
     "title": "Notice 2083-05-08",
     "url": "https://hr.parliament.gov.np/en/notices/1787557206",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-31"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/tcth6qpwcp4kmkmv.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-31",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-08-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-08.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Notice_2083-05-08.json"
   },
   {
     "serial": "6.",
     "title": "Possible Calender of HoRs since Bhadra 8-31, 2083",
     "url": "https://hr.parliament.gov.np/en/notices/1787563107",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-31"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/vwtivax5ekhpeqsk.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-31",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Possible_Calender_of_HoRs_since_Bhadra_8-31,_2083-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Possible_Calender_of_HoRs_since_Bhadra_8-31,_2083.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Possible_Calender_of_HoRs_since_Bhadra_8-31,_2083.json"
   },
   {
     "serial": "7.",
     "title": "Possible Daily Agenda 2083-05-09",
     "url": "https://hr.parliament.gov.np/en/notices/1787557394",
-    "pdf_url": null,
-    "status": "pending",
-    "scraped_at": "2026-08-31"
+    "pdf_url": "https://hr.parliament.gov.np/uploads/attachments/8oupicogoq4aqovq.pdf",
+    "status": "done",
+    "scraped_at": "2026-08-31",
+    "ocr_path": "/home/runner/work/translation/translation/translations/Possible_Daily_Agenda_2083-05-09-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/translations/Possible_Daily_Agenda_2083-05-09.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Possible_Daily_Agenda_2083-05-09.json"
   },
   {
     "serial": "8.",

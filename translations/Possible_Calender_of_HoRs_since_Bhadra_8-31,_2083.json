@@ -1,0 +1,114 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nBi-weekly Tentative Schedule\nFor the period of Bhadra 1 to 15, 2083\n(As per Rule 254 of the House of Representatives Regulations, 2083)\nBhadra, 2083\nTentative Agenda for House of Representatives Meeting\nDate\nS.N.\nThursday\nSaturday\nZero Hour, Special Time, Ministry-wise Question and Answer, Remuneration, Service Conditions and Facilities of Constitutional Bodies (First Amendment) Bill, 2083 - Proposal to send to the relevant committee for clause-by-clause discussion; Mines and Minerals Bill, 2083 - Proposal to send to the relevant committee for clause-by-clause discussion; Human Trafficking and Trafficking (Control) (First Amendment) Bill, 2083 - Proposal to send to the relevant committee for clause-by-clause discussion; and Passport (First Amendment) Bill, 2083 - Proposal to send to the relevant committee for clause-by-clause discussion.\nSunday\nMonday\nTuesday\nWednesday\nFriday\n1.\n4\n5\n6\n2\n3\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nMinister's response to raised questions, Nepal Law Commission (First Amendment) Bill, 2083 - Proposal to consider; Child Labour (Prohibition and Regulation) Bill, 2083 - Proposal to send to the relevant committee for clause-by-clause discussion; and Maritime Laws Convention of the United Nations concerning areas beyond national jurisdiction - Agreement on the conservation and sustainable use of marine biological diversity presented.\n2.\nMeeting Days\nPublic Holiday\nJoint Meeting\nPurpose of Committee Meetings etc.\nNote:\n1. In consideration of the seriousness of the subject matter, there may be an 'Emergency Time' at the beginning of each meeting.\n2. In addition to the schedule (new bill presentation, committee report presentation on bills, discussion on proposals, etc.), any urgent matters may be included or removed from the agenda if they require discussion/consideration.\n3. If a Minister requests time for a statement of public importance, it may be provided at the beginning of the meeting, and if time is requested for a response to Zero Hour/Special Time/Emergency Time, it may be provided after Zero Hour.\n4. Time will be made available upon request for the Leader of the Opposition, former Prime Ministers, former Speakers, etc., in accordance with parliamentary practice.\n5. Days when the House does not meet are set aside for committee meetings and other purposes. Committee meetings can also be held before or after the House meeting on days when the House meets.\n6. Provisions of Chapters 24, 27, and 30 of the Regulations, among others, may be included in the agenda as needed.\nFederal Parliament\nHouse of Representatives, 2082\nBi-weekly Tentative Schedule\nFor the period of Bhadra 15 to 31, 2083\n(As per Rule 244 of the House of Representatives Regulations, 2083)\nBhadra, 2083\nTentative Agenda for House of Representatives Meeting\nDate\nS.N.\nThursday\nSaturday\nZero Hour, Annual Report Presentation, Employee Provident Fund (Tenth Amendment) Bill, 2083 - Proposal to consider.\nSunday\nMonday\nTuesday\nWednesday\nFriday\n1.\n4\n5\n6\n2\n3\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\n31\nZero Hour, Special Time, Ministry-wise Question and Answer, United Nations Convention on the Law of the Sea concerning marine biological diversity in areas beyond national jurisdiction - Agreement on conservation and sustainable use presented.\n2.\n16th\n17th\n18th\n19th\n20th\n21st\n22nd\n23rd\n24th\nZero Hour, Children (First Amendment) Bill, 2083 - Proposal to consider.\n3.\nSpecial Time, Nepal Law Commission (First Amendment) Bill, 2083 - Proposal to consider.\n4.\nZero Hour, \"Law on Reconciliation (Second Amendment) Bill, 2083\"; \"Employee Provident Fund (Tenth Amendment) Bill, 2083\"; and \"Children (First Amendment) Bill, 2083\" - Proposal to send to the relevant committee for clause-by-clause discussion.\n5.\nNote:\n1. In consideration of the seriousness of the subject matter, there may be an 'Emergency Time' at the beginning of each meeting.\n2. In addition to the schedule (new bill presentation, committee report presentation on bills, discussion on proposals, etc.), any urgent matters may be included or removed from the agenda if they require discussion/consideration.\n3. If a Minister requests time for a statement of public importance, it may be provided at the beginning of the meeting, and if time is requested for a response to Zero Hour/Special Time/Emergency Time, it may be provided after Zero Hour.\n4. Time will be made available upon request for the Leader of the Opposition, former Prime Ministers, former Speakers, etc., in accordance with parliamentary practice.\n5. Days when the House does not meet are set aside for committee meetings and other purposes. Committee meetings can also be held before or after the House meeting on days when the House meets.\n6. Provisions of Chapters 24, 27, and 30 of the Regulations, among others, may be included in the agenda as needed.\n7. Zero Hour, Special Time, and discussion and approval of the United Nations Convention on the Law of the Sea concerning marine biological diversity in areas beyond national jurisdiction - Proposal to discuss and approve.\n8. Discussion and approval of the Agreement on Long-Term Electricity Trade between Nepal and India.\n",
+  "session": {
+    "date_bs": "2083-04-01 to 2083-04-15",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Main Business",
+      "summary_en": "Several bills were proposed to be sent to committees for clause-by-clause discussion, including amendments to the Remuneration, Service Conditions and Facilities of Constitutional Bodies Bill, Mines and Minerals Bill, Human Trafficking and Trafficking (Control) Bill, and Passport Bill. Additionally, proposals for consideration of the Nepal Law Commission (First Amendment) Bill and the Child Labour (Prohibition and Regulation) Bill were presented. An agreement related to the UN Convention on the Law of the Sea was also presented.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Remuneration, Service Conditions and Facilities of Constitutional Bodies (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Mines and Minerals Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Human Trafficking and Trafficking (Control) (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Passport (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Nepal Law Commission (First Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Child Labour (Prohibition and Regulation) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Agreement on the conservation and sustainable use of marine biological diversity under the United Nations Convention on the Law of the Sea",
+          "status": "presented"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Bill discussions",
+        "Committee referrals",
+        "International agreements"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Employee Provident Fund (Tenth Amendment) Bill, 2083 was proposed for consideration. Several other bills, including the Law on Reconciliation (Second Amendment) Bill, 2083, Employee Provident Fund (Tenth Amendment) Bill, 2083, and Children (First Amendment) Bill, 2083, were proposed to be sent to committees for clause-by-clause discussion. The UN Convention on the Law of the Sea was also scheduled for discussion and approval, along with an agreement on long-term electricity trade between Nepal and India.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Employee Provident Fund (Tenth Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Law on Reconciliation (Second Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Employee Provident Fund (Tenth Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Children (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "United Nations Convention on the Law of the Sea concerning marine biological diversity in areas beyond national jurisdiction",
+          "status": "discussed"
+        },
+        {
+          "name": "Agreement on Long-Term Electricity Trade between Nepal and India",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [
+        "Annual Report Presentation"
+      ],
+      "key_issues": [
+        "Bill discussions",
+        "Committee referrals",
+        "International agreements",
+        "Bilateral trade"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary schedule",
+    "House of Representatives",
+    "Legislation",
+    "Bill discussion",
+    "Committee referral",
+    "Question and Answer",
+    "International treaties",
+    "Bilateral agreements",
+    "Nepal Law",
+    "Constitutional bodies",
+    "Public finance",
+    "Child rights",
+    "Human trafficking",
+    "Maritime law",
+    "Electricity trade"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

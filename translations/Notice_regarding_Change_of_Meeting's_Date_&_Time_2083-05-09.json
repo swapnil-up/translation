@@ -1,0 +1,40 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nNotice-1\nDate: 2083 Bhadra 9, Tuesday\nInformation regarding change in meeting date and time\n\nThe meeting of the House of Representatives, which was scheduled to be held on Tuesday, Bhadra 9, 2083, at 9:00 AM, could not be held on the scheduled date and time due to special reasons. Therefore, as per Rule 6, Sub-rule (3) of the Rules of Procedure of the House of Representatives, 2083, the Speaker has rescheduled the meeting to be held on Wednesday, Bhadra 10, 2083, at 9:00 AM. This notice is published for the information of all the Honourable Members of the House of Representatives.\n\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-12",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Speaker"
+  },
+  "sections": [
+    {
+      "name": "Notice",
+      "summary_en": "This notice informs about the rescheduling of a House of Representatives meeting. The meeting originally scheduled for Bhadra 9, 2083, has been postponed due to special reasons. It has been rescheduled to Bhadra 10, 2083, at 9:00 AM by the Speaker, in accordance with the Rules of Procedure.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Meeting rescheduling",
+        "House of Representatives procedures"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Notice",
+    "House of Representatives",
+    "Meeting Reschedule",
+    "Rules of Procedure",
+    "Bhadra 2083"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Notice"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": "2083-04-13"
+}

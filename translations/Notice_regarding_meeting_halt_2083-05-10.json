@@ -1,0 +1,43 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives\nNotice No. 9\n2083 Bhadra 10, Wednesday\nNotice Regarding Adjournment of Meeting\nDue to the fact that the members of the House of Representatives need to be involved in relief and rescue operations, along with the government, in the current situation caused by recent floods and landslides, and therefore cannot attend the meeting on the determined date and time, the meeting of the House of Representatives has been adjourned until further notice, in accordance with Rule 6, Sub-rule (3) of the House of Representatives Regulations, 2083, as directed by the Honorable Speaker. This notice is published for the information of the Honorable Members.\n2083/08/19\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-12",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Adjournment",
+      "summary_en": "The meeting of the House of Representatives scheduled for Bhadra 11, 2083, at 1:00 PM has been adjourned until further notice. This decision was made due to the involvement of members in flood and landslide relief efforts.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Flood and landslide relief and rescue operations",
+        "Member involvement in relief efforts"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary session",
+    "House of Representatives",
+    "Meeting adjournment",
+    "Natural disasters",
+    "Flood relief",
+    "Landslide relief",
+    "Government response",
+    "Parliamentary regulations"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Adjournment"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,109 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 48\nFederal\nNepal\nDaily Agenda\nParliament\nWednesday, Bhadra 10, 2083\n1:00 PM\nQuestion and Answer with the Prime Minister\nHonorable Prime Minister Balendra Shah will answer the questions asked by Honorable Members of Parliament in accordance with Article 9 of the House of Representatives Regulations, 2083.\nPresentation of Annual Report\n2. Honorable Prime Minister Balendra Shah will present the \"Seventh Annual Report of the Muslim Commission, Fiscal Year 2081/082\".\n3. Treaty-Related Work\nHonorable Minister of Energy, Water Resources and Irrigation, Biraj Bhakta Shrestha, will present the \"Treaty between Nepal and India for Long-Term...\" [The rest of the sentence is cut off in the OCR text].\nRaj Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2083-04-10",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": "48",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Question and Answer with the Prime Minister",
+      "summary_en": "Honorable Prime Minister Balendra Shah will answer questions from Members of Parliament as per Article 9 of the House of Representatives Regulations, 2083. This section is dedicated to direct interaction between the Prime Minister and the MPs.",
+      "speakers": [
+        {
+          "name": "Balendra Shah",
+          "party": null,
+          "topic": "Answering parliamentary questions"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Parliamentary questions",
+        "Prime Minister's accountability"
+      ]
+    },
+    {
+      "name": "Presentation of Annual Report",
+      "summary_en": "Honorable Prime Minister Balendra Shah will present the Seventh Annual Report of the Muslim Commission for the Fiscal Year 2081/082. This is a procedural step for parliamentary oversight.",
+      "speakers": [
+        {
+          "name": "Balendra Shah",
+          "party": null,
+          "topic": "Presenting Muslim Commission's annual report"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Seventh Annual Report of the Muslim Commission, Fiscal Year 2081/082"
+      ],
+      "key_issues": [
+        "Muslim Commission",
+        "Annual report presentation",
+        "Fiscal year 2081/082"
+      ]
+    },
+    {
+      "name": "Treaty-Related Work",
+      "summary_en": "Honorable Minister of Energy, Water Resources and Irrigation, Biraj Bhakta Shrestha, is scheduled to present a treaty between Nepal and India concerning long-term cooperation. The details of the treaty are incomplete in the provided text.",
+      "speakers": [
+        {
+          "name": "Biraj Bhakta Shrestha",
+          "party": null,
+          "topic": "Presenting Nepal-India treaty"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Treaty between Nepal and India",
+        "Energy",
+        "Water Resources",
+        "Irrigation"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary session",
+    "House of Representatives",
+    "Prime Minister",
+    "Question and Answer",
+    "Annual Report",
+    "Muslim Commission",
+    "Treaty",
+    "Nepal-India relations",
+    "Energy",
+    "Water Resources",
+    "Irrigation",
+    "Legislative agenda"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Energy, Water Resources and Irrigation"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Question and Answer with the Prime Minister"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Presentation of Annual Report"
+    },
+    {
+      "name": "Biraj Bhakta Shrestha",
+      "party": null,
+      "section": "Treaty-Related Work"
+    },
+    {
+      "name": "Raj Prasad Pandey",
+      "party": null,
+      "section": "General Secretary"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
