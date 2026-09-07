@@ -660,5 +660,25 @@
     "ocr_path": "/home/runner/work/translation/translation/output/Verbatim_2989-ocr.txt",
     "translated_path": "/home/runner/work/translation/translation/output/Verbatim_2989.txt",
     "structured_path": "/home/runner/work/translation/translation/translations/Verbatim_2989.json"
+  },
+  {
+    "id": 2993,
+    "title": "Complete Proceedings of the Twenty-First Session, 16 Bhadra 2083 Tuesday (Meeting no. 43)",
+    "title_np": "एक्काइसौँ अधिवेशन कार्यवाहीको सम्पूर्ण विवरण,  १६  भाद्र  २०८३  मङ्गलवार (बैठक सङ्ख्या- ४३)",
+    "published_at": "2026-09-02",
+    "attachment_url": "https://na.parliament.gov.np/uploads/attachments/f4llfis0luacuwet.pdf",
+    "status": "pending",
+    "scraped_at": "2026-09-07",
+    "serial": "60."
+  },
+  {
+    "id": 2992,
+    "title": "Complete Proceedings of the Twenty-First Session, 9 Bhadra 2083 Tuesday (Meeting no. 42)",
+    "title_np": "एक्काइसौँ अधिवेशन कार्यवाहीको सम्पूर्ण विवरण, ९ भाद्र २०८३ मङ्गलवार (बैठक सङ्ख्या- ४२)",
+    "published_at": "2026-08-31",
+    "attachment_url": "https://na.parliament.gov.np/uploads/attachments/khefva1jbjscl3vz.pdf",
+    "status": "pending",
+    "scraped_at": "2026-09-07",
+    "serial": "61."
   }
 ]
