@@ -1,0 +1,50 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 49\nFederal Parliament of Nepal\nDaily Agenda\nWednesday, Bhadra 17, 2083\n1:00 PM\nPresentation of Special Motion\nThe Honorable Speaker will present the following special motion:-\nSpecial Motion\n\"This meeting of the House of Representatives deeply condoles the incident of August 24, 2026 (Bhadra 10, 2083, Wednesday) where floods in the BhoteKoshi-Trishuli rivers caused many citizens, both Nepali and foreign, to go missing and a large number of deaths, resulting in extensive loss of life and property in areas along the Trishuli riverbanks in Timure, Syabrubesi, Betrawati of Rasuwa, Trishuli Bazaar and Devighat of Nuwakot, as well as in Dhading, Chitwan, and Gorkha districts. Furthermore, it wishes for the management of those who have been rendered homeless by the said incident, the speedy recovery of the injured, and eternal peace for the souls of the deceased, and expresses heartfelt condolences to the bereaved families.\"\n- Ram Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-05-17",
+    "date_ad": "2026-09-02",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "49",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Special Motion Presentation",
+      "summary_en": "The Speaker presented a special motion expressing deep sorrow over the recent floods in the BhoteKoshi-Trishuli rivers. The motion condoled the loss of life and property, wished for the well-being of the displaced and injured, and offered condolences to the families of the deceased.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Flood disaster",
+        "Loss of life and property",
+        "Disaster management",
+        "Condolences"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Special Motion",
+    "Flood",
+    "Natural Disaster",
+    "Condolence",
+    "Loss of Life",
+    "Property Damage",
+    "Disaster Relief",
+    "Rasua",
+    "Nuwakot",
+    "Dhading",
+    "Chitwan",
+    "Gorkha"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Ram Prasad Pandey",
+      "party": null,
+      "section": "Special Motion Presentation"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,39 @@
+{
+  "full_translation_en": "House of Representatives\nNotice Paper 1\nDate: 2083 Bhadra 16, Tuesday\nNotice Regarding the Meeting\nRegarding the meeting of the House of Representatives which was postponed until further notice by Notice Paper-1 published on 2083 Bhadra 11, the Honorable Speaker has scheduled the meeting of the House of Representatives to be held on Wednesday, 2083 Bhadra 17, at 1:00 PM, in accordance with Rule 6, Sub-rule (3) of the House of Representatives Regulations, 2083. This notice is published for the information of the Honorable Members.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-16",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": null,
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "A notice is published informing the Honorable Members that the House of Representatives meeting, previously postponed, has been rescheduled by the Honorable Speaker. The meeting is set to convene on Wednesday, 2083 Bhadra 17, at 1:00 PM, as per the House of Representatives Regulations.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Rescheduling of House of Representatives meeting"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Meeting Notice",
+    "Rescheduling",
+    "Parliamentary Procedure",
+    "Regulations"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Opening"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": "2083-04-17"
+}

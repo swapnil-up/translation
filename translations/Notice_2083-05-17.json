@@ -1,0 +1,166 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 49\nFederal\nNepal\nParliament,\nNotice - 2\n(Concise Details of Meeting Proceedings)\nWednesday, Bhadra 17, 2083\nThe meeting of the House of Representatives today commenced at 1:15 PM under the chairmanship of the Honorable Speaker Dol Prasad Aryal.\nAt the beginning of the meeting, the Honorable Prime Minister Balendra Shah informed the House about the government's ongoing rescue, relief, and rehabilitation efforts following the flood in the BhoteKoshi-Trishuli rivers on Bhadra 10, 2083. He stated that climate change is the primary cause of the BhoteKoshi disaster, and its mitigation and management is a shared responsibility of the global community. He mentioned that the government is making every effort to save its citizens after the disaster, and highlighted the impact on the tunnels of hydropower projects. He explained that rescue efforts are facing difficulties and delays due to differences compared to various international experiences, and emphasized that the army, armed police, and Nepal police deployed for rescue should be encouraged.\nFollowing this, the following Honorable Members expressed their views on the flood in the BhoteKoshi-Trishuli rivers and related issues from their party's perspective:-\n1. Hon. Ganesh Parajuli\n2. Hon. Bhimraj Adhikari\n3. Hon. Ram Bahadur Thapa\n4. Hon. Pushpa Kamal Dahal\n5. Hon. Dhuvraj Rai\n6. Hon. Gyan Bahadur Shahi\nSubsequently, the Honorable Speaker expressed sorrow over the loss of life and property due to the flood in the BhoteKoshi-Trishuli rivers, directed the government to expedite rescue and relief efforts, and shared his views on the work to be done by domestic and foreign organizations and civil society. The following special motion regarding the loss of life and property due to the flood in the BhoteKoshi-Trishuli rivers was presented to the House and unanimously passed:-\nSpecial Motion\n\"This meeting of the House of Representatives expresses deep sorrow over the incident on Wednesday, Bhadra 10, 2083, where the flood in the BhoteKoshi-Trishuli rivers caused many citizens, both Nepali and foreign, to go missing and a large number of deaths in areas including Timure, Syafrubesi, Betrawati in Rasuwa, Trishuli Bazaar and Devighat in Nuwakot, and along the Trishuli river banks in Dhading, Chitwan, and Gorkha districts, resulting in extensive loss of life and property. Furthermore, it wishes for the management of those who have been displaced by the incident, the speedy recovery of the injured, and prays for the eternal peace of the souls of the deceased, expressing deep condolences to the bereaved families.\"\nThereafter, the next meeting of the House of Representatives will be held on Thursday, Bhadra 18, 2083, at 1:00 PM. The meeting was adjourned at 3:20 PM.\nPanchan Prasad Pandey\nSecretary General\n",
+  "session": {
+    "date_bs": "2083-05-17",
+    "date_ad": "2026-09-02",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "49",
+    "chairperson": "Dol Prasad Aryal"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The meeting commenced under the chairmanship of the Speaker. The Prime Minister provided a detailed update on the government's response to the BhoteKoshi-Trishuli river floods, highlighting climate change as a cause and the challenges in rescue operations.",
+      "speakers": [
+        {
+          "name": "Balendra Shah",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood response, climate change, rescue challenges"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "BhoteKoshi-Trishuli flood",
+        "Rescue and relief efforts",
+        "Climate change",
+        "Hydropower project impact",
+        "International rescue comparison"
+      ]
+    },
+    {
+      "name": "Impromptu Session",
+      "summary_en": "Several Honorable Members from different parties raised their concerns and shared their views on the BhoteKoshi-Trishuli river flood and its aftermath.",
+      "speakers": [
+        {
+          "name": "Ganesh Parajuli",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood"
+        },
+        {
+          "name": "Bhimraj Adhikari",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood"
+        },
+        {
+          "name": "Ram Bahadur Thapa",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood"
+        },
+        {
+          "name": "Pushpa Kamal Dahal",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood"
+        },
+        {
+          "name": "Dhuvraj Rai",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood"
+        },
+        {
+          "name": "Gyan Bahadur Shahi",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "BhoteKoshi-Trishuli flood",
+        "Loss of life and property",
+        "Government response"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Speaker presented a special motion expressing deep sorrow over the BhoteKoshi-Trishuli flood, offering condolences, and calling for government action. The motion was unanimously passed by the House.",
+      "speakers": [
+        {
+          "name": "Dol Prasad Aryal",
+          "party": null,
+          "topic": "BhoteKoshi-Trishuli flood resolution"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "BhoteKoshi-Trishuli flood",
+        "Condolences",
+        "Loss of life and property",
+        "Government directive"
+      ],
+      "special_motion": {
+        "name": "Special Motion on BhoteKoshi-Trishuli Flood",
+        "summary_en": "Expresses deep sorrow over the flood, acknowledges loss of life and property, offers condolences, and calls for management of displaced persons and recovery of the injured.",
+        "status": "passed"
+      }
+    },
+    {
+      "name": "Adjournment",
+      "summary_en": "The meeting was adjourned until the next session.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "House of Representatives",
+    "Parliamentary Meeting",
+    "Natural Disaster",
+    "Flood",
+    "BhoteKoshi River",
+    "Trishuli River",
+    "Rescue Operations",
+    "Relief Efforts",
+    "Climate Change",
+    "Government Response",
+    "Special Motion",
+    "Condolences"
+  ],
+  "ministries_mentioned": [],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dol Prasad Aryal",
+      "party": null,
+      "section": "Opening, Main Business"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Ganesh Parajuli",
+      "party": null,
+      "section": "Impromptu Session"
+    },
+    {
+      "name": "Bhimraj Adhikari",
+      "party": null,
+      "section": "Impromptu Session"
+    },
+    {
+      "name": "Ram Bahadur Thapa",
+      "party": null,
+      "section": "Impromptu Session"
+    },
+    {
+      "name": "Pushpa Kamal Dahal",
+      "party": null,
+      "section": "Impromptu Session"
+    },
+    {
+      "name": "Dhuvraj Rai",
+      "party": null,
+      "section": "Impromptu Session"
+    },
+    {
+      "name": "Gyan Bahadur Shahi",
+      "party": null,
+      "section": "Impromptu Session"
+    }
+  ],
+  "adjournment_time": "3:20 PM",
+  "next_meeting_date": "2083-05-18"
+}

@@ -1,0 +1,95 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 40\nFederal\nNepal\nDaily Agenda\nParliament,\nThursday, Bhadra 18, 2083\n1:00 PM\nManagement Work\n1. The Honorable Minister for Youth, Labour and Employment, Ramji Yadav, will present the proposal: \"Let the 'Child Labour (Prohibition and Regulation) Bill, 2083' be sent to the relevant committee for clause-by-clause discussion.\"\nTreaty-related Work\n2. The Honorable Minister for Energy, Water Resources and Irrigation, Biraj Bhakta Shrestha, will present the proposal: \"Regarding the Long-Term Treaty between Nepal and India...\"\n3. The Honorable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will present the proposal: \"Regarding the United Nations Convention on the Law of the Sea...\"\nNational Assembly\nSecretary-General\nBishnu Prasad Pandey",
+  "session": {
+    "date_bs": "2083-04-18",
+    "date_ad": "2026-09-02",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "40",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Youth, Labour and Employment presented a proposal to send the 'Child Labour (Prohibition and Regulation) Bill, 2083' to a committee for clause-by-clause discussion.",
+      "speakers": [
+        {
+          "name": "Ramji Yadav",
+          "party": null,
+          "topic": "Child Labour Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Child Labour (Prohibition and Regulation) Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Child Labour Bill"
+      ]
+    },
+    {
+      "name": "Treaty-related Work",
+      "summary_en": "The Minister for Energy, Water Resources and Irrigation will present a proposal regarding a long-term treaty between Nepal and India. The Minister for Law, Justice and Parliamentary Affairs will present a proposal concerning the United Nations Convention on the Law of the Sea.",
+      "speakers": [
+        {
+          "name": "Biraj Bhakta Shrestha",
+          "party": null,
+          "topic": "Nepal-India Treaty"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "UN Convention on Law of the Sea"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Nepal-India Treaty",
+        "Law of the Sea Convention"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Child Labour",
+    "Treaties",
+    "International Law",
+    "Nepal-India Relations",
+    "United Nations"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Youth, Labour and Employment",
+    "Ministry of Energy, Water Resources and Irrigation",
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Ramji Yadav",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Biraj Bhakta Shrestha",
+      "party": null,
+      "section": "Treaty-related Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Treaty-related Work"
+    },
+    {
+      "name": "Bishnu Prasad Pandey",
+      "party": null,
+      "section": "National Assembly"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
