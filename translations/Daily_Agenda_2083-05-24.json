@@ -1,0 +1,96 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 49\nFederal\nNepal\nDaily Agenda\nParliament,\n2083 Bhadra 24, Wednesday\n1:00 PM\nLetter from the Office of the Prime Minister and Council of Ministers\n1. The Honorable Speaker will read out the letter received from the Office of the Prime Minister and Council of Ministers regarding the additional work.\nManagement Work\nHonorable Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam:\n2. a) To present a proposal seeking permission to present the \"Nepal Law Commission (First Amendment) Bill, 2083\".\n b) To present the \"Nepal Law Commission (First Amendment) Bill, 2083\".\nHonorable Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam, will present a proposal to \"Consider the Mediation (Second Amendment) Bill, 2083\".\n3. Honorable Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam, will present a proposal to \"Consider the Mediation (Second Amendment) Bill, 2083\".\nTreaty Related Work\nHonorable Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam, will present the \"Proposal regarding the accession to the membership of the Council of Asian Legislative Institutions (CALI)\" to the House.\nPanchan Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-24",
+    "date_ad": "2026-09-09",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "49",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Honorable Speaker will read out a letter from the Office of the Prime Minister and Council of Ministers regarding additional work assigned to the House.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Letter from Prime Minister's Office"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam, sought permission to present the Nepal Law Commission (First Amendment) Bill, 2083, and subsequently presented it. She also proposed to consider the Mediation (Second Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sovita Gautam",
+          "party": null,
+          "topic": "Nepal Law Commission Bill and Mediation Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Nepal Law Commission (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Mediation (Second Amendment) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative agenda",
+        "Bill introduction",
+        "Bill consideration"
+      ]
+    },
+    {
+      "name": "Treaty Related Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sovita Gautam, presented a proposal to the House regarding Nepal's accession to the membership of the Council of Asian Legislative Institutions (CALI).",
+      "speakers": [
+        {
+          "name": "Sovita Gautam",
+          "party": null,
+          "topic": "Accession to CALI membership"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "International cooperation",
+        "Legislative institutions",
+        "Treaty accession"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary proceedings",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Law Commission",
+    "Mediation",
+    "International organizations",
+    "Treaties",
+    "Government business"
+  ],
+  "ministries_mentioned": [
+    "Office of the Prime Minister and Council of Ministers",
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sovita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sovita Gautam",
+      "party": null,
+      "section": "Treaty Related Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

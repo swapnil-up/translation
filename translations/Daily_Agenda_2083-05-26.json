@@ -1,0 +1,109 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 53\nFederal Parliament of Nepal\nDaily Business Schedule\nFriday, Bhadra 26, 2083\n1:00 PM\n1. Letter from the Office of the President\nThe Honorable Speaker will read out the details of the letter received from the Office of the President regarding the appointment of ministers.\n2. Information on Message\nMr. Prakash Adhikari, Secretary of the House of Representatives, will provide information regarding the \"Bill to Amend the Provisions Relating to the Nepal Special Service Act, 2042\" (Bill No. 2083) received as a message from the National Assembly.\n3. Management Work\nThe Honorable Minister of Finance, Dr. Swarnim Wagle, will present a proposal for consideration of the \"Employees Provident Fund (Tenth Amendment) Bill, 2083\".\n4. The Honorable Minister of Law, Justice and Parliamentary Affairs, Sobita Gautam, will present a proposal for consideration of the \"Nepal Law Commission (First Amendment) Bill, 2083\".\nPadma Prasad Pandey\nSecretary General",
+  "session": {
+    "date_bs": "2083-06-26",
+    "date_ad": "2026-09-12",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "53",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Office of the President concerning the appointment of ministers.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Ministerial appointments"
+      ]
+    },
+    {
+      "name": "Information on Message",
+      "summary_en": "The Secretary of the House of Representatives will inform the house about a message received from the National Assembly regarding the Nepal Special Service Act (Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Prakash Adhikari",
+          "party": null,
+          "topic": "Information on message from National Assembly"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend the Provisions Relating to the Nepal Special Service Act, 2042",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Nepal Special Service Act",
+        "National Assembly message"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister of Finance will propose consideration of the Employees Provident Fund (Tenth Amendment) Bill, 2083. The Minister of Law, Justice and Parliamentary Affairs will propose consideration of the Nepal Law Commission (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Employees Provident Fund (Tenth Amendment) Bill, 2083"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Nepal Law Commission (First Amendment) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Employees Provident Fund (Tenth Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Nepal Law Commission (First Amendment) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Employees Provident Fund Bill",
+        "Nepal Law Commission Bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Ministerial Appointment",
+    "National Assembly Message",
+    "Employees Provident Fund",
+    "Nepal Law Commission"
+  ],
+  "ministries_mentioned": [
+    "Office of the President",
+    "Ministry of Finance",
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Prakash Adhikari",
+      "party": null,
+      "section": "Information on Message"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

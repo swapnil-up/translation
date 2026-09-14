@@ -1,0 +1,110 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 52\nFederal Parliament of Nepal\nDaily Agenda\nThursday, Bhadra 25, 2083\n1:00 PM\nManagement Work\nHonorable Finance Minister Dr. Swarnim Wagle:\n1. a) To present a proposal seeking leave to introduce the \"Citizen Investment Fund (Third Amendment) Bill, 2083\".\n   b) To introduce the \"Citizen Investment Fund (Third Amendment) Bill, 2083\".\n   c) To present a proposal seeking leave to introduce the \"Payment and Settlement (First Amendment) Bill, 2083\".\n   d) To introduce the \"Payment and Settlement (First Amendment) Bill, 2083\".\n2. Honorable Finance Minister Dr. Swarnim Wagle to present a proposal for consideration of the \"Employees' Provident Fund (Tenth Amendment) Bill, 2083\".\nTreaty Related Work\n3. Honorable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, to present a proposal for general discussion on \"Accepting Membership of the Council of Asian Legislative Institutions (CALI)\".\nCondolence Motion\n4. Honorable Speaker to present a condolence motion on the demise of Shukraraj Samyuk, former member of the National Assembly.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-25",
+    "date_ad": "2026-09-11",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "52",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister sought and received leave to introduce two bills: the \"Citizen Investment Fund (Third Amendment) Bill, 2083\" and the \"Payment and Settlement (First Amendment) Bill, 2083\". He also presented a proposal for consideration of the \"Employees' Provident Fund (Tenth Amendment) Bill, 2083\".",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Introduction of bills and consideration proposal"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Citizen Investment Fund (Third Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Payment and Settlement (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Employees' Provident Fund (Tenth Amendment) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Citizen Investment Fund Bill",
+        "Payment and Settlement Bill",
+        "Employees' Provident Fund Bill"
+      ]
+    },
+    {
+      "name": "Treaty Related Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs presented a proposal for general discussion on accepting membership of the Council of Asian Legislative Institutions (CALI).",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Membership of Council of Asian Legislative Institutions (CALI)"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Council of Asian Legislative Institutions (CALI) membership"
+      ]
+    },
+    {
+      "name": "Condolence Motion",
+      "summary_en": "The Honorable Speaker is scheduled to present a condolence motion on the passing of Shukraraj Samyuk, a former member of the National Assembly.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Condolence motion",
+        "Demise of Shukraraj Samyuk"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Legislation",
+    "Finance",
+    "Investment Fund",
+    "Payment Systems",
+    "Provident Fund",
+    "Treaties",
+    "International Organizations",
+    "Condolence Motion"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry",
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Treaty Related Work"
+    },
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Shukraraj Samyuk",
+      "party": null,
+      "section": "Condolence Motion"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

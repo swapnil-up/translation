@@ -1,0 +1,78 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 44\nFederal Parliament of Nepal\nDaily Agenda\nTuesday, Bhadra 30, 2083\n1:00 PM\n(Tentative)\nMinistry-wise Question and Answer\nRegarding the Ministry of Law, Justice and Parliamentary Affairs, Ministry of Cooperatives, Federal Affairs and General Administration, and Ministry of Land Management, Cooperatives and Poverty Alleviation, and Ministry of Foreign Affairs.\n1. The concerned Minister will answer oral questions related to the Ministry of Law, Justice and Parliamentary Affairs, Ministry of Cooperatives, Federal Affairs and General Administration, and Ministry of Land Management, Cooperatives and Poverty Alleviation, and Ministry of Foreign Affairs.\nDiscussion and Approval of Convention\nHonorable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam:\n2. (a) \"Be it discussed in the House with Nepal Government's declaration of its accession to the Convention relating to the obtaining of membership of the Council of Asian Legislative Institutions (CALI).\"\n(b) \"Be it approved with Nepal Government's declaration of its accession to the Convention relating to the obtaining of membership of the Council of Asian Legislative Institutions (CALI).\"\n\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-30",
+    "date_ad": "2026-09-15",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "44",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Ministry-wise Question and Answer",
+      "summary_en": "The concerned Minister will answer oral questions related to the Ministry of Law, Justice and Parliamentary Affairs, Ministry of Cooperatives, Federal Affairs and General Administration, and Ministry of Land Management, Cooperatives and Poverty Alleviation, and Ministry of Foreign Affairs.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Oral questions to ministries",
+        "Law, Justice and Parliamentary Affairs",
+        "Cooperatives, Federal Affairs and General Administration",
+        "Land Management",
+        "Foreign Affairs"
+      ]
+    },
+    {
+      "name": "Discussion and Approval of Convention",
+      "summary_en": "The House will discuss and approve Nepal's accession to the Council of Asian Legislative Institutions (CALI). Honorable Minister Sobita Gautam will present proposals for discussion and approval.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Proposal for CALI membership accession"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Council of Asian Legislative Institutions (CALI)",
+        "Membership accession",
+        "International convention"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Question and Answer",
+    "Ministry Accountability",
+    "International Conventions",
+    "Legislative Institutions",
+    "Nepal",
+    "Government Business",
+    "Law",
+    "Foreign Affairs",
+    "Cooperatives",
+    "Federal Affairs"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Cooperatives, Federal Affairs and General Administration",
+    "Ministry of Land Management, Cooperatives and Poverty Alleviation",
+    "Ministry of Foreign Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Discussion and Approval of Convention"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "General"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
