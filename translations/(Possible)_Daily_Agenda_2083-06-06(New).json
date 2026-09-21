@@ -1,0 +1,59 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 58\nFederal\nNepal\nParliament,\nDaily Agenda\nTuesday, Ashoj 6, 2082\n1:00 PM\n(Tentative)\nManagement Work\nHonorable Finance Minister Dr. Swarnim Wagle will present the proposal \"Consideration of the Citizen Investment Fund (Third Amendment) Bill, 2082\".\nPanchan Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2082-06-06",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": "58",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister, Dr. Swarnim Wagle, presented a proposal for consideration of the Citizen Investment Fund (Third Amendment) Bill, 2082.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Consideration of Citizen Investment Fund (Third Amendment) Bill, 2082"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Citizen Investment Fund (Third Amendment) Bill, 2082",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Citizen Investment Fund (Third Amendment) Bill, 2082"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Legislation",
+    "Finance",
+    "Investment",
+    "Bill Consideration",
+    "Citizen Investment Fund"
+  ],
+  "ministries_mentioned": [
+    "Finance Ministry"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Panchan Prasad Pandey",
+      "party": null,
+      "section": "General Secretary"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

@@ -1,0 +1,87 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 46\nFederal Parliament of Nepal\nDaily Agenda\nThursday, Ashoj 1, 2083\n1:00 PM\n1. Presentation of Committee Report on Bill\nHonorable Chairperson Hari Dhakal of the State Affairs and Good Governance Committee will present the \"Report of the Committee on the National Service Corps Bill, 2083\".\n2. Work related to Agreement\nHonorable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will present a proposal to \"Discuss the Agreement on the Conservation and Sustainable Use of Marine Biodiversity in Areas Beyond National Jurisdiction under the United Nations Convention on the Law of the Sea\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-01-01",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": "46",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Presentation of Committee Report on Bill",
+      "summary_en": "The Chairperson of the State Affairs and Good Governance Committee, Hari Dhakal, presented the committee's report on the National Service Corps Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Hari Dhakal",
+          "party": null,
+          "topic": "Presentation of committee report on National Service Corps Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "National Service Corps Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Committee on the National Service Corps Bill, 2083"
+      ],
+      "key_issues": [
+        "National Service Corps Bill",
+        "Committee Report Presentation"
+      ]
+    },
+    {
+      "name": "Work related to Agreement",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, proposed a general discussion on the Agreement on the Conservation and Sustainable Use of Marine Biodiversity in Areas Beyond National Jurisdiction under the United Nations Convention on the Law of the Sea.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Proposal for discussion on marine biodiversity agreement"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Marine Biodiversity Conservation",
+        "Sustainable Use of Marine Resources",
+        "United Nations Convention on the Law of the Sea",
+        "Areas Beyond National Jurisdiction"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Bill Presentation",
+    "Committee Report",
+    "National Service Corps Bill",
+    "International Agreement",
+    "Marine Biodiversity",
+    "Law, Justice and Parliamentary Affairs"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Hari Dhakal",
+      "party": null,
+      "section": "Presentation of Committee Report on Bill"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Work related to Agreement"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Secretary-General"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

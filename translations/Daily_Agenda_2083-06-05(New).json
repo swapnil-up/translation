@@ -1,0 +1,97 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 57\nDaily Agenda\nFederal Parliament of Nepal\n2083 Ashoj 5, Monday\n1:00 PM\n1. Letter from the Office of the President\nThe Honorable Speaker will read out the letter received from the Office of the President regarding the certification of a bill.\n2. Formation of a Special Committee\nThe Honorable Speaker will present a proposal for the formation of a Parliamentary Special Committee on Climate Change in the Himalayas and Bhote-Koshi-Trishuli Disasters, in accordance with Rule 180 of the House of Representatives Regulations, 2082, along with the names of the honorable members to be included in the committee.\n3. Management Work\nThe Honorable Minister for Women, Children, Senior Citizens and Social Security, Sita WADI, will present a proposal stating, \"Let the 'Child Related (First Amendment) Bill, 2082' be sent to the relevant committee for clause-by-clause discussion.\"\nOn behalf of the Right Honorable Prime Minister and Minister of Defense, Balen Shah, the Honorable Minister for Law, Justice and Parliamentary Affairs, Sobita GAUTAM, will:\n(a) Present a proposal stating, \"Let's discuss the National Service Corps Bill, 2082, along with the report of the State Affairs and Good Governance Committee.\"\n(b) Present a proposal stating, \"Let the National Service Corps Bill, 2082, be passed.\"\nPadma Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2083-04-05",
+    "date_ad": "2026-09-22",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "57",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Speaker will read a letter from the Office of the President regarding bill certification. Following this, a proposal to form a Special Committee on Climate Change and Disasters in the Himalayas will be presented.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "President's Office letter",
+        "Bill certification",
+        "Special Committee formation",
+        "Climate Change",
+        "Himalayan Disasters"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister for Women, Children, Senior Citizens and Social Security proposed sending the Child Related (First Amendment) Bill, 2082 to committee. The Minister for Law, Justice and Parliamentary Affairs proposed discussing and passing the National Service Corps Bill, 2082.",
+      "speakers": [
+        {
+          "name": "Sita WADI",
+          "party": null,
+          "topic": "Child Related (First Amendment) Bill, 2082"
+        },
+        {
+          "name": "Sobita GAUTAM",
+          "party": null,
+          "topic": "National Service Corps Bill, 2082"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Child Related (First Amendment) Bill, 2082",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "National Service Corps Bill, 2082",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [
+        "State Affairs and Good Governance Committee report"
+      ],
+      "key_issues": [
+        "Child Related Bill amendment",
+        "National Service Corps Bill",
+        "Committee discussions"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Committees",
+    "Climate Change",
+    "Disaster Management",
+    "Child Rights",
+    "National Service",
+    "Presidential Office"
+  ],
+  "ministries_mentioned": [
+    "Office of the President",
+    "Ministry for Women, Children, Senior Citizens and Social Security",
+    "Ministry for Law, Justice and Parliamentary Affairs",
+    "Ministry of Defense"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sita WADI",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Sobita GAUTAM",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Balen Shah",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

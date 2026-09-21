@@ -1,0 +1,60 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 44\nFederal Parliament\nNepal\nDaily Business\nParliament,\n2083 Bhadra 31, Wednesday\n1:00 PM\nManagement Work\nHonorable Minister for Women, Children, Senior Citizens and Social Security, Sita Kumari Gurung, will present a proposal to \"Consider the Children Act (First Amendment) Bill, 2083\".\nPanna Prasad Pandey\nGeneral Secretary",
+  "session": {
+    "date_bs": "2083-04-12",
+    "date_ad": "2026-09-17",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "44",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Women, Children, Senior Citizens and Social Security, Sita Kumari Gurung, presented a proposal to consider the Children Act (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sita Kumari Gurung",
+          "party": null,
+          "topic": "Consideration of Children Act (First Amendment) Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Children Act (First Amendment) Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Children Act (First Amendment) Bill, 2083"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliament",
+    "House of Representatives",
+    "Daily Business",
+    "Children Act",
+    "Bill Consideration",
+    "Social Security",
+    "Women's Rights",
+    "Children's Rights"
+  ],
+  "ministries_mentioned": [
+    "Ministry for Women, Children, Senior Citizens and Social Security"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sita Kumari Gurung",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Panna Prasad Pandey",
+      "party": null,
+      "section": "General Secretary"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
