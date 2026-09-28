@@ -719,5 +719,25 @@
     "ocr_path": "/home/runner/work/translation/translation/output/Verbatim_2998-ocr.txt",
     "translated_path": "/home/runner/work/translation/translation/output/Verbatim_2998.txt",
     "structured_path": "/home/runner/work/translation/translation/translations/Verbatim_2998.json"
+  },
+  {
+    "id": 3006,
+    "title": "Complete Proceedings of the Twenty-First Session, 05 Ashoj 2083 Monday (Meeting no. 48)",
+    "title_np": "एक्काइसौँ अधिवेशन कार्यवाहीको सम्पूर्ण विवरण, ०५ असोज २०८३ सोमवार (बैठक सङ्ख्या- ४८)",
+    "published_at": "2026-09-27",
+    "attachment_url": "https://na.parliament.gov.np/uploads/attachments/vu9zjob529irjhs4.pdf",
+    "status": "pending",
+    "scraped_at": "2026-09-28",
+    "serial": "65."
+  },
+  {
+    "id": 3001,
+    "title": "Complete Proceedings of the Twenty-First Session, 02  Ashoj 2083 Friday (Meeting no. 47)",
+    "title_np": "एक्काइसौँ अधिवेशन कार्यवाहीको सम्पूर्ण विवरण, ०२ असोज २०८३ शुक्रवार (बैठक सङ्ख्या- ४७)",
+    "published_at": "2026-09-21",
+    "attachment_url": "https://na.parliament.gov.np/uploads/attachments/urbshmumb80oatcz.pdf",
+    "status": "pending",
+    "scraped_at": "2026-09-28",
+    "serial": "66."
   }
 ]
