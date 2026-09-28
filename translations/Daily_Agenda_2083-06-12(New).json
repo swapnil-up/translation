@@ -1,0 +1,97 @@
+{
+  "full_translation_en": "House of Representatives, 2082\nSecond Session\nMeeting Number - 62\nDaily Agenda\nFederal\nParliament of Nepal\nMonday, October 12, 2083\n11:00 AM\nManagement Work\n1. On behalf of the Right Honourable Prime Minister Balendra Shah, the Honourable Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam:-\n   a) Proposal to seek permission to introduce the \"Some Nepal Laws Arrangement and Operation Bill, 2083\"\n   b) To introduce the \"Some Nepal Laws Arrangement and Operation Bill, 2083\".\n2. The Honourable Minister for Women, Children, Senior Citizens and Social Security, Sita Badi:-\n   a) To present the proposal to seek permission to introduce the \"Bill to Amend Some Nepal Laws on Women, Children, Senior Citizens and Social Security, 2083\".\n   b) To introduce the \"Bill to Amend Some Nepal Laws on Women, Children, Senior Citizens and Social Security, 2083\".\n3. The Honourable Minister for Health and Food Hygiene, Nisha Mehta:-\n   a) To present the proposal to seek permission to introduce the \"Objects (Control of Sale and Distribution) (First Amendment) Bill to Replace Breast Milk, 2083\".\n   b) To introduce the \"Objects (Control of Sale and Distribution) (First Amendment) Bill to Replace Breast Milk, 2083\".\n   c) To present the proposal to seek permission to introduce the \"Safe Motherhood and Reproductive Health Rights (First Amendment) Bill, 2083\".\n   d) To introduce the \"Safe Motherhood and Reproductive Health Rights (First Amendment) Bill, 2083\".\n   e) To present the proposal to seek permission to introduce the \"Health Workers and Health Institutions Security (Second Amendment) Bill, 2083\".\n   f) To introduce the \"Health Workers and Health Institutions Security (Second Amendment) Bill, 2083\".\n   g) To present the proposal to seek permission to introduce the \"Ramraja Prasad Singh Health Science Academy Bill, 2083\".\n   h) To introduce the \"Ramraja Prasad Singh Health Science Academy Bill, 2083\".\n\nPanch Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-07-12",
+    "date_ad": null,
+    "meeting_type": "House of Representatives",
+    "meeting_number": "62",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The agenda for the day included management work. Several bills were proposed for introduction, covering legal reforms, women and child security, health, and a health science academy.",
+      "speakers": [],
+      "bills_discussed": [
+        {
+          "name": "Some Nepal Laws Arrangement and Operation Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Bill to Amend Some Nepal Laws on Women, Children, Senior Citizens and Social Security, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Objects (Control of Sale and Distribution) (First Amendment) Bill to Replace Breast Milk, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Safe Motherhood and Reproductive Health Rights (First Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Health Workers and Health Institutions Security (Second Amendment) Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Ramraja Prasad Singh Health Science Academy Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legal reform",
+        "Women and child security",
+        "Social security",
+        "Health services",
+        "Reproductive health",
+        "Health worker security",
+        "Health science academy"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary meeting",
+    "Legislation",
+    "Bill introduction",
+    "Law amendment",
+    "Social security",
+    "Women's rights",
+    "Child rights",
+    "Health policy",
+    "Maternal health",
+    "Reproductive health",
+    "Health worker protection",
+    "Health education",
+    "Government business"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Women, Children, Senior Citizens and Social Security",
+    "Ministry of Health and Food Hygiene"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sita Badi",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

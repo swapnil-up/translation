@@ -1,0 +1,73 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 61\nFederal\nNepal\nDaily Agenda\nParliament,\n2083 Ashoj 8, Thursday\n2:20 PM\n(Second Meeting)\nManagement Work\n1. The Hon. Minister for Physical Infrastructure Development will present a proposal for consideration.\n2. The Hon. Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will present a proposal for consideration of the \"Bill on Free Legal Aid, 2083\".\nPanchan Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-04-08",
+    "date_ad": "2026-09-24",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "61",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The agenda includes two main items under Management Work. The Minister for Physical Infrastructure Development will present a proposal for consideration. Following this, the Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, will present a proposal for consideration of the Bill on Free Legal Aid, 2083.",
+      "speakers": [
+        {
+          "name": "Hon. Minister for Physical Infrastructure Development",
+          "party": null,
+          "topic": "Present proposal for consideration"
+        },
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Bill on Free Legal Aid, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill on Free Legal Aid, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Physical Infrastructure Development",
+        "Free Legal Aid Bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Meeting",
+    "House of Representatives",
+    "Daily Agenda",
+    "Legislation",
+    "Bill Presentation",
+    "Ministerial Proposal",
+    "Physical Infrastructure",
+    "Legal Aid",
+    "Law and Justice"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Physical Infrastructure Development",
+    "Ministry of Law, Justice and Parliamentary Affairs"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Hon. Minister for Physical Infrastructure Development",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Panchan Prasad Pandey",
+      "party": null,
+      "section": "Secretary-General"
+    }
+  ],
+  "adjournment_time": "2:20 PM",
+  "next_meeting_date": null
+}

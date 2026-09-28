@@ -1,0 +1,115 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 59\nFederal Parliament of Nepal\nDaily Business Schedule\nWednesday, Ashoj 7, 2083\n11:00 AM (Tentative)\n1. Letter from the Office of the President\nThe Honorable Speaker will read out the contents of the letter received from the Office of the President regarding the Prime Minister's portfolio.\n2. Management Work\nHonorable Minister for Physical Infrastructure Development, Sunil Lamsal:\na) Will present a proposal seeking permission to introduce the \"Solid Waste Management Bill, 2083\".\nb) Will introduce the \"Solid Waste Management Bill, 2083\".\n3. Honorable Minister for Finance, Dr. Swarnim Wagle:\na) Will present a proposal for consideration of the \"Citizen Investment Fund (Third Amendment) Bill, 2083\".\nb) Will present a proposal for consideration of the \"Payment and Settlement (First Amendment) Bill, 2083\".\n4. Honorable Minister for Agriculture, Forests and Environment, Gita Chaudhary will present a proposal for consideration of the \"Infectious Animal Disease (Control) Bill, 2083\" which originated in the National Assembly.\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-07-07",
+    "date_ad": "2026-09-24",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "59",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Opening",
+      "summary_en": "The Honorable Speaker will read out a letter from the Office of the President concerning the Prime Minister's portfolio.",
+      "speakers": [],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Prime Minister's portfolio"
+      ]
+    },
+    {
+      "name": "Main Business",
+      "summary_en": "The Minister for Physical Infrastructure Development will seek permission to introduce and then introduce the Solid Waste Management Bill, 2083. The Minister for Finance will present proposals for consideration of the Citizen Investment Fund (Third Amendment) Bill, 2083 and the Payment and Settlement (First Amendment) Bill, 2083. The Minister for Agriculture, Forests and Environment will present a proposal for consideration of the Infectious Animal Disease (Control) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sunil Lamsal",
+          "party": null,
+          "topic": "Introduce Solid Waste Management Bill, 2083"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Consider Citizen Investment Fund Bill, 2083"
+        },
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Consider Payment and Settlement Bill, 2083"
+        },
+        {
+          "name": "Gita Chaudhary",
+          "party": null,
+          "topic": "Consider Infectious Animal Disease Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Solid Waste Management Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Citizen Investment Fund (Third Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Payment and Settlement (First Amendment) Bill, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Infectious Animal Disease (Control) Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Solid Waste Management",
+        "Citizen Investment Fund",
+        "Payment and Settlement",
+        "Infectious Animal Disease Control"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Business",
+    "House of Representatives",
+    "Legislation",
+    "Bills",
+    "Solid Waste Management",
+    "Finance",
+    "Agriculture",
+    "Environment",
+    "Public Health",
+    "Presidential Office"
+  ],
+  "ministries_mentioned": [
+    "Office of the Prime Minister",
+    "Ministry of Physical Infrastructure Development",
+    "Ministry of Finance",
+    "Ministry of Agriculture, Forests and Environment"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Opening"
+    },
+    {
+      "name": "Sunil Lamsal",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Main Business"
+    },
+    {
+      "name": "Gita Chaudhary",
+      "party": null,
+      "section": "Main Business"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

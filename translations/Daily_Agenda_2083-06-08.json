@@ -1,0 +1,75 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 60\nFederal Parliament of Nepal\nDaily Business Schedule\nThursday, October 24, 2024 (2081 Ashoj 8)\n11:00 AM\nManagement Work\n1. Hon. Minister of Law, Justice and Parliamentary Affairs Sobita Gautam:\nProposing to seek permission to present the \"Free Legal Aid Bill, 2083\".\na) Present the \"Free Legal Aid Bill, 2083\".\n2. Hon. Minister of Infrastructure Development Sunil Lamsal:\nTo present a proposal for consideration of the \"Solid Waste Management Bill, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2081-08-08",
+    "date_ad": "2024-10-24",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "60",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister of Law, Justice and Parliamentary Affairs sought permission to present the Free Legal Aid Bill, 2083, and then presented the bill. The Minister of Infrastructure Development presented a proposal for consideration of the Solid Waste Management Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Free Legal Aid Bill, 2083"
+        },
+        {
+          "name": "Sunil Lamsal",
+          "party": null,
+          "topic": "Consideration of Solid Waste Management Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Free Legal Aid Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Solid Waste Management Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Free Legal Aid Bill",
+        "Solid Waste Management Bill"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "parliament",
+    "house of representatives",
+    "legislation",
+    "legal aid",
+    "waste management",
+    "bill presentation",
+    "government business"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Infrastructure Development"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sunil Lamsal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
