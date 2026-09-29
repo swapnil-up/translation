@@ -726,9 +726,12 @@
     "title_np": "एक्काइसौँ अधिवेशन कार्यवाहीको सम्पूर्ण विवरण, ०५ असोज २०८३ सोमवार (बैठक सङ्ख्या- ४८)",
     "published_at": "2026-09-27",
     "attachment_url": "https://na.parliament.gov.np/uploads/attachments/vu9zjob529irjhs4.pdf",
-    "status": "pending",
+    "status": "done",
     "scraped_at": "2026-09-28",
-    "serial": "65."
+    "serial": "65.",
+    "ocr_path": "/home/runner/work/translation/translation/output/Verbatim_3006-ocr.txt",
+    "translated_path": "/home/runner/work/translation/translation/output/Verbatim_3006.txt",
+    "structured_path": "/home/runner/work/translation/translation/translations/Verbatim_3006.json"
   },
   {
     "id": 3001,
@@ -736,7 +739,7 @@
     "title_np": "एक्काइसौँ अधिवेशन कार्यवाहीको सम्पूर्ण विवरण, ०२ असोज २०८३ शुक्रवार (बैठक सङ्ख्या- ४७)",
     "published_at": "2026-09-21",
     "attachment_url": "https://na.parliament.gov.np/uploads/attachments/urbshmumb80oatcz.pdf",
-    "status": "pending",
+    "status": "skipped",
     "scraped_at": "2026-09-28",
     "serial": "66."
   }
