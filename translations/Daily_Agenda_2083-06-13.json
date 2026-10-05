@@ -1,0 +1,142 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 64\nFederal\nNepal\nDaily Agenda\nParliament\nTuesday, Ashoj 13, 2083\n10:00 AM\nPresentation of Committee Report on Bill\n1. Honorable Chairperson of the Education, Health and Information Technology Committee, Ojaswi Sherchan, will present the \"Report of the Committee on the National Forensic Science Laboratory (Establishment and Operation) Bill, 2083\".\nManagement Work\n2. On behalf of the Right Honorable Prime Minister and Defense Minister Balendra Shah, Honorable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will:\na) Present a proposal seeking permission to introduce the \"National Defense University Bill, 2083\".\nb) Introduce the \"National Defense University Bill, 2083\".\n3. Honorable Minister for Infrastructure Development Sunil Lamsal will:\na) Present a proposal seeking permission to introduce the \"Diploma in Engineering Council Bill, 2083\".\nb) Introduce the \"Diploma in Engineering Council Bill, 2083\".\n4. On behalf of the Right Honorable Prime Minister Balendra Shah, Honorable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will present a proposal for consideration of the \"Bill to Amend Some Nepal Laws, 2083\".\n5. Honorable Minister for Health and Food Hygiene Nisha Mehta will present a proposal for consideration of the \"Ramraja Prasad Singh Health Sciences Academy Bill, 2083\".\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-07-13",
+    "date_ad": "2026-09-30",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "64",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Presentation of Committee Report on Bill",
+      "summary_en": "The Chairperson of the Education, Health and Information Technology Committee, Ojaswi Sherchan, presented the committee's report on the National Forensic Science Laboratory (Establishment and Operation) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Ojaswi Sherchan",
+          "party": null,
+          "topic": "Presentation of committee report on National Forensic Science Laboratory Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "National Forensic Science Laboratory (Establishment and Operation) Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Committee on the National Forensic Science Laboratory (Establishment and Operation) Bill, 2083"
+      ],
+      "key_issues": []
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, on behalf of the Prime Minister, sought permission to introduce and then introduced the National Defense University Bill, 2083. The Minister for Infrastructure Development, Sunil Lamsal, also sought permission and introduced the Diploma in Engineering Council Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Introduction of National Defense University Bill, 2083"
+        },
+        {
+          "name": "Sunil Lamsal",
+          "party": null,
+          "topic": "Introduction of Diploma in Engineering Council Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "National Defense University Bill, 2083",
+          "status": "introduced"
+        },
+        {
+          "name": "Diploma in Engineering Council Bill, 2083",
+          "status": "introduced"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": []
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, on behalf of the Prime Minister, presented a proposal for consideration of the Bill to Amend Some Nepal Laws, 2083. The Minister for Health and Food Hygiene, Nisha Mehta, presented a proposal for consideration of the Ramraja Prasad Singh Health Sciences Academy Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Consideration of Bill to Amend Some Nepal Laws, 2083"
+        },
+        {
+          "name": "Nisha Mehta",
+          "party": null,
+          "topic": "Consideration of Ramraja Prasad Singh Health Sciences Academy Bill, 2083"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Bill to Amend Some Nepal Laws, 2083",
+          "status": "discussed"
+        },
+        {
+          "name": "Ramraja Prasad Singh Health Sciences Academy Bill, 2083",
+          "status": "discussed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": []
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Agenda",
+    "House of Representatives",
+    "Bill Presentation",
+    "Committee Report",
+    "Legislation",
+    "National Defense University Bill",
+    "Diploma in Engineering Council Bill",
+    "Nepal Laws Amendment Bill",
+    "Health Sciences Academy Bill",
+    "Forensic Science Laboratory Bill"
+  ],
+  "ministries_mentioned": [
+    "Education, Health and Information Technology",
+    "Law, Justice and Parliamentary Affairs",
+    "Infrastructure Development",
+    "Health and Food Hygiene",
+    "Defense"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Ojaswi Sherchan",
+      "party": null,
+      "section": "Presentation of Committee Report on Bill"
+    },
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sunil Lamsal",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Nisha Mehta",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

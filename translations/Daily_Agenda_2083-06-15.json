@@ -1,0 +1,152 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 67\nFederal Parliament of Nepal\nDaily Business Schedule\nThursday, October 2, 2083\n11:00 AM\nPresentation of Annual Report\nOn behalf of the Honorable Prime Minister Balendra Shah, the Honorable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will present the \"Eighth Annual Report of the National Natural Resources and Fiscal Commission, 2083\".\nPresentation of Committee Report on Bills\nHarí Thakal, Honorable Chairperson of the State Affairs and Good Governance Committee, will present the \"Report of the Committee on the (First Amendment) Bill relating to Remuneration, Service Conditions and Facilities of Office Bearers of Constitutional Bodies, 2083\".\nManagement Work\nHonorable Finance Minister Dr. Swarnim Wagle will:\n(a) Present the proposal that \"The Employees Provident Fund (Tenth Amendment) Bill, 2083 be sent to the relevant committee for clause-by-clause discussion\".\n(b) Present the proposal that \"The Citizen Investment Fund (Third Amendment) Bill, 2083 be sent to the relevant committee for clause-by-clause discussion\".\n(c) Present the proposal that \"The Payment and Settlement (First Amendment) Bill, 2083 be sent to the relevant committee for clause-by-clause discussion\".\nCondolence Motion\nThe Honorable Speaker will present the following condolence motion on the demise of former member Ghanendra Basnet:\n\"The House of Representatives expresses sorrow over the untimely demise of Ghanendra Basnet, who was elected as a member of the House of Representatives from Sankhuwasabha Constituency No. 2 in the 2048 BS House of Representatives election and from Bhojpur Constituency No. 1 in the 2056 BS House of Representatives election, and who played a leading role in the establishment of democracy and the democratic system, at the age of 74 on October 14, 2083 BS. This meeting of the House of Representatives expresses heartfelt condolences on his demise and extends sympathy to the bereaved family.\"\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-07-15",
+    "date_ad": "2026-10-02",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "67",
+    "chairperson": "Honorable Speaker"
+  },
+  "sections": [
+    {
+      "name": "Presentation of Annual Report",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs, Sobita Gautam, presented the Eighth Annual Report of the National Natural Resources and Fiscal Commission, 2083, on behalf of the Prime Minister.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Presentation of Annual Report of National Natural Resources and Fiscal Commission"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [
+        "Eighth Annual Report of the National Natural Resources and Fiscal Commission, 2083"
+      ],
+      "key_issues": [
+        "Annual Report Presentation"
+      ]
+    },
+    {
+      "name": "Presentation of Committee Report on Bills",
+      "summary_en": "The Chairperson of the State Affairs and Good Governance Committee, Hari Thakal, presented the committee's report on the (First Amendment) Bill relating to Remuneration, Service Conditions and Facilities of Office Bearers of Constitutional Bodies, 2083.",
+      "speakers": [
+        {
+          "name": "Hari Thakal",
+          "party": null,
+          "topic": "Presentation of Committee Report on Constitutional Bodies Bill"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Constitutional Bodies (First Amendment) Bill relating to Remuneration, Service Conditions and Facilities of Office Bearers, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [
+        "Report of the Committee on the (First Amendment) Bill relating to Remuneration, Service Conditions and Facilities of Office Bearers of Constitutional Bodies, 2083"
+      ],
+      "key_issues": [
+        "Constitutional Bodies Bill",
+        "Committee Report"
+      ]
+    },
+    {
+      "name": "Management Work",
+      "summary_en": "The Finance Minister, Dr. Swarnim Wagle, proposed sending three bills to committees for clause-by-clause discussion: the Employees Provident Fund (Tenth Amendment) Bill, 2083; the Citizen Investment Fund (Third Amendment) Bill, 2083; and the Payment and Settlement (First Amendment) Bill, 2083.",
+      "speakers": [
+        {
+          "name": "Dr. Swarnim Wagle",
+          "party": null,
+          "topic": "Sending bills to committee for discussion"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Employees Provident Fund (Tenth Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Citizen Investment Fund (Third Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Payment and Settlement (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Bill discussion",
+        "Committee referral"
+      ]
+    },
+    {
+      "name": "Condolence Motion",
+      "summary_en": "The House of Representatives expressed sorrow over the passing of former member Ghanendra Basnet, who was elected from Sankhuwasabha and Bhojpur constituencies and played a role in establishing democracy. The motion extended condolences to his family.",
+      "speakers": [
+        {
+          "name": "Honorable Speaker",
+          "party": null,
+          "topic": "Presentation of condolence motion"
+        }
+      ],
+      "bills_discussed": [],
+      "reports_presented": [],
+      "key_issues": [
+        "Condolence motion",
+        "Demise of former member"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "Parliamentary Proceedings",
+    "House of Representatives",
+    "Annual Report",
+    "Fiscal Commission",
+    "Constitutional Bodies",
+    "Legislation",
+    "Bill Discussion",
+    "Committee Report",
+    "Finance",
+    "Condolence Motion",
+    "Former Member"
+  ],
+  "ministries_mentioned": [
+    "Law, Justice and Parliamentary Affairs",
+    "Finance"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Balendra Shah",
+      "party": null,
+      "section": "Presentation of Annual Report"
+    },
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Presentation of Annual Report"
+    },
+    {
+      "name": "Hari Thakal",
+      "party": null,
+      "section": "Presentation of Committee Report on Bills"
+    },
+    {
+      "name": "Dr. Swarnim Wagle",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Honorable Speaker",
+      "party": null,
+      "section": "Condolence Motion"
+    },
+    {
+      "name": "Ghanendra Basnet",
+      "party": "Nepal Communist Party (UML)",
+      "section": "Condolence Motion"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}

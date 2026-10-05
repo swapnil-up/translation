@@ -1,0 +1,109 @@
+{
+  "full_translation_en": "Federal Parliament\nHouse of Representatives, 2082\nSecond Session\nMeeting Number - 66\nFederal Parliament of Nepal\nDaily Agenda\nWednesday, Ashoj 14, 2083\n1:00 PM\nManagement Work\n1. Honorable Minister for Law, Justice and Parliamentary Affairs Sobita Gautam will present the following proposals:\n(a) \"To send the Mediation (Second Amendment) Bill, 2083 for clause-by-clause discussion to the relevant committee.\"\n(b) \"To send the Nepal Law Commission (First Amendment) Bill, 2083 for clause-by-clause discussion to the relevant committee.\"\n(c) \"To send the Free Legal Aid Related Bill, 2083 for clause-by-clause discussion to the relevant committee.\"\n2. Honorable Minister for Agriculture, Forest and Environment Gita Chaudhary will present the proposal: \"To send the Infectious Animal Disease (Control) Bill, 2083, originating in the National Assembly, for clause-by-clause discussion to the relevant committee.\"\n3. Honorable Minister for Science, Technology and Innovation Mahabir Pun will:\n(a) Present the proposal: \"To discuss the National Forensic Science Laboratory (Establishment and Operation) Bill, 2082, along with the report of the Education, Health and Information Technology Committee, originating in the National Assembly.\"\n(b) Present the proposal: \"To pass the National Forensic Science Laboratory (Establishment and Operation) Bill, 2083, originating in the National Assembly.\"\nPadma Prasad Pandey\nSecretary-General",
+  "session": {
+    "date_bs": "2083-06-14",
+    "date_ad": "2026-09-30",
+    "meeting_type": "House of Representatives",
+    "meeting_number": "66",
+    "chairperson": null
+  },
+  "sections": [
+    {
+      "name": "Management Work",
+      "summary_en": "The Minister for Law, Justice and Parliamentary Affairs proposed sending three bills related to mediation, the Nepal Law Commission, and free legal aid to committees for clause-by-clause discussion. The Minister for Agriculture, Forest and Environment proposed sending the Infectious Animal Disease (Control) Bill to a committee. The Minister for Science, Technology and Innovation proposed discussing and passing the National Forensic Science Laboratory Bill.",
+      "speakers": [
+        {
+          "name": "Sobita Gautam",
+          "party": null,
+          "topic": "Proposing bills for committee discussion"
+        },
+        {
+          "name": "Gita Chaudhary",
+          "party": null,
+          "topic": "Proposing bill for committee discussion"
+        },
+        {
+          "name": "Mahabir Pun",
+          "party": null,
+          "topic": "Proposing bill discussion and passage"
+        }
+      ],
+      "bills_discussed": [
+        {
+          "name": "Mediation (Second Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Nepal Law Commission (First Amendment) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Free Legal Aid Related Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "Infectious Animal Disease (Control) Bill, 2083",
+          "status": "sent_to_committee"
+        },
+        {
+          "name": "National Forensic Science Laboratory (Establishment and Operation) Bill, 2082",
+          "status": "discussed"
+        },
+        {
+          "name": "National Forensic Science Laboratory (Establishment and Operation) Bill, 2083",
+          "status": "passed"
+        }
+      ],
+      "reports_presented": [],
+      "key_issues": [
+        "Legislative agenda",
+        "Bill discussions",
+        "Committee referrals",
+        "Law reform"
+      ]
+    }
+  ],
+  "agenda_tags": [
+    "parliament",
+    "house of representatives",
+    "agenda",
+    "legislation",
+    "bills",
+    "law",
+    "mediation",
+    "legal aid",
+    "animal disease",
+    "forensic science",
+    "committee discussion",
+    "bill passage"
+  ],
+  "ministries_mentioned": [
+    "Ministry of Law, Justice and Parliamentary Affairs",
+    "Ministry of Agriculture, Forest and Environment",
+    "Ministry of Science, Technology and Innovation"
+  ],
+  "all_speakers_mentioned": [
+    {
+      "name": "Sobita Gautam",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Gita Chaudhary",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Mahabir Pun",
+      "party": null,
+      "section": "Management Work"
+    },
+    {
+      "name": "Padma Prasad Pandey",
+      "party": null,
+      "section": "Management Work"
+    }
+  ],
+  "adjournment_time": null,
+  "next_meeting_date": null
+}
